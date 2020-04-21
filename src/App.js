@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
-import { mainPage } from './Components/mainPage';
+//import 'bootstrap/dist/css/bootstrap.min.css';
+import {Test} from './Components/Test';
 function App() {
   return (
-    <mainPage></mainPage>
+    <Test></Test>
   );
 }
 

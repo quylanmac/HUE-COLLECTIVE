@@ -3,7 +3,7 @@ import myCss from '../App.css';
 import {Container, Row, Col, Button} from 'react-bootstrap';
 import {ColourWheel} from './ColourWheel';
 import {Loader} from './Loader';
-export class mainPage extends React.Component {
+export class Test extends React.Component {
     constructor(props) {
         super(props);
         
