@@ -1,11 +1,9 @@
 import React from 'react';
 import myCss from '../App.css';
-//import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Row, Col, Button} from 'react-bootstrap';
 import {ColourWheel} from './ColourWheel';
-import logo from '../img/logo.png';
 import {Loader} from './Loader';
-export class Test extends React.Component {
+export class mainPage extends React.Component {
     constructor(props) {
         super(props);
         

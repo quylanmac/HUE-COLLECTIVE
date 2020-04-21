@@ -1,3 +1,4 @@
+//This is not used so far
 import React from 'react';
 import {HuePicker} from 'react-color';
 import '../App.css';
