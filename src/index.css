@@ -5,8 +5,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:#121212;
 }
+Button {
+  color:#121212 !important;
+  background-color:#121212 !important;
+  border-color:#121212 !important;
 
+}
+.myButton:hover {
+  color:#121212;
+}
+.myButton {
+  background-color:#121212;
+  border-color:#121212;
+
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
