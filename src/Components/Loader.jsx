@@ -29,7 +29,7 @@ export class Loader extends React.Component {
             load=null;
         }
         return(
-            <div className=""> 
+            <div className="animated fadeIn delay"> 
                 {load}
             </div>
         )
