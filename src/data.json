@@ -1,0 +1,51 @@
+[
+    {
+        "id": 0,
+        "name": "HUE COLLECTIVE",
+        "image": "hue",
+        "role": "2020"
+    },
+    {
+        "id": 1,
+        "name": "Braeanne Oribello",
+        "image": "braeanne",
+        "role": "Creative Director",
+        "major": "Design and Interaction",
+        "bio": " When Braeanne wanted to connect with more designers, she assembled a ragtag group of friends to create HUE, a place where creatives from all disciplines could build community and learn from one another! She loves snowboarding, but also hopes to one day redesign electronic s to be more sustainable and accessible to those in developing countries!",
+        "color1": "#8194dd",
+        "color2": "#9as9e3",
+        "color3": "#b3beea",
+        "linkedin": "test",
+        "instagram": "test2",
+        "msg": "test3"
+    },
+    {
+        "id": 2,
+        "name": "Mylinh Lac",
+        "image": "mylinh",
+        "role": "Creative Director",
+        "major": "Design and Interaction",
+        "bio": "Despite her dismay at Animal Crossing : New Horizons being a Nintendo exclusive, Mylinh forges on at HUE, proud of the communal initiatives the zine takes on within the design community. Of HUE’s dedicated team members, she says, “before anything, we’re friends.” Of delicious spicy food, she says, “bring it on.” ",
+        "color1": "#f1caad",
+        "color2": "#f3d4bd",
+        "color3": "#f6dfcd",
+        "linkedin": "test",
+        "instagram": "test2",
+        "msg": "test3"
+    },
+    {
+        "id": 3,
+        "name":"Michael Lwin DuMont",
+        "image": "lwin",
+        "role": "Editor",
+        "major": "Chemical Engineering",
+        "bio": "Lwin, one of HUE’s editors, joined because of his interest in reading and writing, and because he wanted to support any and all collaborations between the arts, humanities, and sciences. He is driven to transition our society to renewable energy, but ja zz, above all things, is his passion.",
+        "color1": "#009775",
+        "color2": "#33ab90",
+        "color3": "#66c0ac",
+        "linkedin": "test",
+        "instagram": "test2",
+        "msg": "test3"
+    }
+
+]

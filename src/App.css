@@ -1,3 +1,56 @@
+@font-face {
+  font-family: 'Cubano';
+  src: local('Cubano'), url(./font/Cubano-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'HelveticaBold';
+  src: local('HelveticaBold'), url(./font/Helvetica\ Neu\ Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: local('Helvetica'), url(./font/HelveticaNeue.ttf) format('truetype');
+}
+.myCard {
+  border: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.cardFont {
+  font-family: HelveticaBold;
+  font-size: 20px;
+  font-style:normal;
+  line-height:25px;
+  text-transform: uppercase;
+}
+.cardFont2 {
+  font-family: Helvetica;
+  font-size: 20px;
+  line-height:25px;
+}
+.mainLogo {
+  font-size: 50px;
+  font-family: Cubano;
+  font-style: normal;
+  font-weight:normal;
+  text-align:center;
+  line-height:149%;
+  letter-spacing:0.185em;
+  text-shadow:-3px 0 #121212, 0 1px #121212, 1px 0 #121212, 0 -1px #121212;
+}
+.secondaryLogo {
+  font-size: 50px;
+  font-family: Cubano;
+  font-style: normal;
+  font-weight:normal;
+  text-align:center;
+  line-height:149%;
+  letter-spacing:0.185em;
+  margin-top:4px;
+  margin-left:-11px;
+}
+
 .overlay {
   display:grid;
 }
