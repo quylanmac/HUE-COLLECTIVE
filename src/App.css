@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
 @font-face {
   font-family: 'Cubano';
   src: local('Cubano'), url(./font/Cubano-Regular.otf) format('opentype');
@@ -9,6 +11,17 @@
 @font-face {
   font-family: 'Helvetica';
   src: local('Helvetica'), url(./font/HelveticaNeue.ttf) format('truetype');
+}
+.secondCardHead {
+  font-family: HelveticaBold;
+  font-size:26px;
+  line-height:32px;
+  text-align:center;
+}
+.secondCard {
+  font-family: Karla;
+  font-size:20px;
+  line-height:23px;
 }
 .myCard {
   border: 0;
