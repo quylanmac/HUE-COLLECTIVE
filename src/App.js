@@ -1,17 +1,17 @@
 import React from 'react';
 import './App.css';
-//import 'bootstrap/dist/css/bootstrap.min.css';
-import {Test} from './Components/Test';
-
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
-  Link
 } from "react-router-dom";
+//import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from "./Routes/Home";
+import mainPage from "./Routes/mainPage";
+import {Test} from './Components/Test';
+
 function App() {
   return (
-    <Test></Test>
+   <Test></Test>
   );
 }
 

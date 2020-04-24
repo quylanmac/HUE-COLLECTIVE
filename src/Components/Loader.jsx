@@ -14,7 +14,7 @@ export class Loader extends React.Component {
     }
 
     componentDidMount() {
-        this.interval=setTimeout(()=>this.setState({renderChild:true}),8500);  //should be set to false
+        this.interval=setTimeout(()=>this.setState({renderChild:false}),6000);  //should be set to false
     }
 
     componentWillUnmount() {
@@ -23,7 +23,7 @@ export class Loader extends React.Component {
     render() {
         let load;
         if (this.state.renderChild==true) {
-            load=<img src={loader} alt={"Loading..."} style={{width:"100%"}}></img>;
+            load=<img src={loader} alt={"Loading..."}></img>;
         }
         else {
             load=null;
