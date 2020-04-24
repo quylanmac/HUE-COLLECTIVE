@@ -1,32 +1,32 @@
 import React from 'react';
 import myCss from '../App.css';
-import {Container, Row, Col, Button} from 'react-bootstrap';
+import {Container, Row, Col, Card, Button, Modal} from 'react-bootstrap';
 import {ColourWheel} from './ColourWheel';
 import {Loader} from './Loader';
 import '../animation.css';
 import {Redirect, Link} from "react-router-dom";
 import {TeamCard} from './TeamCard';
 import data from '../data.json';
+
 export class Test extends React.Component {
-    constructor(props) {
-        super(props);
+    constructor(props, context) {
+        super(props, context);
         
         this.state={
             background:"white",
             loaderVis:false, //should be false
             mainPageVis: false,
             LoaderDiv: true,
+            show: null
         };
         this.interval=null;
         this.setloaderVis = this.setloaderVis.bind(this);
         this.setmainPageVis = this.setmainPageVis.bind(this);
         this.setBothVis = this.setBothVis.bind(this);
         this.removeLoaderDiv = this.removeLoaderDiv.bind(this);
+        this.handleShow = this.handleShow.bind(this);
+        this.handleClose = this.handleClose.bind(this);
     }
-
-    handleChange = (color) => {
-        this.setState({background:color.hex});
-    };
     componentDidMount() {
         this.interval=setTimeout(()=>this.setState({loaderVis:true}),5000);
     }
@@ -51,6 +51,37 @@ export class Test extends React.Component {
         this.setBothVis();
         this.setState({LoaderDiv:false});
     }
+
+    
+  handleClose() {
+    this.setState({show: null});
+  }
+
+  handleShow(id) {
+    this.setState({show: id});
+  }
+    renderModals() {
+        return data.map(data => {
+          return (
+              <div>
+            <Button bsStyle="primary" bsSize="large" block onClick={() => this.handleShow(data.id)}>
+            <h1>{data.name}</h1>
+          </Button>
+              <Modal
+                show={this.state.show === data.id} onHide={this.handleClose}
+              >
+                <Card className="secondCardHead" style={{backgroundColor:data.color1}}>{data.name}
+                <div style={{height:"450px"}}>
+                <Card.Img className = "myCard" src={require(`../Members/Sketch/${data.image}.png`)} style={{}}/>
+                </div>
+                    <Card.Title className="secondCard" style={{backgroundColor:data.color2}}>{data.bio}</Card.Title>
+                    <Card.Subtitle style={{backgroundColor:data.color3}}>{data.role}</Card.Subtitle>
+                </Card>
+              </Modal>
+              </div>
+          )
+        });
+      }
     render() {    
 
         return (
@@ -92,13 +123,24 @@ export class Test extends React.Component {
                     {/*This takes a JSON file and creates cards */}
                     <Row className="row-cols-1">
                         {data.map( data=> (
+                            
                             <Col xs={3} className="mb-5" key={`${data.id}`}>
-                                <TeamCard data={data}></TeamCard>
+                                <Card className="myCard h-100 shadow-sm bg-white" style={{width:"251px"}} onClick={() => this.handleShow(data.id)}>
+                                    <Card.Img className = "myCard" src={require(`../Members/Picture/${data.image}.png`)} style={{width:"251px", height:"275px"}}/>
+                                    <Card.Body className="d-flex flex-column">
+                                    <div className="d-flex mb-2 justify-content-between">
+                                        <Card.Title className="mb-0 cardFont">{data.name}</Card.Title>
+                                    </div>
+                                        <Card.Text className="cardFont2" style={{marginTop:"-5px"}}>{data.role}</Card.Text>
+                                </Card.Body>
+                            </Card>
                             </Col>
+                            
                         ))}
-                        </Row> 
+                    </Row> 
                 </div>
               : null}
+              {this.renderModals()}
             </Container>
             </div>
         );
