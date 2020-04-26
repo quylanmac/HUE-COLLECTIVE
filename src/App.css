@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
-
+@font-face {
+  font-family: 'HelveticaLight';
+  src: local('HelveticaLight'), url(./font/HelveticaNeue\ Light.ttf) format('truetype');
+}
 @font-face {
   font-family: 'Cubano';
   src: local('Cubano'), url(./font/Cubano-Regular.otf) format('opentype');
@@ -12,35 +15,98 @@
   font-family: 'Helvetica';
   src: local('Helvetica'), url(./font/HelveticaNeue.ttf) format('truetype');
 }
-.secondCardHead {
-  font-family: HelveticaBold;
-  font-size:26px;
-  line-height:32px;
+.text-align {
   text-align:center;
 }
-.secondCard {
-  font-family: Karla;
-  font-size:20px;
-  line-height:23px;
+.noPad {
+  padding-left:0 !important;
+  padding-right:0 !important;
 }
+
+.memberBio {
+  font-family: Karla !important;
+  font-size:1em !important;
+  line-height:23px !important;
+}
+@media (max-width:767px) {
+  body {
+  font-size: 12px !important;
+  }
+}
+@media (min-width:768px) {
+  body {
+  font-size: 22px !important;
+  }
+}
+
+.sidebar1 {
+  font-family: HelveticaLight !important;
+  font-size:1em !important;
+  line-height:27px !important;
+  letter-spacing:0.12em !important;
+  color: black !important;
+  font-weight:300 !important;
+  rotate:-90deg;
+}
+
+.sidebar2 {
+  font-family: HelveticaLight !important;
+  font-size:1em !important;
+  line-height:27px !important;
+  letter-spacing:0.12em !important;
+  color: black !important;
+  font-weight:300 !important;
+  rotate:90deg;
+}
+.color {
+  font-family: HelveticaLight !important;
+  font-weight:300 !important;
+  font-size:0.5em !important;
+  line-height:15px !important;
+  color:#656565 !important;
+  padding-right:3rem !important;
+}
+@media (min-width:768px) {
+.modal-90w {
+  max-width:32% !important;
+  height:750px !important
+}
+}
+@media (max-width:767px) {
+  .modal-90w {
+    max-width:75% !important;
+    height:750px !important;
+    position:absolute !important;
+    left:12.5% !important;
+  }
+  }
+.cardName {
+  margin-Top:1rem;
+  font-family: HelveticaBold !important ;
+  font-size:1.5em !important;
+  line-height:32px !important;
+  text-align:center !important;
+  text-transform: uppercase !important;
+}
+
 .myCard {
-  border: 0;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  border: 0 !important ;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
 }
 .cardFont {
-  font-family: HelveticaBold;
-  font-size: 20px;
-  font-style:normal;
-  line-height:25px;
-  text-transform: uppercase;
+  font-family: HelveticaBold !important;
+  font-size: 1em !important;
+  font-style:normal !important;
+  line-height:25px !important;
+  text-transform: uppercase !important;
 }
 .cardFont2 {
-  font-family: Helvetica;
-  font-size: 20px;
-  line-height:25px;
+  font-family: Helvetica !important;
+  font-size: 1em !important;
+  line-height:25px !important;
 }
 .mainLogo {
   font-size: 50px;
@@ -60,8 +126,8 @@
   text-align:center;
   line-height:149%;
   letter-spacing:0.185em;
-  margin-top:4px;
-  margin-left:-11px;
+  margin-top:3px;
+  margin-left:-8px;
 }
 
 .overlay {
