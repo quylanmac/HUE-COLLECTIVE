@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @font-face {
   font-family: 'HelveticaLight';
   src: local('HelveticaLight'), url(./font/HelveticaNeue\ Light.ttf) format('truetype');
@@ -15,12 +16,23 @@
   font-family: 'Helvetica';
   src: local('Helvetica'), url(./font/HelveticaNeue.ttf) format('truetype');
 }
+.linebreak {
+  border: 0.5px solid #FFFFFF;
+}
+.huearewepre {
+  font-family:VT323 !important;
+  line-height:106% !important;
+  letter-spacing: 0.04em !important;
+  color: #F9F9F9 !important;
+}
+.huearewe {
+  font-family: Karla !important;
+  line-height:150% !important;
+  color: #FCFCFC !important;
+  letter-spacing: .04em !important;
+}
 .text-align {
   text-align:center;
-}
-.noPad {
-  padding-left:0 !important;
-  padding-right:0 !important;
 }
 
 .memberBio {
@@ -28,14 +40,69 @@
   font-size:1em !important;
   line-height:23px !important;
 }
+
+.cardFont2{
+  font-family: Helvetica !important;
+}
+.cardFont{
+  font-family: HelveticaBold !important;
+  font-style:normal !important;
+  text-transform: uppercase !important;
+  white-space:nowrap !important;
+}
 @media (max-width:767px) {
   body {
   font-size: 12px !important;
+  }
+  .mobileCard {
+    max-height:60% !Important;
+  }
+  .cardFont2{
+    font-size: 0.6em !important;
+  }
+  .cardFont{
+    font-size: 0.6em !important;
+  }
+  .myCard {
+    max-height: 83% !important;
+  }
+  .card-body {
+    padding: 0.2rem !important;
+  }
+  .mobileCard2 {
+    min-height:4rem !important;
+  }
+  .huearewe {
+    font-size:1em !important;
+  }
+  .huearewepre {
+    font-size:1.3em !important;
+  }
+  .marginCard {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
   }
 }
 @media (min-width:768px) {
   body {
   font-size: 22px !important;
+  }
+  .cardFont {
+    font-size: 0.86em !important;
+    line-height:25px !important;
+  }
+  .cardFont2 {
+    font-size: 1em !important;
+    line-height:25px !important;
+  }
+  .marginCard {
+    margin-bottom:5rem !important;
+  }
+  .huearewe {
+    font-size:1.45em !important;
+  }
+  .huearewepre {
+    font-size:2.2em !important;
   }
 }
 
@@ -47,6 +114,7 @@
   color: black !important;
   font-weight:300 !important;
   rotate:-90deg;
+  white-space:nowrap !important;
 }
 
 .sidebar2 {
@@ -57,6 +125,7 @@
   color: black !important;
   font-weight:300 !important;
   rotate:90deg;
+  white-space:nowrap !important;
 }
 .color {
   font-family: HelveticaLight !important;
@@ -95,18 +164,6 @@
   border-bottom-right-radius: 0 !important;
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
-}
-.cardFont {
-  font-family: HelveticaBold !important;
-  font-size: 1em !important;
-  font-style:normal !important;
-  line-height:25px !important;
-  text-transform: uppercase !important;
-}
-.cardFont2 {
-  font-family: Helvetica !important;
-  font-size: 1em !important;
-  line-height:25px !important;
 }
 .mainLogo {
   font-size: 50px;
