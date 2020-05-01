@@ -8,13 +8,91 @@
   font-family: 'Cubano';
   src: local('Cubano'), url(./font/Cubano-Regular.otf) format('opentype');
 }
+
 @font-face {
   font-family: 'HelveticaBold';
-  src: local('HelveticaBold'), url(./font/Helvetica\ Neu\ Bold.ttf) format('truetype');
+  src: local('HelveticaBold'), url(./font/HelveticaNeueBd.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Helvetica';
   src: local('Helvetica'), url(./font/HelveticaNeue.ttf) format('truetype');
+}
+.nav-link {
+  padding: 0 !important;
+}
+.myPlayer {
+  position:absolute !important;
+  top: 0 !important;
+  left:0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.wrapper {
+  position:relative !important;
+  padding-top: 56.25% !important;
+}
+.links {
+  display: block;
+  width: 100%;
+  padding: 1.5rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;  
+}
+.dropdown {
+  position: absolute !important;
+  top: 0 !important;
+  z-index:9999 !important;
+}
+.navLinks {
+  font-family: VT323 !important;
+  line-height: 106% !important;
+  color:white !important;
+}
+.dropdown-item {
+  color: white !important;
+}
+.dropdown-toggle::after {
+  content:none !important;
+}
+.dropdown-menu {
+  background-color:transparent !important;
+  color: white !important;
+  border: 0 !important;
+  right:0 !important;
+  top:0 !important;
+  left: auto !important;
+}
+.dropdown-menu > a:hover {
+  background-image: none !important;
+  background-color: transparent !important;
+  text-decoration: underline !important;
+}
+.card-body {
+  padding-top: 0.8rem !important;
+  padding-left: 1rem !important;
+  padding-bottom:2rem !important;
+  padding-right:1rem !important;
+}
+.modal {
+  top:2rem !important;
+}
+.modal-backdrop.show {
+  opacity: 0.8 !important;
+}
+.modal-backdrop {
+  background-color: gray !important;
+}
+.modal-content {
+  border: 0 !important;
+  background-color: transparent !important;
+}
+.modal {
+  vertical-align:middle;
 }
 .linebreak {
   border: 0.5px solid #FFFFFF;
@@ -37,18 +115,19 @@
 
 .memberBio {
   font-family: Karla !important;
-  font-size:1em !important;
   line-height:23px !important;
 }
 
 .cardFont2{
   font-family: Helvetica !important;
+  font-weight:bold !important;  
 }
 .cardFont{
   font-family: HelveticaBold !important;
   font-style:normal !important;
   text-transform: uppercase !important;
   white-space:nowrap !important;
+
 }
 @media (max-width:767px) {
   body {
@@ -82,18 +161,37 @@
     padding-right: 10px !important;
     padding-left: 10px !important;
   }
+  .cardName {
+    font-size: 1.2em !important;
+  }
+  .memberBio {
+    font-size:0.6em !important;
+  }
+  .sidebar1 {
+    font-size:0.7em !important;
+  }
+  .sidebar2 {
+    font-size:0.7em !important;
+  }
+  .color {
+    font-size:0.33em !important;
+    padding-right:1rem !important;
+  }
+  .smallLogo {
+    max-width:50% !important;
+  }
 }
 @media (min-width:768px) {
   body {
   font-size: 22px !important;
   }
   .cardFont {
-    font-size: 0.86em !important;
-    line-height:25px !important;
+    font-size: 0.88em !important;
+    line-height:20px !important;
   }
   .cardFont2 {
-    font-size: 1em !important;
-    line-height:25px !important;
+    font-size: 0.88em !important;
+    line-height:24px !important;
   }
   .marginCard {
     margin-bottom:5rem !important;
@@ -104,11 +202,37 @@
   .huearewepre {
     font-size:2.2em !important;
   }
+  .cardName {
+    font-size:1.5em !important;
+  }
+  .memberBio {
+    font-size:0.91em !important;
+  }
+  .sidebar1 {
+    font-size:1em !important;
+  }
+  .sidebar2 {
+    font-size:1em !important;
+  }
+  .color {
+    font-size:0.6em !important;
+    padding-right:3rem !important;
+  }
+  .mediaPad {
+    padding-left:1.5rem !important;
+  }
+  .navLinks {
+    font-size: 1.3em !important;
+  }
+  .links {
+    font-size:1.5rem !important;
+  }
 }
-
+.secondCardMedia {
+  display:inline-block !important;
+}
 .sidebar1 {
   font-family: HelveticaLight !important;
-  font-size:1em !important;
   line-height:27px !important;
   letter-spacing:0.12em !important;
   color: black !important;
@@ -119,7 +243,6 @@
 
 .sidebar2 {
   font-family: HelveticaLight !important;
-  font-size:1em !important;
   line-height:27px !important;
   letter-spacing:0.12em !important;
   color: black !important;
@@ -130,14 +253,12 @@
 .color {
   font-family: HelveticaLight !important;
   font-weight:300 !important;
-  font-size:0.5em !important;
   line-height:15px !important;
   color:#656565 !important;
-  padding-right:3rem !important;
 }
 @media (min-width:768px) {
 .modal-90w {
-  max-width:32% !important;
+  max-width:40% !important;
   height:750px !important
 }
 }
@@ -152,10 +273,10 @@
 .cardName {
   margin-Top:1rem;
   font-family: HelveticaBold !important ;
-  font-size:1.5em !important;
   line-height:32px !important;
   text-align:center !important;
   text-transform: uppercase !important;
+  white-space:nowrap !important;
 }
 
 .myCard {
