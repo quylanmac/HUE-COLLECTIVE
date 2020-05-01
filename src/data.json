@@ -3,7 +3,9 @@
         "id": 0,
         "name": "HUE COLLECTIVE",
         "image": "hue",
-        "role": "2020"
+        "role": "2020",
+        "instagram": "https://www.instagram.com/hue.collective/",
+        "linkedin": "https://www.linkedin.com/company/huecollective/"
     },
     {
         "id": 1,
@@ -21,7 +23,6 @@
         "color1": "#8194dd",
         "color2": "#9aa9e3",
         "color3": "#b3beea",
-        "instagram": "test2",
         "linkedin": "https://www.linkedin.com/in/braeanneori/",
         "instagram": "https://www.instagram.com/braeanneori/"
     },

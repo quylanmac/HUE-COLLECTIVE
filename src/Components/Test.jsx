@@ -1,10 +1,14 @@
-import React from 'react';
-import {Container, Row, Col, Card, Button, Modal} from 'react-bootstrap';
+import React, {useState} from 'react';
+import {Container, Row, Col, Card, Button, Modal, Nav, NavDropdown, Navbar} from 'react-bootstrap';
 import '../App.css';
 import {ColourWheel} from './ColourWheel';
 import {Loader} from './Loader';
 import '../animation.css';
 import data from '../data.json';
+import ReactPlayer from 'react-player';
+import promoVid from '../img/promo.mp4';
+import promoVidThumbnail from '../img/thumbnail.png';
+import { Link, animateScroll as scroll } from "react-scroll";
 const black = '#000000';
 
 export class Test extends React.Component {
@@ -18,6 +22,9 @@ export class Test extends React.Component {
             LoaderDiv: true,
             show: null,
             showDoodle: 0,
+            isOpen: false,
+            navType: true,
+            opacity: 0.3,
         };
         this.interval=null;
         this.setloaderVis = this.setloaderVis.bind(this);
@@ -32,7 +39,22 @@ export class Test extends React.Component {
         this.handleShowDoodle2 = this.handleShowDoodle2.bind(this);
         this.iterateNextCard = this.iterateNextCard.bind(this);
         this.iteratePrevCard = this.iteratePrevCard.bind(this);
+        this.handleNavOpen = this.handleNavOpen.bind(this);
+        this.handleNavClose = this.handleNavClose.bind(this);
+        this.setOpacity = this.setOpacity.bind(this);
     }
+    setOpacity() {
+        this.setState({opacity: 1});
+    }
+    handleNavOpen = () => {
+        this.setState({ isOpen: true });
+        this.setState({navType: false})
+      }
+    
+      handleNavClose = () => {
+         this.setState({ isOpen: false });
+         this.setState({navType:true});
+      }
     componentDidMount() {
         this.interval=setTimeout(()=>this.setState({loaderVis:true}),5000);
     }
@@ -103,40 +125,71 @@ export class Test extends React.Component {
           this.setState({show:17});
       }
   }
-    /**Creates the popup cards */
+  toggle() {
+      this.setState(prevState => ({
+          isOpen: !prevState.isOpen}
+     ));
+  }
+
+    /**Renders the navigation bar */
+    renderNav() {
+            return (
+              <Navbar className="justify-content-end navLinks">
+                <NavDropdown
+                /*Checks if the user is hovering the navbar and will expand if so*/
+                  title={<div>{this.state.navType ? <img style={{maxWidth:"50px"}} src={require(`../img/Navigator.png`)}></img> : <img style={{maxWidth:"100px"}} src={require(`../img/Navigator2.png`)}></img>} </div>}
+                  show={this.state.isOpen}
+                  onMouseEnter={this.handleNavOpen}
+                  onMouseLeave={this.handleNavClose}
+                  onClick={this.handleNavOpen}
+                >
+                    <Link onClick={this.handleNavClose} className="links" to="video" spy={true} smooth={true} duration={500}>Video</Link>
+                    <Link onClick={this.handleNavClose} className="links" to="about" spy={true} smooth={true} duration={700}>About HUE</Link>
+                    <Link onClick={this.handleNavClose} className="links" to="team" spy={true} smooth={true} duration={750}>Meet the Team</Link>
+                    <Link onClick={this.handleNavClose} className="links" to="contact" spy={true} smooth={true} duration={1500}>Contact</Link>
+
+                </NavDropdown>
+              </Navbar>
+            );
+    }
+    /**Creates the popup cards using the data JSON file */
     renderModals() {
         return data.map(data => {
           return (
               <div>
-
               <Modal
               dialogClassName="modal-90w"
+              backdropOpacity={1}
                 show={this.state.show === data.id} onHide={this.handleClose} 
+                className="my-auto"
               > 
+              <Row>
+                {/*Arrow to iterate cards*/} 
+                <Col xs={1} style={{textAlign:"left"}} className="mx-auto my-auto centerBlock" >
+                <img onClick={this.iteratePrevCard} src={require(`../img/arrow2.png`)} className="mx-auto d-block img-fluid" ></img>
+                </Col>
+
+                <Col className="my-auto" style={{maxHeight:"770px"}}>
+
                 <Card className="myCard">
-                    
+
+                 {/*Top of the card*/}   
                 <div className="TOPCARD mx-auto" style={{backgroundColor:data.color1}}>
-
+                    {/*Member Name*/}
                     <Row className="justify-content-center align-items-center">
-                        <Col xs={2} md={3} style={{textAlign:"left"}} className="mx-auto centerBlock" >
-                        <img onClick={this.iteratePrevCard} src={require(`../img/arrow2.png`)} className="mx-auto d-block img-fluid" ></img>
-                        </Col>
-
-                        <Col xs={8} md={6} className="mx-auto">
+                        <Col xs={8} md={8} className="mx-auto">
                             <Card.Title className="cardName">{data.name}</Card.Title>
-                        </Col>
-
-                        <Col xs={2} md={3} style={{textAlign:"right"}} className="mx-auto centerBlock">
-                        <img onClick={this.iterateNextCard} src={require(`../img/arrow1.png`)} className="mx-auto d-block img-fluid" ></img>
                         </Col>
                     </Row>
 
+                    {/*Member role, picture, major*/}
                     <Row>
                         <Col xs={2} md={3} className="d-flex justify-content-center align-items-center">
                             <h2 className="text-align sidebar1">{data.role}</h2>
                         </Col>
 
                         <Col xs={8} md={6}>
+                            {/*Checks which sketch drawing to show*/}
                             {this.state.showDoodle == 0 ? <Card.Img className="img-fluid d-block" src={require(`../Members/Sketch/${data.image}.png`)}/> : (this.state.showDoodle == 1 ? <Card.Img className="img-fluid d-block" src={require(`../Members/Sketch/${data.image}2.png`)}/> : <Card.Img className="img-fluid d-block" src={require(`../Members/Sketch/${data.image}3.png`)}/>)}
 
                         </Col>
@@ -145,53 +198,58 @@ export class Test extends React.Component {
                             <p className="text-align sidebar2">{data.major}</p> 
                         </Col> 
                     </Row>
-                           
+
+                    {/*Color 1*/}       
                     <Row>
                         <Col className="mt-auto">
                             <p className="color" style={{textAlign:"right"}}>{data.color1}</p>
                         </Col>
                     </Row>
+
                 </div>
-                        
+                
+                {/*Mid of the card*/}
                 <div className="MIDCARD" style={{backgroundColor:data.color2}}>
-            
+                    {/*Bio and secondary color*/}
                     <Row>
                         <Col>
-                        <Card.Subtitle className="secondCard">
+                        <Card.Subtitle className="memberBio">
                             <div style={{marginTop:"1.5rem", marginLeft:"1.5rem", marginRight:"1.5rem"}}>
-
+                            {/*Checks if user mouses over bolded words. Will render doodles if so*/}
                               <p>{data.bio}<b onMouseOver={this.handleShowDoodle} onMouseLeave={this.handleCloseDoodle}>{data.bio2}</b>{data.bio3}<b onMouseOver={this.handleShowDoodle2} onMouseLeave={this.handleCloseDoodle}>{data.bio4}</b>{data.bio5}</p>
                             </div>
                         </Card.Subtitle>
                         </Col>
                     </Row>
-
+                    {/*Secondary color*/}
                     <Row>
                         <Col className="mt-auto">
                             <p className="color" style={{textAlign:"right"}}>{data.color2}</p>
                         </Col>
                     </Row>
                 </div>
-
+                
+                {/*Bottom of card*/}
                 <div className="BOTCARD" style={{backgroundColor:data.color3}}>
                     <Card.Subtitle>
+                        {/*Social media*/}
                         <Row>
                             <Col>
                                 <div style={{ marginLeft:"30px", marginRight:"30px", paddingTop:"5%"}}>
-                                    <a href={data.linkedin} target="_blank">
-                                        <img src={require(`../img/linkedIN.png`)} ></img>
+                                    <a href={data.linkedin} target="_blank" className="secondCardMedia">
+                                        <img src={require(`../img/linkedIN.png`)} className="smallLogo"></img>
                                     </a>
-                                    <a href={data.instagram} target="_blank">
-                                        <img src={require(`../img/instagram.png`)} style={{ paddingLeft:"1.5rem"}}></img>
+                                    <a href={data.instagram} target="_blank"  className="secondCardMedia mediaPad">
+                                        <img src={require(`../img/instagram.png`)}  className="smallLogo"></img>
                                     </a>
-                                    <a href="" target="_blank">
-                                        <img src={require(`../img/email.png`)} style={{paddingLeft:"1.5rem"}}></img>
+                                    <a href="" target="_blank" className="secondCardMedia mediaPad">
+                                        <img src={require(`../img/email.png`)}  className="smallLogo"></img>
                                     </a>
                                 </div>
                             </Col>
                         </Row>
                     </Card.Subtitle>
-
+                    {/*Third color*/}
                     <Row>
                         <Col className="mt-auto">
                             <p className="color" style={{textAlign:"right"}}>{data.color3}</p>
@@ -200,7 +258,12 @@ export class Test extends React.Component {
                 </div>   
 
                 </Card>
-              
+              </Col>
+              {/*Arrow to iterate cards*/}
+              <Col xs={1} style={{textAlign:"left"}} className="mx-auto my-auto centerBlock" >
+                    <img onClick={this.iterateNextCard} src={require(`../img/arrow1.png`)} className="mx-auto d-block img-fluid" ></img>
+                </Col>
+              </Row>
               </Modal>
               </div>
           )
@@ -232,7 +295,7 @@ export class Test extends React.Component {
                     {/*This is the top left logo that takes the color of the user*/}
                     {/*This function call checks the returned color. If it is black, returns white instead*/}
                     {this.checkColor()}
-                    <Row>
+                    <Row style={{marginTop:"3rem"}}>
                         <Col className="col-auto">
                             <div className="nav">
                                 <div className="overlay">
@@ -245,14 +308,28 @@ export class Test extends React.Component {
                                 </div>
                             </div>              
                         </Col>
+
+                        {/*Nav bar*/}
+                        <Col>
+                        {this.renderNav()}
+                        </Col>
+                        
                     </Row>
 
-                    <Row style={{paddingTop:"2rem"}}>
+                    {/*Promo Video*/}
+                    <Row style={{paddingTop:"4rem", paddingBottom:"4rem"}}>
+                        <Col id="video">
+                            <div className="wrapper">
+                        <ReactPlayer className="myPlayer" width="100%" height="100%" url={require(`../img/promo.mp4`)} controls={true} style={{opacity:this.state.opacity}} onPlay={this.setOpacity}></ReactPlayer>
+                        </div>
+                        </Col>
+                    </Row>
+                    {/*About Section*/}
+                    <Row style={{paddingTop:"2rem"}} id="about">
                         <Col>
                         <p className="huearewepre">HUE are we?</p>
                         </Col>
                     </Row>
-
                     <Row style={{paddingBottom:"4rem"}}>
                         <Col>
                         <p className="huearewe">Brought together by creative curiosity, we are a multidisciplinary group of UCSD students working to craft a platform that showcases different experiences and perspectives in design. 
@@ -261,6 +338,7 @@ export class Test extends React.Component {
                         </Col>
                     </Row>
 
+                    {/*Social media*/}
                     <Row style={{paddingTop:"2rem", paddingBottom:"8rem"}}>
                         <Col className="mx-auto">
                         </Col>
@@ -278,12 +356,13 @@ export class Test extends React.Component {
                         <Col className="mx-auto">
                         </Col>
                     </Row>
-
+                    
                     <div style={{paddingBottom:"8rem"}}>
                     <hr className="linebreak"></hr>
                     </div>
 
-                    <Row>
+                    {/*Meet the Team*/}
+                    <Row id="team">
                         <Col>
                         <p className="huearewepre">meet the team</p>
                         </Col>
@@ -315,14 +394,15 @@ export class Test extends React.Component {
                     <div style={{paddingTop:"8rem", paddingBottom:"8rem"}}>
                     <hr className="linebreak"></hr>
                     </div>
-
+                    
+                    {/*Secondary social media*/}
                     <Row>
                         <Col>
                         <p className="huearewepre">get in touch</p>
                         </Col>
                     </Row>
 
-                    <Row>
+                    <Row id="contact">
                     <Col className="mx-auto justify-content-left align-items-center d-flex" style={{marginBottom:"4rem"}}>
                             <a href="https://www.facebook.com/HUEcollectives/" target="_blank">
                                 <img src={require(`../img/facebookwhite.png`)} style={{paddingRight:"1rem"}}></img>
