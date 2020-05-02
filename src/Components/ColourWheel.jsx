@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../img/huecropped2.png';
+import logo from '../img/huecropped4.png';
 import '../App.css';
 import cursor2 from '../img/cursor.svg';
 export class ColourWheel extends React.Component {
@@ -12,8 +12,8 @@ export class ColourWheel extends React.Component {
     };
 
     this.options = {
-      width: 1024,
-      height:1024,
+      width: 768,
+      height:435,
       img: this.props.img 
     };
     this.interval=null;

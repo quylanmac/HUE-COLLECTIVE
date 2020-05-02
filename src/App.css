@@ -17,6 +17,30 @@
   font-family: 'Helvetica';
   src: local('Helvetica'), url(./font/HelveticaNeue.ttf) format('truetype');
 }
+.fixNav {
+  position:fixed !important;;
+  top:10% !important;
+  right: 10% !important;
+  left: 0 !important;
+  z-index: 1030 !important;
+}
+.fade {
+  transition: none !important;
+}
+.modal.fade .modal-dialog {
+  transition: none !important;
+}
+.mouseDoodle {
+ cursor: pointer !important; 
+}
+.chooseYour {
+  font-family: VT323 !important;
+  font-size: 2em !important;
+  line-height: 150% !important;
+  text-align: center !important;
+  letter-spacing: 0.185em !important;
+  color: white !important;
+}
 .nav-link {
   padding: 0 !important;
 }
@@ -152,10 +176,10 @@
     min-height:4rem !important;
   }
   .huearewe {
-    font-size:1em !important;
+    font-size:1.3em !important;
   }
   .huearewepre {
-    font-size:1.3em !important;
+    font-size:1.6em !important;
   }
   .marginCard {
     padding-right: 10px !important;
@@ -203,19 +227,19 @@
     font-size:2.2em !important;
   }
   .cardName {
-    font-size:1.5em !important;
+    font-size:1.2em !important;
   }
   .memberBio {
     font-size:0.91em !important;
   }
   .sidebar1 {
-    font-size:1em !important;
+    font-size:0.7em !important;
   }
   .sidebar2 {
-    font-size:1em !important;
+    font-size:0.7em !important;
   }
   .color {
-    font-size:0.6em !important;
+    font-size:0.45em !important;
     padding-right:3rem !important;
   }
   .mediaPad {
@@ -228,6 +252,20 @@
     font-size:1.5rem !important;
   }
 }
+@media (min-width:1367px) {
+  .color {
+    font-size: 0.6em !important;
+  }
+  .cardName {
+    font-size: 1.5em !important;
+  }
+  .sidebar1 {
+    font-size:1em !important;
+  }
+  .sidebar2 {
+    font-size:1em !important;
+  }
+}
 .secondCardMedia {
   display:inline-block !important;
 }
@@ -237,7 +275,7 @@
   letter-spacing:0.12em !important;
   color: black !important;
   font-weight:300 !important;
-  rotate:-90deg;
+  transform:rotate(-90deg) !important;
   white-space:nowrap !important;
 }
 
@@ -247,7 +285,7 @@
   letter-spacing:0.12em !important;
   color: black !important;
   font-weight:300 !important;
-  rotate:90deg;
+  transform:rotate(90deg) !important;
   white-space:nowrap !important;
 }
 .color {
@@ -259,13 +297,11 @@
 @media (min-width:768px) {
 .modal-90w {
   max-width:40% !important;
-  height:750px !important
 }
 }
 @media (max-width:767px) {
   .modal-90w {
     max-width:75% !important;
-    height:750px !important;
     position:absolute !important;
     left:12.5% !important;
   }
