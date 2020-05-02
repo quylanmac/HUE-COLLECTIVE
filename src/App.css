@@ -102,9 +102,11 @@
   padding-bottom:2rem !important;
   padding-right:1rem !important;
 }
-.modal {
-  top:2rem !important;
+.modal-body {
+  max-height: calc(100vh-100px) !important;
+  overflow-y:auto !important;
 }
+
 .modal-backdrop.show {
   opacity: 0.8 !important;
 }
@@ -189,17 +191,20 @@
     font-size: 1.2em !important;
   }
   .memberBio {
-    font-size:0.6em !important;
+    font-size:0.5em !important;
+  }
+  .color {
+    font-size: 0.4em !important;
   }
   .sidebar1 {
-    font-size:0.7em !important;
+    font-size:0.6em !important;
   }
   .sidebar2 {
-    font-size:0.7em !important;
+    font-size:0.6em !important;
   }
   .color {
     font-size:0.33em !important;
-    padding-right:1rem !important;
+    padding-right:.75em !important;
   }
   .smallLogo {
     max-width:50% !important;
@@ -230,17 +235,17 @@
     font-size:1.2em !important;
   }
   .memberBio {
-    font-size:0.91em !important;
+    font-size:0.5em !important;
   }
   .sidebar1 {
-    font-size:0.7em !important;
+    font-size:0.6em !important;
   }
   .sidebar2 {
-    font-size:0.7em !important;
+    font-size:0.6em !important;
   }
   .color {
-    font-size:0.45em !important;
-    padding-right:3rem !important;
+    font-size:0.4em !important;
+    padding-right:1.5em !important;
   }
   .mediaPad {
     padding-left:1.5rem !important;
@@ -254,15 +259,18 @@
 }
 @media (min-width:1367px) {
   .color {
-    font-size: 0.6em !important;
+    font-size: 0.5em !important;
   }
   .cardName {
-    font-size: 1.5em !important;
+    font-size: 1.4em !important;
   }
   .sidebar1 {
     font-size:1em !important;
   }
   .sidebar2 {
+    font-size:1em !important;
+  }
+  .memberBio {
     font-size:1em !important;
   }
 }
@@ -277,6 +285,8 @@
   font-weight:300 !important;
   transform:rotate(-90deg) !important;
   white-space:nowrap !important;
+  padding-left:2.5em !important;
+  padding-right:2.5em !important;
 }
 
 .sidebar2 {
@@ -287,6 +297,8 @@
   font-weight:300 !important;
   transform:rotate(90deg) !important;
   white-space:nowrap !important;
+  padding-left:2.5em !important;
+  padding-right:2.5em !important;
 }
 .color {
   font-family: HelveticaLight !important;
@@ -313,8 +325,12 @@
   text-align:center !important;
   text-transform: uppercase !important;
   white-space:nowrap !important;
+  width: 100% !important;
+  word-wrap: break-word !important;
 }
-
+.firstCard {
+  cursor: pointer !important;
+}
 .myCard {
   border: 0 !important ;
   border-bottom-left-radius: 0 !important;

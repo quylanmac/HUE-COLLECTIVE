@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import loader from '../img/loader2.gif';
+import loader from '../img/ezgif.com-crop.gif';
 import '../animation.css'
 export class Loader extends React.Component {
     constructor(props) {
