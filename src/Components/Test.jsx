@@ -197,7 +197,7 @@ export class Test extends React.Component {
                     {/*Member role, picture, major*/}
                     <Row>
 
-                        <Col xs={2} md={1} className="d-flex justify-content-center align-items-center" style={{marginLeft:"2.5em"}}>
+                        <Col xs={2} md={1} className="d-flex justify-content-center align-items-center marginLeft">
                             <p className="text-align sidebar1">{data.role}</p>
                         </Col>
 
@@ -207,7 +207,7 @@ export class Test extends React.Component {
 
                         </Col>
 
-                        <Col xs={2} md={1} className="d-flex justify-content-center align-items-center" style={{marginRight:"2.5em"}}>
+                        <Col xs={2} md={1} className="d-flex justify-content-center align-items-center marginRight">
                             <p className="text-align sidebar2">{data.major}</p> 
                         </Col> 
 
@@ -227,12 +227,12 @@ export class Test extends React.Component {
                     <Row>
                         <Col>
                         <Card.Subtitle className="memberBio">
-                            <div style={{marginTop:"2em", marginLeft:"2.5em", marginRight:"2.5em"}}>
+                            <div style={{marginTop:"5%", marginLeft:"2.5em", marginRight:"2.5em"}}>
                             {/*Checks if user mouses over bolded words. Will render doodles if so*/}
                               <p>{data.bio}
-                              <b onMouseOver={this.handleShowDoodle} onMouseLeave={this.handleCloseDoodle} className="mouseDoodle">{data.bio2}</b>
+                              <a onMouseOver={this.handleShowDoodle} onMouseLeave={this.handleCloseDoodle} className="mouseDoodle">{data.bio2}</a>
                               {data.bio3}
-                              <b onMouseOver={this.handleShowDoodle2} onMouseLeave={this.handleCloseDoodle} className="mouseDoodle">{data.bio4}</b>
+                              <a onMouseOver={this.handleShowDoodle2} onMouseLeave={this.handleCloseDoodle} className="mouseDoodle">{data.bio4}</a>
                               {data.bio5}</p>
                             </div>
                         </Card.Subtitle>
@@ -252,11 +252,13 @@ export class Test extends React.Component {
                         <Row>
                             <Col>
                             <Card.Subtitle className="memberBio">
+                                
                                 <div style={{marginTop:"2em", marginLeft:"2.5em", marginRight:"2.5em"}}>
-                                    <a href={data.linkedin} target="_blank" className="secondCardMedia">
+                                {data.linkedin ?
+                                    <a href={data.linkedin} target="_blank" className="secondCardMedia mediaPad">
                                         <img src={require(`../img/linkedIN.png`)} className="smallLogo"></img>
-                                    </a>
-                                    <a href={data.instagram} target="_blank"  className="secondCardMedia mediaPad">
+                                    </a> : null }
+                                    <a href={data.instagram} target="_blank"  className="secondCardMedia ">
                                         <img src={require(`../img/instagram.png`)}  className="smallLogo"></img>
                                     </a>
                                 </div>
@@ -408,7 +410,7 @@ export class Test extends React.Component {
                                 onClick={() => this.handleShow(data.id)} 
                                 onMouseEnter={()=>this.handleTransform(data.id)} 
                                 onMouseLeave={()=>this.handleNonTransform()} 
-                                style={{transform: `${this.state.hovered===data.id ? 'scale(1.1,1.1)' : 'none'}`}}>
+                                style={{transform: `${this.state.hovered===data.id ? 'scale(1.1,1.1)' : 'none'}`, transition:"0.25s ease-in-out"}}>
                                     
                                     <Card.Img className = "myCard" src={require(`../Members/Picture/${data.image}.png`)}/>
                                     <Card.Body className="mobileCard2">
