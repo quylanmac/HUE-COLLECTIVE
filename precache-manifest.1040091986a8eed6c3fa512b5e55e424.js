@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e9ee3b400f4d468fbb5b5c3024df54fc",
+    "revision": "1e14c706417e8b89d20d0dfd393c893f",
     "url": "/index.html"
   },
   {
-    "revision": "94b7a57b450f948eaffe",
+    "revision": "084fe4e5be03c8cf982a",
     "url": "/static/css/2.69121389.chunk.css"
   },
   {
-    "revision": "a96cea5c84241c3457aa",
-    "url": "/static/css/main.940c17d6.chunk.css"
+    "revision": "67746e3b3b8e9fccfe93",
+    "url": "/static/css/main.48cfb875.chunk.css"
   },
   {
-    "revision": "94b7a57b450f948eaffe",
-    "url": "/static/js/2.518b5981.chunk.js"
+    "revision": "084fe4e5be03c8cf982a",
+    "url": "/static/js/2.3b218683.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/static/js/2.518b5981.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.3b218683.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a96cea5c84241c3457aa",
-    "url": "/static/js/main.e74b6496.chunk.js"
+    "revision": "67746e3b3b8e9fccfe93",
+    "url": "/static/js/main.6e91e96e.chunk.js"
   },
   {
     "revision": "aa8021130684922e19c3",
@@ -152,6 +152,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/cursor.626c6620.svg"
   },
   {
+    "revision": "712a67bff73996225f010268bab69af1",
+    "url": "/static/media/ezgif.com-crop.712a67bf.gif"
+  },
+  {
     "revision": "09fa1e3c3afc0af175d6cf88b1e7e7fe",
     "url": "/static/media/hemmy.09fa1e3c.png"
   },
@@ -188,8 +192,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/hue3.944ebb96.png"
   },
   {
-    "revision": "67f6f874ed5f29e4f524d79687956544",
-    "url": "/static/media/huecropped4.67f6f874.png"
+    "revision": "293fca9df9fa8eecc1964cdc7a740943",
+    "url": "/static/media/huecropped4.293fca9d.png"
   },
   {
     "revision": "7c40a5c604127408cbb794b078030804",
@@ -270,10 +274,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4c0b122c13b6312edcc6bf65f8bda3ce",
     "url": "/static/media/lisa3.4c0b122c.png"
-  },
-  {
-    "revision": "51ab508febc04bc79f61bc966a0fd253",
-    "url": "/static/media/loader2.51ab508f.gif"
   },
   {
     "revision": "176a9c26b5267f475bd301cfb296c99d",
