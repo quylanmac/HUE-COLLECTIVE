@@ -1,6 +1,6 @@
 {
-  "homepage": "http://quylanmac.github.io/hue-collective",
-  "name": "hue-react",
+  "homepage": "https://huecollective.co/",
+  "name": "hue-collective",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

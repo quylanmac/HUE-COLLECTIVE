@@ -134,7 +134,7 @@ export class Test extends React.Component {
     /**Renders the navigation bar */
     renderNav() {
             return (
-              <Navbar className="justify-content-end navLinks">
+              <Navbar className="justify-content-end navLinks fixNav">
                 <NavDropdown
                 /*Checks if the user is hovering the navbar and will expand if so*/
                   title={<div>{this.state.navType ? <img style={{maxWidth:"50px"}} src={require(`../img/Navigator.png`)}></img> : <img style={{maxWidth:"100px"}} src={require(`../img/Navigator2.png`)}></img>} </div>}
@@ -142,6 +142,7 @@ export class Test extends React.Component {
                   onMouseEnter={this.handleNavOpen}
                   onMouseLeave={this.handleNavClose}
                   onClick={this.handleNavOpen}
+                
                 >
                     <Link onClick={this.handleNavClose} className="links" to="video" spy={true} smooth={true} duration={500}>Video</Link>
                     <Link onClick={this.handleNavClose} className="links" to="about" spy={true} smooth={true} duration={700}>About HUE</Link>
@@ -161,17 +162,17 @@ export class Test extends React.Component {
               dialogClassName="modal-90w"
               backdropOpacity={1}
                 show={this.state.show === data.id} onHide={this.handleClose} 
-                className="my-auto"
+                className="my-auto h-100"
               > 
-              <Row>
+              <Row style={{maxHeight:"100%"}}>
                 {/*Arrow to iterate cards*/} 
-                <Col xs={1} style={{textAlign:"left"}} className="mx-auto my-auto centerBlock" >
-                <img onClick={this.iteratePrevCard} src={require(`../img/arrow2.png`)} className="mx-auto d-block img-fluid" ></img>
+                <Col xs={1} md={1} style={{textAlign:"left", height:"50%"}} className="mx-auto my-auto centerBlock" >
+                <img onClick={this.iteratePrevCard} src={require(`../img/arrow2.png`)} className="mx-auto d-block img-fluid mouseDoodle" ></img>
                 </Col>
 
-                <Col className="my-auto" style={{maxHeight:"770px"}}>
+                <Col md={10} className="my-auto" style={{maxHeight:"100%"}}>
 
-                <Card className="myCard">
+                <Card className="myCard" style={{height:"820px", backgroundColor:"transparent"}}>
 
                  {/*Top of the card*/}   
                 <div className="TOPCARD mx-auto" style={{backgroundColor:data.color1}}>
@@ -185,7 +186,7 @@ export class Test extends React.Component {
                     {/*Member role, picture, major*/}
                     <Row>
                         <Col xs={2} md={3} className="d-flex justify-content-center align-items-center">
-                            <h2 className="text-align sidebar1">{data.role}</h2>
+                            <p className="text-align sidebar1">{data.role}</p>
                         </Col>
 
                         <Col xs={8} md={6}>
@@ -216,7 +217,11 @@ export class Test extends React.Component {
                         <Card.Subtitle className="memberBio">
                             <div style={{marginTop:"1.5rem", marginLeft:"1.5rem", marginRight:"1.5rem"}}>
                             {/*Checks if user mouses over bolded words. Will render doodles if so*/}
-                              <p>{data.bio}<b onMouseOver={this.handleShowDoodle} onMouseLeave={this.handleCloseDoodle}>{data.bio2}</b>{data.bio3}<b onMouseOver={this.handleShowDoodle2} onMouseLeave={this.handleCloseDoodle}>{data.bio4}</b>{data.bio5}</p>
+                              <p>{data.bio}
+                              <b onMouseOver={this.handleShowDoodle} onMouseLeave={this.handleCloseDoodle} className="mouseDoodle">{data.bio2}</b>
+                              {data.bio3}
+                              <b onMouseOver={this.handleShowDoodle2} onMouseLeave={this.handleCloseDoodle} className="mouseDoodle">{data.bio4}</b>
+                              {data.bio5}</p>
                             </div>
                         </Card.Subtitle>
                         </Col>
@@ -253,15 +258,15 @@ export class Test extends React.Component {
                     <Row>
                         <Col className="mt-auto">
                             <p className="color" style={{textAlign:"right"}}>{data.color3}</p>
-                    </Col>
+                        </Col>
                     </Row>                       
                 </div>   
 
                 </Card>
               </Col>
               {/*Arrow to iterate cards*/}
-              <Col xs={1} style={{textAlign:"left"}} className="mx-auto my-auto centerBlock" >
-                    <img onClick={this.iterateNextCard} src={require(`../img/arrow1.png`)} className="mx-auto d-block img-fluid" ></img>
+              <Col xs={1} md={1} style={{textAlign:"left"}} className="mx-auto my-auto centerBlock" >
+                    <img onClick={this.iterateNextCard} src={require(`../img/arrow1.png`)} className="mx-auto d-block img-fluid mouseDoodle" ></img>
                 </Col>
               </Row>
               </Modal>
@@ -273,19 +278,30 @@ export class Test extends React.Component {
         return (
             /*This div spans entire page*/
             <div style={{backgroundColor:"#121212",minHeight:"100vh"}}>
-            <Container className="d-flex flex-column justify-content-center container-fluid">
+            <Container className="d-flex flex-column justify-content-center align-self-center container-fluid my-auto">
                  {/*The gif loads with a fade and then transitions into the still image. When image is clicked, color is returned and mainPage is displayed*/}
                     {/*Overlay classes are used to position the loader right on top of the ColourWheel component so it fades into a still image*/}
-                {this.state.LoaderDiv ?  
-                <div className="overlay" style={{marginTop:"-10.5%"}}>   
-                    <div className="overlay-1"><Loader></Loader></div>
+                {this.state.LoaderDiv ?
+                <div style={{minHeight:"100vh"}} className="d-flex justify-content-center"> 
+
+                <div className="d-flex justify-content-center">
+                    <div className="overlay">   
+                        <div className="overlay-1 justify-content-center align-self-center" style={{display:"grid"}}>
+                            <Col className="my-auto">
+                                <Loader></Loader>
+                            </Col>
+                        </div>
                     {/*This checks for the vis bool to display the colour wheel component which is set after a timed delay*/}
-                        {this.state.loaderVis ? 
-                            <div className="overlay-2 animated fadeIn delay2">
+                    {this.state.loaderVis ? 
+                            <div className="overlay-2 animated fadeIn delay2 justify-content-center align-self-center" style={{display:"grid"}}>
+   
+                               <Col className="my-auto">
                                 <button className="mybutton" onClick={this.removeLoaderDiv}>
                                     <ColourWheel callback={color=>this.setState({background:color})}></ColourWheel>
-                                </button>
+                                </button></Col>
                             </div> : null}
+                    </div>
+                </div>
                 </div>
                 :null}
             {/*FROM HERE IS THE MAIN PAGE*/}
@@ -320,7 +336,7 @@ export class Test extends React.Component {
                     <Row style={{paddingTop:"4rem", paddingBottom:"4rem"}}>
                         <Col id="video">
                             <div className="wrapper">
-                        <ReactPlayer className="myPlayer" width="100%" height="100%" url={require(`../img/promo.mp4`)} controls={true} style={{opacity:this.state.opacity}} onPlay={this.setOpacity}></ReactPlayer>
+                        <ReactPlayer className="myPlayer" width="100%" height="100%" url={require(`../img/promo.mp4`)} playIcon={<img src={require(`../img/playIcon.png`)}></img>} controls={true} style={{opacity:this.state.opacity}} onPlay={this.setOpacity} playing light={require(`../img/thumbnail.png`)} ></ReactPlayer>
                         </div>
                         </Col>
                     </Row>
@@ -344,10 +360,10 @@ export class Test extends React.Component {
                         </Col>
                         <Col className="mx-auto justify-content-center align-items-center d-flex">
                             <a href="https://www.facebook.com/HUEcollectives/" target="_blank">
-                                <img src={require(`../img/facebookwhite.png`)} style={{paddingRight:"1rem"}}></img>
+                                <img src={require(`../img/facebookwhite.png`)} style={{paddingRight:"2.5rem"}}></img>
                             </a>
                             <a href="https://www.instagram.com/hue.collective/" target="_blank">
-                                <img src={require(`../img/instagramwhite.png`)} style={{paddingRight:"1rem"}}></img>
+                                <img src={require(`../img/instagramwhite.png`)} style={{paddingRight:"2.5rem"}}></img>
                             </a>
                             <a href="https://www.linkedin.com/company/huecollective/" target="_blank">
                                 <img src={require(`../img/linkedINwhite.png`)}></img>
@@ -405,10 +421,10 @@ export class Test extends React.Component {
                     <Row id="contact">
                     <Col className="mx-auto justify-content-left align-items-center d-flex" style={{marginBottom:"4rem"}}>
                             <a href="https://www.facebook.com/HUEcollectives/" target="_blank">
-                                <img src={require(`../img/facebookwhite.png`)} style={{paddingRight:"1rem"}}></img>
+                                <img src={require(`../img/facebookwhite.png`)} style={{paddingRight:"2.5rem"}}></img>
                             </a>
                             <a href="https://www.instagram.com/hue.collective/" target="_blank">
-                                <img src={require(`../img/instagramwhite.png`)} style={{paddingRight:"1rem"}}></img>
+                                <img src={require(`../img/instagramwhite.png`)} style={{paddingRight:"2.5rem"}}></img>
                             </a>
                             <a href="https://www.linkedin.com/company/huecollective/" target="_blank">
                                 <img src={require(`../img/linkedINwhite.png`)}></img>
