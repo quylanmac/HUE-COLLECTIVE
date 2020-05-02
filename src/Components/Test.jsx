@@ -5,6 +5,7 @@ import {ColourWheel} from './ColourWheel';
 import {Loader} from './Loader';
 import '../animation.css';
 import data from '../data.json';
+import popupData from '../popup.json';
 import ReactPlayer from 'react-player';
 import promoVid from '../img/promo.mp4';
 import promoVidThumbnail from '../img/thumbnail.png';
@@ -25,6 +26,7 @@ export class Test extends React.Component {
             isOpen: false,
             navType: true,
             opacity: 0.3,
+            hovered: null,
         };
         this.interval=null;
         this.setloaderVis = this.setloaderVis.bind(this);
@@ -42,7 +44,10 @@ export class Test extends React.Component {
         this.handleNavOpen = this.handleNavOpen.bind(this);
         this.handleNavClose = this.handleNavClose.bind(this);
         this.setOpacity = this.setOpacity.bind(this);
+        this.handleTransform = this.handleTransform.bind(this);
+        this.handleNonTransform = this.handleNonTransform.bind(this);
     }
+
     setOpacity() {
         this.setState({opacity: 1});
     }
@@ -88,6 +93,12 @@ export class Test extends React.Component {
     handleShow(id) {
         this.setState({show: id});
     }
+    handleTransform(id) {
+        this.setState({hovered: id});
+    }
+    handleNonTransform() {
+        this.setState({hovered: null});
+    }
     handleCloseDoodle() {
         this.setState({showDoodle:0});
     }
@@ -113,15 +124,15 @@ export class Test extends React.Component {
           this.setState({show:show+1});
       }
       else if (show==17) {
-          this.setState({show:0});
+          this.setState({show:1});
       }
   }
   iteratePrevCard() {
     const show = this.state.show;
-      if (show!=null && show>0) {
+      if (show!=null && show>1) {
           this.setState({show:show-1});
       }
-      else if (show==0) {
+      else if (show==1) {
           this.setState({show:17});
       }
   }
@@ -144,10 +155,10 @@ export class Test extends React.Component {
                   onClick={this.handleNavOpen}
                 
                 >
-                    <Link onClick={this.handleNavClose} className="links" to="video" spy={true} smooth={true} duration={500}>Video</Link>
-                    <Link onClick={this.handleNavClose} className="links" to="about" spy={true} smooth={true} duration={700}>About HUE</Link>
-                    <Link onClick={this.handleNavClose} className="links" to="team" spy={true} smooth={true} duration={750}>Meet the Team</Link>
-                    <Link onClick={this.handleNavClose} className="links" to="contact" spy={true} smooth={true} duration={1500}>Contact</Link>
+                    <Link onClick={this.handleNavClose} className="links" to="video" spy={true} smooth={true} duration={500}>video</Link>
+                    <Link onClick={this.handleNavClose} className="links" to="about" spy={true} smooth={true} duration={700}>about HUE</Link>
+                    <Link onClick={this.handleNavClose} className="links" to="team" spy={true} smooth={true} duration={750}>meet the team</Link>
+                    <Link onClick={this.handleNavClose} className="links" to="contact" spy={true} smooth={true} duration={1500}>contact</Link>
 
                 </NavDropdown>
               </Navbar>
@@ -155,7 +166,7 @@ export class Test extends React.Component {
     }
     /**Creates the popup cards using the data JSON file */
     renderModals() {
-        return data.map(data => {
+        return popupData.map(data => {
           return (
               <div>
               <Modal
@@ -166,7 +177,7 @@ export class Test extends React.Component {
               > 
               <Row style={{maxHeight:"100%"}}>
                 {/*Arrow to iterate cards*/} 
-                <Col xs={1} md={1} style={{textAlign:"left", height:"50%"}} className="mx-auto my-auto centerBlock" >
+                <Col xs={1} md={1} style={{textAlign:"left"}} className="mx-auto my-auto centerBlock" >
                 <img onClick={this.iteratePrevCard} src={require(`../img/arrow2.png`)} className="mx-auto d-block img-fluid mouseDoodle" ></img>
                 </Col>
 
@@ -178,26 +189,28 @@ export class Test extends React.Component {
                 <div className="TOPCARD mx-auto" style={{backgroundColor:data.color1}}>
                     {/*Member Name*/}
                     <Row className="justify-content-center align-items-center">
-                        <Col xs={8} md={8} className="mx-auto">
+                        <Col xs={12} md={12} className="mx-auto">
                             <Card.Title className="cardName">{data.name}</Card.Title>
                         </Col>
                     </Row>
 
                     {/*Member role, picture, major*/}
                     <Row>
-                        <Col xs={2} md={3} className="d-flex justify-content-center align-items-center">
+
+                        <Col xs={2} md={1} className="d-flex justify-content-center align-items-center" style={{marginLeft:"2.5em"}}>
                             <p className="text-align sidebar1">{data.role}</p>
                         </Col>
 
-                        <Col xs={8} md={6}>
+                        <Col xs={8} md={6} className="mx-auto my-auto"> 
                             {/*Checks which sketch drawing to show*/}
                             {this.state.showDoodle == 0 ? <Card.Img className="img-fluid d-block" src={require(`../Members/Sketch/${data.image}.png`)}/> : (this.state.showDoodle == 1 ? <Card.Img className="img-fluid d-block" src={require(`../Members/Sketch/${data.image}2.png`)}/> : <Card.Img className="img-fluid d-block" src={require(`../Members/Sketch/${data.image}3.png`)}/>)}
 
                         </Col>
 
-                        <Col xs={2} md={3} className="d-flex justify-content-center align-items-center">
+                        <Col xs={2} md={1} className="d-flex justify-content-center align-items-center" style={{marginRight:"2.5em"}}>
                             <p className="text-align sidebar2">{data.major}</p> 
                         </Col> 
+
                     </Row>
 
                     {/*Color 1*/}       
@@ -206,7 +219,6 @@ export class Test extends React.Component {
                             <p className="color" style={{textAlign:"right"}}>{data.color1}</p>
                         </Col>
                     </Row>
-
                 </div>
                 
                 {/*Mid of the card*/}
@@ -215,7 +227,7 @@ export class Test extends React.Component {
                     <Row>
                         <Col>
                         <Card.Subtitle className="memberBio">
-                            <div style={{marginTop:"1.5rem", marginLeft:"1.5rem", marginRight:"1.5rem"}}>
+                            <div style={{marginTop:"2em", marginLeft:"2.5em", marginRight:"2.5em"}}>
                             {/*Checks if user mouses over bolded words. Will render doodles if so*/}
                               <p>{data.bio}
                               <b onMouseOver={this.handleShowDoodle} onMouseLeave={this.handleCloseDoodle} className="mouseDoodle">{data.bio2}</b>
@@ -236,24 +248,21 @@ export class Test extends React.Component {
                 
                 {/*Bottom of card*/}
                 <div className="BOTCARD" style={{backgroundColor:data.color3}}>
-                    <Card.Subtitle>
                         {/*Social media*/}
                         <Row>
                             <Col>
-                                <div style={{ marginLeft:"30px", marginRight:"30px", paddingTop:"5%"}}>
+                            <Card.Subtitle className="memberBio">
+                                <div style={{marginTop:"2em", marginLeft:"2.5em", marginRight:"2.5em"}}>
                                     <a href={data.linkedin} target="_blank" className="secondCardMedia">
                                         <img src={require(`../img/linkedIN.png`)} className="smallLogo"></img>
                                     </a>
                                     <a href={data.instagram} target="_blank"  className="secondCardMedia mediaPad">
                                         <img src={require(`../img/instagram.png`)}  className="smallLogo"></img>
                                     </a>
-                                    <a href="" target="_blank" className="secondCardMedia mediaPad">
-                                        <img src={require(`../img/email.png`)}  className="smallLogo"></img>
-                                    </a>
                                 </div>
+                                </Card.Subtitle>
                             </Col>
                         </Row>
-                    </Card.Subtitle>
                     {/*Third color*/}
                     <Row>
                         <Col className="mt-auto">
@@ -390,11 +399,17 @@ export class Test extends React.Component {
                         </Col>
                     </Row>
 
-                    {/*This takes a JSON file and creates the main cards */}
+                    {/*This takes a JSON file and creates the main cards */} 
                     <Row>
                         {data.map( data=> (
                             <Col xs={4} sm={6} md={3} className="marginCard" key={`${data.id}`}>
-                                <Card className="myCard h-100 shadow-sm bg-white mobileCard" style={{margin:"auto"}} onClick={() => this.handleShow(data.id)}>
+                                <Card className="firstCard myCard h-100 shadow-sm bg-white mobileCard" 
+                                style={{margin:"auto"}} 
+                                onClick={() => this.handleShow(data.id)} 
+                                onMouseEnter={()=>this.handleTransform(data.id)} 
+                                onMouseLeave={()=>this.handleNonTransform()} 
+                                style={{transform: `${this.state.hovered===data.id ? 'scale(1.1,1.1)' : 'none'}`}}>
+                                    
                                     <Card.Img className = "myCard" src={require(`../Members/Picture/${data.image}.png`)}/>
                                     <Card.Body className="mobileCard2">
                                     <div className="mb-2 justify-content-between">
