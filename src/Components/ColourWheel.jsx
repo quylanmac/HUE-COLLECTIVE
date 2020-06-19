@@ -20,7 +20,6 @@ export class ColourWheel extends React.Component {
   }
 
   componentDidMount() {
-    this.interval=setTimeout(()=>this.setState({renderChild:true}),6500);
     this.addImageInCanvas();
   }
   componentWillUnmount() {
