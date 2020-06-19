@@ -120,10 +120,10 @@ export class Test extends React.Component {
   /*Next 2 functions for arrow buttons to scroll through cards */
   iterateNextCard() {
       const show = this.state.show;
-      if (show!=null && show<17) {
+      if (show!=null && show<16) {
           this.setState({show:show+1});
       }
-      else if (show==17) {
+      else if (show==16) {
           this.setState({show:1});
       }
   }
@@ -133,7 +133,7 @@ export class Test extends React.Component {
           this.setState({show:show-1});
       }
       else if (show==1) {
-          this.setState({show:17});
+          this.setState({show:16});
       }
   }
   toggle() {
