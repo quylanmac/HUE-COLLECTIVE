@@ -254,10 +254,10 @@ export class Test extends React.Component {
                             <Card.Subtitle className="memberBio">
                                 
                                 <div style={{marginTop:"2em", marginLeft:"2.5em", marginRight:"2.5em"}}>
-                                {data.linkedin ?
+                                {data.linkedin &&
                                     <a href={data.linkedin} target="_blank" className="secondCardMedia mediaPad">
                                         <img src={require(`../img/linkedIN.png`)} className="smallLogo"></img>
-                                    </a> : null }
+                                    </a> }
                                     <a href={data.instagram} target="_blank"  className="secondCardMedia ">
                                         <img src={require(`../img/instagram.png`)}  className="smallLogo"></img>
                                     </a>
@@ -292,7 +292,7 @@ export class Test extends React.Component {
             <Container className="d-flex flex-column justify-content-center align-self-center container-fluid my-auto">
                  {/*The gif loads with a fade and then transitions into the still image. When image is clicked, color is returned and mainPage is displayed*/}
                     {/*Overlay classes are used to position the loader right on top of the ColourWheel component so it fades into a still image*/}
-                {this.state.LoaderDiv ?
+                {this.state.LoaderDiv &&
                 <div style={{minHeight:"100vh"}} className="d-flex justify-content-center"> 
 
                 <div className="d-flex justify-content-center">
@@ -303,21 +303,21 @@ export class Test extends React.Component {
                             </Col>
                         </div>
                     {/*This checks for the vis bool to display the colour wheel component which is set after a timed delay*/}
-                    {this.state.loaderVis ? 
+                    {this.state.loaderVis &&
                             <div className="overlay-2 animated fadeIn delay2 justify-content-center align-self-center" style={{display:"grid"}}>
    
                                <Col className="my-auto">
                                 <button className="mybutton" onClick={this.removeLoaderDiv}>
                                     <ColourWheel callback={color=>this.setState({background:color})}></ColourWheel>
                                 </button></Col>
-                            </div> : null}
+                            </div>}
                     </div>
                 </div>
                 </div>
-                :null}
+                }
             {/*FROM HERE IS THE MAIN PAGE*/}
                                 {/*When the HUE logo is clicked, mainPageVis is set to true and the main page content is shown*/}
-            {this.state.mainPageVis ? 
+            {this.state.mainPageVis &&
                 <div className="page">
                     {/*This is the top left logo that takes the color of the user*/}
                     {/*This function call checks the returned color. If it is black, returns white instead*/}
@@ -450,7 +450,7 @@ export class Test extends React.Component {
                     </Row>
 
                 </div>
-              : null}
+              }
               {/*This creates the popup for each card*/}
               {this.renderModals()}
             </Container>
