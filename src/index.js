@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+/* import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 //import './index.css';
 import App from './App';
@@ -16,3 +16,46 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 //serviceWorker.unregister();
+ */
+import React from 'react';
+import './App.css';
+import ReactDOM from 'react-dom';
+import SP20 from './Components/SP20/SP20';
+import About from './Components/About/About';
+import Issues from './Components/Issues/Issues';
+import NewLoading from './Components/NewLoading';
+import { Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { StoreProvider } from './Components/Store';
+import { Provider, connect } from 'react-redux';
+import { Dispatch } from 'react-redux';
+import rootStore from './redux/stores';
+import Navbar from './Components/Navbar/Navbar';
+const AppComponent = () => {
+  return (
+    <Switch>
+      <Route exact path="/" component={NewLoading} />
+      <Route path="/">
+      <Navbar/>
+
+        <Switch>
+          <Route exact path="/index" component={SP20} />
+          <Route exact path="/about" component={About}/>
+          <Route exact path="/issues" component={Issues}/>
+        </Switch>
+      </Route>
+    </Switch>
+   
+  )
+}
+const App = connect()(AppComponent);
+ReactDOM.render(
+  <React.StrictMode>
+    <Provider store={rootStore}>
+      <Router>
+        <App />
+      </Router>
+    </Provider>
+  </React.StrictMode>,
+  document.getElementById('root'),
+);

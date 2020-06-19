@@ -1,0 +1,237 @@
+@font-face {
+    font-family: "GT-America-Regular";
+    src: local("GT-America-Regular"), url(../../font/GT-America-Regular.otf) format("opentype");
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+    font-family: "GT-America-Expanded-Medium";
+    src: local("GT-America-Expanded-Medium"), url(../../font/GT-America-Expanded-Medium.otf) format("opentype");
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: "GT-America-Expanded-Regular";
+    src: local("GT-America-Expanded-Regular"), url(../../font/GT-America-Expanded-Regular.otf) format("opentype");
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+    font-family: "GT-America-Extended-Regular";
+    src: local("GT-America-Extended-Regular"), url(../../font/GT-America-Extended-Regular.otf) format("opentype");
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.issue {
+    background-color: #fcfcfc;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.issueHeader {
+    border: #121212;
+    border-style: solid none solid none;
+    font-family: VT323;
+    font-size: 2rem;
+    line-height: 35px;
+}
+.textHeader {
+    margin: 1rem;
+}
+.issueBody {
+    margin-top: 5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.issueTarget {
+    margin-bottom: 2rem;
+    font-family: GT-America-Expanded-Medium;
+    font-size: 3rem;
+}
+.issueText {
+    margin-bottom: 2rem;
+    max-width: 75%;
+    text-align: justify;
+    font-family: GT-America-Extended-Regular;
+}
+.showMore {
+    background-color: #121212;
+    color: #fcfcfc;
+}
+.buttonText {
+    margin: 1rem;
+    font-family: GT-America-Extended-Regular;
+}
+.myDrag {
+    margin-top: 3rem;
+}
+.announcement {
+    color: #fcfcfc;
+    border: #fcfcfc;
+    z-index: 999;
+    background-color: #121212;
+    font-family: VT323;
+    font-size: 2rem;
+}
+.announcement2 {
+    color: #fcfcfc;
+    border: #fcfcfc;
+    z-index: 999;
+    font-family: VT323;
+    font-size: 2rem;
+    position: absolute;
+    top:0;
+    right:0;
+}
+.announcement2 > div{
+    overflow-x: inherit !important;
+}
+.announcement > div {
+    margin: 2rem;
+}
+.secondaryNav {
+    margin-bottom: 2rem;
+}
+.moveCursor {
+    cursor: move;
+}
+.stickerTest {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    /*  display:flex; */
+}
+.closeIssue {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1rem;
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    .stickerBox {
+        position: absolute;
+        bottom: -35%;
+        left: 0%;
+    }
+    .stickerBox2 {
+        position: absolute;
+        bottom: -35%;
+        left: 33.3%;
+    }
+    .stickerBox3 {
+        position: absolute;
+        bottom: -35%;
+        left: 66.6%;
+    }
+    .stickerBox img {
+        max-width: 50%;
+    }
+    .stickerBox2 img {
+        max-width: 50%;
+    }
+    .stickerBox3 img {
+        max-width: 75%;
+    }
+}
+@media (min-width: 768px) {
+    .stickerBox {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+    }
+    .stickerBox2 {
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+    }
+    .stickerBox3 {
+        position: absolute;
+        bottom: 50%;
+        right: 0%;
+    }
+}
+@media (min-width: 1367px) {
+    .stickerBox {
+        position: absolute;
+        bottom: 0%;
+        left: 10%;
+    }
+    .stickerBox2 {
+        position: absolute;
+        bottom: 0%;
+        right: 15%;
+    }
+    .stickerBox3 {
+        position: absolute;
+        bottom: 40%;
+        right: 10%;
+    }
+}
+
+.testwrapper {
+    top: -50%;
+    right: 50%;
+    width: 200%;
+    height: 200%;
+}
+.testwrapper > div {
+    overflow: visible !important;
+}
+.testwrapper h1 {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    /* I think this works for centering? */
+    top: calc(50% - 64px);
+    -webkit-transform: translate(-50%, calc(-50% - 64px));
+    -ms-transform: translate(-50%, calc(-50% - 64px));
+    transform: translate(-50%, calc(-50% - 64px));
+}
+
+.testwrapper h1 span {
+    position: absolute;
+}
+.circleAnimation {
+    -webkit-animation: myOrbit 4s linear infinite; /* Chrome, Safari 5 */
+       -moz-animation: myOrbit 4s linear infinite; /* Firefox 5-15 */
+         -o-animation: myOrbit 4s linear infinite; /* Opera 12+ */
+            animation: myOrbit 4s linear infinite; /* Chrome, Firefox 16+, 
+                                                      IE 10+, Safari 5 */
+                                                      position:absolute;
+}
+@-webkit-keyframes myOrbit {
+    from {
+        -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    }
+}
+
+@-moz-keyframes myOrbit {
+    from {
+        -moz-transform: rotate(0deg) translateX(150px) rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    }
+}
+
+@-o-keyframes myOrbit {
+    from {
+        -o-transform: rotate(0deg) translateX(150px) rotate(0deg);
+    }
+    to {
+        -o-transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    }
+}
+
+@keyframes myOrbit {
+    from {
+        transform: rotate(0deg) translateX(150px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    }
+}

@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+body {
+  background-color: #121212 !important;
+  background-image:
+  linear-gradient(to right, #1F1F1F 1px, transparent 1px),
+  linear-gradient(to bottom, #1F1F1F 1px, transparent 1px);
+  opacity: 1;
+  background-size: 200px 100px;
+}
 @font-face {
   font-family: 'HelveticaLight';
   src: local('HelveticaLight'), url(./font/HelveticaNeue\ Light.ttf) format('truetype');
@@ -52,9 +60,7 @@
   letter-spacing: 0.185em !important;
   color: white !important;
 }
-.nav-link {
-  padding: 0 !important;
-}
+
 .myPlayer {
   position:absolute !important;
   top: 0 !important;
@@ -472,5 +478,4 @@
     transform: rotate(360deg);
   }
 }
-
 @import '~bootstrap/dist/css/bootstrap.min.css';
