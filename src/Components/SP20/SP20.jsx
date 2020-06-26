@@ -9,10 +9,8 @@ import star from '../../img/SP20/star.png';
 import fire from '../../img/SP20/fire.png';
 import hue from '../../img/SP20/hue.png';
 import NavBar from 'react-bootstrap/Navbar';
-import Heading from '../Heading';
-import CircleType from 'circletype';
+import myGif from '../../img/SP20/issue2.gif';
 import { NavDropdown, Nav, Image, DropdownButton } from 'react-bootstrap';
-import ReactArcText from 'react-arc-text-fix';
 import './SP20.css';
 class SP20 extends Component {
     constructor(props) {
@@ -51,6 +49,7 @@ class SP20 extends Component {
         const dragHandlers = { onStart: this.onStart, onStop: this.onStop };
         return (
             <>
+            <div style={{maxWidth:"100%"}}>
                 <Container>
                     <Row>
                         <Draggable handle="strong" {...dragHandlers}>
@@ -98,17 +97,7 @@ class SP20 extends Component {
 
                     </Row>
                 </Container>
-{/*                 <div
-                        style={{
-                            width: '5%',
-                            whiteSpace: 'nowrap',
-                        }}
-                        className="announcement2 "
-                    >
-                        <Marquee speed="0.08" direction="right">
-                        <ReactArcText text="check out our first issue "/>
-                  </Marquee>
-                    </div> */}
+                <img className="gif" src={myGif}/>
                 <NavBar className="myNav secondaryNav">
                     <div
                         style={{
@@ -122,6 +111,7 @@ class SP20 extends Component {
 
 
                 </NavBar>
+                </div>
             </>
         )
     }

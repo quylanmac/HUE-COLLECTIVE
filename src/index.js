@@ -23,6 +23,7 @@ import ReactDOM from 'react-dom';
 import SP20 from './Components/SP20/SP20';
 import About from './Components/About/About';
 import Issues from './Components/Issues/Issues';
+import Contact from './Components/Contact/Contact';
 import NewLoading from './Components/NewLoading';
 import { Redirect } from 'react-router-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -42,6 +43,7 @@ const AppComponent = () => {
           <Route exact path="/index" component={SP20} />
           <Route exact path="/about" component={About}/>
           <Route exact path="/issues" component={Issues}/>
+          <Route exact path="/contact" component={Contact}/>
         </Switch>
       </Route>
     </Switch>

@@ -200,6 +200,16 @@
                                                       IE 10+, Safari 5 */
                                                       position:absolute;
 }
+.gif {
+    position:absolute;
+    right:0;
+    top:25%;
+}
+@media (max-width:767px) {
+    .gif {
+        width:0;
+    }
+}
 @-webkit-keyframes myOrbit {
     from {
         -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg);

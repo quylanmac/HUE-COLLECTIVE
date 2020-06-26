@@ -42,7 +42,7 @@ const Navbar = ({ color }) => {
                     <Nav.Link onClick={() => redirectTo('/about')}>
                         about
                     </Nav.Link>
-                    <Nav.Link onClick={() => redirectTo('/about')}>
+                    <Nav.Link onClick={() => redirectTo('/contact')}>
                         contact
                     </Nav.Link>
 
