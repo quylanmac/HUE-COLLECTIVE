@@ -1,5 +1,6 @@
 const initialState = {
-    color: 'white'
+    color: 'white',
+    theme: 'black',
   }
   
   const rootReducer = (state = initialState, action) => {
@@ -8,6 +9,11 @@ const initialState = {
           return {
               ...state,
               color: action.color,
+          };
+      case 'THEME': 
+          return {
+              ...state,
+              theme: action.theme,
           };
       default:
         return state;

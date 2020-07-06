@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+.lighttheme {
+  background-color: white !important;
+  background-image: none !important;
+}
+
 body {
   background-color: #121212 !important;
   background-image:
@@ -90,6 +95,11 @@ body {
   z-index:9999 !important;
 }
 .navLinks {
+  font-family: VT323 !important;
+  line-height: 106% !important;
+  color:white !important;
+}
+.navLinks2 {
   font-family: VT323 !important;
   line-height: 106% !important;
   color:white !important;
@@ -274,6 +284,9 @@ body {
     padding-right:1.5rem !important;
   }
   .navLinks {
+    font-size: 1.3em !important;
+  }
+  .navLinks2 {
     font-size: 1.3em !important;
   }
   .links {

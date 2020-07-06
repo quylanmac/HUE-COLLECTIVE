@@ -4,3 +4,10 @@ export const setColor = content => ({
         content
     }
 });
+export const setTheme = content => ({
+   
+    type: 'THEME',
+    theme: {
+        content
+    }
+});
