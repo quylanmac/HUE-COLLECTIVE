@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import '../SP20/SP20.css';
 import Draggable from 'react-draggable';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Redirect, NavLink, Link } from 'react-router-dom';
+import { setTheme } from '../../redux/actions';
 
 class Issues extends Component {
     constructor(props) {
@@ -34,6 +36,9 @@ class Issues extends Component {
     onStop = () => {
         this.setState({ activeDrags: --this.state.activeDrags });
     };
+    handleTheme(theme) {
+        this.props.setTheme(theme);
+    }
     render() {
         const dragHandlers = { onStart: this.onStart, onStop: this.onStop };
 
@@ -57,11 +62,16 @@ class Issues extends Component {
                                 valuable tools. With HUE, we hope you can start your own journey, and answer for yourself, “what is design?”
                               </p>
                             </div>
-                            <button className="showMore">
-                                <p className="buttonText">
-                                    SHOW ME MORE
-                                </p>
-                            </button>
+                            <Link to={{
+                                            pathname: "/article1",
+
+                                        }}>
+                                            <button className="showMore" onClick={() => this.handleTheme("white")}>
+                                                <p className="buttonText">
+                                                    SHOW ME MORE
+                                        </p>
+                                            </button>
+                                        </Link>
                         </div>
                     </div>
                 </Draggable>
@@ -70,4 +80,4 @@ class Issues extends Component {
         )
     }
 }
-export default connect()(Issues);
+export default connect(null, {setTheme})(Issues);

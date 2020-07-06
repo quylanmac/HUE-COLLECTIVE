@@ -25,6 +25,7 @@ import About from './Components/About/About';
 import Issues from './Components/Issues/Issues';
 import Contact from './Components/Contact/Contact';
 import NewLoading from './Components/NewLoading';
+import Article1 from './Components/Article1/Article1';
 import { Redirect } from 'react-router-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { StoreProvider } from './Components/Store';
@@ -35,12 +36,16 @@ import Navbar from './Components/Navbar/Navbar';
 const AppComponent = () => {
   return (
     <Switch>
+      {/* Loading component with color picker */}
       <Route exact path="/" component={NewLoading} />
       <Route path="/">
       <Navbar/>
 
         <Switch>
+          {/* Index is landing page */}
           <Route exact path="/index" component={SP20} />
+          {/* Current blank page for articles */}
+          <Route exact path="/article1" component={Article1}/>
           <Route exact path="/about" component={About}/>
           <Route exact path="/issues" component={Issues}/>
           <Route exact path="/contact" component={Contact}/>
