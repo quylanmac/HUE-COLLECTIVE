@@ -26,6 +26,15 @@ import Issues from './Components/Issues/Issues';
 import Contact from './Components/Contact/Contact';
 import NewLoading from './Components/NewLoading';
 import Article1 from './Components/Article1/Article1';
+
+//------------Spring Issue Redirects-----------------//
+import JFunes from './Components/Article1/JFunes/JFunes';
+import LIbarra from './Components/Article1/LIbarra/LIbarra';
+import SKato from './Components/Article1/SKato/SKato';
+import SLee from './Components/Article1/SLee/SLee';
+import JWolf from './Components/Article1/JWolf/JWolf';
+//--------End of Spring Issue Redirects--------------//
+
 import { Redirect } from 'react-router-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { StoreProvider } from './Components/Store';
@@ -49,6 +58,12 @@ const AppComponent = () => {
           <Route exact path="/about" component={About}/>
           <Route exact path="/issues" component={Issues}/>
           <Route exact path="/contact" component={Contact}/>
+
+          <Route exact path="/JFunes" component={JFunes}/>
+          <Route exact path="/LIbarra" component={LIbarra}/>
+          <Route exact path="/SKato" component={SKato}/>
+          <Route exact path="/SLee" component={SLee}/>
+          <Route exact path="/JWolf" component={JWolf}/>
         </Switch>
       </Route>
     </Switch>

@@ -1,0 +1,10 @@
+.singleimage{
+    max-width: 100%;
+}
+
+@media (max-width:767px){
+    .singleimage{
+        max-width: 105%;
+        margin-top: 2rem;
+    }
+}
