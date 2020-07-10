@@ -1,0 +1,84 @@
+/* .backarrow{
+    margin-top: 1.5rem;
+    background: none;
+    border: none;
+}
+
+.profile{
+    margin-left: 2.5rem;
+}
+
+.name{
+    margin-left: 2rem;
+    font-family: GT-America-Expanded-Medium;
+    font-size: 3rem;
+    line-height: 2.75rem;
+}
+
+.year{
+    vertical-align: center;
+    margin-top: -0.75rem;
+    margin-left: 2rem;
+    font-family: GT-America-Expanded-Regular;
+    font-size: 1.5rem;
+}
+
+.socials{
+    background:none;
+    border:none;
+    margin-bottom:0.5rem;
+    margin-left: 2rem;
+}
+
+.role {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    font-family: GT-America-Expanded-Medium;
+    font-size: 2.5rem;
+}
+
+.paragraph{
+    text-align: start;
+    font-family: GT-America-Extended-Regular;
+    font-size: 0.9rem;
+    line-height: 200%;
+}
+
+.paragraphbig{
+    font-family: GT-America-Extended-Regular;
+    font-size: 1.23rem;
+    line-height: 150%;
+}
+
+.regularrow{
+    margin-bottom: 2.5rem;
+}
+
+.upnext {
+    max-width: 100%;
+}
+
+.nextbutton{
+    max-width: 100%;
+    background:none;
+    border:none;
+} */
+
+.singleimage{
+    max-width: 100%;
+}
+
+.doubleimage{
+    margin-left: 6rem;
+    margin-right: 2rem;
+}
+
+@media (max-width:767px) {
+    .singleimage{
+        max-width: 105%;
+        /* margin-top: 3rem; */
+    }
+    .doubleimage{
+        margin-left:3rem;
+    }
+}

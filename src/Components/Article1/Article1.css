@@ -1,0 +1,133 @@
+.articleTarget {
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+    font-family: GT-America-Expanded-Medium;
+    font-size: 2.5rem;
+}
+.articleBody {
+    margin-bottom: 2rem;
+    font-size: 1.15rem;
+    max-width: 125%;
+    text-align: start;
+    font-family: GT-America-Extended-Regular;
+}
+
+.profiles {
+    border:none;
+    margin: 1rem;
+    background: none;
+}
+
+/*-----General CSS for each article-------*/
+
+.backarrow{
+    margin-top: 1.5rem;
+    background: none;
+    border: none;
+}
+
+.profile{
+    margin-left: 3rem;
+    max-width: 60%;
+}
+
+.name{
+    margin-left: 2rem;
+    font-family: GT-America-Expanded-Medium;
+    font-size: 3rem;
+    line-height: 2.75rem;
+}
+
+.year{
+    vertical-align: center;
+    margin-top: -0.75rem;
+    margin-left: 2rem;
+    font-family: GT-America-Expanded-Regular;
+    font-size: 1.5rem;
+}
+
+.socials{
+    background:none;
+    border:none;
+    max-width: 90%;
+    margin-bottom:0.5rem;
+    margin-left: 2rem;
+}
+
+.role {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-family: GT-America-Expanded-Medium;
+    font-size: 2.5rem;
+}
+
+.paragraph{
+    text-align: start;
+    font-family: GT-America-Extended-Regular;
+    font-size: 0.9rem;
+    line-height: 200%;
+}
+
+.paragraphbig{
+    font-family: GT-America-Extended-Regular;
+    font-size: 1.23rem;
+    line-height: 150%;
+}
+
+.regularrow{
+    margin-bottom: 2.5rem;
+}
+
+.upnexttext{
+    font-family: GT-America-Expanded-Medium;
+    font-size: 3rem;
+}
+.upnext {
+    max-width: 100%;
+    margin-bottom: 3rem;
+}
+
+.nextbutton{
+    max-width: 100%;
+    background:none;
+    border:none;
+}
+
+.column2{
+    background-color: blueviolet;
+}
+
+
+@media (max-width:767px) {
+    .paragraph {
+        font-size:0.7rem !important;
+    }
+    .paragraphbig {
+        font-size:1rem !important;
+    }
+
+    .upnexttext{
+        font-size: 1.5rem !important;
+    }
+    .role {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    .name{
+        margin-left: 2rem;
+        font-size: 2rem;
+        line-height: 2.75rem;
+    }
+
+    .year{
+        font-size: 1rem;
+    }
+    .upnext {
+        max-width: 110%;
+    }
+    
+    .nextbutton{
+        max-width: 110%;
+    }
+}
