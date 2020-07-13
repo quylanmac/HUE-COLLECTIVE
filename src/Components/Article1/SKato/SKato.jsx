@@ -128,13 +128,13 @@ class SKato extends Component{
                             </Col>
                         </Row>
                         
-                        <Row>
+                        <Row className="regularrow">
                             <Col md={4} xs={4}>
                                 <img style={{maxWidth:"90%"}} src={require('./pic4.png')}></img>
                             </Col>
 
                             <Col md={8} xs={8}>
-                                <p style={{marginTop:"3rem"}} className="paragraphbig">Urban design is very important for Sophie because in this age where everything is digitized, it is easy to lose sight of the nuances of design that can benefit the community and the environment at the same time.</p>
+                                <p style={{marginTop:"2rem"}} className="paragraphbig">Urban design is very important for Sophie because in this age where everything is digitized, it is easy to lose sight of the nuances of design that can benefit the community and the environment at the same time.</p>
                             </Col>
                         </Row>
 

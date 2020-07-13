@@ -77,37 +77,37 @@ class JWolf extends Component{
                             </Col>
                         </Row>
 
-                        <Row>
+                        <Row className="regularrow">
                             <Col>
-                                <p className="paragraph">Jonah Wolf, a third year Economics major with Accounting and Business minors, boasts more than just an extensive knowledge in the world of economics. In fact, Jonah utilizes his creative talents in a medium much different than statistical models or economic methods. Rather, he makes beats. During our interview with Jonah, we were able to learn more about his journey as well as the versatility he brings to the table. Jonah got his start in music from a very young age, starting with the drums then transitioning into guitar and eventually beat making when he was in the 12th grade. After taking a hiatus, Jonah rekindled his passion for beat making after enrolling in UCSD. His experience has led him to produce a versatile array of beats as for him, “It’s      about      sharing       ideas      and      music”.</p>
+                                <p className="paragraph">Jonah Wolf, a third year Economics major with Accounting and Business minors, boasts more than just an extensive knowledge in the world of economics. In fact, Jonah utilizes his creative talents in a medium much different than statistical models or economic methods. Rather, he makes <span className="paragraphbig">beats</span>. During our interview with Jonah, we were able to learn more about his journey as well as the versatility he brings to the table. Jonah got his start in music from a very young age, starting with the drums then transitioning into guitar and eventually beat making when he was in the 12th grade. After taking a hiatus, Jonah rekindled his passion for beat making after enrolling in UCSD. His experience has led him to produce a versatile array of beats as for him, <span className="paragraphbig">“It’s about sharing ideas and music”</span>.</p>
                             </Col>
                         </Row>
 
-                        <Row>
-                            <Col>
+                        <Row className="regularrow">
+                            <Col md={3} xs={3}>
 
                             </Col>
 
-                            <Col>
+                            <Col md={9} xs={9}>
                                 <p className="paragraphbig">When creating his beats, Jonah’s main concern is getting to a place that the artists he collaborates with can love.</p>
                             </Col>
                         </Row>
 
                         <Row className="regularrow">
                             <Col>
-                                <p className="paragraph">During the beat making process, Jonah uses FL Studio, a digital audio workspace that allows him to combine various musical elements such as keyboards, organs, drums, and even electronic sounds to produce beats that he then sends out to various artists to experiment with and refine. His beats span a variety of genres, from Lo-Fi to contemporary R&B, and he credits his inspiration to the different artists that he collaborates with during the music making process alongside his own personal inspirations. When specifying some of these inspirations, Jonah credits Taio Cruz’s 2009 smash hit Dynamite as well as various artists of today such as Kanye West, Travis Scott, Young Thug, Thaiboy Digital, 100 gecs, JPEGMAFIA, and Mozart. </p>
+                                <p className="paragraph">During the beat making process, Jonah uses FL Studio, a digital audio workspace that allows him to combine various musical elements such as <span className="paragraphbig">keyboards, organs, drums, and even electronic sounds</span> to produce beats that he then sends out to various artists to experiment with and refine. His beats span a <span className="paragraphbig">variety of genres</span>, from Lo-Fi to contemporary R&B, and he credits his inspiration to the different artists that he collaborates with during the music making process alongside his own personal inspirations. When specifying some of these inspirations, Jonah credits Taio Cruz’s 2009 smash hit Dynamite as well as various artists of today such as Kanye West, Travis Scott, Young Thug, Thaiboy Digital, 100 gecs, JPEGMAFIA, and Mozart. </p>
                             </Col>
                         </Row>
 
                         <Row className="regularrow">
                             <Col>
-                                <p className="paragraph">Jonah’s devotion to beat making has also led him to be involved in the Producers & Remixers Organization (PRO) Club at UCSD, which gave him valuable information with working on digital  audio workspaces as well as a great community to learn from.  </p>
+                                <p className="paragraph">Jonah’s devotion to beat making has also led him to be involved in the <span className="paragraphbig">Producers & Remixers Organization (PRO) Club</span> at UCSD, which gave him valuable information with working on digital  audio workspaces as well as a great community to learn from.  </p>
                             </Col>
                         </Row>
 
                         <Row>
                             <Col>
-                                <p className="paragraph">Jonah’s work can be found across various online platforms and specifically, his work with his own music collective, Housemoney, truly showcases Jonah’s multifaceted talent. Co-founded with fellow UCSD alum Damian Ngo, Jonah is focusing on creating his own music as well as connecting and collaborating with other artists, some of which are from UCSD.  With a strong line of communication between both himself and the artists, he is able to utilize his skills in beat making to create works of art that seamlessly complement  the talents of his artists. Housemoney isn’t solely limited to collaboration but also producing original music, instrumentals and playlists for the avid music fan to experience. Some of Housemoney’s productions include curated monthly playlists on Spotify and various instrumentals on Youtube, some of which have garnered over 500,000 views.  </p>
+                                <p className="paragraph">Jonah’s work can be found across various online platforms and specifically, his work with his own music collective, <span className="paragraphbig">Housemoney</span>, truly showcases Jonah’s multifaceted talent. Co-founded with fellow UCSD alum Damian Ngo, Jonah is focusing on creating his own music as well as connecting and collaborating with other artists, some of which are from UCSD.  With a strong line of communication between both himself and the artists, he is able to utilize his skills in beat making to <span className="paragraphbig">create works of art that seamlessly complement  the talents of his artists</span>. Housemoney isn’t solely limited to collaboration but also producing original music, instrumentals and playlists for the avid music fan to experience. Some of Housemoney’s productions include curated monthly playlists on Spotify and various instrumentals on Youtube, some of which have garnered over 500,000 views.  </p>
                             </Col>
                         </Row>
 
@@ -120,16 +120,16 @@ class JWolf extends Component{
 
                         <Row>
                             <Col>
-                                <p className="paragraph">For Jonah, beat making isn’t only about the end result, but also the future. He is passionate about sharing his own music as well as seeing other artists grow and he hopes to continue working with other  artists and contributing to their sound. When balancing beat making with school, he suggests time management and a strict schedule interlaced with time for rest and relaxation. To explore more of Jonah’s work, visit some of his accounts and bear witness to           a           man          of          the          people.</p>
+                                <p className="paragraph">For Jonah, beat making isn’t only about the end result, but also the future. He is passionate about sharing his own music as well as seeing other artists grow and he hopes to continue working with other  artists and contributing to their sound. When balancing beat making with school, he suggests time management and a strict schedule interlaced with time for rest and relaxation. To explore more of Jonah’s work, visit some of his accounts and bear witness <span className="paragraphbig">to a man of the people</span>.</p>
                             </Col>
                         </Row>
 
                         <Row className="regularrow">
-                            <Col>
+                            <Col md={4} xs={4}>
                                     {/* STICKERS HERE */}
                             </Col>
 
-                            <Col>
+                            <Col md={8} xs={8}>
                                 <img style={{maxWidth:"100%"}} src={require('./pic2.png')}></img>
                             </Col>
                         </Row>

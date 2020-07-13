@@ -1,5 +1,51 @@
 .singleimage{
+    /* max-width: 100%; */
+}
+
+.sticker1 {
+    left:-3%;
+    bottom: 3%;
+    max-width: 13%;
+}
+
+.sticker2{
+    max-width: 15%;
+    top:24%;
+    left: 23%
+}
+
+.sticker3{
+    max-width: 15%;
+    /* bottom: 10%; */
+    top:29%;
+    left: 42%
+}
+
+.sticker4{
+    max-width: 15%;
+    top: 29%;
+    left: 5%;
+}
+
+.sticker5{
+    max-width: 30%;
+    right: 0%;
+    top: -7%
+}
+.sticker6{
+    max-width: 40%;
+    right: -5%;
+    bottom: -5%
+}
+
+.sticker7{
     max-width: 100%;
+}
+
+.sticker8{
+    max-width: 20%;
+    top:-5%;
+    right: 1%;
 }
 
 @media (max-width:767px){

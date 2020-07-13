@@ -63,9 +63,33 @@
     background:none;
     border:none;
 } */
+.one{
+    align-self: right;
+}
+
+.sticker1 {
+    position: absolute;
+    left: -8%;
+    top: -20%;
+    max-width: 15%;
+}
+
+.sticker2{
+    position: absolute;
+    right: -1%;
+    margin-top: 8rem;
+    max-width: 20%;
+}
+
+.sticker3{
+    position: absolute;
+    right: -10%;
+    top: -20%;
+    max-width: 50%;
+}
 
 .singleimage{
-    max-width: 100%;
+    max-width: 10%;
 }
 
 .doubleimage{

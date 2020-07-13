@@ -62,16 +62,24 @@
 }
 
 .paragraph{
-    text-align: start;
+    text-align: justify;
     font-family: GT-America-Extended-Regular;
     font-size: 0.9rem;
+    /* position: relative; */
     line-height: 200%;
 }
 
 .paragraphbig{
+    text-align: justify;
     font-family: GT-America-Extended-Regular;
     font-size: 1.23rem;
+    /* position: static; */
     line-height: 150%;
+}
+
+.cursor{
+    cursor: move;
+    position: absolute;
 }
 
 .regularrow{
@@ -94,7 +102,7 @@
 }
 
 .column2{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
 

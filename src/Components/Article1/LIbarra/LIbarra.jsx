@@ -26,6 +26,7 @@ class LIbarra extends Component{
         this.props.setTheme(theme);
     }
     render() {
+        const dragHandlers = { onStart: this.onStart, onStop: this.onStop };
         return (
             <Container>
                 <Row>
@@ -79,12 +80,24 @@ class LIbarra extends Component{
 
                         <Row className="regularrow">
                             <Col>
-                            <p className="paragraph">&emsp;&emsp;Lauren Ibarra is a UCSD student majoring in Biochemistry, and has found a calling in <span className="paragraphbig">health education</span>. During high school, Lauren founded a literacy-promotion campaign, exposing her to the discipline of service design.  From this initial exposure, her interest in raising up others bloomed into her current goal of creating <span className="paragraphbig">preventative health measures for underrepresented people</span> in our society.</p>
+                                <Draggable {...dragHandlers}>
+                                    <img className="cursor sticker1" draggable="false" src={require('../Pictures/Cover/generalpics/emeraldsticker.png')} />
+                                </Draggable>
+                                <p className="paragraph">&emsp;&emsp;&emsp;Lauren Ibarra is a UCSD student majoring in Biochemistry, and has found a calling in <span className="paragraphbig">health education</span>. During high school, Lauren founded a literacy-promotion campaign, exposing her to the discipline of service design.  From this initial exposure, her interest in raising up others bloomed into her current goal of creating <span className="paragraphbig">preventative health measures for underrepresented people</span> in our society.</p>
                             </Col>
                         </Row>
 
                         <Row className="regularrow">
                             <img style={{maxWidth:"100%"}} src={require('./pic1.png')}></img>
+                            <Draggable {...dragHandlers}>
+                                <img className="cursor sticker2" draggable="false" src={require('../Pictures/Cover/generalpics/beesticker.png')} />
+                            </Draggable>
+                            <Draggable {...dragHandlers}>
+                                <img className="cursor sticker3" draggable="false" src={require('../Pictures/Cover/generalpics/beesticker.png')} />
+                            </Draggable>
+                            <Draggable {...dragHandlers}>
+                                <img className="cursor sticker4" draggable="false" src={require('../Pictures/Cover/generalpics/beesticker.png')} />
+                            </Draggable>
                         </Row>
 
                         <Row>
@@ -95,28 +108,40 @@ class LIbarra extends Component{
 
                         <Row>
                             <Col md={4} xs={5}>
-                                <img className="singleimage" src={require('./pic2.png')}></img>
+                            <Draggable {...dragHandlers}>
+                                <img className="cursor sticker5" draggable="false" src={require('../Pictures/Cover/generalpics/starsticker.png')} />
+                            </Draggable>
+                                <img style={{maxWidth:"100%"}} src={require('./pic2.png')}></img>
+                                
                             </Col>
 
                             <Col md={8} xs={7}>
-                                <p className="paragraphbig">In her experience, Lauren found it best to push her younger students rather than allowing educators’ pre-existing&emsp;&emsp;biases&emsp;&emsp;about disadvantaged communities limit their curriculum.</p>
+                                <p className="paragraphbig">In her experience, Lauren found it best to push her younger students rather than allowing educators’ pre-existing biases about disadvantaged communities limit their curriculum.</p>
+                                <Draggable {...dragHandlers}>
+                                    <img className="cursor sticker6" draggable="false" src={require('../Pictures/Cover/generalpics/leafsticker.png')} />
+                                </Draggable>
                             </Col>
 
                         </Row>
 
-                        <Row className="regularrow">
+                        <Row>
                             <Col>
                             <p className="paragraph">As she grew into her journey as a designer, Lauren found inspiration in those closest to her.  Her parents, who immigrated to the United States from Mexico, worked hard to provide their daughter the tools she needed to pursue her passions.  And now, as a college student, Lauren has devoted herself to improving the lives of others.  She finds inspiration in her mentor Dr. Weena Joshi, a UCSD faculty and leader within the International Health Collective who also works with children in the Tijuana clinic.</p>
                             </Col>
                         </Row>
 
                         <Row className="regularrow">
-                            <Col md={4} xs={8}>
-                                
+                            <Col md={3} xs={3}>
+                            <Draggable {...dragHandlers}>
+                                    <img className="cursor sticker7" draggable="false" src={require('../Pictures/Cover/generalpics/housesticker.png')} />
+                                </Draggable>
                             </Col>
 
-                            <Col md={8} xs={8}>
-                                <p className="paragraphbig">Balancing between her demands as a pre-med student and a designer, Lauren advises that it’s better to pursue your passions, rather than following someone else’s path.</p>
+                            <Col md={9} xs={9}>
+                            <Draggable {...dragHandlers}>
+                                    <img className="cursor sticker8" draggable="false" src={require('../Pictures/Cover/generalpics/flowersticker.png')} />
+                                </Draggable>
+                                <p style={{marginTop:"4rem"}} className="paragraphbig">Balancing between her demands as a pre-med student and a designer, Lauren advises that it’s better to pursue your passions, rather than following someone else’s path.</p>
                             </Col>
 
                         </Row>

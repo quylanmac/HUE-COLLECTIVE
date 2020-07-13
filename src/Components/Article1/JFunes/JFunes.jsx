@@ -26,6 +26,7 @@ class JFunes extends Component{
         this.props.setTheme(theme);
     }
     render() {
+        const dragHandlers = { onStart: this.onStart, onStop: this.onStop };
         return (
             <Container>
                 <Row>
@@ -70,55 +71,87 @@ class JFunes extends Component{
                         <Row>
                             <p className="role">GRAPHIC DESIGN</p>
                         </Row>
-
-                        <Row className="regularrow">
-                            <p className="paragraph">&emsp;&emsp; <span className="paragraphbig">M</span>eet Jonathan Funes, a <span className="paragraphbig">graphic designer</span> who turned his passion for art and self-expression into a successful career in design and illustration! His background in graphic design started in his high school advertisement design class, where he was exposed to Photoshop for the first time. He loved design and passionately <span className="paragraphbig">self studied</span> the basics of graphic design by  watching YouTube videos. Now, he is a graphic designer for University Centers and the creator of his own apparel.</p>
+                        
+                        <Row>
+                            <Col>
+                            <Draggable {...dragHandlers}>
+                                <img className="cursor sticker1" draggable="false" src={require('../Pictures/Cover/generalpics/starsticker.png')} />
+                            </Draggable>
+                                <p className="paragraph one">&emsp;&emsp; <span className="paragraphbig">M</span>eet Jonathan Funes, a <span className="paragraphbig">graphic designer</span> who turned his passion for art and self-expression into a successful career in design and illustration! His background in graphic design started in his high school advertisement design class, where he was exposed to Photoshop for the first time. He loved design and passionately <span className="paragraphbig">self studied</span> the basics of graphic design by  watching YouTube videos. Now, he is a graphic designer for University Centers and the creator of his own apparel.</p>
+                            </Col>
                         </Row>
 
                         <Row className="regularrow">
-                            <p style={{marginLeft:"9rem"}} className="paragraphbig"> Jonathan’s journey to get to where he is now was not a direct path. </p>
+                            <Col md={3} xs={3}>
+                            <Draggable {...dragHandlers}>
+                                <img style={{maxWidth:"100%"}} className="cursor" draggable="false" src={require('../Pictures/Cover/generalpics/shirtsticker.png')} />
+                            </Draggable>
+                            </Col>
+
+                            <Col md={9} xs={9}>
+                            <p style={{marginTop:"3rem"}} className="paragraphbig"> Jonathan’s journey to get to where he is now was not a direct path. </p>
+                            </Col>
                         </Row>
 
                         <Row className="regularrow">
+                            <Col>
                             <p className="paragraph">He was originally admitted into UCSD as a Computer Science major. However, Jonathan was inspired to <span className="paragraphbig">follow his dreams</span> and changed his major to Communication with minors in Design and Business.</p>
+                            </Col>
                         </Row>
 
                         <Row className="regularrow">
+                            <Col>
                             <img style={{marginRight:"1rem", maxWidth:"30%"}}src={require('./pic1.png')}></img>
                             <img style={{marginRight:"1rem", maxWidth:"30%"}}src={require('./pic2.png')}></img>
                             <img style={{maxWidth:"30%"}}src={require('./pic3.png')}></img>
+                            <Draggable {...dragHandlers}>
+                                <img className="cursor sticker2" draggable="false" src={require('../Pictures/Cover/generalpics/idkwhatthisissticker.png')} />
+                            </Draggable>
+                            </Col>
                         </Row>
 
-                        <Row className="regularrow">
+                        <Row style={{marginBottom:"1rem"}}>
+                            <Col>
                             <p className="paragraph">Before working as a graphic designer at University Centers, Jonathan was a graphic designer for the Career Services Center. He created flyers, maps, layouts, and pamphlets which allowed him to <span className="paragraphbig">gain experience</span> and <span className="paragraphbig">perfect his skills</span>. Once he began working for University Centers, Jonathan was able to channel this experience into creating his own individual style of graphics to use in his work. He enjoys working for University Centers because it allows him to <span className="paragraphbig">express</span> something that he may not be used to. </p>
+                            </Col>
                         </Row>
 
                         <Row className="regularrow">
-                            <p style={{marginLeft:"7rem"}} className="paragraphbig">He loves experimenting with different colors, textures, and typography in order to create something unique.</p>
+                            <Col md={2} xs={2}>
+                            <Draggable {...dragHandlers}>
+                                <img style={{maxWidth:"120%"}} className="cursor" draggable="false" src={require('../Pictures/Cover/generalpics/papersticker.png')} />
+                            </Draggable>  
+                            </Col>
+                            <Col md={10} xs={10}>
+                                <p className="paragraphbig">He loves experimenting with different colors, textures, and typography in order to create something unique.</p>
+                            </Col>
                         </Row>
 
                         <Row className="regularrow">
                             <Col md={4} xs={4}>
-                            <img className="singleimage" src={require("./pic4.png")}></img>
+                            <img style={{maxWidth:"110%"}} src={require("./pic4.png")}></img>
                             </Col>
 
                             <Col md={8} xs={8}> 
-                            <p className="paragraph">When asked to elaborate on his design process, Jonathan explained that it all <span className="paragraphbig">starts with a work order</span>. If the work order is from an artist, for example, he’ll draw inspiration from that artist’s <span className="paragraphbig">past album art or music</span>. From there, Jonathan will find photos to retouch or retrace on Procreate (an iPad application). After that he’ll work on details such as the typography so that it really fits with the artist or event.</p>
+                            <p style={{marginTop:"1rem"}} className="paragraph">When asked to elaborate on his design process, Jonathan explained that it all <span className="paragraphbig">starts with a work order</span>. If the work order is from an artist, for example, he’ll draw inspiration from that artist’s <span className="paragraphbig">past album art or music</span>. From there, Jonathan will find photos to retouch or retrace on Procreate (an iPad application). After that he’ll work on details such as the typography so that it really fits with the artist or event.</p>
                             </Col>
                         </Row>
 
                         <Row>
                             <Col md={8} xs={7}>
-                                <p className="paragraph">In his free time, Jonathan likes to be create <span className="paragraphbig">vector&emsp;&emsp;&emsp;&emsp;and&emsp;&emsp;&emsp;&emsp;freehand illustrations</span>. One of his projects titled, “Rings and Things,” is an illustration series and product design endeavor in which he created bright and vibrant jewelry pieces in order to combat <span className="paragraphbig">toxic masculinity within the Hispanic community</span>. Jonathan describes his personal</p>
+                                <p className="paragraph">In his free time, Jonathan likes to be create <span className="paragraphbig">vector and freehand illustrations</span>. One of his projects titled, “Rings and Things,” is an illustration series and product design endeavor in which he created bright and vibrant jewelry pieces in order to combat <span className="paragraphbig">toxic masculinity within the Hispanic community</span>. Jonathan describes his personal style includes <span className="paragraphbig">bright colors, loud </span></p>
                             </Col>
                             <Col md={4} xs={5}>
-                                <img className="singleimage" src={require("./pic5.png")}></img>
+                                <Draggable {...dragHandlers}>
+                                    <img className="cursor sticker3" draggable="false" src={require('../Pictures/Cover/generalpics/trianglesticker.png')} />
+                                </Draggable>
+                                <img style={{maxWidth:"100%"}} src={require("./pic5.png")}></img>
                             </Col>
                         </Row>
 
                         <Row className="regularrow" style={{marginTop:"-1rem"}}>
                             <Col>
-                            <p className="paragraph">style includes <span className="paragraphbig">bright colors, loud patterns, and textures</span>. He is inspired by @onlyjoke (Instagram) who also uses bright colors and shapes. For more details on this project and more of Jonathan’s work, check out his website.</p>
+                            <p className="paragraph"><span className="paragraphbig">patterns, and textures</span>. He is inspired by @onlyjoke (Instagram) who also uses bright colors and shapes. For more details on this project and more of Jonathan’s work, check out his website.</p>
                             </Col>
                         </Row>
 
