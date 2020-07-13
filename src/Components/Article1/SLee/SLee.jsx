@@ -79,23 +79,23 @@ class SLee extends Component{
 
                         <Row>
                             <Col>
-                                <p className="paragraph">	As a 2nd year Speculative Design major and an Urban Studies minor in UC San Diego, Sophia directs her creative talents on abstract art and speculative design. As a freshman, she entered UC San Diego as a Global Health Major. She later had a change of heart and decided to pursue speculative design. According to Sophia, UCSD has an amazing blend of science, technology, and art. These three elements are at the heart of what speculative design and of Sophia’s work. As a former student of an all-girl school, Sophia incorporates strong feminist elements in her work.</p>
+                                <p className="paragraph">	As a 2nd year Speculative Design major and an Urban Studies minor in UC San Diego, Sophia directs her creative talents on abstract art and speculative design. As a freshman, she entered UC San Diego as a Global Health Major. She later had a change of heart and decided to pursue speculative design. According to Sophia, UCSD has an amazing blend of <span className="paragraphbig">science, technology, and art</span>. These three elements are at the heart of what speculative design and of Sophia’s work. As a former student of an all-girl school, Sophia incorporates strong <span className="paragraphbig">feminist elements</span> in her work.</p>
                             </Col>
                         </Row>
 
-                        <Row>
-                            <Col>
+                        <Row className="regularrow">
+                            <Col md={9} xs={9}>
                                 <p className="paragraphbig">In her creative work, Sophia uses a plethora of editing and design software. </p>
                             </Col>
 
-                            <Col>
+                            <Col md={3} xs={3}>
                                 {/* STICKER HERE */}
                             </Col>
                         </Row>
                         
                         <Row style={{marginTop:"-1rem"}}>
                             <Col>
-                                <p className="paragraph">One of these is Autocad which is a 2D and 3D design software. She also uses Blender and Arduino Integrated Development Environment (IDE) software in which she wished that she had learned way earlier in her artistic journey in order to build up her proficiency for it. Through the classes that she takes in UC San Diego, such as Vis 147A and Vis 30, she develops her skills and takes inspiration from them. Feedback and conversations with professors in the same field are some of the important sources of help that Sophie gets. </p>
+                                <p className="paragraph">One of these is Autocad which is a 2D and 3D design software. She also uses Blender and Arduino Integrated Development Environment (IDE) software in which she wished that she had learned way earlier in her artistic journey in order to build up her proficiency for it. Through the classes that she takes in UC San Diego, such as Vis 147A and Vis 30, she develops her skills and takes inspiration from them. <span className="paragraphbig">Feedback and conversations with professors</span> in the same field are some of the important sources of help that Sophie gets. </p>
                             </Col>
                         </Row>
                         
@@ -107,7 +107,7 @@ class SLee extends Component{
 
                         <Row>
                             <Col>
-                                <p className="paragraph">As a fan of many different varieties of art and design, Sophia takes inspiration from artists Maia Ruth Lee and Lee Bul. Maia Ruth Lee is an artist that covers different types of mediums such as modeling or sculpting, and operates as the director of an art-focused non-profit organization called Wide Rainbow. Lee Bul is a contemporary sculpture artist; her work focuses on questioning patriarchal authority and the marginalization of women by exposing societal problems.</p>
+                                <p className="paragraph">As a fan of many different varieties of art and design, <span className="paragraphbig">Sophia takes inspiration from artists Maia Ruth Lee and Lee Bul</span>. Maia Ruth Lee is an artist that covers different types of mediums such as modeling or sculpting, and operates as the director of an art-focused non-profit organization called Wide Rainbow. Lee Bul is a contemporary sculpture artist; her work focuses on questioning patriarchal authority and the marginalization of women by exposing societal problems.</p>
                             </Col>
                         </Row>
                         
@@ -122,9 +122,9 @@ class SLee extends Component{
                             </Col>
                         </Row>
 
-                        <Row style={{marginBottom:"3rem"}}>
+                        <Row style={{marginTop:"-1rem", marginBottom:"3rem"}}>
                             <Col>
-                                <p className="paragraph">integrating architecture to the global warming crisis. Her passion in integrating green architecture with her creativity in specular design is what we need more in young designers. </p>
+                                <p className="paragraph">integrating architecture to the global warming crisis. Her <span className="paragraphbig">passion in integrating green architecture</span> with her creativity in specular design is what we need more in young designers. </p>
                             </Col>
                         </Row>
 
