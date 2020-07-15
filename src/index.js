@@ -33,6 +33,8 @@ import LIbarra from './Components/Article1/LIbarra/LIbarra';
 import SKato from './Components/Article1/SKato/SKato';
 import SLee from './Components/Article1/SLee/SLee';
 import JWolf from './Components/Article1/JWolf/JWolf';
+import ATam from './Components/Article1/ATam/ATam';
+import HLiner from './Components/Article1/HLiner/HLiner';
 //--------End of Spring Issue Redirects--------------//
 
 import { Redirect } from 'react-router-dom';
@@ -64,6 +66,8 @@ const AppComponent = () => {
           <Route exact path="/SKato" component={SKato}/>
           <Route exact path="/SLee" component={SLee}/>
           <Route exact path="/JWolf" component={JWolf}/>
+          <Route exact path="/ATam" component={ATam}/>
+          <Route exact path="/HLiner" component={HLiner}/>
         </Switch>
       </Route>
     </Switch>
