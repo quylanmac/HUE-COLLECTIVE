@@ -179,7 +179,7 @@ class JFunes extends Component{
                                 <Link to = {{
                                     pathname: "/RSinghal",
                                 }}>
-                                    <button className="nextbutton"><img className="upnext" src={require('../Pictures/Cover/RISHABH SINGHAL.png')} alt ="Sophia Lee" onClick={() => this.handleTheme("white")}></img></button>
+                                    <button className="nextbutton"><img className="upnext" src={require('../Pictures/Cover/RISHABH SINGHAL.png')} alt ="Rishabh Singhal" onClick={() => this.handleTheme("white")}></img></button>
                                 </Link>
                             </Col>
 
@@ -187,7 +187,7 @@ class JFunes extends Component{
                                 <Link to = {{
                                     pathname: "/HLiner",
                                 }}>
-                                    <button className="nextbutton"><img className="upnext" src={require('../Pictures/Cover/HARRY LINER.png')} alt ="Sophia Lee" onClick={() => this.handleTheme("white")}></img></button>
+                                    <button className="nextbutton"><img className="upnext" src={require('../Pictures/Cover/HARRY LINER.png')} alt ="Harry Liner" onClick={() => this.handleTheme("white")}></img></button>
                                 </Link>
                             </Col>
                         </Row>
