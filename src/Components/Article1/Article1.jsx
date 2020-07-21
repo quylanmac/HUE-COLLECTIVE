@@ -77,7 +77,7 @@ class Article1 extends Component {
                         }}>
                             <button class="profiles"><img src={require('./Pictures/Cover/JONATHAN FUNES.png')} alt ="Jonathan Funes" onClick={() => this.handleTheme("white")}></img></button>
                         </Link>
-                        </Col>
+                        </Col> 
                     <Col md={4}>
                         <Link to = {{
                             pathname: "/EOrta",
