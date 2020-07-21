@@ -1,0 +1,38 @@
+.rssticker1{
+    max-width: 10%;
+    left:-2%;
+    top:-10%;
+}
+
+.rssticker2{
+    max-width: 10%;
+    left:0;
+    bottom: -2%;
+}
+
+.rssticker3{
+    position: relative !important;
+    max-width: 20%;
+    left: 80%;
+    margin-top:-3rem;
+    bottom: 10%;
+}
+
+.rssticker4{
+    max-width: 20%;
+    bottom: -10%;
+    left:0;
+}
+
+@media (max-width:767px) {
+    .rssticker1{
+        left:0;
+        top:-2%;
+    }
+    .rssticker2{
+        max-width: 15%;
+    }
+    .rssticker4{
+        max-width: 25%;
+    }
+}

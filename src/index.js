@@ -35,6 +35,10 @@ import SLee from './Components/Article1/SLee/SLee';
 import JWolf from './Components/Article1/JWolf/JWolf';
 import ATam from './Components/Article1/ATam/ATam';
 import HLiner from './Components/Article1/HLiner/HLiner';
+import RSinghal from './Components/Article1/RSinghal/RSinghal';
+import ALee from './Components/Article1/ALee/ALee';
+import ERichards from './Components/Article1/ERichards/ERichards';
+import EOrta from './Components/Article1/EOrta/EOrta';
 //--------End of Spring Issue Redirects--------------//
 
 import { Redirect } from 'react-router-dom';
@@ -44,6 +48,7 @@ import { Provider, connect } from 'react-redux';
 import { Dispatch } from 'react-redux';
 import rootStore from './redux/stores';
 import Navbar from './Components/Navbar/Navbar';
+
 const AppComponent = () => {
   return (
     <Switch>
@@ -58,7 +63,7 @@ const AppComponent = () => {
           {/* Current blank page for articles */}
           <Route exact path="/article1" component={Article1}/>
           <Route exact path="/about" component={About}/>
-          <Route exact path="/issues" component={Issues}/>
+          <Route exact path="/issues" component={SP20}/>
           <Route exact path="/contact" component={Contact}/>
 
           <Route exact path="/JFunes" component={JFunes}/>
@@ -68,6 +73,10 @@ const AppComponent = () => {
           <Route exact path="/JWolf" component={JWolf}/>
           <Route exact path="/ATam" component={ATam}/>
           <Route exact path="/HLiner" component={HLiner}/>
+          <Route exact path="/RSinghal" component={RSinghal}/>
+          <Route exact path="/ALee" component={ALee}/>
+          <Route exact path="/ERichards" component={ERichards}/>
+          <Route exact path="/EOrta" component={EOrta}/>
         </Switch>
       </Route>
     </Switch>

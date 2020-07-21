@@ -17,6 +17,7 @@ class JFunes extends Component{
     }
     componentDidMount() {
         document.body.className = "lighttheme";
+        window.scrollTo(0,0);
     }
     componentWillUnmount() {
         document.body.className = "";
@@ -30,38 +31,41 @@ class JFunes extends Component{
         return (
             <Container>
                 <Row>
-                    {/* LEFT COLUMN */}
-                    <Col className="column1" xs={12} md={4}>
+                     {/* LEFT COLUMN */}
+                     <Col className="column1" xs={12} md={4}>
+                    <Row className="inner">
                         <Row>
                             <Link to = {{
                                         pathname: "/Article1",
                                     }}>
-                                        <button class="backarrow"><img src={require('../Pictures/Cover/generalpics/backbutton.svg')} /*alt ="Sophia Lee" onClick={() => this.handleTheme("white")}*/></img></button>
+                                        <img className="backarrow" src={require('../Pictures/Cover/generalpics/backbutton.png')}></img>
                                     </Link>
                         </Row>
                         <Row>
-                            <div>
+                            <Col>
                                 <img class="profile" src={profile} alt="profile"/>
-                            </div>
+                            </Col>
                         </Row>
                         <Row>
-                            <div className="name">
-                                <p>JONATHAN FUNES</p>
-                            </div>
-                            <div className="year">
-                                <p>Class of 2020</p>
-                            </div>
+                            <Col md={12}>
+                                <p className="name">JONATHAN FUNES</p>
+                            </Col>
+                            <Col md={12}>
+                                <p className="year">Class of 2020</p>
+                            </Col>
                             
                         </Row>
 
                         <Row>
-                            <a href="https://www.google.com"><img className="socials" src={require('../Pictures/Cover/generalpics/websitebutton.svg')}></img></a>
+                            <Col>
+                            <a href="www.funes-design.com"><img className="socials" src={require('../Pictures/Cover/generalpics/websitebutton.svg')}></img></a>
+                            </Col>
                         </Row>
                         <Row>
-                            <a href="https://www.instagram.com"><img className = "socials" src={require('../Pictures/Cover/generalpics/igbutton.svg')}></img></a>
+                            <Col>
+                            <a href="https://www.linkedin.com/in/jonathan-funes/"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
+                            </Col>
                         </Row>
-                        <Row>
-                            <a href="https://www.linkedin.com"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
                         </Row>
                     </Col>
                     <Col md={1}></Col>
@@ -69,13 +73,13 @@ class JFunes extends Component{
                     <Col className="column2" xs={12} md={7}>
 
                         <Row>
-                            <p className="role">GRAPHIC DESIGN</p>
+                            <Col><p className="role">GRAPHIC DESIGN</p></Col>
                         </Row>
                         
                         <Row>
                             <Col>
                             <Draggable {...dragHandlers}>
-                                <img className="cursor sticker1" draggable="false" src={require('../Pictures/Cover/generalpics/starsticker.png')} />
+                                <img className="cursor jfsticker1" draggable="false" src={require('../Pictures/Cover/generalpics/starsticker.png')} />
                             </Draggable>
                                 <p className="paragraph one">&emsp;&emsp; <span className="paragraphbig">M</span>eet Jonathan Funes, a <span className="paragraphbig">graphic designer</span> who turned his passion for art and self-expression into a successful career in design and illustration! His background in graphic design started in his high school advertisement design class, where he was exposed to Photoshop for the first time. He loved design and passionately <span className="paragraphbig">self studied</span> the basics of graphic design by  watching YouTube videos. Now, he is a graphic designer for University Centers and the creator of his own apparel.</p>
                             </Col>
@@ -99,13 +103,13 @@ class JFunes extends Component{
                             </Col>
                         </Row>
 
-                        <Row className="regularrow">
+                        <Row className="smallrow">
                             <Col>
                             <img style={{marginRight:"1rem", maxWidth:"30%"}}src={require('./pic1.png')}></img>
                             <img style={{marginRight:"1rem", maxWidth:"30%"}}src={require('./pic2.png')}></img>
                             <img style={{maxWidth:"30%"}}src={require('./pic3.png')}></img>
                             <Draggable {...dragHandlers}>
-                                <img className="cursor sticker2" draggable="false" src={require('../Pictures/Cover/generalpics/idkwhatthisissticker.png')} />
+                                <img className="cursor jfsticker2" draggable="false" src={require('../Pictures/Cover/generalpics/idkwhatthisissticker.png')} />
                             </Draggable>
                             </Col>
                         </Row>
@@ -129,7 +133,7 @@ class JFunes extends Component{
 
                         <Row className="regularrow">
                             <Col md={4} xs={4}>
-                            <img style={{maxWidth:"110%"}} src={require("./pic4.png")}></img>
+                            <img className="pic4" src={require("./pic4.png")}></img>
                             </Col>
 
                             <Col md={8} xs={8}> 
@@ -139,19 +143,19 @@ class JFunes extends Component{
 
                         <Row>
                             <Col md={8} xs={7}>
-                                <p className="paragraph">In his free time, Jonathan likes to be create <span className="paragraphbig">vector and freehand illustrations</span>. One of his projects titled, “Rings and Things,” is an illustration series and product design endeavor in which he created bright and vibrant jewelry pieces in order to combat <span className="paragraphbig">toxic masculinity within the Hispanic community</span>. Jonathan describes his personal style includes <span className="paragraphbig">bright colors, loud </span></p>
+                                <p className="paragraph">In his free time, Jonathan likes to be create <span className="paragraphbig">vector and freehand illustrations</span>. One of his projects titled, “Rings and Things,” is an illustration series and product design endeavor in which he created bright and vibrant jewelry pieces in order to combat <span className="paragraphbig">toxic masculinity within the Hispanic community</span>.</p>
                             </Col>
                             <Col md={4} xs={5}>
                                 <Draggable {...dragHandlers}>
-                                    <img className="cursor sticker3" draggable="false" src={require('../Pictures/Cover/generalpics/trianglesticker.png')} />
+                                    <img className="cursor jfsticker3" draggable="false" src={require('../Pictures/Cover/generalpics/trianglesticker.png')} />
                                 </Draggable>
-                                <img style={{maxWidth:"100%"}} src={require("./pic5.png")}></img>
+                                <img className="pic5" src={require("./pic5.png")}></img>
                             </Col>
                         </Row>
 
                         <Row className="regularrow" style={{marginTop:"-1rem"}}>
                             <Col>
-                            <p className="paragraph"><span className="paragraphbig">patterns, and textures</span>. He is inspired by @onlyjoke (Instagram) who also uses bright colors and shapes. For more details on this project and more of Jonathan’s work, check out his website.</p>
+                            <p className="paragraph"><span className="paragraphbig"> Jonathan describes his personal style includes <span className="paragraphbig">bright colors, loud </span>patterns, and textures</span>. He is inspired by @onlyjoke (Instagram) who also uses bright colors and shapes. For more details on this project and more of Jonathan’s work, check out his website.</p>
                             </Col>
                         </Row>
 
