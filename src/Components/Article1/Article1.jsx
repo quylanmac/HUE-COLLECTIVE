@@ -16,12 +16,14 @@ class Article1 extends Component {
     }
     componentDidMount() {
         document.body.className = "lighttheme";
+        this.props.setTheme('white');
+
         window.scrollTo(0,0);
     };
     
     componentWillUnmount() {
         document.body.className = "";
-        this.props.setTheme('white');
+        this.props.setTheme('black');
     };
     handleTheme(theme) {
         this.props.setTheme(theme);

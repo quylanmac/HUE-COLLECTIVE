@@ -18,10 +18,12 @@ class JFunes extends Component{
     componentDidMount() {
         document.body.className = "lighttheme";
         window.scrollTo(0,0);
+        this.props.setTheme('white');
+
     }
     componentWillUnmount() {
         document.body.className = "";
-        this.props.setTheme('white');
+        this.props.setTheme('black');
     }
     handleTheme(theme) {
         this.props.setTheme(theme);
