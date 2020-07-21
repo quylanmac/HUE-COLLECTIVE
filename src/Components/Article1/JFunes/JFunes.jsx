@@ -145,7 +145,7 @@ class JFunes extends Component{
 
                         <Row>
                             <Col md={8} xs={7}>
-                                <p className="paragraph">In his free time, Jonathan likes to be create <span className="paragraphbig">vector and freehand illustrations</span>. One of his projects titled, “Rings and Things,” is an illustration series and product design endeavor in which he created bright and vibrant jewelry pieces in order to combat <span className="paragraphbig">toxic masculinity within the Hispanic community</span>.</p>
+                                <p className="paragraph">In his free time, Jonathan likes to be create <span className="paragraphbig">vector and freehand illustrations</span>. One of his projects titled, “Rings and Things,” is an illustration series and product design endeavor in which he created bright and vibrant jewelry pieces in order to combat <span className="paragraphbig">toxic masculinity within the Hispanic community. </span>Jonathan describes</p>
                             </Col>
                             <Col md={4} xs={5}>
                                 <Draggable {...dragHandlers}>
@@ -157,7 +157,7 @@ class JFunes extends Component{
 
                         <Row className="regularrow" style={{marginTop:"-1rem"}}>
                             <Col>
-                            <p className="paragraph"><span className="paragraphbig"> Jonathan describes his personal style includes <span className="paragraphbig">bright colors, loud </span>patterns, and textures</span>. He is inspired by @onlyjoke (Instagram) who also uses bright colors and shapes. For more details on this project and more of Jonathan’s work, check out his website.</p>
+                            <p className="paragraph"> his personal style includes <span className="paragraphbig">bright colors, loud patterns, and textures</span>. He is inspired by @onlyjoke (Instagram) who also uses bright colors and shapes. For more details on this project and more of Jonathan’s work, check out his website.</p>
                             </Col>
                         </Row>
 
