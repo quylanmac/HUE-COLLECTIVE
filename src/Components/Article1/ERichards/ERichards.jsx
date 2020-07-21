@@ -60,12 +60,12 @@ class ERichards extends Component{
 
                         <Row>
                             <Col>
-                            <a href="https://www.linkedin.com/in/eric-richards/"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
+                            <a href="https://www.linkedin.com/in/eric-richards/" target="_blank"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
                             </Col>
                         </Row>
                         <Row>
                             <Col>
-                            <a href="https://www.atutu.org/"><img className="socials" src={require('../Pictures/Cover/generalpics/atutu.svg')}></img></a>
+                            <a href="https://www.atutu.org/" target="_blank"><img className="socials" src={require('../Pictures/Cover/generalpics/atutu.svg')}></img></a>
                             </Col>
                         </Row>
                         </Row>

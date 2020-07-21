@@ -60,7 +60,7 @@ class SKato extends Component{
 
                         <Row>
                             <Col>
-                            <a href="https://www.linkedin.com/in/sophia-kato-861605194/"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
+                            <a href="https://www.linkedin.com/in/sophia-kato-861605194/" target="_blank"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
                             </Col>
                         </Row>
                         </Row>

@@ -60,7 +60,7 @@ class HLiner extends Component{
 
                         <Row>
                             <Col>
-                            <a href="https://www.linkedin.com/in/harry-liner-204000193/"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
+                            <a href="https://www.linkedin.com/in/harry-liner-204000193/" target="_blank"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
                             </Col>
                         </Row>
                         </Row>

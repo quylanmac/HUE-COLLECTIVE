@@ -60,12 +60,12 @@ class RSinghal extends Component{
 
                         <Row>
                             <Col>
-                            <a href="https://risingha.wixsite.com/rsinghal-portfolio"><img className="socials" src={require('../Pictures/Cover/generalpics/websitebutton.svg')}></img></a>
+                            <a href="https://risingha.wixsite.com/rsinghal-portfolio" target="_blank"><img className="socials" src={require('../Pictures/Cover/generalpics/websitebutton.svg')}></img></a>
                             </Col>
                         </Row>
                         <Row>
                             <Col>
-                            <a href="https://www.linkedin.com/in/rishabh-singhal/"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
+                            <a href="https://www.linkedin.com/in/rishabh-singhal/" target="_blank"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
                             </Col>
                         </Row>
                         </Row>

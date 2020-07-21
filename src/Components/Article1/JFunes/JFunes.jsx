@@ -60,12 +60,12 @@ class JFunes extends Component{
 
                         <Row>
                             <Col>
-                            <a href="https://www.funes-design.com"><img className="socials" src={require('../Pictures/Cover/generalpics/websitebutton.svg')}></img></a>
+                            <a href="https://www.funes-design.com" target="_blank"><img className="socials" src={require('../Pictures/Cover/generalpics/websitebutton.svg')}></img></a>
                             </Col>
                         </Row>
                         <Row>
                             <Col>
-                            <a href="https://www.linkedin.com/in/jonathan-funes/"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
+                            <a href="https://www.linkedin.com/in/jonathan-funes/" target="_blank"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
                             </Col>
                         </Row>
                         </Row>

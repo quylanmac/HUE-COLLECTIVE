@@ -60,7 +60,7 @@ class ATam extends Component{
 
                         <Row>
                             <Col>
-                            <a href="https://www.linkedin.com/in/alicia-tam/"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
+                            <a href="https://www.linkedin.com/in/alicia-tam/" target="_blank"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
                             </Col>
                         </Row>
                         </Row>
