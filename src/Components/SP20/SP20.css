@@ -111,17 +111,17 @@
 @media (max-width: 767px) {
     .stickerBox {
         position: absolute;
-        bottom: -45%;
+        bottom: -42.5%;
         left: 0%;
     }
     .stickerBox2 {
         position: absolute;
-        bottom: -45%;
+        bottom: -42.5%;
         left: 33.3%;
     }
     .stickerBox3 {
         position: absolute;
-        bottom: -45%;
+        bottom: -42.5%;
         left: 66.6%;
     }
     .stickerBox img {
