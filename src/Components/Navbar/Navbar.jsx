@@ -9,7 +9,7 @@ const mapStateToProps = (state) => {
     return { color: state.color, theme: state.theme };
 }
 const Navbar = ({ color, theme }) => {
-     const [redirect, redirectTo] = useState('/index');
+     const [redirect, redirectTo] = useState(null);
     const [myColor, setColor] = useState("white");
     const [myTheme, setTheme] = useState("black");
     useEffect(() => {
@@ -24,11 +24,15 @@ const Navbar = ({ color, theme }) => {
             setTheme(theme.content);
             }
         }
+        if (redirect != null) {
+            redirectTo(null);
+        }
     }, [theme]);
 
    
     return (
         <div>
+            {redirect && <Redirect to={redirect} /> }
            {console.log(myTheme)}
             <NavBar className={myTheme === "white" ? 'myNav2': 'myNav'} expand="lg">
                 <NavBar.Brand className="navBrand" onClick={() => redirectTo('/index')}>
@@ -58,7 +62,7 @@ const Navbar = ({ color, theme }) => {
                 </Nav>
                 </NavBar.Collapse>
             </NavBar>
-            <Redirect to={redirect} />
+            
         </div>
     )
 
