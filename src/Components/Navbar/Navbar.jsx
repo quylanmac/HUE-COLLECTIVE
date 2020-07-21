@@ -35,7 +35,7 @@ const Navbar = ({ color, theme }) => {
             {redirect && <Redirect to={redirect} /> }
            {console.log(myTheme)}
             <NavBar className={myTheme === "white" ? 'myNav2': 'myNav'} expand="lg">
-                <NavBar.Brand className="navBrand" onClick={() => redirectTo('/index')}>
+                <NavBar.Brand className="navBrand" onClick={() => redirectTo('/')}>
                     <div className="overlay">
                         <div className="overlay-2">
                             <p className="secondaryLogo" style={{ color: myColor }}>HUE</p>
