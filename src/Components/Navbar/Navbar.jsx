@@ -5,6 +5,8 @@ import { Redirect } from 'react-router-dom';
 import { rootState } from '../../redux/reducers';
 import { connect } from 'react-redux';
 import './Navbar.css';
+import BlackLogo from '../../img/SP20/BlackLogo.png';
+import WhiteLogo from '../../img/SP20/WhiteLogo.png';
 const mapStateToProps = (state) => {
     return { color: state.color, theme: state.theme };
 }
@@ -33,17 +35,18 @@ const Navbar = ({ color, theme }) => {
     return (
         <div>
             {redirect && <Redirect to={redirect} /> }
-           {console.log(myTheme)}
+           
             <NavBar className={myTheme === "white" ? 'myNav2': 'myNav'} expand="lg">
                 <NavBar.Brand className="navBrand" onClick={() => redirectTo('/')}>
-                    <div className="overlay">
+                    {/* <div className="overlay">
                         <div className="overlay-2">
                             <p className="secondaryLogo" style={{ color: myColor }}>HUE</p>
                         </div>
                         <div class="overlay-1">
                             <p className="mainLogo" style={{ color: myColor }}>HUE</p>
                         </div>
-                    </div>
+                    </div> */}
+                    {myTheme === "white" ? <img src={BlackLogo} className="imgTest"/> : <img src={WhiteLogo} className="imgTest"/>}
 
                 </NavBar.Brand>
                 <NavBar.Toggle aria-controls="responsive-navbar-nav" />
