@@ -17,6 +17,7 @@ class LIbarra extends Component{
     }
     componentDidMount() {
         document.body.className = "lighttheme";
+        window.scrollTo(0,0);
     }
     componentWillUnmount() {
         document.body.className = "";
@@ -30,41 +31,33 @@ class LIbarra extends Component{
         return (
             <Container>
                 <Row>
-                    {/* LEFT COLUMN */}
-                    <Col className="column1" xs={12} md={4}>
+                     {/* LEFT COLUMN */}
+                     <Col className="column1" xs={12} md={4}>
+                    <Row className="inner">
                         <Row>
                             <Link to = {{
                                         pathname: "/Article1",
                                     }}>
-                                        <button class="backarrow"><img src={require('../Pictures/Cover/generalpics/backbutton.svg')} /*alt ="Sophia Lee" onClick={() => this.handleTheme("white")}*/></img></button>
+                                        <img className="backarrow" src={require('../Pictures/Cover/generalpics/backbutton.png')}></img>
                                     </Link>
                         </Row>
                         <Row>
-                            <div>
+                            <Col>
                                 <img class="profile" src={profile} alt="profile"/>
-                            </div>
+                            </Col>
                         </Row>
                         <Row>
-                            <div className="name">
-                                <p>LAUREN IBARRA</p>
-                            </div>
-                            <div className="year">
-                                <p>Class of 2020</p>
-                            </div>
+                            <Col md={12}>
+                                <p className="name">LAUREN IBARRA</p>
+                            </Col>
+                            <Col md={12}>
+                                <p className="year">Class of 2020</p>
+                            </Col>
                             
                         </Row>
 
-                        <Row>
-                            <a href="https://www.google.com"><img className="socials" src={require('../Pictures/Cover/generalpics/websitebutton.svg')}></img></a>
-                        </Row>
-                        <Row>
-                            <a href="https://www.instagram.com"><img className = "socials" src={require('../Pictures/Cover/generalpics/igbutton.svg')}></img></a>
-                        </Row>
-                        <Row>
-                            <a href="https://www.linkedin.com"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
                         </Row>
                     </Col>
-
                     {/* White Column Space */}
                     <Col md={1}></Col>
 
@@ -81,23 +74,25 @@ class LIbarra extends Component{
                         <Row className="regularrow">
                             <Col>
                                 <Draggable {...dragHandlers}>
-                                    <img className="cursor sticker1" draggable="false" src={require('../Pictures/Cover/generalpics/emeraldsticker.png')} />
+                                    <img className="cursor listicker1" draggable="false" src={require('../Pictures/Cover/generalpics/emeraldsticker.png')} />
                                 </Draggable>
                                 <p className="paragraph">&emsp;&emsp;&emsp;Lauren Ibarra is a UCSD student majoring in Biochemistry, and has found a calling in <span className="paragraphbig">health education</span>. During high school, Lauren founded a literacy-promotion campaign, exposing her to the discipline of service design.  From this initial exposure, her interest in raising up others bloomed into her current goal of creating <span className="paragraphbig">preventative health measures for underrepresented people</span> in our society.</p>
                             </Col>
                         </Row>
 
                         <Row className="regularrow">
+                        <Col>
                             <img style={{maxWidth:"100%"}} src={require('./pic1.png')}></img>
                             <Draggable {...dragHandlers}>
-                                <img className="cursor sticker2" draggable="false" src={require('../Pictures/Cover/generalpics/beesticker.png')} />
+                                <img className="cursor listicker2" draggable="false" src={require('../Pictures/Cover/generalpics/beesticker.png')} />
                             </Draggable>
                             <Draggable {...dragHandlers}>
-                                <img className="cursor sticker3" draggable="false" src={require('../Pictures/Cover/generalpics/beesticker.png')} />
+                                <img className="cursor listicker3" draggable="false" src={require('../Pictures/Cover/generalpics/beesticker.png')} />
                             </Draggable>
                             <Draggable {...dragHandlers}>
-                                <img className="cursor sticker4" draggable="false" src={require('../Pictures/Cover/generalpics/beesticker.png')} />
+                                <img className="cursor listicker4" draggable="false" src={require('../Pictures/Cover/generalpics/beesticker.png')} />
                             </Draggable>
+                            </Col>
                         </Row>
 
                         <Row>
@@ -109,7 +104,7 @@ class LIbarra extends Component{
                         <Row>
                             <Col md={4} xs={5}>
                             <Draggable {...dragHandlers}>
-                                <img className="cursor sticker5" draggable="false" src={require('../Pictures/Cover/generalpics/starsticker.png')} />
+                                <img className="cursor listicker5" draggable="false" src={require('../Pictures/Cover/generalpics/starsticker.png')} />
                             </Draggable>
                                 <img style={{maxWidth:"100%"}} src={require('./pic2.png')}></img>
                                 
@@ -118,7 +113,7 @@ class LIbarra extends Component{
                             <Col md={8} xs={7}>
                                 <p className="paragraphbig">In her experience, Lauren found it best to push her younger students rather than allowing educators’ pre-existing biases about disadvantaged communities limit their curriculum.</p>
                                 <Draggable {...dragHandlers}>
-                                    <img className="cursor sticker6" draggable="false" src={require('../Pictures/Cover/generalpics/leafsticker.png')} />
+                                    <img className="cursor listicker6" draggable="false" src={require('../Pictures/Cover/generalpics/leafsticker.png')} />
                                 </Draggable>
                             </Col>
 
@@ -133,13 +128,13 @@ class LIbarra extends Component{
                         <Row className="regularrow">
                             <Col md={3} xs={3}>
                             <Draggable {...dragHandlers}>
-                                    <img className="cursor sticker7" draggable="false" src={require('../Pictures/Cover/generalpics/housesticker.png')} />
+                                    <img className="cursor listicker7" draggable="false" src={require('../Pictures/Cover/generalpics/housesticker.png')} />
                                 </Draggable>
                             </Col>
 
                             <Col md={9} xs={9}>
                             <Draggable {...dragHandlers}>
-                                    <img className="cursor sticker8" draggable="false" src={require('../Pictures/Cover/generalpics/flowersticker.png')} />
+                                    <img className="cursor listicker8" draggable="false" src={require('../Pictures/Cover/generalpics/flowersticker.png')} />
                                 </Draggable>
                                 <p style={{marginTop:"4rem"}} className="paragraphbig">Balancing between her demands as a pre-med student and a designer, Lauren advises that it’s better to pursue your passions, rather than following someone else’s path.</p>
                             </Col>

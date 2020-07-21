@@ -17,6 +17,7 @@ class ATam extends Component{
     }
     componentDidMount() {
         document.body.className = "lighttheme";
+        window.scrollTo(0,0);
     }
     componentWillUnmount() {
         document.body.className = "";
@@ -31,37 +32,35 @@ class ATam extends Component{
             <Container>
                 <Row>
                     {/* LEFT COLUMN */}
-                    <Col className="column1" xs={12} md={4}>
+                     <Col className="column1" xs={12} md={4}>
+                    <Row className="inner">
                         <Row>
                             <Link to = {{
                                         pathname: "/Article1",
                                     }}>
-                                        <button class="backarrow"><img src={require('../Pictures/Cover/generalpics/backbutton.svg')}></img></button>
+                                        <img className="backarrow" src={require('../Pictures/Cover/generalpics/backbutton.png')}></img>
                                     </Link>
                         </Row>
                         <Row>
-                            <div>
+                            <Col>
                                 <img class="profile" src={profile} alt="profile"/>
-                            </div>
+                            </Col>
                         </Row>
                         <Row>
-                            <div className="name">
-                                <p>Alicia Tam</p>
-                            </div>
-                            <div className="year">
-                                <p>Class of 2021</p>
-                            </div>
+                            <Col md={12}>
+                                <p className="name">ALICIA TAM</p>
+                            </Col>
+                            <Col md={12}>
+                                <p className="year">Class of 2020</p>
+                            </Col>
                             
                         </Row>
 
                         <Row>
-                            <a href="https://www.google.com"><img className="socials" src={require('../Pictures/Cover/generalpics/websitebutton.svg')}></img></a>
+                            <Col>
+                            <a href="https://www.linkedin.com/in/alicia-tam/"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
+                            </Col>
                         </Row>
-                        <Row>
-                            <a href="https://www.instagram.com"><img className = "socials" src={require('../Pictures/Cover/generalpics/igbutton.svg')}></img></a>
-                        </Row>
-                        <Row>
-                            <a href="https://www.linkedin.com"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
                         </Row>
                     </Col>
                     <Col md={1}></Col>
@@ -69,7 +68,9 @@ class ATam extends Component{
                     <Col className="column2" xs={12} md={7}>
 
                         <Row>
+                            <Col>
                             <p className="role">ARCHITECTURE</p>
+                            </Col>
                         </Row>
                         
                         <Row>
@@ -78,19 +79,21 @@ class ATam extends Component{
                             </Col>
                         </Row>
 
-                        <Row className="regularrow">
+                        <Row>
                             <Col>
                                 <p className="paragraph">According to Alicia,</p>
                             </Col>
                         </Row>
 
-                        <Row className="regularrow">
+                        <Row className="smallrow">
                             <Col md={3} xs={3}>
-                                {/* STICKER HERE  */}
+                                <Draggable {...dragHandlers}>
+                                    <img className="cursor atsticker1" draggable="false" src={require('../Pictures/Cover/generalpics/starsticker.png')} />
+                                </Draggable>
                             </Col>
 
                             <Col md={9} xs={9}>
-                                <p className="paragraphbig">Spec design can encompass most any field; she says, “you can design at any scale, [any] medium.”</p>
+                                <p className="paragraphbig" style={{marginTop:"2rem"}}>Spec design can encompass most any field; she says, “you can design at any scale, [any] medium.”</p>
                             </Col>
                         </Row>
 
@@ -100,13 +103,36 @@ class ATam extends Component{
                             </Col>
 
                             <Col md={3} xs={3}>
-                                {/* STICKERS HERE */}
+                                {/* <Row>
+                                <Col> */}
+                                    <Draggable {...dragHandlers}>
+                                        <img className="cursor atsticker2" draggable="false" src={require('../Pictures/Cover/generalpics/purplegem.png')} />
+                                    </Draggable>
+                                    {/* </Col>
+                                </Row>
+                                <Row>
+                                <Col> */}
+                                    <Draggable {...dragHandlers}>
+                                        <img className="cursor atsticker3" draggable="false" src={require('../Pictures/Cover/generalpics/trianglesticker.png')} />
+                                    </Draggable>
+                                    {/* </Col>
+                                </Row>
+                                <Row> 
+                                <Col> */}
+                                    <Draggable {...dragHandlers}>
+                                        <img className="cursor atsticker4" draggable="false" src={require('../Pictures/Cover/generalpics/emeraldsticker.png')} />
+                                    </Draggable>
+                                    {/* </Col>
+                                </Row> */}
                             </Col>
                         </Row>
                        
                        <Row className="regularrow">
                            <Col>
-                               <img style={{marginLeft:"5rem" ,maxWidth:"80%"}} src={require('./pic1.png')}></img>
+                           <Draggable {...dragHandlers}>
+                                        <img className="cursor atsticker5" draggable="false" src={require('../Pictures/Cover/generalpics/rainbowsticker.png')} />
+                                    </Draggable>
+                               <img className="pic1" src={require('./pic1.png')}></img>
                            </Col>
                        </Row>
 
@@ -125,7 +151,10 @@ class ATam extends Component{
 
                        <Row>
                            <Col md={6} xs={6}>
-                               <img style={{maxWidth:"100%"}} src={require('./pic2.png')}></img>
+                               <img className="pic2" src={require('./pic2.png')}></img>
+                               <Draggable {...dragHandlers}>
+                                        <img className="cursor atsticker6" draggable="false" src={require('../Pictures/Cover/generalpics/flowersticker.png')} />
+                                    </Draggable>
                            </Col>
 
                            <Col md={6} xs={6}>

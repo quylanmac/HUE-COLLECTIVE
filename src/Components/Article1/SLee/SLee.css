@@ -1,0 +1,40 @@
+.slsticker1{
+    position: relative !important;
+    max-width: 100%;
+}
+
+.slsticker2{
+    max-width: 8%;
+    bottom: -5%;
+    right: 1%;
+}
+
+.slsticker3{
+    max-width: 20%;
+    left:0;
+    top:-5%;
+}
+
+.slsticker4{
+    max-width: 30%;
+    position: relative;
+    left: 50%;
+    margin-top: -3rem;
+}
+.spic2{
+    max-width: 100%;
+}
+
+@media (max-width:767px) {
+    .slsticker1{
+        top:20%;
+    }
+    .slsticker3{
+        left:5%;
+        top:10%;
+    }
+    .spic2{
+        /* margin-right: 1rem; */
+        margin-top: 4rem;
+    }
+}

@@ -17,6 +17,7 @@ class SKato extends Component{
     }
     componentDidMount() {
         document.body.className = "lighttheme";
+        window.scrollTo(0,0);
     }
     componentWillUnmount() {
         document.body.className = "";
@@ -26,44 +27,42 @@ class SKato extends Component{
         this.props.setTheme(theme);
     }
     render() {
+        const dragHandlers = { onStart: this.onStart, onStop: this.onStop };
         return (
             <Container>
                 <Row>
-                    {/* LEFT COLUMN */}
-                    <Col className="column1" xs={12} md={4}>
+                     {/* LEFT COLUMN */}
+                     <Col className="column1" xs={12} md={4}>
+                    <Row className="inner">
                         <Row>
                             <Link to = {{
                                         pathname: "/Article1",
                                     }}>
-                                        <button class="backarrow"><img src={require('../Pictures/Cover/generalpics/backbutton.svg')} /*alt ="Sophia Lee" onClick={() => this.handleTheme("white")}*/></img></button>
+                                        <img className="backarrow" src={require('../Pictures/Cover/generalpics/backbutton.png')}></img>
                                     </Link>
                         </Row>
                         <Row>
-                            <div>
+                            <Col>
                                 <img class="profile" src={profile} alt="profile"/>
-                            </div>
+                            </Col>
                         </Row>
                         <Row>
-                            <div className="name">
-                                <p>SOPHIE KATO</p>
-                            </div>
-                            <div className="year">
-                                <p>Class of 2022</p>
-                            </div>
+                            <Col md={12}>
+                                <p className="name">SOPHIE KATO</p>
+                            </Col>
+                            <Col md={12}>
+                                <p className="year">Class of 2022</p>
+                            </Col>
                             
                         </Row>
 
                         <Row>
-                            <a href="https://www.google.com"><img className="socials" src={require('../Pictures/Cover/generalpics/websitebutton.svg')}></img></a>
+                            <Col>
+                            <a href="https://www.linkedin.com/in/sophia-kato-861605194/"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
+                            </Col>
                         </Row>
-                        <Row>
-                            <a href="https://www.instagram.com"><img className = "socials" src={require('../Pictures/Cover/generalpics/igbutton.svg')}></img></a>
-                        </Row>
-                        <Row>
-                            <a href="https://www.linkedin.com"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
                         </Row>
                     </Col>
-
                     {/* White Column Space */}
                     <Col md={1}></Col>
 
@@ -79,78 +78,96 @@ class SKato extends Component{
 
                         <Row>
                             <Col>
-                                <p className="paragraph">&emsp;&emsp;Sophie Kato, a 2nd year Sociology and Urban Planning major at UC San Diego, is an advocate of Urban Design and all its environmentally friendly applications. Sophie added Sociology as a double major to someday help people plan how to use public space and be critical of its socioeconomic impact in communities. She explores her interest in social and spatial arrangement, learning how they interact and overlap with each other. </p>
+                            <Draggable {...dragHandlers}>
+                                    <img className="cursor sksticker1" draggable="false" src={require('../Pictures/Cover/generalpics/randomsticker.png')} />
+                            </Draggable>
+                                <p className="paragraph">&emsp;&emsp;&emsp;Sophie Kato, a 2nd year Sociology and Urban Planning major at UC San Diego, is an advocate of Urban Design and all its <span className="paragraphbig">environmentally friendly</span> applications. Sophie added Sociology as a double major to someday help people plan how to use <span className="paragraphbig">public space</span> and be critical of its <span className="paragraphbig">socioeconomic impact</span> in communities. She explores her interest in social and spatial arrangement, learning how they interact and overlap with each other. </p>
                             </Col>
                         </Row>
 
                         <Row>
                             <Col>
-                                <p className="paragraph">She is also a big proponent of the Urban Studies and Planning (USP) approach because they recognize the nuances of spatial elements that Architecture does not fully address. For those who have never heard of USP before, Sophie describes it as a way of elaborating and exploring the relationship between spatial and built environments, especially in the context of how our cities and towns influence everything around it and how we could improve it.</p>
+                                <p className="paragraph">She is also a big proponent of the Urban Studies and Planning (USP) approach because they recognize the <span className="paragraphbig">nuances of spatial elements</span> that Architecture does not fully address. For those who have never heard of USP before, Sophie describes it as a way of elaborating and exploring the <span className="paragraphbig">relationship between spatial and built environments</span>, especially in the context of how our cities and towns influence everything around it and how we could improve it.</p>
                             </Col>
                         </Row>
 
-                        <Row>
+                        <Row className="smallrow">
+                            <Col>
                                 <img className="doubleimage" style={{maxWidth:"30%"}} src={require('./pic1.png')}></img>
                                 <img style={{maxWidth:"40%"}} src={require('./pic2.png')}></img>
-                        </Row>
-
-                        <Row>
-                            <Col>
-                                <p className="paragraph">Sophie became an intern for the San Diego Department of Transportation, where she wanted to lower the dependence on cars as a means of travel. This internship focused on changing the narrative on car dependency through creating safer and enjoyable spaces for pedestrians and micro-mobility users in cities and small communities in San Diego.</p>
+                                <Draggable {...dragHandlers}>
+                                    <img className="cursor sksticker2" draggable="false" src={require('../Pictures/Cover/generalpics/randomsticker2.png')} />
+                                </Draggable>
                             </Col>
                         </Row>
 
                         <Row>
-                            <Col md={4} xs={8}>
-                                    {/* STICKER HERE */}
+                            <Col>
+                                <p className="paragraph">Sophie became an intern for the San Diego Department of Transportation, where she wanted to <span className="paragraphbig">lower the dependence on cars</span> as a means of travel. This internship focused on changing the narrative on car dependency through creating safer and enjoyable spaces for pedestrians and micro-mobility users in cities and small communities in San Diego.</p>
+                            </Col>
+                        </Row>
+
+                        <Row>
+                            <Col md={4} xs={4}>
+                            <Draggable {...dragHandlers}>
+                                    <img className="cursor sksticker3" draggable="false" src={require('../Pictures/Cover/generalpics/plantsticker.png')} />
+                                </Draggable>
                             </Col>
 
                             <Col md={8} xs={8}>
-                                <p className="paragraphbig">When it comes to Urban Planning, Sophie believes in placing the environment and people at the center of the design.</p>
+                                <p className="paragraphbig" style={{marginTop:"3rem"}}>When it comes to Urban Planning, Sophie believes in placing the environment and people at the center of the design.</p>
                             </Col>
                         </Row>
 
                         <Row>
                             <Col>
-                                <p className="paragraph">By decreasing the dependence of the community on automobiles as the primary mode of transportation and increasing the availability of space for people to walk in, she is getting closer to her interest in abstract creative work to integrate informal green space.</p>
+                                <p className="paragraph">By <span className="paragraphbig">decreasing the dependence</span> of the community on automobiles as the primary mode of transportation and increasing the <span className="paragraphbig">availability of space</span> for people to walk in, she is getting closer to her interest in abstract creative work to integrate <span className="paragraphbig">informal green space</span>.</p>
                             </Col>
                         </Row>
 
-                        <Row>
+                        <Row className="smallrow">
                             <Col>
+                            <Draggable {...dragHandlers}>
+                                    <img className="cursor sksticker4" draggable="false" src={require('../Pictures/Cover/generalpics/purplegem.png')} />
+                                </Draggable>
                                 <img style={{maxWidth:"100%"}}src={require('./pic3.png')}></img>
                             </Col>
                         </Row>
 
                         <Row>
                             <Col>
-                                <p className="paragraph">One of her inspirations for her work is The Death and Life of Great American Cities, a book by writer and activist Jane Jacobs. Jacobs’ book theorizes on what makes sidewalks and walking spaces in neighborhoods ideal. In the book, Jacobs presents her criticism about the Urban Planning policy in the 1950’s which is primarily responsible for the decline of neighborhoods in the United States. Jacobs’ advocacy of Urban Planning on a human scale can be seen in Sophie’s mentality.</p>
+                                <p className="paragraph">One of her inspirations for her work is <span className="paragraphbig">The Death and Life of Great American Cities</span>, a book by writer and activist Jane Jacobs. Jacobs’ book theorizes on what makes sidewalks and walking spaces in <span className="paragraphbig">neighborhoods</span> ideal. In the book, Jacobs presents her criticism about the Urban Planning policy in the 1950’s which is primarily responsible for the decline of neighborhoods in the United States. Jacobs’ advocacy of Urban Planning on a <span className="paragraphbig">human scale</span> can be seen in Sophie’s mentality.</p>
                             </Col>
                         </Row>
                         
-                        <Row className="regularrow">
+                        <Row className="smallrow">
                             <Col md={4} xs={4}>
-                                <img style={{maxWidth:"90%"}} src={require('./pic4.png')}></img>
+                            <Draggable {...dragHandlers}>
+                                    <img className="cursor sksticker5" draggable="false" src={require('../Pictures/Cover/generalpics/shootingstarsticker.png')} />
+                                </Draggable>
+                                <img className="pic4" src={require('./pic4.png')}></img>
                             </Col>
 
                             <Col md={8} xs={8}>
-                                <p style={{marginTop:"2rem"}} className="paragraphbig">Urban design is very important for Sophie because in this age where everything is digitized, it is easy to lose sight of the nuances of design that can benefit the community and the environment at the same time.</p>
+                                <p style={{marginTop:"3rem"}} className="paragraphbig">Urban design is very important for Sophie because in this age where everything is digitized, it is easy to lose sight of the nuances of design that can benefit the community and the environment at the same time.</p>
                             </Col>
                         </Row>
 
                         <Row>
                             <Col>
-                                <p className="paragraph">Along with this, she talks about the problems of stratification of communities:  “what can go where, depends on how we communicate and how stratification and hierarchies are reinforced.” This presents the problem of stratification, according to her, “...land use determines what kind of industries and structure goes where.” The main hurdle for Sophie’s work is stratification that creates inaccessible land. She strives for promoting equity and creativeness with an emphasis on environmentally friendly designs, since common trends in Urban Design can result in gentrification, further perpetuating the inequalities of land use.</p>
+                                <p className="paragraph">Along with this, she talks about the problems of <span className="paragraphbig">stratification</span> of communities:  “what can go where, depends on how we communicate and how stratification and hierarchies are reinforced.” This presents the problem of stratification, according to her, “<span className="paragraphbig">...land use</span> determines what kind of industries and structure goes where.” The main hurdle for Sophie’s work is stratification that creates <span className="paragraphbig">inaccessible land</span>. She strives for promoting equity and creativeness with an emphasis on <span className="paragraphbig">environmentally friendly designs</span>, since common trends in Urban Design can result in gentrification, further perpetuating the inequalities of land use.</p>
                             </Col>
                         </Row>
 
                         <Row className="regularrow">
                             <Col md={9} xs={9}>
-                                <p className="paragraph">For those just starting out, Sophie recommends to learn and take everything in. The best thing to do is keep an open eye to your environment and space, while being critical of how it could be improved.</p>
+                                <p className="paragraph">For those just starting out, Sophie recommends to learn and take everything in. The best thing to do is keep an <span className="paragraphbig">open eye to your environment and space</span>, while being critical of how it could be improved.</p>
                             </Col>
 
                             <Col md={3} xs={3}>
-                                    {/* STICKER HERE */}
+                            <Draggable {...dragHandlers}>
+                                    <img className="cursor sksticker6" draggable="false" src={require('../Pictures/Cover/generalpics/beesticker.png')} />
+                                </Draggable>
                             </Col>
                         </Row>
 

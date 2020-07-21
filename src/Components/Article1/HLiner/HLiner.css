@@ -1,0 +1,54 @@
+.hlsticker1{
+    position: relative !important;
+    max-width: 100%;
+    top: 5%;
+}
+.hlsticker2{
+    position: relative !important;
+    max-width: 20%;
+    left:80%;
+    margin-top: -1rem;
+}
+
+.hlsticker3{
+    position: relative !important;
+    max-width: 70%;
+    top: 30%;
+    left: 0;
+}
+
+.hlsticker4{
+    max-width: 13%;
+    bottom: -10%;
+    left:10%;
+}
+
+.hlsticker5{
+    position: relative !important;
+    max-width: 100%;
+    top:0;
+}
+
+.hlsticker6{
+    position: relative !important;
+    max-width: 100%;
+}
+.pic1{
+    max-width: 80%;
+    margin-left: 4rem;
+}
+@media (max-width:767px) {
+    .hlsticker1{
+        max-width: 150%;
+    }
+    .hlsticker3{
+        max-width: 110%;
+    }
+    .hlsticker6{
+        max-width: 120%;
+        top:30%;
+    }
+    .pic1{
+        margin-left: 2rem;
+    }
+}

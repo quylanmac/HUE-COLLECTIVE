@@ -17,6 +17,7 @@ class JWolf extends Component{
     }
     componentDidMount() {
         document.body.className = "lighttheme";
+        window.scrollTo(0,0);
     }
     componentWillUnmount() {
         document.body.className = "";
@@ -26,44 +27,47 @@ class JWolf extends Component{
         this.props.setTheme(theme);
     }
     render() {
+        const dragHandlers = { onStart: this.onStart, onStop: this.onStop };
         return (
             <Container>
                 <Row>
-                    {/* LEFT COLUMN */}
-                    <Col className="column1" xs={12} md={4}>
+                     {/* LEFT COLUMN */}
+                     <Col className="column1" xs={12} md={4}>
+                    <Row className="inner">
                         <Row>
                             <Link to = {{
                                         pathname: "/Article1",
                                     }}>
-                                        <button class="backarrow"><img src={require('../Pictures/Cover/generalpics/backbutton.svg')} /*alt ="Sophia Lee" onClick={() => this.handleTheme("white")}*/></img></button>
+                                        <img className="backarrow" src={require('../Pictures/Cover/generalpics/backbutton.png')}></img>
                                     </Link>
                         </Row>
                         <Row>
-                            <div>
+                            <Col>
                                 <img class="profile" src={profile} alt="profile"/>
-                            </div>
+                            </Col>
                         </Row>
                         <Row>
-                            <div className="name">
-                                <p>JONAH WOLF</p>
-                            </div>
-                            <div className="year">
-                                <p>Class of 2022</p>
-                            </div>
+                            <Col md={12}>
+                                <p className="name">JONAH WOLF</p>
+                            </Col>
+                            <Col md={12}>
+                                <p className="year">Class of 2022</p>
+                            </Col>
                             
                         </Row>
 
                         <Row>
-                            <a href="https://www.google.com"><img className="socials" src={require('../Pictures/Cover/generalpics/websitebutton.svg')}></img></a>
+                            <Col>
+                            <a href="https://www.linkedin.com/in/jonah-wolf-7072a421/"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
+                            </Col>
                         </Row>
                         <Row>
-                            <a href="https://www.instagram.com"><img className = "socials" src={require('../Pictures/Cover/generalpics/igbutton.svg')}></img></a>
+                            <Col>
+                            <a href="https://soundcloud.com/onthehousemoney"><img className="socials" src={require('../Pictures/Cover/generalpics/housemoney.svg')}></img></a>
+                            </Col>
                         </Row>
-                        <Row>
-                            <a href="https://www.linkedin.com"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
                         </Row>
                     </Col>
-
                     {/* White Column Space */}
                     <Col md={1}></Col>
 
@@ -83,12 +87,14 @@ class JWolf extends Component{
                             </Col>
                         </Row>
 
-                        <Row className="regularrow">
-                            <Col md={3} xs={3}>
-
+                        <Row className="smallrow">
+                            <Col md={2} xs={2}>
+                            <Draggable {...dragHandlers}>
+                                    <img className="cursor jwsticker1" draggable="false" src={require('../Pictures/Cover/generalpics/notesticker.png')} />
+                                </Draggable>
                             </Col>
 
-                            <Col md={9} xs={9}>
+                            <Col md={10} xs={10}>
                                 <p className="paragraphbig">When creating his beats, Jonah’s main concern is getting to a place that the artists he collaborates with can love.</p>
                             </Col>
                         </Row>
@@ -99,9 +105,12 @@ class JWolf extends Component{
                             </Col>
                         </Row>
 
-                        <Row className="regularrow">
+                        <Row className="smallrow">
                             <Col>
                                 <p className="paragraph">Jonah’s devotion to beat making has also led him to be involved in the <span className="paragraphbig">Producers & Remixers Organization (PRO) Club</span> at UCSD, which gave him valuable information with working on digital  audio workspaces as well as a great community to learn from.  </p>
+                                <Draggable {...dragHandlers}>
+                                    <img className="cursor jwsticker2" draggable="false" src={require('../Pictures/Cover/generalpics/emeraldsticker.png')} />
+                                </Draggable>
                             </Col>
                         </Row>
 
@@ -114,6 +123,9 @@ class JWolf extends Component{
                         <Row className="regularrow">
                             <Col>
                                 <img className="singleimage" style={{maxWidth:"60%"}} src={require('./pic1.png')}></img>
+                                <Draggable {...dragHandlers}>
+                                    <img className="cursor jwsticker3" draggable="false" src={require('../Pictures/Cover/generalpics/randomsticker.png')} />
+                                </Draggable>
                             </Col>
                         </Row>
                         
@@ -126,7 +138,27 @@ class JWolf extends Component{
 
                         <Row className="regularrow">
                             <Col md={4} xs={4}>
-                                    {/* STICKERS HERE */}
+                                <Row md={4} xs={4}>
+                                    {/* <Col> */}
+                                    <Draggable {...dragHandlers}>
+                                    <img className="cursor jwsticker4" draggable="false" src={require('../Pictures/Cover/generalpics/firesticker.png')} />
+                                </Draggable>
+                                    {/* </Col> */}
+                                </Row>
+                                <Row md={4} xs={4}>
+                                    {/* <Col> */}
+                                    <Draggable {...dragHandlers}>
+                                    <img className="cursor jwsticker5" draggable="false" src={require('../Pictures/Cover/generalpics/firesticker.png')} />
+                                </Draggable>
+                                    {/* </Col> */}
+                                </Row>
+                                <Row md={4} xs={4}>
+                                    {/* <Col> */}
+                                    <Draggable {...dragHandlers}>
+                                    <img className="cursor jwsticker6" draggable="false" src={require('../Pictures/Cover/generalpics/firesticker.png')} />
+                                </Draggable>
+                                    {/* </Col> */}
+                                </Row>
                             </Col>
 
                             <Col md={8} xs={8}>

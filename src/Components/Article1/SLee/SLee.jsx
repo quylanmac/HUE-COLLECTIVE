@@ -17,6 +17,7 @@ class SLee extends Component{
     }
     componentDidMount() {
         document.body.className = "lighttheme";
+        window.scrollTo(0,0);
     }
     componentWillUnmount() {
         document.body.className = "";
@@ -26,44 +27,47 @@ class SLee extends Component{
         this.props.setTheme(theme);
     }
     render() {
+        const dragHandlers = { onStart: this.onStart, onStop: this.onStop };
         return (
             <Container>
                 <Row>
-                    {/* LEFT COLUMN */}
-                    <Col className="column1" xs={12} md={4}>
+                     {/* LEFT COLUMN */}
+                     <Col className="column1" xs={12} md={4}>
+                    <Row className="inner">
                         <Row>
                             <Link to = {{
                                         pathname: "/Article1",
                                     }}>
-                                        <button class="backarrow"><img src={require('../Pictures/Cover/generalpics/backbutton.svg')} /*alt ="Sophia Lee" onClick={() => this.handleTheme("white")}*/></img></button>
+                                        <img className="backarrow" src={require('../Pictures/Cover/generalpics/backbutton.png')}></img>
                                     </Link>
                         </Row>
                         <Row>
-                            <div>
+                            <Col>
                                 <img class="profile" src={profile} alt="profile"/>
-                            </div>
+                            </Col>
                         </Row>
                         <Row>
-                            <div className="name">
-                                <p>SOPHIA LEE</p>
-                            </div>
-                            <div className="year">
-                                <p>Class of 2022</p>
-                            </div>
+                            <Col md={12}>
+                                <p className="name">SOPHIA LEE</p>
+                            </Col>
+                            <Col md={12}>
+                                <p className="year">Class of 2022</p>
+                            </Col>
                             
                         </Row>
 
                         <Row>
-                            <a href="https://www.google.com"><img className="socials" src={require('../Pictures/Cover/generalpics/websitebutton.svg')}></img></a>
+                            <Col>
+                            <a href="https://sophiahaewon.cargo.site/"><img className="socials" src={require('../Pictures/Cover/generalpics/websitebutton.svg')}></img></a>
+                            </Col>
                         </Row>
                         <Row>
-                            <a href="https://www.instagram.com"><img className = "socials" src={require('../Pictures/Cover/generalpics/igbutton.svg')}></img></a>
+                            <Col>
+                            <a href="https://www.linkedin.com/in/sophiahaewonlee/"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
+                            </Col>
                         </Row>
-                        <Row>
-                            <a href="https://www.linkedin.com"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
                         </Row>
                     </Col>
-
                     {/* White Column Space */}
                     <Col md={1}></Col>
 
@@ -85,11 +89,13 @@ class SLee extends Component{
 
                         <Row className="regularrow">
                             <Col md={9} xs={9}>
-                                <p className="paragraphbig">In her creative work, Sophia uses a plethora of editing and design software. </p>
+                                <p className="paragraphbig" style={{marginTop:"2rem"}}>In her creative work, Sophia uses a plethora of editing and design software. </p>
                             </Col>
 
                             <Col md={3} xs={3}>
-                                {/* STICKER HERE */}
+                                <Draggable {...dragHandlers}>
+                                    <img className="cursor slsticker1" draggable="false" src={require('../Pictures/Cover/generalpics/tvsticker.png')} />
+                                </Draggable>
                             </Col>
                         </Row>
                         
@@ -99,13 +105,16 @@ class SLee extends Component{
                             </Col>
                         </Row>
                         
-                        <Row>
+                        <Row className="smallrow">
                             <Col>
                                 <img style={{maxWidth:"100%"}} src={require('./pic1.png')}></img>
+                                <Draggable {...dragHandlers}>
+                                    <img className="cursor slsticker2" draggable="false" src={require('../Pictures/Cover/generalpics/purplegem.png')} />
+                                </Draggable>
                             </Col>
                         </Row>
 
-                        <Row>
+                        <Row className="smallrow">
                             <Col>
                                 <p className="paragraph">As a fan of many different varieties of art and design, <span className="paragraphbig">Sophia takes inspiration from artists Maia Ruth Lee and Lee Bul</span>. Maia Ruth Lee is an artist that covers different types of mediums such as modeling or sculpting, and operates as the director of an art-focused non-profit organization called Wide Rainbow. Lee Bul is a contemporary sculpture artist; her work focuses on questioning patriarchal authority and the marginalization of women by exposing societal problems.</p>
                             </Col>
@@ -114,7 +123,10 @@ class SLee extends Component{
 
                         <Row>
                             <Col md={6} xs={6}>
-                                <img style={{maxWidth:"100%"}} src={require('./pic2.png')}></img>
+                                <img className="spic2" src={require('./pic2.png')}></img>
+                                <Draggable {...dragHandlers}>
+                                    <img className="cursor slsticker3" draggable="false" src={require('../Pictures/Cover/generalpics/randomsticker4.png')} />
+                                </Draggable>
                             </Col>
 
                             <Col md={6} xs={6}>
@@ -125,6 +137,9 @@ class SLee extends Component{
                         <Row style={{marginTop:"-1rem", marginBottom:"3rem"}}>
                             <Col>
                                 <p className="paragraph">integrating architecture to the global warming crisis. Her <span className="paragraphbig">passion in integrating green architecture</span> with her creativity in specular design is what we need more in young designers. </p>
+                                <Draggable {...dragHandlers}>
+                                    <img className="cursor slsticker4" draggable="false" src={require('../Pictures/Cover/generalpics/leafrotated.png')} />
+                                </Draggable>
                             </Col>
                         </Row>
 
