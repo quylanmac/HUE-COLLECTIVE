@@ -1,3 +1,9 @@
+.imgTest {
+  max-width:25%;
+  margin-top:1.5rem;
+  margin-bottom:1.5rem;
+  z-index:999;
+}
 .myNav {
   border: #fcfcfc;
   border-style: solid none solid none;
