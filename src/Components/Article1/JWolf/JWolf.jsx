@@ -59,12 +59,12 @@ class JWolf extends Component{
 
                         <Row>
                             <Col>
-                            <a href="https://www.linkedin.com/in/jonah-wolf-7072a421/"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
+                            <a href="https://www.linkedin.com/in/jonah-wolf-7072a421/" target="_blank"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
                             </Col>
                         </Row>
                         <Row>
                             <Col>
-                            <a href="https://soundcloud.com/onthehousemoney"><img className="socials" src={require('../Pictures/Cover/generalpics/housemoney.svg')}></img></a>
+                            <a href="https://soundcloud.com/onthehousemoney" target="_blank"><img className="socials" src={require('../Pictures/Cover/generalpics/housemoney.svg')}></img></a>
                             </Col>
                         </Row>
                         </Row>

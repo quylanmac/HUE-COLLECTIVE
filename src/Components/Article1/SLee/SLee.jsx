@@ -59,12 +59,12 @@ class SLee extends Component{
 
                         <Row>
                             <Col>
-                            <a href="https://sophiahaewon.cargo.site/"><img className="socials" src={require('../Pictures/Cover/generalpics/websitebutton.svg')}></img></a>
+                            <a href="https://sophiahaewon.cargo.site/" target="_blank"><img className="socials" src={require('../Pictures/Cover/generalpics/websitebutton.svg')}></img></a>
                             </Col>
                         </Row>
                         <Row>
                             <Col>
-                            <a href="https://www.linkedin.com/in/sophiahaewonlee/"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
+                            <a href="https://www.linkedin.com/in/sophiahaewonlee/" target="_blank"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
                             </Col>
                         </Row>
                         </Row>
