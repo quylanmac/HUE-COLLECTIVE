@@ -53,13 +53,13 @@ const AppComponent = () => {
   return (
     <Switch>
       {/* Loading component with color picker */}
-      <Route exact path="/" component={NewLoading} />
       <Route path="/">
       <Navbar/>
 
         <Switch>
           {/* Index is landing page */}
           <Route exact path="/index" component={SP20} />
+
           {/* Current blank page for articles */}
           <Route exact path="/article1" component={Article1}/>
           <Route exact path="/about" component={About}/>
