@@ -60,7 +60,7 @@ class JFunes extends Component{
 
                         <Row>
                             <Col>
-                            <a href="www.funes-design.com"><img className="socials" src={require('../Pictures/Cover/generalpics/websitebutton.svg')}></img></a>
+                            <a href="https://www.funes-design.com"><img className="socials" src={require('../Pictures/Cover/generalpics/websitebutton.svg')}></img></a>
                             </Col>
                         </Row>
                         <Row>

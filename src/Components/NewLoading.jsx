@@ -27,7 +27,14 @@ class NewLoading extends Component {
         clearInterval(this.interval);
     }
     handleUpdate(color) {
+        const test = "rgb(0, 0, 0)";
+        if (test==color) {
+            console.log('please');
+            this.props.setColor("white");
+        }
+        else {
         this.props.setColor(color);
+        }
     }
 
     render() {
