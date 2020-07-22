@@ -64,20 +64,13 @@ class Article1 extends Component {
                                 <img className="cursor asticker1" draggable="false" src={require('./Pictures/Cover/generalpics/leafsticker.png')} />
                             </Draggable> 
                     </Col>
-                    {/* <Col md={4}>   
+                    <Col md={4}>   
                         <Link to = {{
                             pathname: "/ATam",
                         }}>
                             <button class="profiles"><img src={require('./Pictures/Cover/ALICIA TAM.png')} alt ="Alicia Tam" onClick={() => this.handleTheme("white")}></img></button>
                         </Link>
-                    </Col> */}
-                    <Col md={4}>
-                        <Link to = {{
-                            pathname: '/JFunes',
-                        }}>
-                            <button class="profiles"><img src={require('./Pictures/Cover/JONATHAN FUNES.png')} alt ="Jonathan Funes" onClick={() => this.handleTheme("white")}></img></button>
-                        </Link>
-                        </Col> 
+                    </Col>
                     <Col md={4}>
                         <Link to = {{
                             pathname: "/EOrta",
@@ -162,13 +155,13 @@ class Article1 extends Component {
                                 <img className="cursor asticker6" draggable="false" src={require('./Pictures/Cover/generalpics/fire.png')} />
                             </Draggable> 
                         </Col>
-                        {/* <Col md={4}>
+                        <Col md={4}>
                         <Link to = {{
                             pathname: '/JFunes',
                         }}>
                             <button class="profiles"><img src={require('./Pictures/Cover/JONATHAN FUNES.png')} alt ="Jonathan Funes" onClick={() => this.handleTheme("white")}></img></button>
                         </Link>
-                        </Col> */}
+                        </Col>
                         <Col md={4}></Col>
                         <Col md={4}></Col>
                     </Row>
