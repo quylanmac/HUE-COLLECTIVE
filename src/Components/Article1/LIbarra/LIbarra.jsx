@@ -53,7 +53,7 @@ class LIbarra extends Component{
                                 <p className="name">LAUREN IBARRA</p>
                             </Col>
                             <Col md={12}>
-                                <p className="year">Class of 2020</p>
+                                <p className="year">Class of 2021</p>
                             </Col>
                             
                         </Row>

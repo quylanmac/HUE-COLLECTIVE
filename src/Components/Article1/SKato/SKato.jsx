@@ -105,7 +105,7 @@ class SKato extends Component{
 
                         <Row>
                             <Col>
-                                <p className="paragraph">Sophie became an intern for the San Diego Department of Transportation, where she wanted to <span className="paragraphbig">lower the dependence on cars</span> as a means of travel. This internship focused on changing the narrative on car dependency through creating safer and enjoyable spaces for pedestrians and micro-mobility users in cities and small communities in San Diego.</p>
+                                <p className="paragraph">Sophie became an intern for the UCSD Transporation Services, where she wanted to <span className="paragraphbig">lower the dependence on cars</span> as a means of travel. This internship focused on changing the narrative on car dependency through creating safer and enjoyable spaces for pedestrians and micro-mobility users in cities and small communities in San Diego.</p>
                             </Col>
                         </Row>
 
