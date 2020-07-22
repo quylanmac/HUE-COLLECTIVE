@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.4d0e302c.chunk.css",
-    "main.js": "/static/js/main.6106e900.chunk.js",
-    "main.js.map": "/static/js/main.6106e900.chunk.js.map",
+    "main.css": "/static/css/main.2e88caa5.chunk.css",
+    "main.js": "/static/js/main.53797b97.chunk.js",
+    "main.js.map": "/static/js/main.53797b97.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.724fe076.js",
     "runtime-main.js.map": "/static/js/runtime-main.724fe076.js.map",
     "static/css/2.69121389.chunk.css": "/static/css/2.69121389.chunk.css",
-    "static/js/2.296eb259.chunk.js": "/static/js/2.296eb259.chunk.js",
-    "static/js/2.296eb259.chunk.js.map": "/static/js/2.296eb259.chunk.js.map",
+    "static/js/2.eb23066d.chunk.js": "/static/js/2.eb23066d.chunk.js",
+    "static/js/2.eb23066d.chunk.js.map": "/static/js/2.eb23066d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.911d969e26592e82b03216680a336bcf.js": "/precache-manifest.911d969e26592e82b03216680a336bcf.js",
+    "precache-manifest.cdfd751b04af3aabda77194722e20979.js": "/precache-manifest.cdfd751b04af3aabda77194722e20979.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.69121389.chunk.css.map": "/static/css/2.69121389.chunk.css.map",
-    "static/css/main.4d0e302c.chunk.css.map": "/static/css/main.4d0e302c.chunk.css.map",
-    "static/js/2.296eb259.chunk.js.LICENSE.txt": "/static/js/2.296eb259.chunk.js.LICENSE.txt",
+    "static/css/main.2e88caa5.chunk.css.map": "/static/css/main.2e88caa5.chunk.css.map",
+    "static/js/2.eb23066d.chunk.js.LICENSE.txt": "/static/js/2.eb23066d.chunk.js.LICENSE.txt",
     "static/media/ALICE LEE.png": "/static/media/ALICE LEE.5aa90359.png",
     "static/media/ALICIA TAM.png": "/static/media/ALICIA TAM.d2238214.png",
     "static/media/App.css": "/static/media/HelveticaNeueBd.b8edca3e.ttf",
@@ -106,7 +106,7 @@
     "static/media/quylan.png": "/static/media/quylan.aa79264a.png",
     "static/media/quylan2.png": "/static/media/quylan2.0ebc8b62.png",
     "static/media/quylan3.png": "/static/media/quylan3.7f6e017b.png",
-    "static/media/rainbowsticker.png": "/static/media/rainbowsticker.5af299ed.png",
+    "static/media/rainbowsticker.png": "/static/media/rainbowsticker.198a18e5.png",
     "static/media/randomsticker.png": "/static/media/randomsticker.57eb5e36.png",
     "static/media/randomsticker2.png": "/static/media/randomsticker2.28b74999.png",
     "static/media/randomsticker3.png": "/static/media/randomsticker3.f19df610.png",
@@ -142,8 +142,8 @@
   "entrypoints": [
     "static/js/runtime-main.724fe076.js",
     "static/css/2.69121389.chunk.css",
-    "static/js/2.296eb259.chunk.js",
-    "static/css/main.4d0e302c.chunk.css",
-    "static/js/main.6106e900.chunk.js"
+    "static/js/2.eb23066d.chunk.js",
+    "static/css/main.2e88caa5.chunk.css",
+    "static/js/main.53797b97.chunk.js"
   ]
 }
