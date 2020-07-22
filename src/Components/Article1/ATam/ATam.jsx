@@ -53,7 +53,7 @@ class ATam extends Component{
                                 <p className="name">ALICIA TAM</p>
                             </Col>
                             <Col md={12}>
-                                <p className="year">Class of 2020</p>
+                                <p className="year">Class of 2021</p>
                             </Col>
                             
                         </Row>
@@ -77,13 +77,7 @@ class ATam extends Component{
                         
                         <Row>
                             <Col>
-                                <p className="paragraph">For Alicia, a 3rd year here at UCSD, it was the call to think critically and challenge the norm that drew her to the discipline of Speculative Design.  You may think, “I wonder, what exactly is spec design?”  And within your simple question, you’d already find your answer. </p>
-                            </Col>
-                        </Row>
-
-                        <Row>
-                            <Col>
-                                <p className="paragraph">According to Alicia,</p>
+                                <p className="paragraph">For Alicia, a 3rd year here at UCSD, it was the call to <span className="paragraphbig">think critically</span> and <span className="paragraphbig">challenge the norm</span> that drew her to the discipline of speculative design.  You may think, “I wonder, what is spec design?”</p>
                             </Col>
                         </Row>
 
@@ -95,13 +89,19 @@ class ATam extends Component{
                             </Col>
 
                             <Col md={9} xs={9}>
-                                <p className="paragraphbig" style={{marginTop:"2rem"}}>Spec design can encompass most any field; she says, “you can design at any scale, [any] medium.”</p>
+                                <p className="paragraphbig" style={{marginTop:"3rem"}}>In Alicia’s own words, if a traditional designer creates the automobile, the speculative designer “foresees the traffic.”</p>
+                            </Col>
+                        </Row>
+
+                        <Row>
+                            <Col>
+                                <p className="paragraph">Speculative design can encompass most any field and focuses on solving <span className="paragraphbig">tomorrow’s problems</span>.  As Alicia pursued Speculative Design, she found a home in architecture and urban planning, where she hopes to emphasize <span className="paragraphbig">sustainability</span> and <span className="paragraphbig">human well-being</span>, all while straying away from the norm.</p>
                             </Col>
                         </Row>
 
                         <Row className="regularrow">
                             <Col md={9} xs={9}>
-                                <p className="paragraph">Though it may seem surprising due to the sheer size of the school, UCSD does not actually have a <span className="paragraphbig">formal architecture major</span>.  Despite this disadvantage, Alicia still managed to find mentors in the discipline, citing Professors Teddy Cruz and Brett Stalbaum as individuals who helped her navigate her major change and dive into architecture.  On any given day, Alicia utilizes a menagerie of tools to create her <span className="paragraphbig">models and designs</span>.  For three dimensional creations, programs such as Revit, AutoCad, and SketchUp offer a variety of amenities for both novel and expert architects.  The Adobe Suite is industry standard for visual designs, and to round out her skills, Alicia can write in C++ to meet any of her coding needs.  As is quite apparent, Alicia has some handy <span className="paragraphbig">technical skills</span>.  </p>
+                                <p className="paragraph">Though it may seem surprising due to the sheer size of the school, UCSD does not actually have a formal architecture program. Despite this disadvantage, Alicia still managed to <span className="paragraphbig">find mentors</span> in the discipline, citing UCSD professors Teddy Cruz and Brett Stalbaum as individuals who helped her navigate her major change and dive into <span className="paragraphbig">urban ecology</span> and <span className="paragraphbig">public culture</span>.  On any given day, Alicia utilizes a menagerie of tools to create her <span className="paragraphbig">models and designs</span>. For 3-D modeling, programs such as Revit, AutoCad, and SketchUp offer a variety of amenities for both novel and expert designers.  The Adobe Suite is the industry standard for visual designs, and to round out her skills, Alicia can write in Python to meet any of her coding needs.  As is quite apparent, Alicia has some handy <span className="paragraphbig">technical skills</span>.</p>
                             </Col>
 
                             <Col md={3} xs={3}>
@@ -132,21 +132,24 @@ class ATam extends Component{
                        <Row className="regularrow">
                            <Col>
                            <Draggable {...dragHandlers}>
-                                        <img className="cursor atsticker5" draggable="false" src={require('../Pictures/Cover/generalpics/rainbowsticker.png')} />
+                                        <img className="cursor atsticker5" draggable="false" src={require('../Pictures/Cover/generalpics/beesticker.png')} />
                                     </Draggable>
                                <img className="pic1" src={require('./pic1.png')}></img>
                            </Col>
                        </Row>
 
-                       <Row>
+                       <Row className="regularrow">
                            <Col>
-                               <p className="paragraphbig">However, as president of Architecture @UCSD, it’s been Alicia's leadership and resilience that helped the org grow and succeed. </p>
+                               <p className="paragraph">However, as president of Architecture @UCSD, it’s been Alicia's <span className="paragraphbig">leadership and resilience</span> that helped the org grow and succeed. During her first year, Alicia joined the club to work on a <span className="paragraphbig">campus redesign project</span>, but by her second year, club activity had fizzled out. At this point, Alicia restarted the club twice, and under her guidance as president, it’s mission is more <span className="paragraphbig">focused</span> than ever. Over this past year, Architecture @ UCSD held regular weekly meetings, organized software workshops, visited active construction sites, and invited local planners and architects to speak with students.  In the future, Alicia hopes to <span className="paragraphbig">expand</span> the club’s activities and continue to <span className="paragraphbig">provide a space</span> where students can explore their interests in architecture.</p>
                            </Col>
                        </Row>
 
                        <Row className="regularrow">
                            <Col>
-                               <p className="paragraph">During her first year, Alicia joined the club to work on a <span className="paragraphbig">campus redesign project</span>, but by her second year, club activity had fizzled out.  At this point, Alicia has restarted the club twice, and under her guidance as president, it’s mission is more <span className="paragraphbig">focused</span> than ever.  Over this past year, Architecture @UCSD held regular weekly meetings, visited active construction sites, and invited local professionals for conversations with students.  In the future, Alicia hopes to <span className="paragraphbig">expand the club’s activities</span>, providing software workshops and continuing to provide a space where students can <span className="paragraphbig">explore their interests</span>.</p>
+                               <p className="paragraphbig">Just like any design discipline, it’s important for architects to consider different perspectives in their work and projects.</p>
+                               <Draggable {...dragHandlers}>
+                                        <img className="cursor atsticker7" draggable="false" src={require('../Pictures/Cover/generalpics/rainbowsticker.png')} />
+                                    </Draggable>
                            </Col>
                        </Row>
 
@@ -160,18 +163,22 @@ class ATam extends Component{
                            </Col>
 
                            <Col md={6} xs={6}>
-                               <p className="paragraph">Just like any design discipline, it’s important for architects to consider <span className="paragraphbig">different perspectives</span> in their work and projects.  Unfortunately, it’s often easier said than done.  Whenever she collaborates, Alicia strives to design with everyone’s ideas in mind, creating a final product that everyone</p>
+                               <p className="paragraph">Unfortunately, it’s often easier said than done.  Whenever she <span className="paragraphbig">collaborates</span>, Alicia strives to design with <span className="paragraphbig">everyone’s ideas</span> in mind, creating a final product that everyone can be <span className="paragraphbig">proud</span> of.  As a designer, she also has to keep in mind the aspects of the <span className="paragraphbig">environment</span>, </p>
                            </Col>
                        </Row>
 
-                       <Row className="regularrow" style={{marginTop:"-1rem"}}>
+                       <Row style={{marginTop:"-1rem", marginBottom:"4rem"}}>
                             <Col>
-                                <p className="paragraph"> can be proud of. As an architect, she also has to keep in mind the restrictions of the <span className="paragraphbig">environment</span>, designing around the site’s <span className="paragraphbig">elevation, climate, and population</span>.  In the future, Alicia dreams of designing for the <span className="paragraphbig">well-being</span> of both the environment and her structure’s occupants.  With the increasing effects of climate change and our focus on mental health, Alicia wants to focus on the <span className="paragraphbig">adaptability of her creations</span>.  However, straying from the norm, she says, will always be a priority for her.</p>
+                                <p className="paragraph">taking into account the natural landscape, climate, local culture, and stakeholders.  With the increasing effects of <span className="paragraphbig">climate change</span> and our focus on <span className="paragraphbig">mental health</span>, Alicia wants to focus on the <span className="paragraphbig">adaptability of her creations</span>.  However, because cities are currently designed to be unsustainable and inequitable, <span className="paragraphbig">straying from the status quo</span> will always be a priority for her.</p>
                             </Col>
                        </Row>
 
 
-
+                       <Row>
+                            <Col>
+                                <p className="upnexttext">UP NEXT</p>
+                            </Col>
+                        </Row>
 
                         <Row>
                             <Col md={4} xs={4}>

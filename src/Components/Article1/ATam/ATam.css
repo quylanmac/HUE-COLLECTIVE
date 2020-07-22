@@ -19,14 +19,23 @@
 
 .atsticker5{
     max-width: 20%;
-    top:-15%;
-    left:8%;
+    bottom:-15%;
+    left:5%;
 }
 
 .atsticker6{
     max-width: 50%;
     left:0;
     bottom: 0;
+    /* -webkit-transform: rotate(90deg); */
+    /* transform: rotate(10); */
+}
+.atsticker7{
+    position: relative;
+    max-width: 25%;
+    left: 70%;
+    bottom: 0;
+    margin-top: -2rem;
     /* -webkit-transform: rotate(90deg); */
     /* transform: rotate(10); */
 }
@@ -37,6 +46,7 @@
 }
 
 .pic2{
+    margin-top: -1rem;
     max-width: 100%;
 }
 
