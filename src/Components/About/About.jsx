@@ -14,6 +14,9 @@ import promoVid from '../../img/promo.mp4';
 import promoVidThumbnail from '../../img/thumbnail.png';
 import { Link, animateScroll as scroll } from "react-scroll";
 import pageBreak from '../../img/pagebreak.png';
+import Marquee from 'react-double-marquee';
+import NavBar from 'react-bootstrap/Navbar';
+
 const black = '#000000';
 
 class About extends Component {
@@ -253,15 +256,16 @@ class About extends Component {
                     {/*This is the top left logo that takes the color of the user*/}
                     {/*This function call checks the returned color. If it is black, returns white instead*/}
                     {/*Promo Video*/}
+                    {/*
                     <Row style={{paddingTop:"4rem", paddingBottom:"4rem"}}>
                         <Col id="video">
                             <div className="wrapper">
                         <ReactPlayer className="myPlayer" width="100%" height="100%" url={require(`../../img/promo.mp4`)} playIcon={<img src={require(`../../img/playIcon.png`)}></img>} controls={true} style={{opacity:this.state.opacity}} onPlay={this.setOpacity} playing light={require(`../../img/thumbnail.png`)} ></ReactPlayer>
                         </div>
                         </Col>
-                    </Row>
+                    </Row>*/}
                     {/*About Section*/}
-                    <Row style={{paddingTop:"2rem"}} id="about">
+                    <Row style={{paddingTop:"4rem"}} id="about">
                         <Col>
                         <p className="huearewepre">HUE are we?</p>
                         </Col>
@@ -311,7 +315,7 @@ class About extends Component {
                     </Row>
 
                     {/*This takes a JSON file and creates the main cards */} 
-                    <Row>
+                    <Row style={{marginBottom:"4rem"}}>
                         {data.map( data=> (
                             <Col xs={4} sm={6} md={3} className="marginCard" key={`${data.id}`}>
                                 <Card className="firstCard myCard h-100 shadow-sm bg-white mobileCard" 
@@ -333,9 +337,9 @@ class About extends Component {
                         ))}
                     </Row>
 
-                    <div style={{paddingTop:"8rem", paddingBottom:"8rem"}}>
-                    <img src={pageBreak} style={{maxWidth:'100%'}}/>
-                    </div>
+                   {/* <div style={{paddingTop:"4rem", paddingBottom:"8rem"}}>
+                   <img src={pageBreak} style={{maxWidth:'100%'}}/>
+                        </div> */}
                     
                     {/*Secondary social media*/}
 {/*                     <Row>
@@ -362,6 +366,19 @@ class About extends Component {
               {/*This creates the popup for each card*/}
               {this.renderModals()}
             </Container>
+            <NavBar className="myNav secondaryNav">
+                        <div
+                            style={{
+                                width: '100%',
+                                whiteSpace: 'nowrap',
+                            }}
+                            className="announcement"
+                        >
+                            <Marquee speed="0.08" direction="right">Welcome to HUE Collective | Welcome to HUE Collective | Welcome to HUE Collective | Welcome to HUE Collective | Welcome to HUE Collective | Welcome to HUE Collective |</Marquee>
+                        </div>
+
+
+                    </NavBar>
             </div>
         );
     }
