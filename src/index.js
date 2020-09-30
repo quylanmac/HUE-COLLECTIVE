@@ -21,6 +21,7 @@ import React from 'react';
 import './App.css';
 import ReactDOM from 'react-dom';
 import SP20 from './Components/SP20/SP20';
+import FA20 from './Components/FA20/FA20'
 import About from './Components/About/About';
 import Issues from './Components/Issues/Issues';
 import Contact from './Components/Contact/Contact';
@@ -64,6 +65,7 @@ const AppComponent = () => {
           <Route exact path="/article1" component={Article1}/>
           <Route exact path="/about" component={About}/>
           <Route exact path="/issues" component={SP20}/>
+          <Route exact path="/issue2" component={FA20}/>
           <Route exact path="/contact" component={Contact}/>
 
           <Route exact path="/JFunes" component={JFunes}/>
