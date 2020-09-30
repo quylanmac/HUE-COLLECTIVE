@@ -26,7 +26,7 @@ import Issues from './Components/Issues/Issues';
 import Contact from './Components/Contact/Contact';
 import NewLoading from './Components/NewLoading';
 import Article1 from './Components/Article1/Article1';
-
+import Home from './Components/Home/Home';
 //------------Spring Issue Redirects-----------------//
 import JFunes from './Components/Article1/JFunes/JFunes';
 import LIbarra from './Components/Article1/LIbarra/LIbarra';
@@ -58,7 +58,8 @@ const AppComponent = () => {
 
         <Switch>
           {/* Index is landing page */}
-          <Route exact path="/" component={SP20} />
+          {/*<Route exact path="/" component={SP20} />*/}
+          <Route exact path="/" component={Home} />
           
           {/* Current blank page for articles */}
           <Route exact path="/article1" component={Article1}/>

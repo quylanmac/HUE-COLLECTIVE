@@ -36,7 +36,7 @@ const Navbar = ({ color, theme }) => {
         <div>
             {redirect && <Redirect to={redirect} /> }
            
-            <NavBar className={myTheme === "white" ? 'myNav2': 'myNav'} expand="lg">
+            <NavBar className={myTheme === "white" ? 'myNav2': (myTheme==="transparent") ? 'myNav3': (myTheme==="hidden") ? 'myNav4' : 'myNav'} expand="lg">
                 <NavBar.Brand className="navBrand" onClick={() => redirectTo('/')}>
                     {/* <div className="overlay">
                         <div className="overlay-2">

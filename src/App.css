@@ -165,7 +165,9 @@ body {
 .text-align {
   text-align:center;
 }
-
+.karla {
+  font-family: Karla !important;
+}
 .memberBio {
   font-family: Karla !important;
   line-height:23px !important;

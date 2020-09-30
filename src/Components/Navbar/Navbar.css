@@ -30,6 +30,21 @@
   z-index: 999;
   background-color: #121212;
 }
+.myNav3 {
+  border: transparent;
+  border-style: solid none solid none;
+  margin-top: 2rem;
+  z-index: 999;
+  background-color: transparent;
+}
+.myNav4 {
+  visibility: hidden !important;
+  border: transparent;
+  border-style: solid none solid none;
+  margin-top: 2rem;
+  z-index: 999;
+  background-color: transparent;
+}
 .navBrand {
   margin-left: 2rem;
   cursor: pointer;

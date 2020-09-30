@@ -5,13 +5,15 @@ import Draggable from 'react-draggable';
 import { Container, Row, Col } from 'react-bootstrap';
 import contact from '../../img/SP20/contact.jpg';
 import pageBreak from '../../img/pagebreak.png';
-
+import Marquee from 'react-double-marquee';
+import NavBar from 'react-bootstrap/Navbar';
 class Contact extends Component {
     constructor(props) {
         super(props);
     }
     render() {
         return (
+            <>
             <Container>
                 <Row>
                     <Col>
@@ -70,6 +72,20 @@ class Contact extends Component {
                     <div style={{marginBottom:"3rem"}}/>
                 </div>
             </Container>
+            <NavBar className="myNav secondaryNav" style={{marginTop:"8rem"}}>
+                        <div
+                            style={{
+                                width: '100%',
+                                whiteSpace: 'nowrap',
+                            }}
+                            className="announcement"
+                        >
+                            <Marquee speed="0.08" direction="right">Welcome to HUE Collective | Welcome to HUE Collective | Welcome to HUE Collective | Welcome to HUE Collective | Welcome to HUE Collective | Welcome to HUE Collective |</Marquee>
+                        </div>
+
+
+                    </NavBar>
+            </>
         )
     }
 }
