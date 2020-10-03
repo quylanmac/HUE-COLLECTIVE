@@ -1,3 +1,6 @@
+.scroll-horizontal > div {
+    position: relative !important;
+}
 @font-face {
     font-family: "GT-Haptik-Black-Trail";
     src: local("GT-Haptik-Black-Trail"), url(../../font/GT-Haptik-Black-Trial.otf) format("opentype");
