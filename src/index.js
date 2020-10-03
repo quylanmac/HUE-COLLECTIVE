@@ -41,7 +41,8 @@ import ALee from './Components/Article1/ALee/ALee';
 import ERichards from './Components/Article1/ERichards/ERichards';
 import EOrta from './Components/Article1/EOrta/EOrta';
 //--------End of Spring Issue Redirects--------------//
-
+//----------Issue 2 Things-----------------//
+import GroupInterview from './Components/GroupInterview/GroupInterview';
 import { Redirect } from 'react-router-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { StoreProvider } from './Components/Store';
@@ -61,7 +62,8 @@ const AppComponent = () => {
           {/* Index is landing page */}
           {/*<Route exact path="/" component={SP20} />*/}
           <Route exact path="/" component={Home} />
-          
+
+          <Route exact path="/groupinterview" component={GroupInterview}/>
           {/* Current blank page for articles */}
           <Route exact path="/article1" component={Article1}/>
           <Route exact path="/about" component={About}/>

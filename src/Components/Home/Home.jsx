@@ -3,10 +3,11 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { setTheme } from '../../redux/actions';
 import './Home.css';
 import { connect } from 'react-redux';
-import Test from '../test/Test';
-import Test2 from '../Issues/Issues';
+import Issue1 from '../Issues/Issues';
+import Issue2 from '../Issues/Issue2';
 import Marquee from 'react-double-marquee';
 import NavBar from 'react-bootstrap/Navbar';
+import Landing from '../Landing/Landing';
 class Home extends Component {
     constructor(props) {
         super(props);
@@ -26,7 +27,7 @@ class Home extends Component {
         })
     };
 
-   
+
 
     handleTimeUpdate = (currentTime, progress, duration) => {
         this.setState({
@@ -55,7 +56,7 @@ class Home extends Component {
         this.player.togglePlay();
         this.player.toggleMute();
         console.log("test");
-        
+
         console.log(this.state.isPlaying);
     }
     handleOnPlay = () => {
@@ -68,32 +69,30 @@ class Home extends Component {
     render() {
         return (
             <>
-               <div style={{height:'80vh'}}>
-                   <Test/>
-               </div>
-               <Container>
-               <div className="postVid">
-               <p className="huearewepre">issues</p>
-               <p className="huearewe">We are always looking for exciting designers to feature in our digital zines.</p>
-               </div>
-               <div>
-               <Test2/>
-               <Test2/>
-               </div>
-               </Container>
-               <NavBar className="myNav secondaryNav">
-                        <div
-                            style={{
-                                width: '100%',
-                                whiteSpace: 'nowrap',
-                            }}
-                            className="announcement"
-                        >
-                            <Marquee speed="0.08" direction="right">Welcome to HUE Collective | Welcome to HUE Collective | Welcome to HUE Collective | Welcome to HUE Collective | Welcome to HUE Collective | Welcome to HUE Collective |</Marquee>
-                        </div>
+                <div style={{ height: '80vh' }}>
+                    <Landing/>
+                </div>
+                <Container>
+                    <div className="postVid" id="issueHome">
+                        <p className="huearewepre">issues</p>
+                        <p className="huearewe">We are always looking for exciting designers to feature in our digital zines.</p>
+                    </div>
+                    <Issue2 />
+                    <Issue1 />
+                </Container>
+                <NavBar className="myNav secondaryNav">
+                    <div
+                        style={{
+                            width: '100%',
+                            whiteSpace: 'nowrap',
+                        }}
+                        className="announcement"
+                    >
+                        <Marquee speed="0.08" direction="right">Welcome to HUE Collective | Welcome to HUE Collective | Welcome to HUE Collective | Welcome to HUE Collective | Welcome to HUE Collective | Welcome to HUE Collective |</Marquee>
+                    </div>
 
 
-                    </NavBar>
+                </NavBar>
             </>
         )
     }

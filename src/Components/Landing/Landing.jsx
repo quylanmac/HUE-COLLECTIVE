@@ -5,8 +5,8 @@ import TestComponent from 'react-background-video-player';
 import playIcon from '../../img/thumbnail.png';
 import playVid from '../../img/testplayvideo.png';
 import { connect } from 'react-redux';
-import './Test.css';
-class Test extends Component {
+import './Landing.css';
+class Landing extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -31,7 +31,7 @@ class Test extends Component {
         })
     };
 
-   
+
 
     handleTimeUpdate = (currentTime, progress, duration) => {
         this.setState({
@@ -55,11 +55,13 @@ class Test extends Component {
 
     toggleMute = () => {
         this.player.toggleMute();
+        console.log(this.player);
     };
     toggleTest = () => {
         this.player.togglePlay();
         this.player.toggleMute();
         this.props.setTheme('hidden');
+        console.log(this.player);
     }
     handleOnPlay = () => {
         this.setState({ isPlaying: true });
@@ -72,7 +74,7 @@ class Test extends Component {
     render() {
         return (
             <>
-             <div className="responseVid" style={{  width: ' 100%', height: '100%' }}>
+                <div className="responseVid" style={{ width: ' 100%', height: '100%' }}>
                     <TestComponent
                         ref={p => this.player = p}
                         containerWidth={this.state.windowWidth}
@@ -88,10 +90,11 @@ class Test extends Component {
                         autoPlay={false}
                         volume={0.5}
                         loop={false}
+                        onEnd={this.toggleMute}
                         className={this.state.isPlaying ? 'normalOpacity' : 'lightOpacity'}
                     />
                     <nav className="promoLayer">
-                       <p className={"karla promo " + (!this.state.isPlaying ? 'show' : 'hidden')}>Expressing ubiquity and ambiguity through different perspectives in design.</p>
+                        <p className={"karla promo " + (!this.state.isPlaying ? 'show' : 'hidden')}>Expressing ubiquity and ambiguity through different perspectives in design.</p>
                         <button onClick={this.toggleTest} className="playButton"><img src={playVid} /></button>
                     </nav>
                 </div>
@@ -100,4 +103,4 @@ class Test extends Component {
         )
     }
 }
-export default connect(null, { setTheme })(Test);
+export default connect(null, { setTheme })(Landing);
