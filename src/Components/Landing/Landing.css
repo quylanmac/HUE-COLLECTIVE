@@ -1,6 +1,6 @@
 .lightOpacity > div {
-    opacity: 100% !important;
+    opacity: 0.5 !important;
 }
 .normalOpacity > div {
-    opacity: 100% !important;
+    opacity: 1.0 !important;
 }
