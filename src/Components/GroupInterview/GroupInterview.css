@@ -137,7 +137,7 @@
     padding: 0 !important;
 }
 .lightOpacity > video {
-    opacity: 50% !important;
+    opacity: 100% !important;
 }
 .normalOpacity > video {
     opacity: 100% !important;
