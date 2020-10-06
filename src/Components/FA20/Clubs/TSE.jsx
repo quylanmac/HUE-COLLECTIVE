@@ -4,9 +4,19 @@ import { connect } from 'react-redux';
 import '../FA20.css';
 import { setTheme } from '../../../redux/actions';
 import Directory from '../Directory.jsx';
+<<<<<<< HEAD
 import './TSE.css'
 import { HashLink } from 'react-router-hash-link';
 import groupButton from '../../../img/Issue2/button.png';
+=======
+import './TSE.css';
+import HorizontalScroll from 'react-scroll-horizontal';
+import { HashLink } from 'react-router-hash-link';
+import GroupInterview from '../../GroupInterview/GroupInterview';
+import groupButton from '../../../img/Issue2/button.png';
+import Empowerment from '../../Empowerment/Empowerment';
+
+>>>>>>> fbbcabc1780690045925bf90328164d3d09372b7
 class TSE extends Component{
     constructor(props) {
         super(props);
@@ -23,9 +33,14 @@ class TSE extends Component{
         this.props.setTheme(theme);
     }
     render(){
+        const parent = { width: `100%`, height: `100%` }
+        const child = { width: `1110px`, height: `100%` }
         return (
-            <Container>
-            <Row>
+        <Container className="container-fluid">
+            <div style={parent} className="row nopad">
+                <HorizontalScroll className="">
+                    <div className="viewResponsive sec1" id="section1">
+                        <Row className="nopad">
                 <Col md={4}>
                     <Row md={2}>
                     <Col md={12} className="issue_2">
@@ -34,7 +49,7 @@ class TSE extends Component{
                     </Col>
                     </Row>
                     <Row xs={10} md={10}>
-                        <Col md={4}>
+                        <Col xs={4} md={4}>
                             <Row>
                                 <img className="plug_1" src={require('../Plug2.svg')} />
                             </Row>
@@ -43,10 +58,11 @@ class TSE extends Component{
                             </Row>
                         </Col>
 
-                        <Col md={8}>
+                        <Col xs={8} md={8}>
                             <Row md={9}>
                                 <Directory/>
                             </Row>
+                            {/* <Row></Row> */}
                         </Col> 
                     </Row>
                 </Col>
@@ -59,23 +75,25 @@ class TSE extends Component{
 
                 <Col md={5}>
 
-                    <Row><img src={require('./Pictures/TSE.svg')}/></Row>
+                    <Row><img style={{maxWidth:"100%"}} src={require('./Pictures/TSE.svg')}/></Row>
                     <Row>
                     {/* <Col md={7} className="tse_col"> */}
                     <div className="tse_div">
                         <div>
-                            <div className="blackbutton">
+                        <a  className="blackbutton" href="https://www.facebook.com/TritonSE/" target="_blank">
                                 <p>FACEBOOK</p>
                                 <img src={require('./Pictures/whitearrow.svg')}/>
-                            </div>
-                            <div className="blackbutton">
+                            </a>
+
+                            <a  className="blackbutton" href="https://ww.instagram.com/ucsd_tse" target="_blank">
                                 <p>INSTAGRAM</p>
                                 <img src={require('./Pictures/whitearrow.svg')}/>
-                            </div>
-                            <div className="blackbutton">
+                            </a>
+
+                            <a  className="blackbutton" href="https://www.linkedin.com/company/tritonsoftwareengineering/" target="_blank">
                                 <p>LINKEDIN</p>
                                 <img src={require('./Pictures/whitearrow.svg')}/>
-                            </div>
+                            </a>
                         </div>
                             <img src={require('./Pictures/Arrows3.png')}/>
                         </div>
@@ -83,10 +101,27 @@ class TSE extends Component{
                 </Col>
 
                 </Row>
+<<<<<<< HEAD
                 <HashLink smooth to="/issue2#section2" className="endButton">
                     <img src={groupButton} />
                 </HashLink>
                 </Container>
+=======
+                <Row className="horizontal_scroll">
+                                <HashLink smooth to="/issue2#section2">
+                                    <img src={groupButton} />
+                                </HashLink>
+                            </Row>
+                        </div>
+                        <div className="viewResponsive sec2" id="section2">
+                            <GroupInterview />
+                        </div>
+                        <div className="viewResponsive sec3" id="section3">
+                            <Empowerment />
+                        </div>                    </HorizontalScroll>
+                </div>
+                 </Container>
+>>>>>>> fbbcabc1780690045925bf90328164d3d09372b7
         )
     }
 }

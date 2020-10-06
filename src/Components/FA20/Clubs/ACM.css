@@ -14,20 +14,26 @@
 .acm_row{
     background-color: #ce5cf6;
     position: relative;
-    top:73%;
+    top:75%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
 }
 
 .acm_text{
     font-family:GT-Walsheim-Pro-Regular-Trial;
     color:white;
     margin: 0;
-    margin-left: 0.3rem;
+    margin-left: 0rem;
     font-size: 1.1rem;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     background-color: #d35135;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
 }
 
 .acm_div{
@@ -38,7 +44,7 @@
     border-style: solid;
     border-width: 2px;
     border-color: black;
-    margin-left: 0.2rem;
+
 }
 
 .acm_div:nth-child(1)>div{
@@ -53,10 +59,34 @@
 
 .acm_row2{
     position: relative;
-    top:8%;
+    top:10%;
 }
 
 .acm_row3{
     position: relative;
-    top:8%;
+    top:10%;
+}
+
+@media(max-width:767px){
+    .acm_text{
+        font-size: 1rem;
+        margin:0rem;
+    }
+    .acm_row{
+        top:0%;
+    }
+    .acm_row2{
+        position: relative;
+        top:0%;
+    }
+    
+    .acm_row3{
+        position: relative;
+        top:0%;
+    }
+    .acm_div:nth-child(1)>div>a{
+        width: 85%;
+        margin-left: 0rem;
+        margin-bottom: 1rem;
+    }
 }

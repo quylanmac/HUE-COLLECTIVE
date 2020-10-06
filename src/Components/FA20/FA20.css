@@ -68,19 +68,31 @@
 }
 
 .plug_1{
-    z-index: -1;
+    z-index: 2;
     max-width: 62%;
     margin-top: 0%;
     margin-left: 1.8rem;
+}
+.plug_2{
+    max-width: 85%;
+    margin-left: 1rem;
+}
+.landing_link{
+    z-index: 2;
+}
+.outlet_2{
+    margin-top: -40%;
+    max-width: 100%;
+    z-index: 1;
 }
 
 .outlet {
     margin-top: -85%;
     max-width: 100%;
-    z-index: -2;
-    border-style: solid;
+    z-index: 1;
+    /* border-style: solid;
     border-width: medium;
-    border-color: black;
+    border-color: black; */
 }
 
 .design_outlet {
@@ -88,7 +100,8 @@
     border-style: solid;
     border-width: 2px;
     border-color: black;
-    padding-top: 0.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.25rem;
 }
 
 .design_outlet > p {
@@ -123,8 +136,6 @@
     width: 95%;
     align-items: center;
     justify-content: space-between;
-    /* margin-left: 1rem; */
-    /* margin-right: 1rem; */
     margin-bottom: 1rem;
     padding-bottom:-1rem;
 }
@@ -133,6 +144,7 @@
     vertical-align: middle;
     font-family: GT-Walsheim-Pro-Regular-Trial;
     margin: 0.5rem;
+    font-size: 1rem;
     color:white;
 }
 
@@ -158,6 +170,7 @@
     vertical-align: middle;
     font-family: GT-Walsheim-Pro-Regular-Trial;
     margin: 0.5rem;
+    font-size: 1rem;
     color:black;
 }
 
@@ -183,15 +196,117 @@
     /* left:0; */
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     background-color: #257a66;
 }
 .title > p {
     align-self: center;
     color: white;
-    font-size: 2.9rem;
+    font-size: 2.5rem;
     -webkit-text-stroke: 2px black;
     font-family: GT-Haptik-Black-Trail;
     margin-bottom: 0%;
+}
+
+.horizontal_scroll{
+    border-top: solid;
+    border-width: 2px;
+    border-color:white;
+    margin-top: -0.25rem;
+    z-index: -99;
+    position: relative;
+    left: 5%;
+}
+.horizontal_scroll>:first-child{
+    margin-top: 1rem;
+    position: relative;
+    left:55%;
+}
+.horizontal_scroll>:first-child>img{
+    max-width: 65%;
+}
+
+@media (max-width:767px) {
+    .issue_2 :first-child {
+        color: white;
+        font-size: 2rem;
+    }
+    .issue_2 :nth-child(2) {
+        color: white;
+        margin-top: -1rem;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    .plug_1{
+        max-width: 40%;
+    }
+    .outlet{
+        margin-left: 5%;
+        max-width: 75%;
+        margin-top: -55%;
+    }
+    .design_outlet{
+        width: 100%;
+    }
+    .design_outlet > p {
+        font-size: 1rem;
+    }
+    .smiley{
+        display: none;
+    }
+    .arrows{
+        display: none;
+    }
+    .text{
+        display: none;
+    }
+    .mug{
+        display: none;
+    }
+    .title{
+        display: none;
+    }
+    .clouds{
+        display: none;
+    }
+
+    .thought{
+        display: none;
+    }
+    .horizontal_scroll>:first-child{
+        /* position: relative; */
+        left: 0%;
+    }
+    .horizontal_scroll>:first-child>img{
+        max-width: 95%;
+    }
+    .whitebutton{
+        width: 80%;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        padding-bottom:-1rem;
+        text-decoration: none;
+    }
+    
+    .whitebutton>p{
+        vertical-align: middle;
+        font-family: GT-Walsheim-Pro-Regular-Trial;
+        margin: 0.5rem;
+        font-size: 1rem;
+        color:white;
+        text-decoration: none;
+        
+    }
+    
+    .whitebutton>img{
+        margin-right: 0.5rem;
+        max-width: 10%;
+    }
+    .blackbutton>img{
+        margin-right: 0.5rem;
+        max-width: 10%;
+    }
 }

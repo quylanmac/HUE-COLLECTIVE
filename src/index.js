@@ -22,6 +22,7 @@ import './App.css';
 import ReactDOM from 'react-dom';
 import SP20 from './Components/SP20/SP20';
 import FA20 from './Components/FA20/FA20';
+import issue2_landing from './Components/FA20/issue2_landing';
 import DesignCo from './Components/FA20/Clubs/DesignCo';
 import ACM from './Components/FA20/Clubs/ACM';
 import Architecture from './Components/FA20/Clubs/Architecture';
@@ -78,6 +79,7 @@ const AppComponent = () => {
           <Route exact path="/article1" component={Article1}/>
           <Route exact path="/about" component={About}/>
           <Route exact path="/issues" component={SP20}/>
+          <Route exact path="/issue2_landing" component={issue2_landing}/>
           <Route exact path="/issue2" component={FA20}/>
           <Route exact path="/issue2/design-co" component={DesignCo}/>
           <Route exact path="/issue2/triton-software-engineering" component={TSE}/>

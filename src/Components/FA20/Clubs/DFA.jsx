@@ -5,8 +5,12 @@ import '../FA20.css';
 import { setTheme } from '../../../redux/actions';
 import Directory from '../Directory.jsx';
 import './DFA.css';
+import HorizontalScroll from 'react-scroll-horizontal';
 import { HashLink } from 'react-router-hash-link';
+import GroupInterview from '../../GroupInterview/GroupInterview';
 import groupButton from '../../../img/Issue2/button.png';
+import Empowerment from '../../Empowerment/Empowerment';
+
 class DFA extends Component{
     constructor(props) {
         super(props);
@@ -24,9 +28,14 @@ class DFA extends Component{
         this.props.setTheme(theme);
     }
     render(){
+        const parent = { width: `100%`, height: `100%` }
+        const child = { width: `1110px`, height: `100%` }
         return (
-            <Container>
-            <Row>
+        <Container className="container-fluid">
+            <div style={parent} className="row nopad">
+                <HorizontalScroll className="">
+                    <div className="viewResponsive sec1" id="section1">
+                        <Row className="nopad">
                 <Col md={4}>
                     <Row md={2}>
                     <Col md={12} className="issue_2">
@@ -35,7 +44,7 @@ class DFA extends Component{
                     </Col>
                     </Row>
                     <Row xs={10} md={10}>
-                        <Col md={4}>
+                        <Col xs={4} md={4}>
                             <Row>
                                 <img className="plug_1" src={require('../Plug2.svg')} />
                             </Row>
@@ -44,7 +53,7 @@ class DFA extends Component{
                             </Row>
                         </Col>
 
-                        <Col md={8}>
+                        <Col xs={8} md={8}>
                             <Row md={9}>
                                 <Directory/>
                             </Row>
@@ -53,7 +62,7 @@ class DFA extends Component{
                 </Col>
 
                 <Col md={3}>
-                    <Row style={{backgroundColor:'#ce5cf6'}}>
+                    <Row>
                         <p className="dfa_text">We design people-centered products, services, and experiences to tackle local challenges. Our studio aims to build a community of interdisciplinary students of all majors who fully embraces the Human-Centered Design process to aid in social innovation.</p>
                     </Row>
                     <Row>
@@ -66,18 +75,18 @@ class DFA extends Component{
                     <Row className="dfa_row">
                         <div className="dfa_div">
                             <div>
-                                <div className="whitebutton">
+                                <a  className="whitebutton" href="https://www.google.com/url?q=https://ucsd.zoom.us/j/8230996088&sa=D&source=calendar&ust=1599450524299000&usg=AOvVaw3BbwlHdGHRbBhli5o6XWCw" target="_blank">
                                     <p>INFO NIGHT 10/5</p>
                                     <img src={require('./Pictures/whitearrow.svg')}/>
-                                </div>
-                                <div className="whitebutton">
+                                </a>
+                                <a  className="whitebutton" href="https://www.instagram.com/dfa.ucsd/" target="_blank">
                                     <p>INSTAGRAM</p>
                                     <img src={require('./Pictures/whitearrow.svg')}/>
-                                </div>
-                                <div className="whitebutton">
+                                </a>
+                                <a  className="whitebutton" href="http://dfaucsd.org/" target="_blank">
                                     <p>WEBSITE</p>
                                     <img src={require('./Pictures/whitearrow.svg')}/>
-                                </div>
+                                </a>
                             </div>
                             <img src={require('./Pictures/Arrows3.png')}/>
                         </div>
@@ -85,10 +94,20 @@ class DFA extends Component{
                 </Col>
 
                 </Row>
-                <HashLink smooth to="/issue2#section2" className="end2Button">
-                    <img src={groupButton} />
-                </HashLink>
-                </Container>
+                <Row className="horizontal_scroll">
+                                <HashLink smooth to="/issue2#section2" className="end2Button">
+                                    <img src={groupButton} />
+                                </HashLink>
+                            </Row>
+                        </div>
+                        <div className="viewResponsive sec2" id="section2">
+                            <GroupInterview />
+                        </div>
+                        <div className="viewResponsive sec3" id="section3">
+                            <Empowerment />
+                        </div>                    </HorizontalScroll>
+                </div>
+                 </Container>
         )
     }
 }

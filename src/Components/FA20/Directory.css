@@ -16,10 +16,11 @@
 }
 .org_link>p{
     font-family: GT-Walsheim-Pro-Regular-Trial;
-    font-size: 1.2rem;
-    margin-top: -0.25rem;
+    font-size: 1.15rem;
+    margin-top: -0.45rem;
     color: black;
     text-decoration: none;
+    
 }
 
 .org_link.green>p:hover{
@@ -74,4 +75,21 @@
 
 .org_link.orange.six.active>p{
     background-color: orange;
+}
+
+@media (max-width:767px) {
+    .org_directory{
+        max-width: 100%;
+    }
+    .org_directory>h1{
+        font-size: 1.5rem;
+    }
+    
+    .org_directory>a{
+        text-decoration: none;
+    }
+    .org_link>p{
+        font-size: 1rem;
+        margin-top: -0.25rem;
+    }
 }
