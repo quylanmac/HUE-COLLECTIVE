@@ -1,0 +1,49 @@
+@media(max-width:767px) {
+    .promo {
+        font-size:1.5rem;
+    }
+    .promoLayer {
+        width:100%;
+        display:block;
+        position: absolute;
+        align-items: center;
+        margin-top:33.3%;
+        margin-left:2.75%;
+    }
+}
+@Media(min-width:768px) {
+    .promo {
+        font-size: 3rem;
+    }
+    .promoLayer {
+        width: 50%;
+        margin-left:2.75%;
+        display:block;
+        position:absolute;
+        align-items:center;
+        margin-top:25%;
+        height:250px;
+        width: 1200px;
+    }
+}
+.promo {
+    color: #FCFCFC;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 150%;
+}
+.playButton {
+    background:transparent;
+    border:0 !important;
+    position: absolute !important;
+    padding: 0 !important;
+}
+.show {
+    visibility: visible;
+}
+.hidden {
+    visibility: hidden;
+}
+.postVid {
+    margin-top:5rem;
+}

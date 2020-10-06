@@ -1,0 +1,76 @@
+.role1 {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-family: GT-America-Expanded-Medium;
+    font-size: 2rem;
+}
+
+.img1{
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.ersticker1{
+    max-width: 10%;
+    top:-10%;
+    left:0;
+}
+
+.ersticker2{
+    position: relative !important;
+    max-width: 100%;
+}
+
+.ersticker3{
+    max-width: 25%;
+    right: -5%;
+    top:-20%;
+}
+
+.ersticker4{
+    max-width: 10%;
+    top:-20%;
+    left:8%;
+}
+
+.ersticker5{
+    max-width: 5%;
+    right:7.5%;
+    bottom: -1%;
+}
+
+.ersticker6{
+    position: relative !important;
+    max-width: 100%;
+}
+
+.erpic2{
+    max-width: 45%;
+    margin-left: 4rem;
+    margin-right: 1rem;
+}
+
+.erpic3{
+    max-width: 35%;
+}
+
+@media (max-width:767px) {
+    .ersticker1{
+        top:-5%;
+        left:5%;
+    }
+    .ersticker2{
+        top:10%;
+        left:-15%;
+        max-width: 110%;
+    }
+    .erpic2{
+        margin-left: 2rem;
+    }
+    .ersticker6{
+        max-width: 125%;
+        top:10%;
+    }
+}

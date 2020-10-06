@@ -1,0 +1,135 @@
+/* .backarrow{
+    margin-top: 1.5rem;
+    background: none;
+    border: none;
+}
+
+.profile{
+    margin-left: 2.5rem;
+}
+
+.name{
+    margin-left: 2rem;
+    font-family: GT-America-Expanded-Medium;
+    font-size: 3rem;
+    line-height: 2.75rem;
+}
+
+.year{
+    vertical-align: center;
+    margin-top: -0.75rem;
+    margin-left: 2rem;
+    font-family: GT-America-Expanded-Regular;
+    font-size: 1.5rem;
+}
+
+.socials{
+    background:none;
+    border:none;
+    margin-bottom:0.5rem;
+    margin-left: 2rem;
+}
+
+.role {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    font-family: GT-America-Expanded-Medium;
+    font-size: 2.5rem;
+}
+
+.paragraph{
+    text-align: start;
+    font-family: GT-America-Extended-Regular;
+    font-size: 0.9rem;
+    line-height: 200%;
+}
+
+.paragraphbig{
+    font-family: GT-America-Extended-Regular;
+    font-size: 1.23rem;
+    line-height: 150%;
+}
+
+.regularrow{
+    margin-bottom: 2.5rem;
+}
+
+.upnext {
+    max-width: 100%;
+}
+
+.nextbutton{
+    max-width: 100%;
+    background:none;
+    border:none;
+} */
+.one{
+    align-self: right;
+}
+
+.jfsticker1 {
+    position: absolute;
+    left: -8%;
+    top: -20%;
+    max-width: 15%;
+}
+
+.jfsticker2{
+    position: absolute;
+    right: -1%;
+    margin-top: 8rem;
+    max-width: 20%;
+}
+
+.jfsticker3{
+    right: -10%;
+    top: -10%;
+    max-width: 50%;
+}
+
+.singleimage{
+    max-width: 10%;
+}
+
+.doubleimage{
+    margin-left: 6rem;
+    margin-right: 2rem;
+}
+.pic4{
+    max-width: 110%;
+    /* margin-top: 3rem; */
+}
+.pic5{
+    max-width: 90%;
+    /* top:0; */
+    margin-top: -1rem;
+}
+
+@media (max-width:767px) {
+    .singleimage{
+        max-width: 105%;
+        /* margin-top: 3rem; */
+    }
+    .doubleimage{
+        margin-left:3rem;
+    }
+    .jfsticker1{
+        top:-10%;
+        left:-3%;
+    }
+
+    .jfsticker2{
+        margin-top: 5rem;
+    }
+    .jfsticker3{
+        top:5%;
+    }
+    .pic4{
+        margin-top: 3rem;
+    }
+    .pic5{
+        margin-top: 3rem;
+        max-width: 100%;
+    }
+
+}

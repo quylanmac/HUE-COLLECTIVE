@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+.lighttheme {
+  background-color: white !important;
+  background-image: none !important;
+}
+.darktheme {
+  background-color: #121212 !important;
+  background-image: none !important;
+}
+body {
+  background-color: #121212 !important;
+  background-image:
+  linear-gradient(to right, #1F1F1F 1px, transparent 1px),
+  linear-gradient(to bottom, #1F1F1F 1px, transparent 1px);
+  opacity: 1;
+  background-size: 200px 100px;
+}
+@font-face {
+  font-family: 'HelveticaLight';
+  src: local('HelveticaLight'), url(./font/HelveticaNeue\ Light.ttf) format('truetype');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;  
+}
+@font-face {
+  font-family: 'Cubano';
+  src: local('Cubano'), url(./font/Cubano-Regular.otf) format('opentype');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;  
+}
+
+@font-face {
+  font-family: 'HelveticaBold';
+  src: local('HelveticaBold'), url(./font/HelveticaNeueBd.ttf) format('truetype');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;  
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: local('Helvetica'), url(./font/HelveticaNeue.ttf) format('truetype');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;  
+}
+.fixNav {
+  position:fixed !important;;
+  top:10% !important;
+  right: 10% !important;
+  left: 0 !important;
+  z-index: 1030 !important;
+}
+
+.fade {
+  transition: opacity .5s linear !important;
+}
+.modal.fade .modal-dialog {
+  transition: opacity .5s linear  !important;
+  transform: none !important;
+}
+.mouseDoodle {
+ cursor: pointer !important; 
+ font-weight: 750 !important;
+}
+.chooseYour {
+  font-family: VT323 !important;
+  font-size: 2em !important;
+  line-height: 150% !important;
+  text-align: center !important;
+  letter-spacing: 0.185em !important;
+  color: white !important;
+}
+
+.myPlayer {
+  position:absolute !important;
+  top: 0 !important;
+  left:0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.wrapper {
+  position:relative !important;
+  padding-top: 56.25% !important;
+}
+.links {
+  display: block;
+  width: 100%;
+  padding: 1.5rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;  
+}
+.dropdown {
+  position: absolute !important;
+  top: 0 !important;
+  z-index:9999 !important;
+}
+.navLinks {
+  font-family: VT323 !important;
+  line-height: 106% !important;
+  color:white !important;
+}
+.navLinks2 {
+  font-family: VT323 !important;
+  line-height: 106% !important;
+  color:white !important;
+}
+.dropdown-item {
+  color: white !important;
+}
+.dropdown-toggle::after {
+  content:none !important;
+}
+.dropdown-menu {
+  background-color:transparent !important;
+  color: white !important;
+  border: 0 !important;
+  right:0 !important;
+  top:0 !important;
+  left: auto !important;
+}
+.dropdown-menu > a:hover {
+  background-image: none !important;
+  background-color: transparent !important;
+  text-decoration: underline !important;
+}
+.card-body {
+  padding-top: 0.8rem !important;
+  padding-left: 1rem !important;
+  padding-bottom:2rem !important;
+  padding-right:1rem !important;
+}
+.modal-body {
+  max-height: calc(100vh-100px) !important;
+  overflow-y:auto !important;
+}
+
+.modal-backdrop.show {
+  opacity: 0.8 !important;
+}
+.modal-backdrop {
+  background-color: gray !important;
+}
+.modal-content {
+  border: 0 !important;
+  background-color: transparent !important;
+}
+.modal {
+  vertical-align:middle;
+}
+.linebreak {
+  border: 0.5px solid #FFFFFF;
+}
+.huearewepre {
+  font-family:VT323 !important;
+  line-height:106% !important;
+  letter-spacing: 0.04em !important;
+  color: #F9F9F9 !important;
+}
+.huearewe {
+  font-family: Karla !important;
+  line-height:150% !important;
+  color: #FCFCFC !important;
+  letter-spacing: .04em !important;
+}
+.text-align {
+  text-align:center;
+}
+.karla {
+  font-family: Karla !important;
+}
+.memberBio {
+  font-family: Karla !important;
+  line-height:23px !important;
+}
+
+.cardFont2{
+  font-family: Helvetica !important;
+  font-weight:bold !important;  
+}
+.cardFont{
+  font-family: HelveticaBold !important;
+  font-style:normal !important;
+  text-transform: uppercase !important;
+  white-space:nowrap !important;
+
+}
+@media (max-width:767px) {
+  body {
+  font-size: 12px !important;
+  }
+  .mobileCard {
+    max-height:60% !Important;
+  }
+  .cardFont2{
+    font-size: 0.6em !important;
+  }
+  .cardFont{
+    font-size: 0.6em !important;
+  }
+  .myCard {
+    max-height: 83% !important;
+  }
+  .card-body {
+    padding: 0.2rem !important;
+  }
+  .mobileCard2 {
+    min-height:4rem !important;
+  }
+  .huearewe {
+    font-size:1.3em !important;
+  }
+  .huearewepre {
+    font-size:1.6em !important;
+  }
+  .marginCard {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+  }
+  .cardName {
+    font-size: 1.2em !important;
+  }
+  .memberBio {
+    font-size:0.5em !important;
+  }
+  .color {
+    font-size: 0.4em !important;
+  }
+  .sidebar1 {
+    font-size:0.6em !important;
+  }
+  .sidebar2 {
+    font-size:0.6em !important;
+  }
+  .color {
+    font-size:0.33em !important;
+    padding-right:.75em !important;
+  }
+  .smallLogo {
+    max-width:50% !important;
+  }
+}
+@media (min-width:768px) {
+  body {
+  font-size: 22px !important;
+  }
+  .cardFont {
+    font-size: 0.88em !important;
+    line-height:20px !important;
+  }
+  .cardFont2 {
+    font-size: 0.88em !important;
+    line-height:24px !important;
+  }
+  .marginCard {
+    margin-bottom:5rem !important;
+  }
+  .huearewe {
+    font-size:1.45em !important;
+  }
+  .huearewepre {
+    font-size:2.2em !important;
+  }
+  .cardName {
+    font-size:1.2em !important;
+  }
+  .memberBio {
+    font-size:0.5em !important;
+  }
+  .marginLeft {
+    margin-left:1em !important;
+  }
+  .marginRight {
+    margin-right:1em !important;
+  }
+  .sidebar1 {
+    font-size:0.6em !important;
+  }
+  .sidebar2 {
+    font-size:0.6em !important;
+  }
+  .color {
+    font-size:0.4em !important;
+    padding-right:1.5em !important;
+  }
+  .mediaPad {
+    padding-right:1.5rem !important;
+  }
+  .navLinks {
+    font-size: 1.3em !important;
+  }
+  .navLinks2 {
+    font-size: 1.3em !important;
+  }
+  .links {
+    font-size:1.5rem !important;
+  }
+}
+@media (min-width:1367px) {
+  .color {
+    font-size: 0.5em !important;
+  }
+  .cardName {
+    font-size: 1.4em !important;
+  }
+  .sidebar1 {
+    font-size:1em !important;
+  }
+  .sidebar2 {
+    font-size:1em !important;
+  }
+  .memberBio {
+    font-size:1em !important;
+  }
+  .marginLeft {
+    margin-left:2.5em !important;
+  }
+  .marginRight {
+    margin-right:2.5em !important;
+  }
+}
+.secondCardMedia {
+  display:inline-block !important;
+}
+.sidebar1 {
+  font-family: HelveticaLight !important;
+  line-height:27px !important;
+  letter-spacing:0.12em !important;
+  color: black !important;
+  font-weight:300 !important;
+  transform:rotate(-90deg) !important;
+  white-space:nowrap !important;
+}
+
+.sidebar2 {
+  font-family: HelveticaLight !important;
+  line-height:27px !important;
+  letter-spacing:0.12em !important;
+  color: black !important;
+  font-weight:300 !important;
+  transform:rotate(90deg) !important;
+  white-space:nowrap !important;
+}
+.color {
+  font-family: HelveticaLight !important;
+  font-weight:300 !important;
+  line-height:15px !important;
+  color:#656565 !important;
+}
+@media (min-width:768px) {
+.modal-90w {
+  max-width:40% !important;
+}
+}
+@media (max-width:767px) {
+  .modal-90w {
+    max-width:75% !important;
+    position:absolute !important;
+    left:12.5% !important;
+  }
+  }
+.cardName {
+  margin-Top:1rem;
+  font-family: HelveticaBold !important ;
+  line-height:32px !important;
+  text-align:center !important;
+  text-transform: uppercase !important;
+  white-space:nowrap !important;
+  width: 100% !important;
+  word-wrap: break-word !important;
+}
+.firstCard {
+  cursor: pointer !important;
+}
+.myCard {
+  border: 0 !important ;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+.mainLogo {
+  font-size: 50px;
+  font-family: Cubano;
+  font-style: normal;
+  font-weight:normal;
+  text-align:center;
+  line-height:149%;
+  letter-spacing:0.185em;
+  text-shadow:-3px 0 #121212, 0 1px #121212, 1px 0 #121212, 0 -1px #121212;
+}
+.secondaryLogo {
+  font-size: 50px;
+  font-family: Cubano;
+  font-style: normal;
+  font-weight:normal;
+  text-align:center;
+  line-height:149%;
+  letter-spacing:0.185em;
+  margin-top:3px;
+  margin-left:-8px;
+}
+
+.overlay {
+  display:grid;
+}
+.overlay-1, .overlay-2 {
+  grid-row:1;
+  grid-column:1;
+}
+
+.delay {
+  animation-delay:1s;
+  animation-duration:3s;
+}
+.delay2 {
+  animation-delay:0.5s;
+}
+.alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.body {
+  background-color:#121212 !important;
+}
+.fade-in {
+  opacity:1;
+  width:100px;
+  height:100px;
+  transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
+}
+.mybutton:hover {
+  color:#121212 !important;
+}
+.mybutton {
+  background-color:#121212 !important;
+  border-color:#121212 !important;
+  border: 0px !important;
+  padding: 0 !important;
+  border-image-width:0 !important;
+  border-bottom-left-radius: 0 !important;
+  display: flex !important;
+}
+.custom-cur{
+  cursor: url('./img/cursor.svg'), grab;
+}
+.loading {
+  min-height:100vh;
+}
+.test{
+  min-height:100vh;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@import '~bootstrap/dist/css/bootstrap.min.css';

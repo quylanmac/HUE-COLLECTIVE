@@ -1,0 +1,42 @@
+@media (max-width:767px) {
+    .header {
+        font-size:2rem !important;
+    }
+    .subtext {
+        font-size:.75rem !important;
+    }
+}
+
+.margin2 {
+    margin-top:3rem;
+    margin-bottom:3rem;
+}
+.margin1 {
+    margin-top:4rem;
+}
+.breakMargin {
+    margin-bottom:3rem;
+}
+.image {
+    max-width:100%;
+}
+.header {
+    font-family: VT323 !important;
+    font-size:3rem;
+    line-height:48px;
+    line-height:100%;
+    color:#FCFCFC;
+}
+.subtext {
+    font-family:Karla !important;
+    font-size:2rem;
+    line-height:37px;
+    color:#FCFCFC;
+}
+.underline {
+    text-decoration: underline;
+    color:#FCFCFC;
+}
+.underline a {
+    color:#FCFCFC;
+}

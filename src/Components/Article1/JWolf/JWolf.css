@@ -1,0 +1,64 @@
+.singleimage{
+    margin-left: 5rem;
+}
+.jwsticker1{
+    position: relative;
+    max-width: 100%;
+    margin-top: -3rem;
+    margin-left: 2rem;
+}
+.jwsticker2{
+    position: relative;
+    max-width: 10%;
+    left:45%;
+    margin-top: -5rem;
+}
+.jwsticker3{
+    max-width: 20%;
+    right:20%;
+    top: 50%;
+}
+.jwsticker4{
+    position: relative;
+    max-width: 35%;
+    left:0;
+    margin-top: 3rem;
+}
+
+.jwsticker5{
+    position: relative;
+    max-width: 35%;
+    left: 50%;
+    margin-top: 10rem;
+}
+.jwsticker6{
+    position: relative;
+    max-width: 35%;
+    margin-top: 10rem;
+}
+
+@media (max-width:767px) {
+    .jwsticker1{
+        max-width: 170%;
+        margin-left: 0rem;
+    }
+    .jwsticker2{
+        max-width: 15%;
+        left:90%;
+        margin-top: -4rem;
+    }
+    .jwsticker3{
+        right: 10%;
+    }
+    .jwsticker4{
+        margin-top: 1rem;
+        left:10%;
+    }
+    .jwsticker5{
+        margin-top: 5rem;
+    }
+    .jwsticker6{
+        margin-top: 5rem;
+        left:10%;
+    }
+}

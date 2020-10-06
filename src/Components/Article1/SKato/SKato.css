@@ -1,0 +1,59 @@
+.sksticker1{
+    max-width: 10%;
+    top:-10%;
+    left: 0;
+}
+
+.sksticker2{
+    max-width: 10%;
+    bottom:-6%;
+    right:6%;
+}
+
+.sksticker3{
+    position: relative;
+    max-width: 100%;
+    top:0;
+    left: 0;
+}
+
+.sksticker4{
+    top: 70%;
+    left: 0;
+    max-width: 8%;
+}
+
+.sksticker5{
+    right:10%;
+    top:-5%;
+    max-width: 30%;
+}
+
+.sksticker6{
+    position: relative;
+    max-width: 100%;
+    top:-10%;
+}
+
+.pic4{
+    max-width: 90%;
+}
+
+@media (max-width:767px) {
+    .sksticker3{
+        max-width: 120%;
+        margin-top: 1rem;
+    }
+    .sksticker5{
+        top:15%;
+        right:-5%;
+    }
+    .sksticker6{
+        max-width: 120%;
+        left:-10%;
+        top:20%;
+    }
+    .pic4{
+        max-width: 120%;
+    }
+}

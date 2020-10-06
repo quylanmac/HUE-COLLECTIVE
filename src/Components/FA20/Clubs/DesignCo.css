@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "GT-Haptik-Black-Trail";
+    src: local("GT-Haptik-Black-Trail"), url(../../../font/GT-Haptik-Black-Trial.otf) format("opentype");
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@font-face{
+    font-family: "GT-Walsheim-Pro-Regular-Trial";
+    src: local("GT-Walsheim-Pro-Regular-Trial"), url(../../../font/GT-Walsheim-Pro-Regular-Trial.otf);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.designco_row2{
+    background-color:#ce5cf6;
+    top:65%;
+    position: relative;
+}
+.designco_row3{
+    /* background-color:#ce5cf6; */
+    top:15%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    position: relative;
+}
+.designco_row4{
+    /* background-color:#ce5cf6; */
+    top:15%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    position: relative;
+}
+
+.designco_text{
+    font-family:GT-Walsheim-Pro-Regular-Trial;
+    color:white;
+    margin: 0;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #d35135;
+}

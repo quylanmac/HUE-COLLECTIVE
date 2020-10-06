@@ -1,0 +1,76 @@
+
+@media (max-width:767px) {
+  .imgTest {
+    max-width:40%;
+    margin-top:0;
+    margin-bottom:0;
+  }
+  .navbar-brand {
+    display: contents !important;
+  }
+}
+@media (min-width:768px) {
+  .imgTest {
+    max-width:25%;
+    margin-top:1.5rem;
+    margin-bottom:1.5rem;
+  }
+}
+.myNav {
+  border: #fcfcfc;
+  border-style: solid none solid none;
+  margin-top: 2rem;
+  z-index: 999;
+  background-color: #121212;
+}
+.myNav2 {
+  background-color:white !important;
+  border-style: solid none solid none;
+  margin-top: 2rem;
+  z-index: 999;
+  background-color: #121212;
+}
+.myNav3 {
+  border: transparent;
+  border-style: solid none solid none;
+  margin-top: 2rem;
+  z-index: 999;
+  background-color: transparent;
+}
+.myNav4 {
+  visibility: hidden !important;
+  border: transparent;
+  border-style: solid none solid none;
+  margin-top: 2rem;
+  z-index: 999;
+  background-color: transparent;
+}
+.navBrand {
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.navLinks {
+  color: #fcfcfc !important;
+  margin-left: 1rem !important;
+  font-size: 1.5rem !important;
+  margin-right: 2rem !important;
+}
+.navLinks2 {
+  color: black !important;
+  margin-left: 1rem !important;
+  font-size: 1.5rem !important;
+  margin-right: 2rem !important;
+}
+.nav-link:hover {
+  text-decoration: underline !important;
+}
+.navbar-toggler {
+  background-color: #fcfcfc !important;
+}
+.navbar-collapse > div > div {
+  margin: 2rem !important;
+}
+.navbar-dark {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}

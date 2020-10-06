@@ -1,0 +1,66 @@
+.atsticker1{
+    max-width: 60%;
+    left:20%;
+}
+
+.atsticker2{
+    max-width: 40%;
+}
+.atsticker3{
+    max-width: 70%;
+    left:0;
+    top: 33%;
+}
+.atsticker4{
+    max-width: 60%;
+    left:0;
+    top: 70%;
+}
+
+.atsticker5{
+    max-width: 20%;
+    bottom:-15%;
+    left:5%;
+}
+
+.atsticker6{
+    max-width: 50%;
+    left:0;
+    bottom: 0;
+    /* -webkit-transform: rotate(90deg); */
+    /* transform: rotate(10); */
+}
+.atsticker7{
+    position: relative;
+    max-width: 25%;
+    left: 70%;
+    bottom: 0;
+    margin-top: -2rem;
+    /* -webkit-transform: rotate(90deg); */
+    /* transform: rotate(10); */
+}
+
+.pic1{
+    margin-left: 5rem;
+    max-width: 80%;
+}
+
+.pic2{
+    margin-top: -1rem;
+    max-width: 100%;
+}
+
+@media (max-width:767px) {
+    .pic1{
+        margin-left: 2rem;
+    }
+
+    .pic2{
+        max-width: 120%;
+        margin-top: 3rem;
+    }
+    .atsticker6{
+        bottom: 20%;
+        left:0;
+    }
+}

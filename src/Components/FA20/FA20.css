@@ -1,0 +1,197 @@
+@media (max-width: 767px) {
+    .viewResponsive {
+        width: calc(100vw - 30px);
+        height: 100%;
+    }
+
+}
+@media (min-width: 768px) {
+    .viewResponsive {
+        width: 1110px;
+        height: 100%;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
+
+.scroll-horizontal > div {
+    position: relative !important;
+}
+.end2Button {
+    display: flex;
+    justify-content: end;
+    margin-top:2rem;
+}
+.nopad {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+@font-face {
+    font-family: "GT-Haptik-Black-Trail";
+    src: local("GT-Haptik-Black-Trail"), url(../../font/GT-Haptik-Black-Trial.otf) format("opentype");
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+    font-family: "GT-Walsheim-Pro-Regular-Trial";
+    src: local("GT-Walsheim-Pro-Regular-Trial"), url(../../font/GT-Walsheim-Pro-Regular-Trial.otf);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.issue_2 {
+    background-color: #ce5cf6;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+
+    top: 0;
+    left: 0;
+    /* width: 10%; */
+}
+
+.issue_2 :first-child {
+    color: white;
+    font-size: 2.5rem;
+    -webkit-text-stroke: 2px black;
+    font-family: GT-Haptik-Black-Trail;
+}
+.issue_2 :nth-child(2) {
+    color: white;
+    margin-top: -10%;
+    font-size: 3.5rem;
+    font-weight: 700;
+    -webkit-text-stroke: 3px black;
+    font-family: GT-Haptik-Black-Trail;
+    margin-bottom: 0%;
+}
+
+.plug_1{
+    z-index: -1;
+    max-width: 62%;
+    margin-top: 0%;
+    margin-left: 1.8rem;
+}
+
+.outlet {
+    margin-top: -85%;
+    max-width: 100%;
+    z-index: -2;
+    border-style: solid;
+    border-width: medium;
+    border-color: black;
+}
+
+.design_outlet {
+    background-color: #e08f61;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    padding-top: 0.5rem;
+}
+
+.design_outlet > p {
+    font-family: GT-Walsheim-Pro-Regular-Trial;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.clouds {
+    max-width: 100%;
+}
+
+.smiley {
+    max-width: 100%;
+}
+
+.arrows {
+    max-width: 100%;
+}
+
+.text {
+    margin-left: 0rem;
+    padding: 0;
+    max-width: 100%;
+}
+
+.whitebutton{
+    display: flex;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-left: 1rem; */
+    /* margin-right: 1rem; */
+    margin-bottom: 1rem;
+    padding-bottom:-1rem;
+}
+
+.whitebutton>p{
+    vertical-align: middle;
+    font-family: GT-Walsheim-Pro-Regular-Trial;
+    margin: 0.5rem;
+    color:white;
+}
+
+.whitebutton>img{
+    margin-right: 0.5rem;
+}
+
+.blackbutton{
+    display: flex;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-left: 1rem; */
+    /* margin-right: 1rem; */
+    margin-bottom: 1rem;
+    padding-bottom:-1rem;
+}
+
+.blackbutton>p{
+    vertical-align: middle;
+    font-family: GT-Walsheim-Pro-Regular-Trial;
+    margin: 0.5rem;
+    color:black;
+}
+
+.blackbutton>img{
+    filter: invert(100%);
+    margin-right: 0.5rem;
+}
+
+.thought{
+    max-width: 100%;
+}
+
+.mug {
+    max-width: 100%;
+}
+
+.title {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    max-width: 200%;
+    /* top:0; */
+    /* left:0; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: #257a66;
+}
+.title > p {
+    align-self: center;
+    color: white;
+    font-size: 2.9rem;
+    -webkit-text-stroke: 2px black;
+    font-family: GT-Haptik-Black-Trail;
+    margin-bottom: 0%;
+}

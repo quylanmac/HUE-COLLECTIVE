@@ -1,0 +1,122 @@
+@media (max-width: 767px) {
+    .beginButton2 {
+        display: flex;
+        justify-content: center;
+        padding-left: 0 !important;
+    }
+    .Empowerment {
+        padding: 1rem;
+    }
+    .group2Header {
+        font-size:2rem;
+    }
+    .subHeader {
+        font-size:1.5rem;
+    }
+    .winsonFlower {
+        width:0px;
+        height:0px;
+    }
+    .winsonHeader {
+        font-size:1.5rem;
+    }
+    .winsonStats {
+        font-size:1rem;
+    }
+    .classicWinson {
+        font-size:1rem;
+    }
+}
+@media (min-width: 768px) {
+    .beginButton2 {
+        display: flex;
+        justify-content: left;
+        padding-left: 0rem;
+    }
+    .Empowerment {
+        padding: 3rem;
+    }
+    .group2Header {
+        font-size: 3.5rem;
+    }
+    .subHeader {
+        font-size: 2.25rem;
+    }
+    .winsonHeader {
+        font-size: 2.25rem;
+    }
+    .winsonStats {
+        font-size: 1.25rem;
+    }
+    .classicWinson {
+        font-size:1.5rem;
+    }
+}
+.winsonButton {
+    max-width:100%;
+}
+.profilePic {
+    max-width:100%;
+}
+.topHeader {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.group2Header {
+    font-family: GT-Haptik-Black-Trail;
+    color: #ffffff;
+    font-weight: 800;
+    line-height: 130%;
+    padding-bottom: 3rem;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000000;
+}
+.subHeader {
+    font-family: GT-Haptik-Black-Trail;
+    color: #d35135;
+    line-height: 140%;
+    font-style: normal;
+    padding-bottom: 3rem;
+}
+.empowerBox {
+    background-color: #ffffff;
+    padding: 3rem;
+    border: 6px solid #d35135;
+    box-sizing: border-box;
+    border-radius: 40px 40px 0px 0px;
+}
+.winsonHeader {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: GT-Haptik-Black-Trail;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 125.5%;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000000;
+}
+.winsonStats {
+    font-family: GT-Walsheim-Pro-Regular-Trial;
+    font-style: normal;
+    line-height: 140%;
+    color: #000000;
+}
+.nopad {
+    padding: 0 !important;
+}
+.classicWinson {
+    font-family: GT-Walsheim-Pro-Regular-Trial;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 140%;
+    color: #000000;
+}
+.endButton {
+    display: flex;
+    justify-content: end;
+    padding-left: 3rem;
+}

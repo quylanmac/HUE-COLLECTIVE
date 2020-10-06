@@ -1,0 +1,221 @@
+.articleTarget {
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    font-family: GT-America-Expanded-Medium;
+    font-size: 2.5rem;
+}
+.articleBody {
+    margin-bottom: 2rem;
+    font-size: 1.15rem;
+    max-width: 125%;
+    text-align: justify;
+    font-family: GT-America-Extended-Regular;
+}
+
+.profiles {
+    border:none;
+    margin: 1rem;
+    background: none;
+}
+
+.asticker1{
+    max-width: 40%;
+    right:-15%;
+    top:30%;
+}
+.asticker2{
+    max-width: 40%;
+    right:0;
+    bottom:-10%;
+}
+.asticker3{
+    max-width: 30%;
+    bottom:-10%;
+    right:0;
+}
+
+.asticker4{
+    max-width: 45%;
+    right:-10%;
+    top:-10%;
+}
+.asticker5{
+    max-width: 35%;
+    top:15%;
+    left:-10%;
+}
+.asticker6{
+    max-width: 40%;
+    bottom: -10%;
+    right:-10%;
+}
+/*-----General CSS for each article-------*/
+
+.inner{
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+}
+.backarrow{
+    margin: 1rem;
+    /* padding-top: 0rem; */
+    padding: 0;
+    max-width: 35%;
+    background: white;
+    border: none;
+    transition:0.5s;
+}
+
+.backarrow:hover{
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.profile{
+    margin-left: 3rem;
+    max-width: 60%;
+}
+
+.name{
+    margin-left: 2rem;
+    font-family: GT-America-Expanded-Medium;
+    font-size: 3rem;
+    line-height: 2.75rem;
+}
+
+.year{
+    vertical-align: center;
+    margin-top: -0.75rem;
+    margin-left: 2rem;
+    font-family: GT-America-Expanded-Regular;
+    font-size: 1.5rem;
+}
+
+.socials{
+    background:white;
+    border:none;
+    max-width: 90%;
+    margin-bottom:0.5rem;
+    margin-left: 2rem;
+    transition: 0.5s;
+}
+
+.socials:hover{
+    -webkit-filter: invert(1);
+    filter:invert(1);
+}
+
+.role {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-family: GT-America-Expanded-Medium;
+    font-size: 2.5rem;
+}
+
+.paragraph{
+    text-align: justify;
+    font-family: GT-America-Extended-Regular;
+    font-size: 0.9rem;
+    /* position: relative; */
+    line-height: 200%;
+}
+
+.paragraphbig{
+    text-align: justify;
+    font-family: GT-America-Extended-Regular;
+    font-size: 1.23rem;
+    /* position: static; */
+    line-height: 150%;
+}
+
+.cursor{
+    cursor: move;
+    position: absolute;
+    z-index: 1;
+}
+
+.regularrow{
+    margin-bottom: 2.5rem;
+}
+.smallrow{
+    margin-bottom: 1.5rem;
+}
+.upnexttext{
+    font-family: GT-America-Expanded-Medium;
+    font-size: 3rem;
+}
+.upnext {
+    max-width: 100%;
+    margin-bottom: 3rem;
+}
+
+.nextbutton{
+    max-width: 100%;
+    background:none;
+    border:none;
+}
+
+.column2{
+    top:0;
+}
+
+
+@media (max-width:767px) {
+    .articleTarget{
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 0rem;
+    }
+    .articleBody{
+        font-size: 1rem;
+    }
+    .paragraph {
+        font-size:0.7rem !important;
+    }
+    .paragraphbig {
+        font-size:1rem !important;
+    }
+
+    .upnexttext{
+        font-size: 1.5rem !important;
+    }
+    .role {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    .name{
+        margin-left: 2rem;
+        font-size: 2rem;
+        line-height: 2.75rem;
+    }
+
+    .year{
+        font-size: 1rem;
+    }
+    .upnext {
+        max-width: 110%;
+    }
+    
+    .nextbutton{
+        margin-left: -1rem;
+        max-width: 150% !important;
+    }
+
+    .asticker1{
+        right:0;
+        top:50%;
+    }
+    .asticker3{
+        right:0;
+    }
+    .asticker4{
+        right: 0;
+    }
+    .asticker5{
+        left:0;
+    }
+    .asticker6{
+        right:0;
+    }
+}
