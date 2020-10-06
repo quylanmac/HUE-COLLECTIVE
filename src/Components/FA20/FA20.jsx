@@ -95,7 +95,7 @@ class FA20 extends Component {
                             </Row>
                             
                                 <HashLink smooth to="/issue2#section2" className="endButton">
-                                    <img src={groupButton} />
+                                    <img src={groupButton} className="responseImg"/>
                                 </HashLink>
                             
                         </div>
