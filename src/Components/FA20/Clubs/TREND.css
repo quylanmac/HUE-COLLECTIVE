@@ -22,6 +22,7 @@
     padding-left: 2rem;
     padding-right: 2rem;
     z-index: 1;
+    flex:auto;
     background-color: #e08f61;
 }
 
@@ -49,6 +50,7 @@
 }
 .trend_div>img{
     max-width: 30%;
+    flex:auto;
 }
 
 .trend_div_div>a{
@@ -65,6 +67,7 @@
     }
     .trend_mobile{
         display: flex;
+        flex:auto;
     }
     .trend_img1{
         max-width: 100%;

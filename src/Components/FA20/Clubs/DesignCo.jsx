@@ -31,11 +31,11 @@ class DesignCo extends Component {
         const parent = { width: `100%`, height: `100%` }
         const child = { width: `1110px`, height: `100%` }
         return (
-            <Container>
+            <Container className="container-fluid">
             <div style={parent} className="row nopad">
                     <HorizontalScroll className="">
                         <div className="viewResponsive sec1" id="section1">
-            <Row>
+            <Row className="nopad">
                 <Col md={4}>
                     <Row md={2}>
                     <Col md={12} className="issue_2">
@@ -82,11 +82,19 @@ class DesignCo extends Component {
 
                     <Col md={5}>
 
+<<<<<<< HEAD
                         <Row className="designco_row3"><img style={{ maxWidth: '60%' }} src={require('./Pictures/designcologo.svg')} /></Row>
                         <Row className="designco_row4">
                             <p className="designco_text">Design Co is UC San Diego's pre-professional design organization that bridges the gap between student designers and industry. Their mission is to cultivate a space that fosters opportunity and growth as an inclusive community of designers. Design Co hosts a combination of workshops, events, and career growth opportunities every quarter, and they hope to see you there.</p>
                         </Row>
                     </Col>
+=======
+                    <Row className="designco_row3"><img style={{maxWidth:'60%', flex:'auto'}} src={require('./Pictures/designcologo.svg')}/></Row>
+                    <Row className="designco_row4">
+                        <p className="designco_text">Design Co is UC San Diego's pre-professional design organization that bridges the gap between student designers and industry. Their mission is to cultivate a space that fosters opportunity and growth as an inclusive community of designers. Design Co hosts a combination of workshops, events, and career growth opportunities every quarter, and they hope to see you there.</p>
+                    </Row>
+                </Col>
+>>>>>>> 7c8e289bf137e5c016146af6734c3c9bf01b5f4b
 
                 </Row>
 

@@ -63,7 +63,7 @@ class YPS extends Component{
                 <Col md={3}>
                 <Row className="yps_row">
                     
-                    <img style={{maxWidth:'100%'}} src={require('./Pictures/Arrows2.png')}/>
+                    <img style={{flex:'auto',maxWidth:'100%'}} src={require('./Pictures/Arrows2.png')}/>
                     
                     <a  className="whitebutton" href="https://ucsdyoungplanners.weebly.com/" target="_blank">
                         <p>WEBSITE</p>
@@ -82,7 +82,7 @@ class YPS extends Component{
 
                 <Col md={5}>
 
-                    <Row className="yps_row2"><img style={{maxWidth:"60%"}} src={require('./Pictures/YPS.png')}/></Row>
+                    <Row className="yps_row2"><img style={{flex:'auto',maxWidth:"60%"}} src={require('./Pictures/YPS.png')}/></Row>
                     <Row className="yps_row3">
                         <p className="yps_text">The Young Planners' Society at UC San Diego is a nationally registered pre-professional networking organization under the American Planning Association (APA) California Chapter for undergraduate students interested in the field of urban planning to come together! Young Planners' Society aims to enhance the student experience by providing social opportunities for undergraduates to get involved not only on campus, but also in the professional community by connecting undergraduates with resources such as guest speakers, panelists, competitions, and involvement opportunities with the American Planning Association.</p>
                     </Row>

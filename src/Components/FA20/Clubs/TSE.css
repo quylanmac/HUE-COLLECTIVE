@@ -43,6 +43,7 @@
 .tse_div>img{
     max-width: 30%;
     margin: 0;
+    flex:auto;
 }
 
 @media (max-width:767px){
