@@ -102,8 +102,8 @@ class TREND extends Component{
 
                 </Row>
                 <Row className="horizontal_scroll">
-                                <HashLink smooth to="/issue2#section2" className="end2Button">
-                                    <img src={groupButton} />
+                                <HashLink smooth to="/issue2#section2" >
+                                    <img src={groupButton} className="end2Button"/>
                                 </HashLink>
                             </Row>
                         </div>

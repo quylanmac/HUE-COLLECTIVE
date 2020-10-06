@@ -4,11 +4,6 @@ import { connect } from 'react-redux';
 import '../FA20.css';
 import { setTheme } from '../../../redux/actions';
 import Directory from '../Directory.jsx';
-<<<<<<< HEAD
-import './TSE.css'
-import { HashLink } from 'react-router-hash-link';
-import groupButton from '../../../img/Issue2/button.png';
-=======
 import './TSE.css';
 import HorizontalScroll from 'react-scroll-horizontal';
 import { HashLink } from 'react-router-hash-link';
@@ -16,7 +11,6 @@ import GroupInterview from '../../GroupInterview/GroupInterview';
 import groupButton from '../../../img/Issue2/button.png';
 import Empowerment from '../../Empowerment/Empowerment';
 
->>>>>>> fbbcabc1780690045925bf90328164d3d09372b7
 class TSE extends Component{
     constructor(props) {
         super(props);
@@ -101,15 +95,9 @@ class TSE extends Component{
                 </Col>
 
                 </Row>
-<<<<<<< HEAD
-                <HashLink smooth to="/issue2#section2" className="endButton">
-                    <img src={groupButton} />
-                </HashLink>
-                </Container>
-=======
                 <Row className="horizontal_scroll">
-                                <HashLink smooth to="/issue2#section2">
-                                    <img src={groupButton} />
+                                <HashLink smooth to="/issue2#section2" >
+                                    <img src={groupButton} className="end2Button"/>
                                 </HashLink>
                             </Row>
                         </div>
@@ -121,7 +109,6 @@ class TSE extends Component{
                         </div>                    </HorizontalScroll>
                 </div>
                  </Container>
->>>>>>> fbbcabc1780690045925bf90328164d3d09372b7
         )
     }
 }

@@ -9,7 +9,6 @@ import { HashLink } from 'react-router-hash-link';
 import GroupInterview from '../../GroupInterview/GroupInterview';
 import Empowerment from '../../Empowerment/Empowerment';
 import './DesignCo.css';
-import { HashLink } from 'react-router-hash-link';
 import groupButton from '../../../img/Issue2/button.png';
 
 class DesignCo extends Component {
@@ -28,53 +27,6 @@ class DesignCo extends Component {
     handleTheme(theme) {
         this.props.setTheme(theme);
     }
-<<<<<<< HEAD
-    render() {
-        return (
-            <Container>
-                <Row>
-                    <Col md={4}>
-                        <Row md={2}>
-                            <Col md={12} className="issue_2">
-                                <p>ISSUE 2</p>
-                                <p>PLUGGED IN</p>
-                            </Col>
-                        </Row>
-                        <Row xs={10} md={10}>
-                            <Col md={4}>
-                                <Row>
-                                    <img className="plug_1" src={require('../Plug2.svg')} />
-                                </Row>
-                                <Row>
-                                    <img className="outlet" src={require('../Outlet.svg')} />
-                                </Row>
-                            </Col>
-
-                            <Col md={8}>
-                                <Row md={9}>
-                                    <Directory />
-                                </Row>
-                            </Col>
-                        </Row>
-                    </Col>
-
-                    <Col md={3}>
-                        {/* <Row md={12}>asd</Row> */}
-                        <Row className="designco_row2">
-                            {/* <Col> */}
-                            <img style={{ maxWidth: '100%' }} src={require('./Pictures/Arrows2.png')} />
-                            <div className="whitebutton">
-                                <p>WEBSITE</p>
-                                <img src={require('./Pictures/whitearrow.svg')} />
-                            </div>
-                            <div className="whitebutton">
-                                <p>COMMUNITY PAGE</p>
-                                <img src={require('./Pictures/whitearrow.svg')} />
-                            </div>
-                            {/* </Col> */}
-                        </Row>
-                    </Col>
-=======
     render(){
         const parent = { width: `100%`, height: `100%` }
         const child = { width: `1110px`, height: `100%` }
@@ -127,7 +79,6 @@ class DesignCo extends Component {
                         {/* </Col> */}
                     </Row>
                 </Col>
->>>>>>> fbbcabc1780690045925bf90328164d3d09372b7
 
                     <Col md={5}>
 
@@ -138,16 +89,10 @@ class DesignCo extends Component {
                     </Col>
 
                 </Row>
-<<<<<<< HEAD
-                <HashLink smooth to="/issue2#section2" className="endButton">
-                    <img src={groupButton} />
-                </HashLink>
-            </Container>
-=======
 
                 <Row className="horizontal_scroll">
                                 <HashLink smooth to="/issue2#section2">
-                                    <img src={require('../../../img/Issue2/button.png')} />
+                                    <img src={groupButton} className="end2Button"/>
                                 </HashLink>
                             </Row>
                         </div>
@@ -159,7 +104,6 @@ class DesignCo extends Component {
                         </div>                    </HorizontalScroll>
                 </div>
                 </Container>
->>>>>>> fbbcabc1780690045925bf90328164d3d09372b7
         )
     }
 }
