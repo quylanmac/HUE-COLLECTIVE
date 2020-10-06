@@ -16,7 +16,7 @@ class FA20 extends Component {
     componentDidMount() {
         document.body.className = "darktheme";
         this.props.setTheme('black');
-        window.scrollTo(0, 0);
+        // window.scrollTo(0, 0);
     }
     componentWillUnmount() {
         document.body.className = "";
@@ -42,7 +42,7 @@ class FA20 extends Component {
                                         </Col>
                                     </Row>
                                     <Row xs={10} md={10}>
-                                        <Col md={4}>
+                                        <Col xs={4} md={4}>
                                             <Row>
                                                 <img className="plug_1" src={require('./Plug2.svg')} />
                                             </Row>
@@ -51,7 +51,7 @@ class FA20 extends Component {
                                             </Row>
                                         </Col>
 
-                                        <Col md={8}>
+                                        <Col xs={8} md={8}>
                                             <Row md={9}>
                                                 <Directory/>
                                             </Row>

@@ -49,7 +49,7 @@ class Issues extends Component {
                     <Draggable handle="strong" {...dragHandlers}>
                         <div>
                             <Link to={{
-                                pathname: "/issue2",
+                                pathname: "/issue2_landing",
 
                             }}>
                                 <img src={Cover} className="issue2cover" />

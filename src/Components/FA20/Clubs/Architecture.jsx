@@ -5,6 +5,11 @@ import '../FA20.css';
 import './Architecture.css';
 import { setTheme } from '../../../redux/actions';
 import Directory from '../Directory.jsx';
+import HorizontalScroll from 'react-scroll-horizontal';
+import { HashLink } from 'react-router-hash-link';
+import GroupInterview from '../../GroupInterview/GroupInterview';
+import groupButton from '../../../img/Issue2/button.png';
+import Empowerment from '../../Empowerment/Empowerment';
 
 class Architecture extends Component{
     constructor(props) {
@@ -23,9 +28,14 @@ class Architecture extends Component{
         this.props.setTheme(theme);
     }
     render(){
+        const parent = { width: `100%`, height: `100%` }
+        const child = { width: `1110px`, height: `100%` }
         return (
-            <Container>
-            <Row>
+        <Container className="container-fluid">
+            <div style={parent} className="row nopad">
+                <HorizontalScroll className="">
+                    <div className="viewResponsive sec1" id="section1">
+                        <Row className="nopad">
                 <Col md={4}>
                     <Row md={2}>
                     <Col md={12} className="issue_2">
@@ -34,7 +44,7 @@ class Architecture extends Component{
                     </Col>
                     </Row>
                     <Row xs={10} md={10}>
-                        <Col md={4}>
+                        <Col xs={4} md={4}>
                             <Row>
                                 <img className="plug_1" src={require('../Plug2.svg')} />
                             </Row>
@@ -43,7 +53,7 @@ class Architecture extends Component{
                             </Row>
                         </Col>
 
-                        <Col md={8}>
+                        <Col xs={8} md={8}>
                             <Row md={9}>
                                 <Directory/>
                             </Row>
@@ -54,22 +64,23 @@ class Architecture extends Component{
                 <Col md={3}>
                     <Row className="arch_row" style={{backgroundColor:'#257a66'}}>
                         <img style={{maxWidth:'100%'}} src={require('./Pictures/Arrows4.png')}/>
-                        <div style={{marginTop:'2rem'}} className="whitebutton">
+
+                        <a style={{marginTop:"1rem"}} className="whitebutton" href="https://plandesignbuild.ucsd.edu/news/challenge.html" target="_blank">
                             <p>URBAN DESIGN CHALLENGE 2020</p>
                             <img src={require('./Pictures/whitearrow.svg')}/>
-                        </div>
-                        <div className="whitebutton">
+                        </a>
+                        <a  className="whitebutton" href="https://www.facebook.com/architectureatucsd" target="_blank">
                             <p>FACEBOOK</p>
                             <img src={require('./Pictures/whitearrow.svg')}/>
-                        </div>
-                        <div className="whitebutton">
+                        </a>
+                        <a  className="whitebutton" href="https://www.instagram.com/archatucsd" target="_blank">
                             <p>INSTAGRAM</p>
                             <img src={require('./Pictures/whitearrow.svg')}/>
-                        </div>
-                        <div style={{marginBottom:'3rem'}} className="whitebutton">
+                        </a>
+                        <a  className="whitebutton" href="archatucsd@gmail.com" target="_blank">
                             <p>EMAIL</p>
                             <img src={require('./Pictures/whitearrow.svg')}/>
-                        </div>
+                        </a>
                     </Row>
                 </Col>
 
@@ -82,7 +93,22 @@ class Architecture extends Component{
                 </Col>
 
                 </Row>
-                </Container>
+
+
+                <Row className="horizontal_scroll">
+                                <HashLink smooth to="/issue2#section2">
+                                    <img src={groupButton} />
+                                </HashLink>
+                            </Row>
+                        </div>
+                        <div className="viewResponsive sec2" id="section2">
+                            <GroupInterview />
+                        </div>
+                        <div className="viewResponsive sec3" id="section3">
+                            <Empowerment />
+                        </div>                    </HorizontalScroll>
+                </div>
+                 </Container>
         )
     }
 }

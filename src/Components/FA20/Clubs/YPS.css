@@ -1,27 +1,28 @@
 .yps_row{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
     background-color:#ce5cf6;
     position: relative;
-    top:55%;
+    top:60%;
 }
-.yps_row>div{
-    margin-top: 1rem;
-}
-.yps_row>div>div{
-    margin-left: 1rem;
-    width: 100%;
+.yps_row>a{
+    margin-left: 0.5rem;
 }
 
 .yps_text{
     font-family:GT-Walsheim-Pro-Regular-Trial;
     color:white;
     margin: 0;
-    margin-left: 0.3rem;
     font-size: 1.1rem;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     background-color: #d35135;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
 }
 
 .yps_row2{
@@ -31,4 +32,25 @@
 .yps_row3{
     position: relative;
     top:15%;
+}
+
+@media (max-width:767px){
+    .yps_row2>img{
+        max-width: 100% !important;
+    }
+    .yps_text{
+        font-size: 1rem;
+    }
+    .yps_row>a{
+        margin-left: 2rem;
+    }
+    .yps_row{
+        top:0%;
+    }
+    .yps_row2{
+        top:0%;
+    }
+    .yps_row3{
+        top: 0%;
+    }
 }

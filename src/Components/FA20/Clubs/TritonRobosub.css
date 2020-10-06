@@ -22,7 +22,7 @@
     max-width: 30%;
 }
 
-.ts_div_div>div{
+.ts_div_div>a{
     margin-left: 1rem;
     width: 125%;
 }
@@ -30,5 +30,22 @@
 .ts_img{
     max-width: 50%;
     position: relative;
+    padding:1rem;
+    background-color: #ce5cf6;
     left: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+@media (max-width:767px){
+    .ts_img{
+        left:0%;
+        max-width: 100%;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .ts_div_div>a{
+        width: 100%;
+    }
 }

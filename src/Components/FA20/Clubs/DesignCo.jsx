@@ -43,7 +43,7 @@ class DesignCo extends Component{
                     </Col>
                     </Row>
                     <Row xs={10} md={10}>
-                        <Col md={4}>
+                        <Col xs={4} md={4}>
                             <Row>
                                 <img className="plug_1" src={require('../Plug2.svg')} />
                             </Row>
@@ -52,7 +52,7 @@ class DesignCo extends Component{
                             </Row>
                         </Col>
 
-                        <Col md={8}>
+                        <Col xs={8} md={8}>
                             <Row md={9}>
                                 <Directory/>
                             </Row>
@@ -65,14 +65,16 @@ class DesignCo extends Component{
                     <Row className="designco_row2">
                     {/* <Col> */}
                         <img style={{maxWidth:'100%'}} src={require('./Pictures/Arrows2.png')}/>
-                        <div className="whitebutton">
+
+                        <a  className="whitebutton" href="http://ucsddesign.co/" target="_blank">
                             <p>WEBSITE</p>
                             <img src={require('./Pictures/whitearrow.svg')}/>
-                        </div>
-                        <div className="whitebutton">
+                        </a>
+
+                        <a  className="whitebutton" href="https://www.community.ucsddesign.co/" target="_blank">
                             <p>COMMUNITY PAGE</p>
                             <img src={require('./Pictures/whitearrow.svg')}/>
-                        </div>
+                        </a>
                         {/* </Col> */}
                     </Row>
                 </Col>
