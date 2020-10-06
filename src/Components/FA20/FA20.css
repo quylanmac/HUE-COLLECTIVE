@@ -62,7 +62,7 @@
 }
 
 .plug_1{
-    z-index: 2;
+    z-index: 3;
     max-width: 62%;
     margin-top: 0%;
     margin-left: 1.8rem;
@@ -72,18 +72,18 @@
     margin-left: 1rem;
 }
 .landing_link{
-    z-index: 2;
+    z-index: 3;
 }
 .outlet_2{
     margin-top: -40%;
     max-width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 
 .outlet {
     margin-top: -85%;
     max-width: 100%;
-    z-index: 1;
+    z-index: 2;
     /* border-style: solid;
     border-width: medium;
     border-color: black; */
@@ -229,18 +229,22 @@
     border-top: solid;
     border-width: 2px;
     border-color:white;
+    z-index: 0;
     margin-top: -0.25rem;
-    z-index: -99;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
     position: relative;
     left: 5%;
 }
 .horizontal_scroll>:first-child{
     margin-top: 1rem;
+    z-index: 1;
     position: relative;
     left:55%;
 }
 .horizontal_scroll>:first-child>img{
     max-width: 65%;
+    z-index: 1;
 }
 
 @media (max-width:767px) {
