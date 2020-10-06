@@ -106,7 +106,7 @@ class GroupInterview extends Component {
                                     ref={p => this.player = p}
                                     containerWidth={this.state.windowWidth}
                                     containerHeight={this.state.windowHeight}
-                                    src={"https://www.youtube.com/watch?v=5BpR6OLzyig"}
+                                    src={Interview}
                                     poster={InterviewCover}
                                     onPlay={this.handleOnPlay}
                                     onPause={this.handleOnPause}
