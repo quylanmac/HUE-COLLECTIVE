@@ -53,7 +53,7 @@ class FA20 extends Component {
 
                                         <Col md={8}>
                                             <Row md={9}>
-                                                <Directory className="testtest"/>
+                                                <Directory/>
                                             </Row>
                                             <Row md={3}>
                                                 <Col md={12} className="design_outlet">
@@ -91,9 +91,10 @@ class FA20 extends Component {
                                         <p>HUECOLLECTIVE.CO</p>
                                     </Row>
                                 </Col>
-
                             </Row>
-                            <Row>
+
+
+                            <Row className="horizontal_scroll">
                                 <HashLink smooth to="/issue2#section2">
                                     <img src={groupButton} />
                                 </HashLink>
