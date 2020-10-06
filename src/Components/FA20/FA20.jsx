@@ -16,7 +16,7 @@ class FA20 extends Component {
     componentDidMount() {
         document.body.className = "darktheme";
         this.props.setTheme('black');
-        window.scrollTo(0, 0);
+        // window.scrollTo(0, 0);
     }
     componentWillUnmount() {
         document.body.className = "";
@@ -42,7 +42,7 @@ class FA20 extends Component {
                                         </Col>
                                     </Row>
                                     <Row xs={10} md={10}>
-                                        <Col md={4}>
+                                        <Col xs={4} md={4}>
                                             <Row>
                                                 <img className="plug_1" src={require('./Plug2.svg')} />
                                             </Row>
@@ -51,9 +51,9 @@ class FA20 extends Component {
                                             </Row>
                                         </Col>
 
-                                        <Col md={8}>
+                                        <Col xs={8} md={8}>
                                             <Row md={9}>
-                                                <Directory className="testtest" />
+                                                <Directory />
                                             </Row>
                                             <Row md={3}>
                                                 <Col md={12} className="design_outlet">
@@ -91,24 +91,25 @@ class FA20 extends Component {
                                         <p>HUECOLLECTIVE.CO</p>
                                     </Row>
                                 </Col>
-
                             </Row>
-                            
+
+
+                            <Row className="horizontal_scroll">
                                 <HashLink smooth to="/issue2#section2" className="endButton">
                                     <img src={groupButton} />
                                 </HashLink>
-                            
+                            </Row>
                         </div>
-                        <div className="viewResponsive sec2" id="section2">
-                            <GroupInterview />
-                        </div>
-                        <div className="viewResponsive sec3" id="section3">
-                            <Empowerment />
-                        </div>                    </HorizontalScroll>
+                            <div className="viewResponsive sec2" id="section2">
+                                <GroupInterview />
+                            </div>
+                            <div className="viewResponsive sec3" id="section3">
+                                <Empowerment />
+                            </div>                    </HorizontalScroll>
                 </div>
             </Container>
 
         )
     }
 }
-export default connect(null, { setTheme })(FA20);
+export default connect(null, { setTheme})(FA20);

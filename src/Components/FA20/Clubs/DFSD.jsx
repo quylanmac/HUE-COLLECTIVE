@@ -5,8 +5,12 @@ import '../FA20.css';
 import { setTheme } from '../../../redux/actions';
 import Directory from '../Directory.jsx';
 import './DFSD.css';
+import HorizontalScroll from 'react-scroll-horizontal';
 import { HashLink } from 'react-router-hash-link';
+import GroupInterview from '../../GroupInterview/GroupInterview';
 import groupButton from '../../../img/Issue2/button.png';
+import Empowerment from '../../Empowerment/Empowerment';
+
 class DFSD extends Component{
     constructor(props) {
         super(props);
@@ -24,9 +28,14 @@ class DFSD extends Component{
         this.props.setTheme(theme);
     }
     render(){
+        const parent = { width: `100%`, height: `100%` }
+        const child = { width: `1110px`, height: `100%` }
         return (
-            <Container>
-            <Row>
+        <Container className="container-fluid">
+            <div style={parent} className="row nopad">
+                <HorizontalScroll className="">
+                    <div className="viewResponsive sec1" id="section1">
+                        <Row className="nopad">
                 <Col md={4}>
                     <Row md={2}>
                     <Col md={12} className="issue_2">
@@ -35,7 +44,7 @@ class DFSD extends Component{
                     </Col>
                     </Row>
                     <Row xs={10} md={10}>
-                        <Col md={4}>
+                        <Col xs={4} md={4}>
                             <Row>
                                 <img className="plug_1" src={require('../Plug2.svg')} />
                             </Row>
@@ -44,7 +53,7 @@ class DFSD extends Component{
                             </Row>
                         </Col>
 
-                        <Col md={8}>
+                        <Col xs={8} md={8}>
                             <Row md={9}>
                                 <Directory/>
                             </Row>
@@ -54,25 +63,28 @@ class DFSD extends Component{
                         </Col> 
                     </Row>
                 </Col>
+                <Col className="dfsd_mobile">
+                    <Row>
+                        <img className="dfsd_img1" src={require('./Pictures/DFSD.png')}/>
+                    </Row>
+                </Col>
 
                 <Col md={3}>
                     <Row className="dfsd_row">
                     
                         <img style={{maxWidth:'100%'}} src={require('./Pictures/Arrows2.png')}/>
-                        <div>
-                        <div className="whitebutton">
+                        <a  className="whitebutton" href="https://d4sd.org/" target="_blank">
                             <p>WEBSITE</p>
                             <img src={require('./Pictures/whitearrow.svg')}/>
-                        </div>
-                        <div className="whitebutton">
+                        </a>
+                        <a  className="whitebutton" href="https://twitter.com/design4sd?lang=en" target="_blank">
                             <p>TWITTER</p>
                             <img src={require('./Pictures/whitearrow.svg')}/>
-                        </div>
-                        <div className="whitebutton">
+                        </a>
+                        <a  className="whitebutton" href="https://www.facebook.com/DesignForSanDiego" target="_blank">
                             <p>FACEBOOK</p>
                             <img src={require('./Pictures/whitearrow.svg')}/>
-                        </div>
-                        </div>
+                        </a>
                     </Row>
                 </Col>
 
@@ -83,10 +95,20 @@ class DFSD extends Component{
                 </Col>
 
                 </Row>
-                <HashLink smooth to="/issue2#section2" className="end2Button">
-                    <img src={groupButton} />
-                </HashLink>
-                </Container>
+                <Row className="horizontal_scroll">
+                                <HashLink smooth to="/issue2#section2" className="end2Button">
+                                    <img src={groupButton} />
+                                </HashLink>
+                            </Row>
+                        </div>
+                        <div className="viewResponsive sec2" id="section2">
+                            <GroupInterview />
+                        </div>
+                        <div className="viewResponsive sec3" id="section3">
+                            <Empowerment />
+                        </div>                    </HorizontalScroll>
+                </div>
+                 </Container>
         )
     }
 }
