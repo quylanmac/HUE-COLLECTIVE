@@ -31,14 +31,14 @@ class FA20 extends Component {
         this.props.setTheme(theme);
     }
     render() {
-        const parent = { width: `60em`, height: `100%` }
-        const child = { width: `60em`, height: `100%` }
+        const parent = { width: `100%`, height: `100%` }
+        const child = { width: `1110px`, height: `100%` }
         return (
-            <Container>
-                <div style={parent}>
-                    <HorizontalScroll>
-                        <div style={child} id="section1">
-                            <Row>
+            <Container className="container-fluid">
+                <div style={parent} className="row nopad">
+                    <HorizontalScroll className="">
+                        <div className="viewResponsive sec1" id="section1">
+                            <Row className="nopad">
                                 <Col md={4}>
                                     <Row md={2}>
                                         <Col md={12} className="issue_2">
@@ -115,14 +115,15 @@ class FA20 extends Component {
                                 <img src={groupButton} />
                             </HashLink>
                         </div>
-                        <div style={child} id="section2">
+                        <div className="viewResponsive sec2" id="section2">
                             <GroupInterview />
                         </div>
-                        <div style={child} id="section3">
+                        <div className="viewResponsive sec3" id="section3">
                             <Empowerment />
                         </div>                    </HorizontalScroll>
                 </div>
-            </Container>
+                 </Container>
+           
         )
     }
 }
