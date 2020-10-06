@@ -4,6 +4,10 @@ import { connect } from 'react-redux';
 import '../FA20.css';
 import { setTheme } from '../../../redux/actions';
 import Directory from '../Directory.jsx';
+import HorizontalScroll from 'react-scroll-horizontal';
+import { HashLink } from 'react-router-hash-link';
+import GroupInterview from '../../GroupInterview/GroupInterview';
+import Empowerment from '../../Empowerment/Empowerment';
 import './DesignCo.css';
 
 class DesignCo extends Component{
@@ -23,8 +27,13 @@ class DesignCo extends Component{
         this.props.setTheme(theme);
     }
     render(){
+        const parent = { width: `100%`, height: `100%` }
+        const child = { width: `1110px`, height: `100%` }
         return (
             <Container>
+            <div style={parent} className="row nopad">
+                    <HorizontalScroll className="">
+                        <div className="viewResponsive sec1" id="section1">
             <Row>
                 <Col md={4}>
                     <Row md={2}>
@@ -77,6 +86,20 @@ class DesignCo extends Component{
                 </Col>
 
                 </Row>
+
+                <Row className="horizontal_scroll">
+                                <HashLink smooth to="/issue2#section2">
+                                    <img src={require('../../../img/Issue2/button.png')} />
+                                </HashLink>
+                            </Row>
+                        </div>
+                        <div className="viewResponsive sec2" id="section2">
+                            <GroupInterview />
+                        </div>
+                        <div className="viewResponsive sec3" id="section3">
+                            <Empowerment />
+                        </div>                    </HorizontalScroll>
+                </div>
                 </Container>
         )
     }
