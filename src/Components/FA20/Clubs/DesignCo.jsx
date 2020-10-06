@@ -30,11 +30,11 @@ class DesignCo extends Component{
         const parent = { width: `100%`, height: `100%` }
         const child = { width: `1110px`, height: `100%` }
         return (
-            <Container>
+            <Container className="container-fluid">
             <div style={parent} className="row nopad">
                     <HorizontalScroll className="">
                         <div className="viewResponsive sec1" id="section1">
-            <Row>
+            <Row className="nopad">
                 <Col md={4}>
                     <Row md={2}>
                     <Col md={12} className="issue_2">
