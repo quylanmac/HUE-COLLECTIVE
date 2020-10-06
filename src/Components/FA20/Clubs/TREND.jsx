@@ -80,7 +80,7 @@ class TREND extends Component{
 
                     <Row>
                     <div className="trend_div">
-                        <img src={require('./Pictures/Arrows5.png')}/>
+                        <img style={{flex:'auto'}} src={require('./Pictures/Arrows5.png')}/>
                         
                             <div className="trend_div_div">
                                 <a style={{marginTop:"1rem"}} className="blackbutton" href="https://www.facebook.com/trenducsd" target="_blank">

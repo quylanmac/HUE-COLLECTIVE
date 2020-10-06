@@ -81,7 +81,7 @@ class DesignCo extends Component{
 
                 <Col md={5}>
 
-                    <Row className="designco_row3"><img style={{maxWidth:'60%'}} src={require('./Pictures/designcologo.svg')}/></Row>
+                    <Row className="designco_row3"><img style={{maxWidth:'60%', flex:'auto'}} src={require('./Pictures/designcologo.svg')}/></Row>
                     <Row className="designco_row4">
                         <p className="designco_text">Design Co is UC San Diego's pre-professional design organization that bridges the gap between student designers and industry. Their mission is to cultivate a space that fosters opportunity and growth as an inclusive community of designers. Design Co hosts a combination of workshops, events, and career growth opportunities every quarter, and they hope to see you there.</p>
                     </Row>

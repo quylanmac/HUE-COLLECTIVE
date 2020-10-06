@@ -105,14 +105,17 @@
 }
 
 .clouds {
+    flex:auto;
     max-width: 100%;
 }
 
 .smiley {
+    flex:auto;
     max-width: 100%;
 }
 
 .arrows {
+    flex:auto;
     max-width: 100%;
 }
 
@@ -197,10 +200,12 @@
 
 .thought{
     max-width: 100%;
+    flex:auto;
 }
 
 .mug {
     max-width: 100%;
+    flex:auto;
 }
 
 .title {
@@ -208,8 +213,7 @@
     border-width: 2px;
     border-color: black;
     max-width: 200%;
-    /* top:0; */
-    /* left:0; */
+    flex:auto;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 2rem;
