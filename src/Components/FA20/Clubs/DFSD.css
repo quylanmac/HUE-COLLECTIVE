@@ -1,0 +1,42 @@
+.dfsd_img{
+    max-width: 100%;
+    background-color: #e08f61;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+.dfsd_row{
+    background-color:#ce5cf6;
+    position: relative;
+    top:55%;
+}
+.dfsd_row>div{
+    margin-top: 1rem;
+}
+.dfsd_row>div>div{
+    margin-left: 1rem;
+    width: 130%;
+}
+
+.dfsd_row2{
+    position: relative;
+    top:15%;
+}
+
+.dfsd_text{
+    font-family:GT-Walsheim-Pro-Regular-Trial;
+    color:white;
+    margin: 0;
+    margin-left: 0.3rem;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: #d35135;
+}

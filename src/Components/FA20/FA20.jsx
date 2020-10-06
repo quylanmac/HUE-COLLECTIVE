@@ -1,12 +1,6 @@
 import React, { Component, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import Navbar from '../Navbar/Navbar';
 import { connect } from 'react-redux';
-import Draggable from 'react-draggable';
-import ScrollText from 'react-scroll-text';
-import NavBar from 'react-bootstrap/Navbar';
-import { Redirect, NavLink, Link } from 'react-router-dom';
-import { NavDropdown, Nav, Image, DropdownButton } from 'react-bootstrap';
 import './FA20.css';
 import { setTheme } from '../../redux/actions';
 import HorizontalScroll from 'react-scroll-horizontal';
@@ -14,6 +8,7 @@ import { HashLink } from 'react-router-hash-link';
 import GroupInterview from '../GroupInterview/GroupInterview';
 import groupButton from '../../img/Issue2/button.png';
 import Empowerment from '../Empowerment/Empowerment';
+import Directory from './Directory';
 class FA20 extends Component {
     constructor(props) {
         super(props);
@@ -35,10 +30,12 @@ class FA20 extends Component {
         const child = { width: `60em`, height: `100%` }
         return (
             <Container>
-                <div style={parent}>
+                {/* <div style={parent}>
                     <HorizontalScroll>
-                        <div style={child} id="section1">
+                        <div style={child} id="section1"> */}
                             <Row>
+
+                            {/* COL 1 */}
                                 <Col md={4}>
                                     <Row md={2}>
                                         <Col md={12} className="issue_2">
@@ -58,18 +55,7 @@ class FA20 extends Component {
 
                                         <Col md={8}>
                                             <Row md={9}>
-                                                <Col className="org_directory">
-                                                    <h1>DESIGN ORGS DIRECTORY</h1>
-                                                    <p>Design Co</p>
-                                                    <p>Triton Software Engineering (TSE)</p>
-                                                    <p>Design for America (DFA)</p>
-                                                    <p>Architecture @ UCSD</p>
-                                                    <p>Trend Magazine</p>
-                                                    <p>ACM Design</p>
-                                                    <p>Design for San Diego</p>
-                                                    <p>Triton Robosub</p>
-                                                    <p>Young Planners Society</p>
-                                                </Col>
+                                                <Directory className="testtest"/>
                                             </Row>
                                             <Row md={3}>
                                                 <Col md={12} className="design_outlet">
@@ -81,6 +67,8 @@ class FA20 extends Component {
 
                                     </Row>
                                 </Col>
+
+                                {/* COL 2 */}
                                 <Col md={3}>
                                     <Row md={9}>
                                         <img className="clouds" src={require('./Clouds.svg')} />
@@ -90,17 +78,13 @@ class FA20 extends Component {
                                     </Row>
                                 </Col>
 
+                                {/* COL 3 */}
                                 <Col md={5}>
                                     <Row md={3}>
                                         <img className="arrows" src={require('./Arrows.svg')} />
                                     </Row>
                                     <Row md={2}>
-                                        {/* <Col md={8}> */}
                                         <img className="text" src={require('./Text.svg')} />
-                                        {/* </Col> */}
-                                        {/* <Col md={4}> */}
-                                        {/* <img className="thought" src={require('./Thought.svg')}/> */}
-                                        {/* </Col> */}
                                     </Row>
                                     <Row md={5}>
                                         <img className="mug" src={require('./Mug.svg')} />
@@ -111,17 +95,20 @@ class FA20 extends Component {
                                 </Col>
 
                             </Row>
-                            <HashLink smooth to="/issue2#section2">
-                                <img src={groupButton} />
-                            </HashLink>
+                            {/* <Row>
+                                <HashLink smooth to="/issue2#section2">
+                                    <img src={groupButton} />
+                                </HashLink>
+                            </Row>
                         </div>
                         <div style={child} id="section2">
                             <GroupInterview />
                         </div>
                         <div style={child} id="section3">
                             <Empowerment />
-                        </div>                    </HorizontalScroll>
-                </div>
+                        </div>                    
+                        </HorizontalScroll>
+                </div> */}
             </Container>
         )
     }

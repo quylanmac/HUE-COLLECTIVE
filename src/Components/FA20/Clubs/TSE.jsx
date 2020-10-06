@@ -4,16 +4,15 @@ import { connect } from 'react-redux';
 import '../FA20.css';
 import { setTheme } from '../../../redux/actions';
 import Directory from '../Directory.jsx';
-import './DesignCo.css';
+import './TSE.css'
 
-class DesignCo extends Component{
+class TSE extends Component{
     constructor(props) {
         super(props);
     }
     componentDidMount() {
         document.body.className = "darktheme";
         this.props.setTheme('black');
-        // window.scrollTo(0,0);
     }
     componentWillUnmount() {
         document.body.className = "";
@@ -52,27 +51,33 @@ class DesignCo extends Component{
                 </Col>
 
                 <Col md={3}>
-                    {/* <Row md={12}>asd</Row> */}
-                    <Row className="designco_row2">
-                    {/* <Col> */}
-                        <img style={{maxWidth:'100%'}} src={require('./Pictures/Arrows2.png')}/>
-                        <div className="whitebutton">
-                            <p>WEBSITE</p>
-                            <img src={require('./Pictures/whitearrow.svg')}/>
-                        </div>
-                        <div className="whitebutton">
-                            <p>COMMUNITY PAGE</p>
-                            <img src={require('./Pictures/whitearrow.svg')}/>
-                        </div>
-                        {/* </Col> */}
+                    <Row style={{backgroundColor:'#257a66'}}>
+                        <p className="tse_text">Triton Software Engineering (TSE) is a multidisciplinary student organization at UC San Diego. We partner with nonprofits to design and develop software, websites and mobile applications pro-bono for social good, while giving our developers practical, real world experience.</p>
                     </Row>
                 </Col>
 
                 <Col md={5}>
 
-                    <Row className="designco_row3"><img style={{maxWidth:'60%'}} src={require('./Pictures/designcologo.svg')}/></Row>
-                    <Row className="designco_row4">
-                        <p className="designco_text">Design Co is UC San Diego's pre-professional design organization that bridges the gap between student designers and industry. Their mission is to cultivate a space that fosters opportunity and growth as an inclusive community of designers. Design Co hosts a combination of workshops, events, and career growth opportunities every quarter, and they hope to see you there.</p>
+                    <Row><img src={require('./Pictures/TSE.svg')}/></Row>
+                    <Row>
+                    {/* <Col md={7} className="tse_col"> */}
+                    <div className="tse_div">
+                        <div>
+                            <div className="blackbutton">
+                                <p>FACEBOOK</p>
+                                <img src={require('./Pictures/whitearrow.svg')}/>
+                            </div>
+                            <div className="blackbutton">
+                                <p>INSTAGRAM</p>
+                                <img src={require('./Pictures/whitearrow.svg')}/>
+                            </div>
+                            <div className="blackbutton">
+                                <p>LINKEDIN</p>
+                                <img src={require('./Pictures/whitearrow.svg')}/>
+                            </div>
+                        </div>
+                            <img src={require('./Pictures/Arrows3.png')}/>
+                        </div>
                     </Row>
                 </Col>
 
@@ -81,4 +86,4 @@ class DesignCo extends Component{
         )
     }
 }
-export default connect(null, {setTheme})(DesignCo);
+export default connect(null, {setTheme})(TSE);

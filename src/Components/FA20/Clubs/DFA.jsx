@@ -4,9 +4,9 @@ import { connect } from 'react-redux';
 import '../FA20.css';
 import { setTheme } from '../../../redux/actions';
 import Directory from '../Directory.jsx';
-import './DesignCo.css';
+import './DFA.css';
 
-class DesignCo extends Component{
+class DFA extends Component{
     constructor(props) {
         super(props);
     }
@@ -52,27 +52,34 @@ class DesignCo extends Component{
                 </Col>
 
                 <Col md={3}>
-                    {/* <Row md={12}>asd</Row> */}
-                    <Row className="designco_row2">
-                    {/* <Col> */}
-                        <img style={{maxWidth:'100%'}} src={require('./Pictures/Arrows2.png')}/>
-                        <div className="whitebutton">
-                            <p>WEBSITE</p>
-                            <img src={require('./Pictures/whitearrow.svg')}/>
-                        </div>
-                        <div className="whitebutton">
-                            <p>COMMUNITY PAGE</p>
-                            <img src={require('./Pictures/whitearrow.svg')}/>
-                        </div>
-                        {/* </Col> */}
+                    <Row style={{backgroundColor:'#ce5cf6'}}>
+                        <p className="dfa_text">We design people-centered products, services, and experiences to tackle local challenges. Our studio aims to build a community of interdisciplinary students of all majors who fully embraces the Human-Centered Design process to aid in social innovation.</p>
+                    </Row>
+                    <Row>
+                        <img style={{maxWidth:'100%'}} src={require('./Pictures/DFAlogo.png')}/>
                     </Row>
                 </Col>
 
                 <Col md={5}>
 
-                    <Row className="designco_row3"><img style={{maxWidth:'60%'}} src={require('./Pictures/designcologo.svg')}/></Row>
-                    <Row className="designco_row4">
-                        <p className="designco_text">Design Co is UC San Diego's pre-professional design organization that bridges the gap between student designers and industry. Their mission is to cultivate a space that fosters opportunity and growth as an inclusive community of designers. Design Co hosts a combination of workshops, events, and career growth opportunities every quarter, and they hope to see you there.</p>
+                    <Row className="dfa_row">
+                        <div className="dfa_div">
+                            <div>
+                                <div className="whitebutton">
+                                    <p>INFO NIGHT 10/5</p>
+                                    <img src={require('./Pictures/whitearrow.svg')}/>
+                                </div>
+                                <div className="whitebutton">
+                                    <p>INSTAGRAM</p>
+                                    <img src={require('./Pictures/whitearrow.svg')}/>
+                                </div>
+                                <div className="whitebutton">
+                                    <p>WEBSITE</p>
+                                    <img src={require('./Pictures/whitearrow.svg')}/>
+                                </div>
+                            </div>
+                            <img src={require('./Pictures/Arrows3.png')}/>
+                        </div>
                     </Row>
                 </Col>
 
@@ -81,4 +88,4 @@ class DesignCo extends Component{
         )
     }
 }
-export default connect(null, {setTheme})(DesignCo);
+export default connect(null, {setTheme})(DFA);

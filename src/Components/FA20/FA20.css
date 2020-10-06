@@ -44,25 +44,6 @@
     margin-bottom: 0%;   
 }
 
-.org_directory{
-    background-color: white;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
-}
-
-.org_directory>h1{
-    font-family: GT-Haptik-Black-Trail;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.org_directory>p{
-    font-family: GT-Walsheim-Pro-Regular-Trial;
-    font-size: 1.2rem;
-    margin-top: -0.25rem;
-}
-
 .plug_1{
     z-index: -1;
     max-width: 62%;
@@ -109,6 +90,57 @@
     margin-left: 0rem;
     padding: 0;
     max-width: 100%;
+}
+
+.whitebutton{
+    display: flex;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-left: 1rem; */
+    /* margin-right: 1rem; */
+    margin-bottom: 1rem;
+    padding-bottom:-1rem;
+}
+
+.whitebutton>p{
+    vertical-align: middle;
+    font-family: GT-Walsheim-Pro-Regular-Trial;
+    margin: 0.5rem;
+    color:white;
+}
+
+.whitebutton>img{
+    margin-right: 0.5rem;
+}
+
+.blackbutton{
+    display: flex;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-left: 1rem; */
+    /* margin-right: 1rem; */
+    margin-bottom: 1rem;
+    padding-bottom:-1rem;
+}
+
+.blackbutton>p{
+    vertical-align: middle;
+    font-family: GT-Walsheim-Pro-Regular-Trial;
+    margin: 0.5rem;
+    color:black;
+}
+
+.blackbutton>img{
+    filter: invert(100%);
+    margin-right: 0.5rem;
 }
 
 .thought{
