@@ -5,6 +5,11 @@ import '../FA20.css';
 import { setTheme } from '../../../redux/actions';
 import Directory from '../Directory.jsx';
 import './YPS.css';
+import HorizontalScroll from 'react-scroll-horizontal';
+import { HashLink } from 'react-router-hash-link';
+import GroupInterview from '../../GroupInterview/GroupInterview';
+import groupButton from '../../../img/Issue2/button.png';
+import Empowerment from '../../Empowerment/Empowerment';
 class YPS extends Component{
     constructor(props) {
         super(props);
@@ -22,9 +27,14 @@ class YPS extends Component{
         this.props.setTheme(theme);
     }
     render(){
+        const parent = { width: `100%`, height: `100%` }
+        const child = { width: `1110px`, height: `100%` }
         return (
-            <Container>
-            <Row>
+        <Container className="container-fluid">
+            <div style={parent} className="row nopad">
+                <HorizontalScroll className="">
+                    <div className="viewResponsive sec1" id="section1">
+                        <Row className="nopad">
                 <Col md={4}>
                     <Row md={2}>
                     <Col md={12} className="issue_2">
@@ -33,7 +43,7 @@ class YPS extends Component{
                     </Col>
                     </Row>
                     <Row xs={10} md={10}>
-                        <Col md={4}>
+                        <Col xs={4} md={4}>
                             <Row>
                                 <img className="plug_1" src={require('../Plug2.svg')} />
                             </Row>
@@ -42,7 +52,7 @@ class YPS extends Component{
                             </Row>
                         </Col>
 
-                        <Col md={8}>
+                        <Col xs={8} md={8}>
                             <Row md={9}>
                                 <Directory/>
                             </Row>
@@ -54,20 +64,19 @@ class YPS extends Component{
                 <Row className="yps_row">
                     
                     <img style={{maxWidth:'100%'}} src={require('./Pictures/Arrows2.png')}/>
-                    <div>
-                    <div className="whitebutton">
+                    
+                    <a  className="whitebutton" href="https://ucsdyoungplanners.weebly.com/" target="_blank">
                         <p>WEBSITE</p>
                         <img src={require('./Pictures/whitearrow.svg')}/>
-                    </div>
-                    <div className="whitebutton">
+                    </a>
+                    <a  className="whitebutton" href="https://ucsdyoungplanners.weebly.com/gbm-schedule" target="_blank">
                         <p>GBM SCHEDULE</p>
                         <img src={require('./Pictures/whitearrow.svg')}/>
-                    </div>
-                    <div className="whitebutton">
+                    </a>
+                    <a  className="whitebutton" href="https://instagram.com/ucsdyps" target="_blank">
                         <p>INSTAGRAM</p>
                         <img src={require('./Pictures/whitearrow.svg')}/>
-                    </div>
-                    </div>
+                    </a>
                 </Row>
                 </Col>
 
@@ -80,7 +89,20 @@ class YPS extends Component{
                 </Col>
 
                 </Row>
-                </Container>
+                <Row className="horizontal_scroll">
+                                <HashLink smooth to="/issue2#section2">
+                                    <img src={groupButton} />
+                                </HashLink>
+                            </Row>
+                        </div>
+                        <div className="viewResponsive sec2" id="section2">
+                            <GroupInterview />
+                        </div>
+                        <div className="viewResponsive sec3" id="section3">
+                            <Empowerment />
+                        </div>                    </HorizontalScroll>
+                </div>
+                 </Container>
         )
     }
 }
