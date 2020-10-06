@@ -1,5 +1,24 @@
+@media (max-width: 767px) {
+    .viewResponsive {
+        width: calc(100vw - 30px);
+        height: 100%;
+    }
+
+}
+@media (min-width: 768px) {
+    .viewResponsive {
+        width: 1110px;
+        height: 100%;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
 .scroll-horizontal > div {
     position: relative !important;
+}
+.nopad {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
 @font-face {
     font-family: "GT-Haptik-Black-Trail";
@@ -7,24 +26,23 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-@font-face{
+@font-face {
     font-family: "GT-Walsheim-Pro-Regular-Trial";
     src: local("GT-Walsheim-Pro-Regular-Trial"), url(../../font/GT-Walsheim-Pro-Regular-Trial.otf);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-.issue_2{
+.issue_2 {
     background-color: #ce5cf6;
-  
+
     border-style: solid;
     border-width: 2px;
     border-color: black;
 
-    top:0;
+    top: 0;
     left: 0;
     /* width: 10%; */
-   
 }
 
 .issue_2 :first-child {
@@ -32,45 +50,44 @@
     font-size: 2.5rem;
     -webkit-text-stroke: 2px black;
     font-family: GT-Haptik-Black-Trail;
-    
 }
-.issue_2 :nth-child(2){
+.issue_2 :nth-child(2) {
     color: white;
     margin-top: -10%;
     font-size: 3.5rem;
     font-weight: 700;
     -webkit-text-stroke: 3px black;
     font-family: GT-Haptik-Black-Trail;
-    margin-bottom: 0%;   
+    margin-bottom: 0%;
 }
 
-.org_directory{
+.org_directory {
     background-color: white;
     border-style: solid;
     border-width: 2px;
     border-color: black;
 }
 
-.org_directory>h1{
+.org_directory > h1 {
     font-family: GT-Haptik-Black-Trail;
     font-size: 2rem;
     font-weight: 700;
 }
 
-.org_directory>p{
+.org_directory > p {
     font-family: GT-Walsheim-Pro-Regular-Trial;
     font-size: 1.2rem;
     margin-top: -0.25rem;
 }
 
-.plug_1{
+.plug_1 {
     z-index: -1;
     max-width: 62%;
     margin-top: 0%;
     margin-left: 1.8rem;
 }
 
-.outlet{
+.outlet {
     margin-top: -85%;
     max-width: 100%;
     z-index: -2;
@@ -79,7 +96,7 @@
     border-color: black;
 }
 
-.design_outlet{
+.design_outlet {
     background-color: #e08f61;
     border-style: solid;
     border-width: 2px;
@@ -87,39 +104,39 @@
     padding-top: 0.5rem;
 }
 
-.design_outlet>p{
+.design_outlet > p {
     font-family: GT-Walsheim-Pro-Regular-Trial;
     text-align: center;
     font-size: 1.2rem;
 }
 
-.clouds{
+.clouds {
     max-width: 100%;
 }
 
-.smiley{
+.smiley {
     max-width: 100%;
 }
 
-.arrows{
+.arrows {
     max-width: 100%;
 }
 
-.text{
+.text {
     margin-left: 0rem;
     padding: 0;
     max-width: 100%;
 }
 
-.thought{
+.thought {
     max-width: 100%;
 }
 
-.mug{
+.mug {
     max-width: 100%;
 }
 
-.title{
+.title {
     border-style: solid;
     border-width: 2px;
     border-color: black;
@@ -132,7 +149,7 @@
     padding-right: 0.5rem;
     background-color: #257a66;
 }
-.title>p{
+.title > p {
     align-self: center;
     color: white;
     font-size: 2.9rem;

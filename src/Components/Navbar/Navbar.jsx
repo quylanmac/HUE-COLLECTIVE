@@ -49,7 +49,7 @@ const Navbar = ({ color, theme }) => {
                     {myTheme === "white" ? <img src={BlackLogo} className="imgTest" /> : <img src={WhiteLogo} className="imgTest" />}
 
                 </NavBar.Brand>
-                <NavBar.Toggle aria-controls="responsive-navbar-nav" />
+                <NavBar.Toggle aria-controls="responsive-navbar-nav" className="navbar-dark"/>
                 <NavBar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto">
                         <HashLink className={myTheme === "white" ? 'navLinks2 nav-link' : 'navLinks nav-link'} smooth to="/#issueHome" >

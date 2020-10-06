@@ -22,6 +22,8 @@
         position:absolute;
         align-items:center;
         margin-top:25%;
+        height:250px;
+        width: 1200px;
     }
 }
 .promo {
@@ -34,6 +36,7 @@
     background:transparent;
     border:0 !important;
     position: absolute !important;
+    padding: 0 !important;
 }
 .show {
     visibility: visible;
