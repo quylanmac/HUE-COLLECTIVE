@@ -20,6 +20,7 @@
 }
 .ts_div>img{
     max-width: 30%;
+    flex:auto;
 }
 
 .ts_div_div>a{
@@ -28,6 +29,7 @@
 }
 
 .ts_img{
+    flex:auto;
     max-width: 50%;
     position: relative;
     padding:1rem;

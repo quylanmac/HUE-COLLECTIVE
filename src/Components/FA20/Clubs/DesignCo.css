@@ -10,7 +10,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+.designco_row3>img{
+    flex:auto;
+}
 .designco_row2{
     background-color:#ce5cf6;
     top:69%;

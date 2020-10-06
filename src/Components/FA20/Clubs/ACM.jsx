@@ -87,7 +87,7 @@ class ACM extends Component{
                                     <img src={require('./Pictures/whitearrow.svg')}/>
                                 </a>
                             </div>
-                            <img src={require('./Pictures/Arrows6.png')}/>
+                            <img style={{flex:'auto'}} src={require('./Pictures/Arrows6.png')}/>
                         </div>
                     </Row>
                 </Col>

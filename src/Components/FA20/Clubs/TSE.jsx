@@ -69,7 +69,7 @@ class TSE extends Component{
 
                 <Col md={5}>
 
-                    <Row><img style={{maxWidth:"100%"}} src={require('./Pictures/TSE.svg')}/></Row>
+                    <Row><img style={{maxWidth:"100%", flex:'auto'}} src={require('./Pictures/TSE.svg')}/></Row>
                     <Row>
                     {/* <Col md={7} className="tse_col"> */}
                     <div className="tse_div">

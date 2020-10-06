@@ -50,6 +50,7 @@
 .dfa_div>img{
     max-width: 25%;
     margin: 0;
+    flex:auto;
 }
 
 @media (max-width:767px){
