@@ -9,6 +9,7 @@ import TranscriptButton from '../../img/Issue2/Transcript.png';
 import VideoPlayer from 'react-background-video-player';
 import playInterview from '../../img/Issue2/playInterview.png';
 import pauseInterview from '../../img/Issue2/pauseInterview.png';
+import Interview from '../../img/Issue2/Interview.mp4';
 import InterviewCover from '../../img/Issue2/interviewCover.png';
 import { Scrollbars } from 'react-custom-scrollbars';
 import playVideo from '../../img/Issue2/playVideo.png';
@@ -105,12 +106,13 @@ class GroupInterview extends Component {
                                 {/* <ReactPlayer className="" width={'100%'} maxHeight={'100%'} url={"https://www.youtube.com/watch?v=AZyUlomy4ls"}
                                     playIcon={<img src={require(`../../img/playIcon.png`)}></img>}
                                     controls={true} playing light={InterviewCover} ></ReactPlayer> */}
-                                {/* <VideoPlayer
+                                <VideoPlayer
                                     ref={p => this.player = p}
                                     containerWidth={this.state.windowWidth}
                                     containerHeight={this.state.windowHeight}
-                                    src={Interview}
-                                    poster={'http://il6.picdn.net/shutterstock/videos/3548084/thumb/1.jpg?i10c=img.resize(height:160)'}                                    onPlay={this.handleOnPlay}
+                                    src={"https://media.githubusercontent.com/media/quylanmac/HUE-COLLECTIVE/progress/src/img/promo.mp4"}
+                                    poster={InterviewCover}
+                                    onPlay={this.handleOnPlay}
                                     onPause={this.handleOnPause}
                                     onMute={this.handleOnMute}
                                     onUnmute={this.handleOnUnmute}
@@ -121,7 +123,7 @@ class GroupInterview extends Component {
                                     loop={false}
                                     onEnd={this.toggleMute}
                                     className={this.state.isPlaying ? (this.state.showControls ? 'lightOpacity interview' : 'normalOpacity interview') : 'lightOpacity interview'}
-                                /> */}
+                                />
 
                                 <nav onMouseEnter={this.handleControlsOpen} onMouseLeave={this.handleControlsClose} className="interviewLayer">
                                     <TransitionGroup component={null}>
@@ -242,7 +244,7 @@ Bri: Ok, I think this meeting is adjourned
 
                     </div>
                     <HashLink smooth to="/issue2#section3" className="endButton" >
-                        <img src={EmpowerButton} className="responseImg"/>
+                        <img src={EmpowerButton} />
                     </HashLink>
                 </div>
             </>

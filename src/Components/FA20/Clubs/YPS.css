@@ -1,4 +1,5 @@
 .yps_row{
+<<<<<<< HEAD
     background-color:#ce5cf6;
     position: relative;
     top:55%;
@@ -9,26 +10,77 @@
 .yps_row>div>div{
     margin-left: 1rem;
     width: 100%;
+=======
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    background-color:#ce5cf6;
+    position: relative;
+    top:60%;
+    z-index: 1;
+}
+.yps_row>a{
+    margin-left: 0.5rem;
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 }
 
 .yps_text{
     font-family:GT-Walsheim-Pro-Regular-Trial;
     color:white;
     margin: 0;
+<<<<<<< HEAD
     margin-left: 0.3rem;
+=======
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
     font-size: 1.1rem;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     background-color: #d35135;
+<<<<<<< HEAD
+=======
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 }
 
 .yps_row2{
     position: relative;
     top:15%;
+<<<<<<< HEAD
+=======
+    z-index: 1;
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 }
 .yps_row3{
     position: relative;
     top:15%;
+<<<<<<< HEAD
+=======
+    z-index: 1;
+}
+
+@media (max-width:767px){
+    .yps_row2>img{
+        flex:auto;
+        max-width: 100% !important;
+    }
+    .yps_text{
+        font-size: 1rem;
+    }
+    .yps_row>a{
+        margin-left: 2rem;
+    }
+    .yps_row{
+        top:0%;
+    }
+    .yps_row2{
+        top:0%;
+    }
+    .yps_row3{
+        top: 0%;
+    }
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 }

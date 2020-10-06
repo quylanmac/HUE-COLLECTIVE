@@ -5,8 +5,16 @@ import '../FA20.css';
 import { setTheme } from '../../../redux/actions';
 import Directory from '../Directory.jsx';
 import './YPS.css';
+<<<<<<< HEAD
 import { HashLink } from 'react-router-hash-link';
 import groupButton from '../../../img/Issue2/button.png';
+=======
+import HorizontalScroll from 'react-scroll-horizontal';
+import { HashLink } from 'react-router-hash-link';
+import GroupInterview from '../../GroupInterview/GroupInterview';
+import groupButton from '../../../img/Issue2/button.png';
+import Empowerment from '../../Empowerment/Empowerment';
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 class YPS extends Component{
     constructor(props) {
         super(props);
@@ -24,9 +32,20 @@ class YPS extends Component{
         this.props.setTheme(theme);
     }
     render(){
+<<<<<<< HEAD
         return (
             <Container>
             <Row>
+=======
+        const parent = { width: `100%`, height: `100%` }
+        const child = { width: `1110px`, height: `100%` }
+        return (
+        <Container className="container-fluid">
+            <div style={parent} className="row nopad">
+                <HorizontalScroll className="">
+                    <div className="viewResponsive sec1" id="section1">
+                        <Row className="nopad">
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
                 <Col md={4}>
                     <Row md={2}>
                     <Col md={12} className="issue_2">
@@ -35,7 +54,11 @@ class YPS extends Component{
                     </Col>
                     </Row>
                     <Row xs={10} md={10}>
+<<<<<<< HEAD
                         <Col md={4}>
+=======
+                        <Col xs={4} md={4}>
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
                             <Row>
                                 <img className="plug_1" src={require('../Plug2.svg')} />
                             </Row>
@@ -44,7 +67,11 @@ class YPS extends Component{
                             </Row>
                         </Col>
 
+<<<<<<< HEAD
                         <Col md={8}>
+=======
+                        <Col xs={8} md={8}>
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
                             <Row md={9}>
                                 <Directory/>
                             </Row>
@@ -55,6 +82,7 @@ class YPS extends Component{
                 <Col md={3}>
                 <Row className="yps_row">
                     
+<<<<<<< HEAD
                     <img style={{maxWidth:'100%'}} src={require('./Pictures/Arrows2.png')}/>
                     <div>
                     <div className="whitebutton">
@@ -70,22 +98,59 @@ class YPS extends Component{
                         <img src={require('./Pictures/whitearrow.svg')}/>
                     </div>
                     </div>
+=======
+                    <img style={{flex:'auto',maxWidth:'100%'}} src={require('./Pictures/Arrows2.png')}/>
+                    
+                    <a  className="whitebutton" href="https://ucsdyoungplanners.weebly.com/" target="_blank">
+                        <p>WEBSITE</p>
+                        <img src={require('./Pictures/whitearrow.svg')}/>
+                    </a>
+                    <a  className="whitebutton" href="https://ucsdyoungplanners.weebly.com/gbm-schedule" target="_blank">
+                        <p>GBM SCHEDULE</p>
+                        <img src={require('./Pictures/whitearrow.svg')}/>
+                    </a>
+                    <a  className="whitebutton" href="https://instagram.com/ucsdyps" target="_blank">
+                        <p>INSTAGRAM</p>
+                        <img src={require('./Pictures/whitearrow.svg')}/>
+                    </a>
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
                 </Row>
                 </Col>
 
                 <Col md={5}>
 
+<<<<<<< HEAD
                     <Row className="yps_row2"><img style={{maxWidth:"60%"}} src={require('./Pictures/YPS.png')}/></Row>
+=======
+                    <Row className="yps_row2"><img style={{flex:'auto',maxWidth:"60%"}} src={require('./Pictures/YPS.png')}/></Row>
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
                     <Row className="yps_row3">
                         <p className="yps_text">The Young Planners' Society at UC San Diego is a nationally registered pre-professional networking organization under the American Planning Association (APA) California Chapter for undergraduate students interested in the field of urban planning to come together! Young Planners' Society aims to enhance the student experience by providing social opportunities for undergraduates to get involved not only on campus, but also in the professional community by connecting undergraduates with resources such as guest speakers, panelists, competitions, and involvement opportunities with the American Planning Association.</p>
                     </Row>
                 </Col>
 
                 </Row>
+<<<<<<< HEAD
                 <HashLink smooth to="/issue2#section2" className="end2Button">
                     <img src={groupButton} />
                 </HashLink>
                 </Container>
+=======
+                <Row className="horizontal_scroll">
+                                <HashLink smooth to="/issue2#section2">
+                                    <img src={groupButton} className="end2Button"/>
+                                </HashLink>
+                            </Row>
+                        </div>
+                        <div className="viewResponsive sec2" id="section2">
+                            <GroupInterview />
+                        </div>
+                        <div className="viewResponsive sec3" id="section3">
+                            <Empowerment />
+                        </div>                    </HorizontalScroll>
+                </div>
+                 </Container>
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
         )
     }
 }

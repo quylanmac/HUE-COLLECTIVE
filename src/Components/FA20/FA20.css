@@ -13,9 +13,13 @@
         margin-left: 5px;
     }
 }
+<<<<<<< HEAD
 .responseImg {
     max-width:100%;
 }
+=======
+
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 .scroll-horizontal > div {
     position: relative !important;
 }
@@ -70,19 +74,45 @@
 }
 
 .plug_1{
+<<<<<<< HEAD
     z-index: -1;
+=======
+    z-index: 3;
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
     max-width: 62%;
     margin-top: 0%;
     margin-left: 1.8rem;
 }
+<<<<<<< HEAD
+=======
+.plug_2{
+    max-width: 85%;
+    margin-left: 1rem;
+}
+.landing_link{
+    z-index: 3;
+}
+.outlet_2{
+    margin-top: -40%;
+    max-width: 100%;
+    z-index: 2;
+}
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 
 .outlet {
     margin-top: -85%;
     max-width: 100%;
+<<<<<<< HEAD
     z-index: -2;
     border-style: solid;
     border-width: medium;
     border-color: black;
+=======
+    z-index: 2;
+    /* border-style: solid;
+    border-width: medium;
+    border-color: black; */
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 }
 
 .design_outlet {
@@ -90,7 +120,12 @@
     border-style: solid;
     border-width: 2px;
     border-color: black;
+<<<<<<< HEAD
     padding-top: 0.5rem;
+=======
+    padding-top: 0.75rem;
+    padding-bottom: 0.25rem;
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 }
 
 .design_outlet > p {
@@ -100,14 +135,26 @@
 }
 
 .clouds {
+<<<<<<< HEAD
+=======
+    flex:auto;
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
     max-width: 100%;
 }
 
 .smiley {
+<<<<<<< HEAD
+=======
+    flex:auto;
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
     max-width: 100%;
 }
 
 .arrows {
+<<<<<<< HEAD
+=======
+    flex:auto;
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
     max-width: 100%;
 }
 
@@ -115,6 +162,10 @@
     margin-left: 0rem;
     padding: 0;
     max-width: 100%;
+<<<<<<< HEAD
+=======
+    flex:auto;
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 }
 
 .whitebutton{
@@ -125,8 +176,11 @@
     width: 95%;
     align-items: center;
     justify-content: space-between;
+<<<<<<< HEAD
     /* margin-left: 1rem; */
     /* margin-right: 1rem; */
+=======
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
     margin-bottom: 1rem;
     padding-bottom:-1rem;
 }
@@ -135,11 +189,31 @@
     vertical-align: middle;
     font-family: GT-Walsheim-Pro-Regular-Trial;
     margin: 0.5rem;
+<<<<<<< HEAD
+=======
+    font-size: 1rem;
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
     color:white;
 }
 
 .whitebutton>img{
     margin-right: 0.5rem;
+<<<<<<< HEAD
+=======
+    max-width: 10%;
+}
+
+.whitebutton:hover{
+    filter:invert(100%) ;
+    background-color: white;
+    text-decoration: none;
+}
+.whitebutton:hover>p{
+    filter: invert(100%);
+}
+.whitebutton:hover>img{
+    filter: invert(100%);
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 }
 
 .blackbutton{
@@ -160,20 +234,44 @@
     vertical-align: middle;
     font-family: GT-Walsheim-Pro-Regular-Trial;
     margin: 0.5rem;
+<<<<<<< HEAD
+=======
+    font-size: 1rem;
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
     color:black;
 }
 
 .blackbutton>img{
     filter: invert(100%);
     margin-right: 0.5rem;
+<<<<<<< HEAD
+=======
+    max-width: 10%;
+}
+.blackbutton:hover{
+    background-color:white;
+    filter:invert(100%);
+    text-decoration: none;
+}
+.blackbutton:hover>img{
+    filter: invert(100%);
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 }
 
 .thought{
     max-width: 100%;
+<<<<<<< HEAD
+=======
+    flex:auto;
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 }
 
 .mug {
     max-width: 100%;
+<<<<<<< HEAD
+=======
+    flex:auto;
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 }
 
 .title {
@@ -181,19 +279,139 @@
     border-width: 2px;
     border-color: black;
     max-width: 200%;
+<<<<<<< HEAD
     /* top:0; */
     /* left:0; */
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+=======
+    flex:auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
     background-color: #257a66;
 }
 .title > p {
     align-self: center;
     color: white;
+<<<<<<< HEAD
     font-size: 2.9rem;
+=======
+    font-size: 2.5rem;
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
     -webkit-text-stroke: 2px black;
     font-family: GT-Haptik-Black-Trail;
     margin-bottom: 0%;
 }
+<<<<<<< HEAD
+=======
+
+.horizontal_scroll{
+    border-top: solid;
+    border-width: 2px;
+    border-color:white;
+    z-index: 0;
+    margin-top: -0.25rem;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    position: relative;
+}
+.horizontal_scroll>:first-child{
+    margin-top: 1rem;
+    z-index: 1;
+    position: relative;
+    left:55%;
+}
+.horizontal_scroll>:first-child>img{
+    max-width: 65%;
+    z-index: 1;
+}
+
+@media (max-width:767px) {
+    .issue_2 :first-child {
+        color: white;
+        font-size: 2rem;
+    }
+    .issue_2 :nth-child(2) {
+        color: white;
+        margin-top: -1rem;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    .plug_1{
+        max-width: 40%;
+    }
+    .outlet{
+        margin-left: 5%;
+        max-width: 75%;
+        margin-top: -55%;
+    }
+    .design_outlet{
+        width: 100%;
+    }
+    .design_outlet > p {
+        font-size: 1rem;
+    }
+    .smiley{
+        display: none;
+    }
+    .arrows{
+        display: none;
+    }
+    .text{
+        display: none;
+    }
+    .mug{
+        display: none;
+    }
+    .title{
+        display: none;
+    }
+    .clouds{
+        display: none;
+    }
+
+    .thought{
+        display: none;
+    }
+    .horizontal_scroll>:first-child{
+        /* position: relative; */
+        left: 0%;
+    }
+    .horizontal_scroll>:first-child>img{
+        max-width: 95%;
+    }
+    .whitebutton{
+        width: 80%;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        padding-bottom:-1rem;
+        text-decoration: none;
+    }
+    
+    .whitebutton>p{
+        vertical-align: middle;
+        font-family: GT-Walsheim-Pro-Regular-Trial;
+        margin: 0.5rem;
+        font-size: 1rem;
+        color:white;
+        text-decoration: none;
+        
+    }
+    
+    .whitebutton>img{
+        margin-right: 0.5rem;
+        max-width: 10%;
+    }
+    .blackbutton>img{
+        margin-right: 0.5rem;
+        max-width: 10%;
+    }
+}
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac

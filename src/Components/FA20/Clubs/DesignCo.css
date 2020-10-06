@@ -10,11 +10,25 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+<<<<<<< HEAD
 
 .designco_row2{
     background-color:#ce5cf6;
     top:65%;
     position: relative;
+=======
+.designco_row3>img{
+    flex:auto;
+}
+.designco_row2{
+    background-color:#ce5cf6;
+    top:69%;
+    position: relative;
+    z-index: 1;
+}
+.designco_row2>a{
+    margin-left: 0.5rem;
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 }
 .designco_row3{
     /* background-color:#ce5cf6; */
@@ -43,4 +57,38 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
     background-color: #d35135;
+<<<<<<< HEAD
+=======
+}
+
+@media (max-width:767px) {
+    .designco_row2{
+        background-color:#ce5cf6;
+        top:0%;
+        position: relative;
+    }
+    .designco_row2>a{
+        margin-left: 2rem;
+    }
+    .designco_row3{
+        /* background-color:#ce5cf6; */
+        top:0%;
+        position: relative;
+    }
+    .designco_row3>img{
+        max-width: 100% !important;
+    }
+    .designco_row4{
+        /* background-color:#ce5cf6; */
+        top:0%;
+        position: relative;
+    }
+    
+    .designco_text{
+        font-family:GT-Walsheim-Pro-Regular-Trial;
+        color:white;
+        margin: 0;
+        font-size: 1rem;
+    }
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 }
