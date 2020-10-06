@@ -4,9 +4,9 @@ import { connect } from 'react-redux';
 import '../FA20.css';
 import { setTheme } from '../../../redux/actions';
 import Directory from '../Directory.jsx';
-import './DesignCo.css';
+import './DFSD.css';
 
-class DesignCo extends Component{
+class DFSD extends Component{
     constructor(props) {
         super(props);
     }
@@ -47,32 +47,37 @@ class DesignCo extends Component{
                             <Row md={9}>
                                 <Directory/>
                             </Row>
+                            <Row md={3}>
+                                <img className="dfsd_img" src={require('./Pictures/DFSD.png')}/>
+                            </Row>
                         </Col> 
                     </Row>
                 </Col>
 
                 <Col md={3}>
-                    {/* <Row md={12}>asd</Row> */}
-                    <Row className="designco_row2">
-                    {/* <Col> */}
+                    <Row className="dfsd_row">
+                    
                         <img style={{maxWidth:'100%'}} src={require('./Pictures/Arrows2.png')}/>
+                        <div>
                         <div className="whitebutton">
                             <p>WEBSITE</p>
                             <img src={require('./Pictures/whitearrow.svg')}/>
                         </div>
                         <div className="whitebutton">
-                            <p>COMMUNITY PAGE</p>
+                            <p>TWITTER</p>
                             <img src={require('./Pictures/whitearrow.svg')}/>
                         </div>
-                        {/* </Col> */}
+                        <div className="whitebutton">
+                            <p>FACEBOOK</p>
+                            <img src={require('./Pictures/whitearrow.svg')}/>
+                        </div>
+                        </div>
                     </Row>
                 </Col>
 
                 <Col md={5}>
-
-                    <Row className="designco_row3"><img style={{maxWidth:'60%'}} src={require('./Pictures/designcologo.svg')}/></Row>
-                    <Row className="designco_row4">
-                        <p className="designco_text">Design Co is UC San Diego's pre-professional design organization that bridges the gap between student designers and industry. Their mission is to cultivate a space that fosters opportunity and growth as an inclusive community of designers. Design Co hosts a combination of workshops, events, and career growth opportunities every quarter, and they hope to see you there.</p>
+                    <Row className="dfsd_row2">
+                        <p className="dfsd_text">Design for San Diego (D4SD) is a civic design challenge focused on bringing together our community and leveraging collective intelligence to address complex issues in the San Diego region. D4SD 2020 focused on how to improve the safety, emotional health, and economic prosperity of all San Diegans during the COVID pandemic. We support inclusion by all ages, skill-levels, and cultural backgrounds by motivating hundreds of diverse citizens to take part in facilitated activities, stakeholder research, and brainstorming to create design proposals for how to enact positive change in our region. D4SD has provided a unique position to make direct social impacts, while also advancing research on "collective innovation", where we explore how we can organize collective action through design thinking tools & strategies.</p>
                     </Row>
                 </Col>
 
@@ -81,4 +86,4 @@ class DesignCo extends Component{
         )
     }
 }
-export default connect(null, {setTheme})(DesignCo);
+export default connect(null, {setTheme})(DFSD);

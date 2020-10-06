@@ -1,0 +1,77 @@
+.org_directory{
+    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+.org_directory>h1{
+    font-family: GT-Haptik-Black-Trail;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.org_directory>a{
+    text-decoration: none;
+}
+.org_link>p{
+    font-family: GT-Walsheim-Pro-Regular-Trial;
+    font-size: 1.2rem;
+    margin-top: -0.25rem;
+    color: black;
+    text-decoration: none;
+}
+
+.org_link.green>p:hover{
+    background-color: green;
+    color:white;
+}
+.org_link.red>p:hover{
+    background-color: red;
+    color:white;
+}
+.org_link.orange>p:hover{
+    background-color: orange;
+}
+
+.org_link.green.one.active>p{
+    background-color: green;
+    color: white;
+}
+
+.org_link.green.seven.active>p{
+    background-color: green;
+    color: white;
+}
+
+.org_link.green.nine.active>p{
+    background-color: green;
+    color: white;
+}
+
+.org_link.red.two.active>p{
+    background-color: red;
+    color: white;
+}
+
+.org_link.red.five.active>p{
+    background-color: red;
+    color: white;
+}
+
+.org_link.red.eight.active>p{
+    background-color: red;
+    color: white;
+}
+
+.org_link.orange.three.active>p{
+    background-color: orange;
+}
+
+.org_link.orange.four.active>p{
+    background-color: orange;
+}
+
+.org_link.orange.six.active>p{
+    background-color: orange;
+}

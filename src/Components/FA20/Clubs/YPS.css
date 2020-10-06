@@ -1,0 +1,34 @@
+.yps_row{
+    background-color:#ce5cf6;
+    position: relative;
+    top:55%;
+}
+.yps_row>div{
+    margin-top: 1rem;
+}
+.yps_row>div>div{
+    margin-left: 1rem;
+    width: 100%;
+}
+
+.yps_text{
+    font-family:GT-Walsheim-Pro-Regular-Trial;
+    color:white;
+    margin: 0;
+    margin-left: 0.3rem;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: #d35135;
+}
+
+.yps_row2{
+    position: relative;
+    top:15%;
+}
+.yps_row3{
+    position: relative;
+    top:15%;
+}

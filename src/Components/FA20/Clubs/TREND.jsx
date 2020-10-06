@@ -4,9 +4,9 @@ import { connect } from 'react-redux';
 import '../FA20.css';
 import { setTheme } from '../../../redux/actions';
 import Directory from '../Directory.jsx';
-import './DesignCo.css';
+import './TREND.css';
 
-class DesignCo extends Component{
+class TREND extends Component{
     constructor(props) {
         super(props);
     }
@@ -47,32 +47,41 @@ class DesignCo extends Component{
                             <Row md={9}>
                                 <Directory/>
                             </Row>
+
+                            <Row md={3}>
+                                <img className="trend_img" src={require('./Pictures/TREND.png')}/>
+                            </Row>
                         </Col> 
                     </Row>
                 </Col>
 
                 <Col md={3}>
-                    {/* <Row md={12}>asd</Row> */}
-                    <Row className="designco_row2">
-                    {/* <Col> */}
-                        <img style={{maxWidth:'100%'}} src={require('./Pictures/Arrows2.png')}/>
-                        <div className="whitebutton">
-                            <p>WEBSITE</p>
-                            <img src={require('./Pictures/whitearrow.svg')}/>
-                        </div>
-                        <div className="whitebutton">
-                            <p>COMMUNITY PAGE</p>
-                            <img src={require('./Pictures/whitearrow.svg')}/>
-                        </div>
-                        {/* </Col> */}
+                    <Row style={{backgroundColor:'#257a66'}}>
+                        <p className="trend_text">TREND is a student-run fashion and lifestyle magazine at UCSD. We release two issues in an academic year - Fall/Winter and Spring/Summer - both print and online versions. We are a team of student artists, designers, writers, photographers, stylists and marketing managers. This student organization is the perfect place to be in for anyone with a creative mind and a love for art and fashion.</p>
                     </Row>
                 </Col>
 
                 <Col md={5}>
 
-                    <Row className="designco_row3"><img style={{maxWidth:'60%'}} src={require('./Pictures/designcologo.svg')}/></Row>
-                    <Row className="designco_row4">
-                        <p className="designco_text">Design Co is UC San Diego's pre-professional design organization that bridges the gap between student designers and industry. Their mission is to cultivate a space that fosters opportunity and growth as an inclusive community of designers. Design Co hosts a combination of workshops, events, and career growth opportunities every quarter, and they hope to see you there.</p>
+                    <Row>
+                    <div className="trend_div">
+                        <img src={require('./Pictures/Arrows5.png')}/>
+                        
+                            <div className="trend_div_div">
+                                <div className="blackbutton" style={{marginTop:"1rem"}}>
+                                    <p>FACEBOOK</p>
+                                    <img src={require('./Pictures/whitearrow.svg')}/>
+                                </div>
+                                <div className="blackbutton">
+                                    <p>INSTAGRAM</p>
+                                    <img src={require('./Pictures/whitearrow.svg')}/>
+                                </div>
+                                <div className="blackbutton">
+                                    <p>PAST ISSUES</p>
+                                <img src={require('./Pictures/whitearrow.svg')}/>
+                                </div>
+                            </div>
+                        </div>
                     </Row>
                 </Col>
 
@@ -81,4 +90,4 @@ class DesignCo extends Component{
         )
     }
 }
-export default connect(null, {setTheme})(DesignCo);
+export default connect(null, {setTheme})(TREND);

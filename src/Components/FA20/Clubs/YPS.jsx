@@ -4,9 +4,8 @@ import { connect } from 'react-redux';
 import '../FA20.css';
 import { setTheme } from '../../../redux/actions';
 import Directory from '../Directory.jsx';
-import './DesignCo.css';
-
-class DesignCo extends Component{
+import './YPS.css';
+class YPS extends Component{
     constructor(props) {
         super(props);
     }
@@ -52,27 +51,31 @@ class DesignCo extends Component{
                 </Col>
 
                 <Col md={3}>
-                    {/* <Row md={12}>asd</Row> */}
-                    <Row className="designco_row2">
-                    {/* <Col> */}
-                        <img style={{maxWidth:'100%'}} src={require('./Pictures/Arrows2.png')}/>
-                        <div className="whitebutton">
-                            <p>WEBSITE</p>
-                            <img src={require('./Pictures/whitearrow.svg')}/>
-                        </div>
-                        <div className="whitebutton">
-                            <p>COMMUNITY PAGE</p>
-                            <img src={require('./Pictures/whitearrow.svg')}/>
-                        </div>
-                        {/* </Col> */}
-                    </Row>
+                <Row className="yps_row">
+                    
+                    <img style={{maxWidth:'100%'}} src={require('./Pictures/Arrows2.png')}/>
+                    <div>
+                    <div className="whitebutton">
+                        <p>WEBSITE</p>
+                        <img src={require('./Pictures/whitearrow.svg')}/>
+                    </div>
+                    <div className="whitebutton">
+                        <p>GBM SCHEDULE</p>
+                        <img src={require('./Pictures/whitearrow.svg')}/>
+                    </div>
+                    <div className="whitebutton">
+                        <p>INSTAGRAM</p>
+                        <img src={require('./Pictures/whitearrow.svg')}/>
+                    </div>
+                    </div>
+                </Row>
                 </Col>
 
                 <Col md={5}>
 
-                    <Row className="designco_row3"><img style={{maxWidth:'60%'}} src={require('./Pictures/designcologo.svg')}/></Row>
-                    <Row className="designco_row4">
-                        <p className="designco_text">Design Co is UC San Diego's pre-professional design organization that bridges the gap between student designers and industry. Their mission is to cultivate a space that fosters opportunity and growth as an inclusive community of designers. Design Co hosts a combination of workshops, events, and career growth opportunities every quarter, and they hope to see you there.</p>
+                    <Row className="yps_row2"><img style={{maxWidth:"60%"}} src={require('./Pictures/YPS.png')}/></Row>
+                    <Row className="yps_row3">
+                        <p className="yps_text">The Young Planners' Society at UC San Diego is a nationally registered pre-professional networking organization under the American Planning Association (APA) California Chapter for undergraduate students interested in the field of urban planning to come together! Young Planners' Society aims to enhance the student experience by providing social opportunities for undergraduates to get involved not only on campus, but also in the professional community by connecting undergraduates with resources such as guest speakers, panelists, competitions, and involvement opportunities with the American Planning Association.</p>
                     </Row>
                 </Col>
 
@@ -81,4 +84,4 @@ class DesignCo extends Component{
         )
     }
 }
-export default connect(null, {setTheme})(DesignCo);
+export default connect(null, {setTheme})(YPS);
