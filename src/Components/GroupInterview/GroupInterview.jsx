@@ -106,7 +106,7 @@ class GroupInterview extends Component {
                                 {/* <ReactPlayer className="" width={'100%'} maxHeight={'100%'} url={"https://www.youtube.com/watch?v=AZyUlomy4ls"}
                                     playIcon={<img src={require(`../../img/playIcon.png`)}></img>}
                                     controls={true} playing light={InterviewCover} ></ReactPlayer> */}
-                                <VideoPlayer
+                                {/* <VideoPlayer
                                     ref={p => this.player = p}
                                     containerWidth={this.state.windowWidth}
                                     containerHeight={this.state.windowHeight}
@@ -122,7 +122,7 @@ class GroupInterview extends Component {
                                     loop={false}
                                     onEnd={this.toggleMute}
                                     className={this.state.isPlaying ? (this.state.showControls ? 'lightOpacity interview' : 'normalOpacity interview') : 'lightOpacity interview'}
-                                />
+                                /> */}
 
                                 <nav onMouseEnter={this.handleControlsOpen} onMouseLeave={this.handleControlsClose} className="interviewLayer">
                                     <TransitionGroup component={null}>
