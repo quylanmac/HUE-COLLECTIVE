@@ -61,30 +61,7 @@
     margin-bottom: 0%;
 }
 
-<<<<<<< HEAD
 .plug_1{
-=======
-.org_directory {
-    background-color: white;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
-}
-
-.org_directory > h1 {
-    font-family: GT-Haptik-Black-Trail;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.org_directory > p {
-    font-family: GT-Walsheim-Pro-Regular-Trial;
-    font-size: 1.2rem;
-    margin-top: -0.25rem;
-}
-
-.plug_1 {
->>>>>>> b30cae3970647f82116f6c673ee02140544159e1
     z-index: -1;
     max-width: 62%;
     margin-top: 0%;
@@ -132,7 +109,6 @@
     max-width: 100%;
 }
 
-<<<<<<< HEAD
 .whitebutton{
     display: flex;
     border-style: solid;
@@ -185,9 +161,6 @@
 }
 
 .thought{
-=======
-.thought {
->>>>>>> b30cae3970647f82116f6c673ee02140544159e1
     max-width: 100%;
 }
 
