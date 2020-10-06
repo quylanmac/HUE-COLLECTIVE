@@ -1,0 +1,196 @@
+@media (max-width: 767px) {
+    .playInterviewButton {
+        height: 0;
+        width: 0;
+    }
+    .promo {
+        font-size: 1.5rem;
+    }
+    .interviewLayer {
+        width: 100%;
+        display: flex;
+        position: absolute;
+        align-items: center;
+        margin-top: 33.3%;
+        margin-left: 2.75%;
+        justify-content: center;
+        align-items: center;
+    }
+    .groupInterview {
+        padding: 1rem;
+    }
+    .endButton {
+        display: flex;
+        justify-content: center; 
+        padding-left: 0 !important;
+    }
+    .beginButton {
+        display: flex;
+        justify-content: center; 
+        padding-left: 0 !important;
+    }
+    .bigButton {
+        display: flex;
+        justify-content: center; 
+        padding-left: 0 !important;
+    }
+    .groupHeader {
+        font-size:2rem;
+    }
+    .groupsubHeader {
+        font-size: 1.1rem;
+    }
+    .interviewBox {
+        padding:1rem;
+    }
+    .transcript > div {
+        padding: 1rem;
+    }
+    .transcript {
+        font-size:1.1rem;
+    }
+}
+@media (min-width: 768px) {
+    .promo {
+        font-size: 3rem;
+    }
+    .interviewLayer {
+        display: flex;
+        position: absolute;
+        margin-left: 6%;
+        margin-top: -11%;
+        height: 150px;
+        width: 500px;
+        justify-content: center;
+        align-items: center;
+    }
+    .groupInterview {
+        padding: 3rem;
+    }
+    .endButton {
+        display: flex;
+        justify-content: end;
+        padding-left: 3rem;
+    }
+    .beginButton {
+        display: flex;
+        justify-content: left;
+        padding-left: 0rem;
+    }
+    
+    .groupHeader {
+        font-size: 3.5rem;
+    }
+    .interviewBox {
+        padding: 3rem;
+    }
+    .transcript > div {
+        padding: 1.5rem;
+    }
+    .transcript {
+        font-size:1.5rem;
+    }
+}
+.tester-enter {
+    opacity: 0;
+}
+.tester-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+.tester-exit {
+    opacity: 1;
+}
+.tester-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}
+.visibleButton {
+    visibility: visible;
+}
+.invisibleButton {
+    visibility: hidden;
+}
+.interview {
+    position: inherit !important;
+    margin-bottom: -7.5px;
+}
+.interview > video {
+    position: inherit !important;
+    max-width: 100% !important;
+    background-color: black;
+}
+.playInterviewButton {
+    display: flex;
+    margin: auto;
+    position: inherit !important;
+    padding: 0 !important;
+    background: transparent;
+    border: 0 !important;
+}
+.topHeader {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.lightOpacity {
+    background-color: black;
+    padding: 0 !important;
+}
+.lightOpacity > video {
+    opacity: 50% !important;
+}
+.normalOpacity > video {
+    opacity: 100% !important;
+}
+.transcript {
+    border: 8px solid #000000;
+    font-family: GT-Walsheim-Pro-Regular-Trial;
+    line-height: 130%;
+    color: #000000;
+    font-weight: normal;
+    font-style: normal;
+    padding: 1.5rem;
+    height: 1000px !important;
+    overflow: scroll;
+    scrollbar-face-color: #367cd2;
+    scrollbar-shadow-color: #ffffff;
+    scrollbar-highlight-color: #ffffff;
+    scrollbar-3dlight-color: #ffffff;
+    scrollbar-darkshadow-color: #ffffff;
+    scrollbar-track-color: #ffffff;
+    scrollbar-arrow-color: #ffffff;
+}
+
+.interviewVid > div {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.transcriptButton {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    cursor: pointer;
+    max-width:100%;
+}
+.groupHeader {
+    font-family: GT-Haptik-Black-Trail;
+    color: #ffffff;
+    font-weight: 800;
+    line-height: 130%;
+    padding-bottom: 3rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000000;
+    letter-spacing: normal;
+}
+.groupsubHeader {
+    font-family: GT-Walsheim-Pro-Regular-Trial;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 140%;
+    color: #000000;
+}
+.interviewBox {
+    background-color: #ffffff;
+    border: 6px solid #257a66;
+    box-sizing: border-box;
+    border-radius: 40px 40px 0px 0px;
+}

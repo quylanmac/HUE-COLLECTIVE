@@ -2,10 +2,19 @@ import React, { Component, useState } from 'react';
 import { setTheme } from '../../redux/actions';
 import promoVid from '../../img/promo.mp4';
 import TestComponent from 'react-background-video-player';
-import playIcon from '../../img/thumbnail.png';
-import playVid from '../../img/testplayvideo.png';
+import playIcon from '../../img/thumbnail.jpg';
+import playVid from '../../img/Issue2/playInterview.png';
+import pauseVid from '../../img/Issue2/pauseInterview.png';
 import { connect } from 'react-redux';
 import './Landing.css';
+import playVideo from '../../img/Issue2/playVideo.png';
+import playVideoHover from '../../img/Issue2/playVideoHover.png';
+import pauseVideo from '../../img/Issue2/pauseVideo.png';
+import pauseVideoHover from '../../img/Issue2/pauseVideoHover.png';
+import {
+    CSSTransition,
+    TransitionGroup,
+} from 'react-transition-group';
 class Landing extends Component {
     constructor(props) {
         super(props);
@@ -16,7 +25,22 @@ class Landing extends Component {
             duration: 0,
             windowWidth: window.innerWidth,
             windowHeight: window.innerHeight,
+            showControls: false,
+            hover: false,
         }
+    }
+    handleHover = () => {
+        this.setState({ hover: !this.state.hover });
+    }
+    handleControlsOpen = () => {
+        this.setState({ showControls: true });
+        this.props.setTheme('transparent');
+    }
+    handleControlsClose = () => {
+        if (this.state.isPlaying == true) {
+            this.props.setTheme('hidden');
+        }
+        this.setState({ showControls: false });
     }
     componentDidMount() {
         this.props.setTheme('transparent');
@@ -55,13 +79,11 @@ class Landing extends Component {
 
     toggleMute = () => {
         this.player.toggleMute();
-        console.log(this.player);
     };
     toggleTest = () => {
         this.player.togglePlay();
         this.player.toggleMute();
         this.props.setTheme('hidden');
-        console.log(this.player);
     }
     handleOnPlay = () => {
         this.setState({ isPlaying: true });
@@ -91,11 +113,22 @@ class Landing extends Component {
                         volume={0.5}
                         loop={false}
                         onEnd={this.toggleMute}
-                        className={this.state.isPlaying ? 'normalOpacity' : 'lightOpacity'}
+                        className={this.state.isPlaying ? (this.state.showControls ? 'lightOpacity' : 'normalOpacity') : 'lightOpacity'}
                     />
-                    <nav className="promoLayer">
+
+                    <nav onMouseEnter={this.handleControlsOpen} onMouseLeave={this.handleControlsClose} className="promoLayer">
                         <p className={"karla promo " + (!this.state.isPlaying ? 'show' : 'hidden')}>Expressing ubiquity and ambiguity through different perspectives in design.</p>
-                        <button onClick={this.toggleTest} className="playButton"><img src={playVid} /></button>
+
+                        <TransitionGroup component={null}>
+                            <CSSTransition key={this.state.hover} timeout={5000} classNames="tester">
+                                <button onClick={this.toggleTest} onMouseEnter={this.handleHover} onMouseLeave={this.handleHover} className="playInterviewButton">
+                                    <img src={(!this.state.isPlaying ? (this.state.hover ? playVideoHover : playVideo) :
+                                        (!this.state.controls ? (this.state.hover ? pauseVideoHover : pauseVideo) : null))}
+                                        className={this.state.isPlaying ? (this.state.showControls ? 'visibleButton' : 'invisibleButton') : 'visibleButton'} />
+                                </button>
+                            </CSSTransition>
+                        </TransitionGroup>
+
                     </nav>
                 </div>
 

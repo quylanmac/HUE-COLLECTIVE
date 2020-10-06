@@ -70,3 +70,7 @@
 .navbar-collapse > div > div {
   margin: 2rem !important;
 }
+.navbar-dark {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}

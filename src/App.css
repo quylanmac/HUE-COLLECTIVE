@@ -4,7 +4,10 @@
   background-color: white !important;
   background-image: none !important;
 }
-
+.darktheme {
+  background-color: #121212 !important;
+  background-image: none !important;
+}
 body {
   background-color: #121212 !important;
   background-image:
