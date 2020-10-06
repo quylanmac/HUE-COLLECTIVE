@@ -20,6 +20,7 @@ import {
     CSSTransition,
     TransitionGroup,
 } from 'react-transition-group';
+import ReactPlayer from 'react-player';
 class GroupInterview extends Component {
     constructor(props) {
         super(props);
@@ -31,7 +32,7 @@ class GroupInterview extends Component {
             windowWidth: window.innerWidth,
             windowHeight: window.innerHeight,
             displayTranscript: false,
-            showControls:false,
+            showControls: false,
             hover: false,
         }
     }
@@ -102,6 +103,9 @@ class GroupInterview extends Component {
                         <div className="interviewBox">
                             <p className="groupsubHeader">At HUE, our mission is to showcase different perspectives in design. So, we got together and talked about what design meant to each of us. We covered everything from our design inspirations to our most important learning experiences. In doing so, we were able to learn more about each other and our unique experiences with design. We hope you enjoy this interview! Thank you to Mylinh Lac, Braeanne Oribello, Lisa Zhou, Lwin DuMont, Adam Syed, Samantha Cheung, Justin Hwang, Amy An, Quylan Mac, and Alex Padayao for sharing. </p>
                             <div className="responseVid interviewVid" style={{ width: ' 100%', height: '100%' }}>
+                                {/* <ReactPlayer className="" width={'100%'} maxHeight={'100%'} url={"https://www.youtube.com/watch?v=AZyUlomy4ls"}
+                                    playIcon={<img src={require(`../../img/playIcon.png`)}></img>}
+                                    controls={true} playing light={InterviewCover} ></ReactPlayer> */}
                                 <VideoPlayer
                                     ref={p => this.player = p}
                                     containerWidth={this.state.windowWidth}
@@ -127,7 +131,7 @@ class GroupInterview extends Component {
                                             <button onClick={this.toggleTest} onMouseEnter={this.handleHover} onMouseLeave={this.handleHover} className="playInterviewButton">
                                                 <img src={(!this.state.isPlaying ? (this.state.hover ? playVideoHover : playVideo) :
                                                     (!this.state.controls ? (this.state.hover ? pauseVideoHover : pauseVideo) : null))}
-                                                    className={this.state.isPlaying ? (this.state.showControls ? 'visibleButton':'invisibleButton') : 'visibleButton'} />
+                                                    className={this.state.isPlaying ? (this.state.showControls ? 'visibleButton' : 'invisibleButton') : 'visibleButton'} />
                                             </button>
                                         </CSSTransition>
                                     </TransitionGroup>
