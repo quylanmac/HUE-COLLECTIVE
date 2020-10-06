@@ -88,7 +88,7 @@ class DFA extends Component{
                                     <img src={require('./Pictures/whitearrow.svg')}/>
                                 </a>
                             </div>
-                            <img src={require('./Pictures/Arrows3.png')}/>
+                            <img style={{flex:'auto'}} src={require('./Pictures/Arrows3.png')}/>
                         </div>
                     </Row>
                 </Col>

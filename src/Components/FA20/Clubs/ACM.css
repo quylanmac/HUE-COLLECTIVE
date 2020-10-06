@@ -55,6 +55,7 @@
 }
 .acm_div>img{
     max-width: 30%;
+    flex:auto;
     margin: 0;
 }
 

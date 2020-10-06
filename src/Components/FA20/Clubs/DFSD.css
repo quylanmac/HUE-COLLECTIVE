@@ -9,6 +9,7 @@
     border-width: 2px;
     border-color: black;
     z-index: 1;
+    flex:auto;
 }
 
 .dfsd_row{
@@ -51,6 +52,7 @@
 @media(max-width:767px){
     .dfsd_mobile{
         display: flex;
+        flex:auto;
     }
     .dfsd_img{
         display:none;

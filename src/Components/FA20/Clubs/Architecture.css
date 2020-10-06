@@ -40,6 +40,7 @@
     position: relative;
     left:65%;
     max-width: 35%;
+    flex:auto;
 }
 .arch_text{
     font-family:GT-Walsheim-Pro-Regular-Trial;

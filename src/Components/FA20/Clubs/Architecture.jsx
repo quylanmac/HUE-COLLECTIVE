@@ -63,7 +63,7 @@ class Architecture extends Component{
 
                 <Col md={3}>
                     <Row className="arch_row" style={{backgroundColor:'#257a66'}}>
-                        <img style={{maxWidth:'100%'}} src={require('./Pictures/Arrows4.png')}/>
+                        <img style={{maxWidth:'100%', flex:'auto'}} src={require('./Pictures/Arrows4.png')}/>
 
                         <a style={{marginTop:"1rem"}} className="whitebutton" href="https://plandesignbuild.ucsd.edu/news/challenge.html" target="_blank">
                             <p>URBAN DESIGN CHALLENGE 2020</p>
