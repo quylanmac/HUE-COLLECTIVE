@@ -28,6 +28,7 @@
 .dfa_row{
     top:71%;
     position: relative;
+    z-index: 1;
 }
 .dfa_div{
     margin-left: 0;

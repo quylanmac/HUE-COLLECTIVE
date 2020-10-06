@@ -18,6 +18,7 @@
     border-style: solid;
     border-width: 2px;
     border-color: black;
+    z-index: 1;
 }
 
 .acm_text{
@@ -60,11 +61,13 @@
 .acm_row2{
     position: relative;
     top:10%;
+    z-index: 1;
 }
 
 .acm_row3{
     position: relative;
     top:10%;
+    z-index: 1;
 }
 
 @media(max-width:767px){
