@@ -33,6 +33,7 @@ class Landing extends Component {
         this.setState({ hover: !this.state.hover });
     }
     handleControlsOpen = () => {
+        console.log('open');
         this.setState({ showControls: true });
         this.props.setTheme('transparent');
     }
@@ -40,6 +41,7 @@ class Landing extends Component {
         if (this.state.isPlaying == true) {
             this.props.setTheme('hidden');
         }
+        console.log('close');
         this.setState({ showControls: false });
     }
     componentDidMount() {
