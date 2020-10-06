@@ -273,7 +273,7 @@
         left: 0%;
     }
     .horizontal_scroll>:first-child>img{
-        max-width: 100%;
+        max-width: 95%;
     }
     .whitebutton{
         width: 80%;
