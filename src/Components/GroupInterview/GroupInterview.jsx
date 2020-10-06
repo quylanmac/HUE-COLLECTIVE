@@ -9,7 +9,6 @@ import TranscriptButton from '../../img/Issue2/Transcript.png';
 import VideoPlayer from 'react-background-video-player';
 import playInterview from '../../img/Issue2/playInterview.png';
 import pauseInterview from '../../img/Issue2/pauseInterview.png';
-import Interview from '../../img/Issue2/Interview.mp4';
 import InterviewCover from '../../img/Issue2/interviewCover.png';
 import { Scrollbars } from 'react-custom-scrollbars';
 import playVideo from '../../img/Issue2/playVideo.png';
