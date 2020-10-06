@@ -5,6 +5,7 @@
     background-color:#ce5cf6;
     position: relative;
     top:60%;
+    z-index: 1;
 }
 .yps_row>a{
     margin-left: 0.5rem;
@@ -28,10 +29,12 @@
 .yps_row2{
     position: relative;
     top:15%;
+    z-index: 1;
 }
 .yps_row3{
     position: relative;
     top:15%;
+    z-index: 1;
 }
 
 @media (max-width:767px){
