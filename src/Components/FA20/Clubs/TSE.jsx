@@ -5,7 +5,8 @@ import '../FA20.css';
 import { setTheme } from '../../../redux/actions';
 import Directory from '../Directory.jsx';
 import './TSE.css'
-
+import { HashLink } from 'react-router-hash-link';
+import groupButton from '../../../img/Issue2/button.png';
 class TSE extends Component{
     constructor(props) {
         super(props);
@@ -82,6 +83,9 @@ class TSE extends Component{
                 </Col>
 
                 </Row>
+                <HashLink smooth to="/issue2#section2" className="endButton">
+                    <img src={groupButton} />
+                </HashLink>
                 </Container>
         )
     }

@@ -53,7 +53,7 @@ class FA20 extends Component {
 
                                         <Col md={8}>
                                             <Row md={9}>
-                                                <Directory className="testtest"/>
+                                                <Directory className="testtest" />
                                             </Row>
                                             <Row md={3}>
                                                 <Col md={12} className="design_outlet">
@@ -93,11 +93,11 @@ class FA20 extends Component {
                                 </Col>
 
                             </Row>
-                            <Row>
-                                <HashLink smooth to="/issue2#section2">
+                            
+                                <HashLink smooth to="/issue2#section2" className="endButton">
                                     <img src={groupButton} />
                                 </HashLink>
-                            </Row>
+                            
                         </div>
                         <div className="viewResponsive sec2" id="section2">
                             <GroupInterview />
@@ -106,8 +106,8 @@ class FA20 extends Component {
                             <Empowerment />
                         </div>                    </HorizontalScroll>
                 </div>
-                 </Container>
-           
+            </Container>
+
         )
     }
 }

@@ -111,8 +111,7 @@ class GroupInterview extends Component {
                                     containerWidth={this.state.windowWidth}
                                     containerHeight={this.state.windowHeight}
                                     src={Interview}
-                                    poster={InterviewCover}
-                                    onPlay={this.handleOnPlay}
+                                    poster={'http://il6.picdn.net/shutterstock/videos/3548084/thumb/1.jpg?i10c=img.resize(height:160)'}                                    onPlay={this.handleOnPlay}
                                     onPause={this.handleOnPause}
                                     onMute={this.handleOnMute}
                                     onUnmute={this.handleOnUnmute}

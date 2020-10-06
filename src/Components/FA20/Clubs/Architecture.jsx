@@ -5,7 +5,8 @@ import '../FA20.css';
 import './Architecture.css';
 import { setTheme } from '../../../redux/actions';
 import Directory from '../Directory.jsx';
-
+import { HashLink } from 'react-router-hash-link';
+import groupButton from '../../../img/Issue2/button.png';
 class Architecture extends Component{
     constructor(props) {
         super(props);
@@ -82,6 +83,9 @@ class Architecture extends Component{
                 </Col>
 
                 </Row>
+                <HashLink smooth to="/issue2#section2" className="end2Button">
+                    <img src={groupButton} />
+                </HashLink>
                 </Container>
         )
     }
