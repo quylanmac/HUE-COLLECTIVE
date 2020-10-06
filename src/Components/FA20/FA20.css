@@ -213,10 +213,10 @@
     border-top: solid;
     border-width: 2px;
     border-color:white;
-    margin-top: -0.25rem;
     z-index: -99;
     position: relative;
-    left: 5%;
+    margin-right:0px !important;
+    margin-left:0px !important;
 }
 .horizontal_scroll>:first-child{
     margin-top: 1rem;
