@@ -1,6 +1,6 @@
 {
   "homepage": "http://quylanmac.github.io/asdftester",
-  "name": "hue-collective",
+  "name": "asdftester",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
