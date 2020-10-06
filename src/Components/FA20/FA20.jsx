@@ -29,21 +29,11 @@ class FA20 extends Component {
         const parent = { width: `100%`, height: `100%` }
         const child = { width: `1110px`, height: `100%` }
         return (
-<<<<<<< HEAD
-            <Container>
-                {/* <div style={parent}>
-                    <HorizontalScroll>
-                        <div style={child} id="section1"> */}
-                            <Row>
-
-                            {/* COL 1 */}
-=======
             <Container className="container-fluid">
                 <div style={parent} className="row nopad">
                     <HorizontalScroll className="">
                         <div className="viewResponsive sec1" id="section1">
                             <Row className="nopad">
->>>>>>> b30cae3970647f82116f6c673ee02140544159e1
                                 <Col md={4}>
                                     <Row md={2}>
                                         <Col md={12} className="issue_2">
@@ -103,7 +93,7 @@ class FA20 extends Component {
                                 </Col>
 
                             </Row>
-                            {/* <Row>
+                            <Row>
                                 <HashLink smooth to="/issue2#section2">
                                     <img src={groupButton} />
                                 </HashLink>
@@ -114,17 +104,10 @@ class FA20 extends Component {
                         </div>
                         <div className="viewResponsive sec3" id="section3">
                             <Empowerment />
-<<<<<<< HEAD
-                        </div>                    
-                        </HorizontalScroll>
-                </div> */}
-            </Container>
-=======
                         </div>                    </HorizontalScroll>
                 </div>
                  </Container>
            
->>>>>>> b30cae3970647f82116f6c673ee02140544159e1
         )
     }
 }
