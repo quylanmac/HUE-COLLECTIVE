@@ -66,7 +66,7 @@ class DFA extends Component{
                         <p className="dfa_text">We design people-centered products, services, and experiences to tackle local challenges. Our studio aims to build a community of interdisciplinary students of all majors who fully embraces the Human-Centered Design process to aid in social innovation.</p>
                     </Row>
                     <Row>
-                        <img style={{maxWidth:'100%'}} src={require('./Pictures/DFAlogo.png')}/>
+                        <img style={{maxWidth:'100%', zIndex:"1"}} src={require('./Pictures/DFAlogo.png')}/>
                     </Row>
                 </Col>
 
