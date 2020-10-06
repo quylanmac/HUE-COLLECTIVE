@@ -110,8 +110,9 @@ class GroupInterview extends Component {
                                     ref={p => this.player = p}
                                     containerWidth={this.state.windowWidth}
                                     containerHeight={this.state.windowHeight}
-                                    src={Interview}
-                                    poster={'http://il6.picdn.net/shutterstock/videos/3548084/thumb/1.jpg?i10c=img.resize(height:160)'}                                    onPlay={this.handleOnPlay}
+                                    src={"https://media.githubusercontent.com/media/quylanmac/HUE-COLLECTIVE/progress/src/img/promo.mp4"}
+                                    poster={InterviewCover}
+                                    onPlay={this.handleOnPlay}
                                     onPause={this.handleOnPause}
                                     onMute={this.handleOnMute}
                                     onUnmute={this.handleOnUnmute}
