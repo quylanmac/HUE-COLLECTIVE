@@ -95,7 +95,7 @@ class FA20 extends Component {
 
 
                             <Row className="horizontal_scroll justifyEnd">
-                                <HashLink smooth to="/issue2#section2" className="end2Button">
+                                <HashLink smooth to="/issue2#section2" className="">
                                     <img src={groupButton} className="end2Button responseImg"/>
                                 </HashLink>
                             </Row>

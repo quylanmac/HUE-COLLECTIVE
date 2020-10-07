@@ -79,7 +79,7 @@ class TSE extends Component{
                                 <img src={require('./Pictures/whitearrow.svg')}/>
                             </a>
 
-                            <a  className="blackbutton" href="https://ww.instagram.com/ucsd_tse" target="_blank">
+                            <a  className="blackbutton" href="https://www.instagram.com/ucsd_tse" target="_blank">
                                 <p>INSTAGRAM</p>
                                 <img src={require('./Pictures/whitearrow.svg')}/>
                             </a>

@@ -13,7 +13,8 @@
     }
 }
 .responseImg {
-    max-width: 100%;
+    width: 100%;
+    height:auto;
 }
 
 .scroll-horizontal > div {
@@ -248,7 +249,7 @@
     margin-left: 0px !important;
     position: relative;
 }
-.horizontal_scroll > :first-child {
+/* .horizontal_scroll > :first-child {
     margin-top: 1rem;
     z-index: 1;
     position: relative;
@@ -256,7 +257,7 @@
 .horizontal_scroll > :first-child > img {
     max-width: 100%;
     z-index: 1;
-}
+} */
 .justifyEnd {
     justify-content:end;
 }
@@ -307,13 +308,13 @@
     .thought {
         display: none;
     }
-    .horizontal_scroll > :first-child {
-        /* position: relative; */
+    /* .horizontal_scroll > :first-child {
+        /* position: relative;
         left: 0%;
     }
     .horizontal_scroll > :first-child > img {
         max-width: 100%;
-    }
+    } */
     .whitebutton {
         width: 80%;
         align-items: center;

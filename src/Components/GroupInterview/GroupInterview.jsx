@@ -243,7 +243,7 @@ Bri: Ok, I think this meeting is adjourned
 
                     </div>
                     <HashLink smooth to="/issue2#section3" className="endButton" >
-                        <img src={EmpowerButton} />
+                        <img src={EmpowerButton}  className="endButton responseImg"/>
                     </HashLink>
                 </div>
             </>
