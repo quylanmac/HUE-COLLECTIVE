@@ -19,8 +19,9 @@
     justify-content: flex-start;
 }
 .ts_div>img{
-    max-width: 30%;
-    flex:auto;
+    width:30%;
+    height:auto;
+    
 }
 
 .ts_div_div>a{

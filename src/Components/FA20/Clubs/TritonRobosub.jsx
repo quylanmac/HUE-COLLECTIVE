@@ -71,7 +71,7 @@ class TritonRobosub extends Component {
 
                                     <Row>
                                         <div className="ts_div">
-                                            <img style={{ flex: 'auto' }} src={require('./Pictures/Arrows5.png')} />
+                                            <img  src={require('./Pictures/Arrows5.png')} />
 
                                             <div className="ts_div_div">
                                                 <a style={{ marginTop: "1rem" }} className="blackbutton" href="https://robosub.ucsd.edu/" target="_blank">
