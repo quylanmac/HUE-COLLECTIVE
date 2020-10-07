@@ -1,11 +1,6 @@
 {
-<<<<<<< HEAD
   "homepage": "https://eggspired.online",
   "name": "asdftester",
-=======
-  "homepage": "https://huecollective.co/",
-  "name": "hue-collective",
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
   "version": "0.1.0",
   "private": true,
   "dependencies": {

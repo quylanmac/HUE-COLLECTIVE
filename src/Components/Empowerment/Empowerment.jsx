@@ -20,11 +20,7 @@ class Empowerment extends Component {
             <>
                 <div className="Empowerment">
                     <HashLink smooth to="/issue2#section2" className="beginButton2">
-<<<<<<< HEAD
                         <img src={Group} className="responseImg"/>
-=======
-                        <img src={Group} />
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
                     </HashLink>
                     <div className="topHeader">
                         <p className="group2Header">EMPOWERMENT {'\u0026'} DESIGN</p>
@@ -123,11 +119,7 @@ class Empowerment extends Component {
                         </div>
                     </div>
                     <HashLink smooth to="/issue2#section1" className="endButton">
-<<<<<<< HEAD
                         <img src={rightDesign} className="responseImg"/>
-=======
-                        <img src={rightDesign} />
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
                     </HashLink>
                 </div>
             </>

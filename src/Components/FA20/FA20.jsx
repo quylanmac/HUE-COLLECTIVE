@@ -16,11 +16,7 @@ class FA20 extends Component {
     componentDidMount() {
         document.body.className = "darktheme";
         this.props.setTheme('black');
-<<<<<<< HEAD
-        window.scrollTo(0, 0);
-=======
         // window.scrollTo(0, 0);
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
     }
     componentWillUnmount() {
         document.body.className = "";
@@ -46,11 +42,7 @@ class FA20 extends Component {
                                         </Col>
                                     </Row>
                                     <Row xs={10} md={10}>
-<<<<<<< HEAD
-                                        <Col md={4}>
-=======
                                         <Col xs={4} md={4}>
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
                                             <Row>
                                                 <img className="plug_1" src={require('./Plug2.svg')} />
                                             </Row>
@@ -59,15 +51,9 @@ class FA20 extends Component {
                                             </Row>
                                         </Col>
 
-<<<<<<< HEAD
-                                        <Col md={8}>
-                                            <Row md={9}>
-                                                <Directory className="testtest" />
-=======
                                         <Col xs={8} md={8}>
                                             <Row md={9}>
                                                 <Directory />
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
                                             </Row>
                                             <Row md={3}>
                                                 <Col md={12} className="design_outlet">
@@ -105,28 +91,12 @@ class FA20 extends Component {
                                         <p>HUECOLLECTIVE.CO</p>
                                     </Row>
                                 </Col>
-<<<<<<< HEAD
-
-                            </Row>
-                            
-                                <HashLink smooth to="/issue2#section2" className="endButton">
-                                    <img src={groupButton} className="responseImg"/>
-                                </HashLink>
-                            
-                        </div>
-                        <div className="viewResponsive sec2" id="section2">
-                            <GroupInterview />
-                        </div>
-                        <div className="viewResponsive sec3" id="section3">
-                            <Empowerment />
-                        </div>                    </HorizontalScroll>
-=======
                             </Row>
 
 
-                            <Row className="horizontal_scroll">
-                                <HashLink smooth to="/issue2#section2">
-                                    <img src={groupButton} className="end2Button"/>
+                            <Row className="horizontal_scroll justifyEnd">
+                                <HashLink smooth to="/issue2#section2" className="end2Button">
+                                    <img src={groupButton} className="end2Button responseImg"/>
                                 </HashLink>
                             </Row>
                         </div>
@@ -136,15 +106,10 @@ class FA20 extends Component {
                             <div className="viewResponsive sec3" id="section3">
                                 <Empowerment />
                             </div>                    </HorizontalScroll>
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
                 </div>
             </Container>
 
         )
     }
 }
-<<<<<<< HEAD
-export default connect(null, { setTheme })(FA20);
-=======
 export default connect(null, { setTheme})(FA20);
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac

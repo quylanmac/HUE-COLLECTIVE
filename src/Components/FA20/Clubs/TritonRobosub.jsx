@@ -4,11 +4,6 @@ import { connect } from 'react-redux';
 import '../FA20.css';
 import { setTheme } from '../../../redux/actions';
 import Directory from '../Directory.jsx';
-<<<<<<< HEAD
-import './TritonRobosub.css'
-import { HashLink } from 'react-router-hash-link';
-import groupButton from '../../../img/Issue2/button.png';
-=======
 import './TritonRobosub.css';
 import HorizontalScroll from 'react-scroll-horizontal';
 import { HashLink } from 'react-router-hash-link';
@@ -16,7 +11,6 @@ import GroupInterview from '../../GroupInterview/GroupInterview';
 import groupButton from '../../../img/Issue2/button.png';
 import Empowerment from '../../Empowerment/Empowerment';
 
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 class TritonRobosub extends Component{
     constructor(props) {
         super(props);
@@ -34,11 +28,6 @@ class TritonRobosub extends Component{
         this.props.setTheme(theme);
     }
     render(){
-<<<<<<< HEAD
-        return (
-            <Container>
-            <Row>
-=======
         const parent = { width: `100%`, height: `100%` }
         const child = { width: `1110px`, height: `100%` }
         return (
@@ -47,7 +36,6 @@ class TritonRobosub extends Component{
                 <HorizontalScroll className="">
                     <div className="viewResponsive sec1" id="section1">
                         <Row className="nopad">
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
                 <Col md={4}>
                     <Row md={2}>
                     <Col md={12} className="issue_2">
@@ -56,11 +44,7 @@ class TritonRobosub extends Component{
                     </Col>
                     </Row>
                     <Row xs={10} md={10}>
-<<<<<<< HEAD
-                        <Col md={4}>
-=======
                         <Col xs={4} md={4}>
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
                             <Row>
                                 <img className="plug_1" src={require('../Plug2.svg')} />
                             </Row>
@@ -69,11 +53,7 @@ class TritonRobosub extends Component{
                             </Row>
                         </Col>
 
-<<<<<<< HEAD
-                        <Col md={8}>
-=======
                         <Col xs={8} md={8}>
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
                             <Row md={9}>
                                 <Directory/>
                             </Row>
@@ -91,23 +71,6 @@ class TritonRobosub extends Component{
 
                     <Row>
                     <div className="ts_div">
-<<<<<<< HEAD
-                        <img src={require('./Pictures/Arrows5.png')}/>
-                        
-                            <div className="ts_div_div">
-                                <div className="blackbutton" style={{marginTop:"1rem"}}>
-                                    <p>WEBSITE</p>
-                                    <img src={require('./Pictures/whitearrow.svg')}/>
-                                </div>
-                                <div className="blackbutton">
-                                    <p>FACEBOOK</p>
-                                    <img src={require('./Pictures/whitearrow.svg')}/>
-                                </div>
-                                <div className="blackbutton">
-                                    <p>APPLICATIONS</p>
-                                <img src={require('./Pictures/whitearrow.svg')}/>
-                                </div>
-=======
                         <img style={{flex:'auto'}} src={require('./Pictures/Arrows5.png')}/>
                         
                             <div className="ts_div_div">
@@ -123,7 +86,6 @@ class TritonRobosub extends Component{
                                     <p>APPLICATIONS</p>
                                 <img src={require('./Pictures/whitearrow.svg')}/>
                                 </a>
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
                             </div>
                         </div>
                     </Row>
@@ -133,12 +95,6 @@ class TritonRobosub extends Component{
                 </Col>
 
                 </Row>
-<<<<<<< HEAD
-                <HashLink smooth to="/issue2#section2" className="end2Button">
-                    <img src={groupButton} />
-                </HashLink>
-                </Container>
-=======
                 <Row className="horizontal_scroll">
                                 <HashLink smooth to="/issue2#section2" >
                                     <img src={groupButton} className="end2Button" />
@@ -153,7 +109,6 @@ class TritonRobosub extends Component{
                         </div>                    </HorizontalScroll>
                 </div>
                  </Container>
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
         )
     }
 }

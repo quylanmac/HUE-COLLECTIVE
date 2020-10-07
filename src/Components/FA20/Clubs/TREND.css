@@ -17,19 +17,12 @@
     border-color: black;
     max-width: 100%;
     max-height: 95%;
-<<<<<<< HEAD
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-=======
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
     z-index: 1;
     flex:auto;
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
     background-color: #e08f61;
 }
 
@@ -37,18 +30,12 @@
     font-family:GT-Walsheim-Pro-Regular-Trial;
     color:white;
     margin: 0;
-<<<<<<< HEAD
-    font-size: 1.1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-=======
     border-style: solid;
     border-width: 2px;
     border-color: black;
     font-size: 1.1rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
     padding-top: 3rem;
     padding-bottom: 3rem;
     background-color:#257a66;
@@ -63,13 +50,6 @@
 }
 .trend_div>img{
     max-width: 30%;
-<<<<<<< HEAD
-}
-
-.trend_div_div>div{
-    margin-left: 1rem;
-    width: 125%;
-=======
     flex:auto;
 }
 
@@ -105,5 +85,4 @@
     .trend_text{
         font-size: 1rem;
     }
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 }

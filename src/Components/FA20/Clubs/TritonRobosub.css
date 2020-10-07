@@ -20,26 +20,15 @@
 }
 .ts_div>img{
     max-width: 30%;
-<<<<<<< HEAD
-}
-
-.ts_div_div>div{
-=======
     flex:auto;
 }
 
 .ts_div_div>a{
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
     margin-left: 1rem;
     width: 125%;
 }
 
 .ts_img{
-<<<<<<< HEAD
-    max-width: 50%;
-    position: relative;
-    left: 50%;
-=======
     flex:auto;
     max-width: 50%;
     position: relative;
@@ -61,5 +50,4 @@
     .ts_div_div>a{
         width: 100%;
     }
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 }

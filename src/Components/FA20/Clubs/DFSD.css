@@ -3,13 +3,6 @@
     background-color: #e08f61;
     padding-left: 2rem;
     padding-right: 2rem;
-<<<<<<< HEAD
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
-=======
     padding-top: 2rem;
     padding-bottom: 2rem;
     border-style: solid;
@@ -17,22 +10,11 @@
     border-color: black;
     z-index: 1;
     flex:auto;
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 }
 
 .dfsd_row{
     background-color:#ce5cf6;
     position: relative;
-<<<<<<< HEAD
-    top:55%;
-}
-.dfsd_row>div{
-    margin-top: 1rem;
-}
-.dfsd_row>div>div{
-    margin-left: 1rem;
-    width: 130%;
-=======
     top:60%;
     border-style: solid;
     border-width: 2px;
@@ -42,7 +24,6 @@
 .dfsd_row>a{
     /* margin-top: 1rem; */
     margin-left: 0.5rem;
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 }
 
 .dfsd_row2{
@@ -54,21 +35,15 @@
     font-family:GT-Walsheim-Pro-Regular-Trial;
     color:white;
     margin: 0;
-<<<<<<< HEAD
-    margin-left: 0.3rem;
-=======
     border-style: solid;
     border-width: 2px;
     border-color: black;
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
     font-size: 1.1rem;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     background-color: #d35135;
-<<<<<<< HEAD
-=======
 }
 
 .dfsd_mobile{
@@ -107,5 +82,4 @@
 
     }
 
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 }

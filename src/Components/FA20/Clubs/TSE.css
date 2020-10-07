@@ -32,10 +32,7 @@
     border-width: 2px;
     border-color: black;
     margin-left: 0.2rem;
-<<<<<<< HEAD
-=======
     max-width: 80%;
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 }
 
 .tse_div:nth-child(1)>div{
@@ -46,8 +43,6 @@
 .tse_div>img{
     max-width: 30%;
     margin: 0;
-<<<<<<< HEAD
-=======
     flex:auto;
 }
 
@@ -58,5 +53,4 @@
     .tse_div{
         max-width: 100%;
     }
->>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
 }
