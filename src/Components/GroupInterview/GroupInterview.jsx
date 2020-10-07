@@ -94,8 +94,8 @@ class GroupInterview extends Component {
 
             <>
                 <div className="groupInterview">
-                    <HashLink smooth to="/issue2#section1" className="beginButton" >
-                        <img src={Directory} className="responseImg"/>
+                    <HashLink smooth to="/issue2#section1" className="" >
+                        <img src={Directory} className="beginButton responseImg"/>
                     </HashLink>
                     <div className="topHeader">
                         <p className="groupHeader">HUE MEMBERS GROUP INTERVIEW</p>
@@ -242,8 +242,8 @@ Bri: Ok, I think this meeting is adjourned
                         </div>
 
                     </div>
-                    <HashLink smooth to="/issue2#section3" className="endButton" >
-                        <img src={EmpowerButton}  className="endButton responseImg"/>
+                    <HashLink smooth to="/issue2#section3" className="" >
+                        <img src={EmpowerButton}  className="end2Button responseImg"/>
                     </HashLink>
                 </div>
             </>
