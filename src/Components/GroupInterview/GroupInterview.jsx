@@ -20,6 +20,8 @@ import {
     TransitionGroup,
 } from 'react-transition-group';
 import ReactPlayer from 'react-player';
+import SimpleViewSlider from 'react-view-slider/simple'
+
 class GroupInterview extends Component {
     constructor(props) {
         super(props);
@@ -93,60 +95,60 @@ class GroupInterview extends Component {
         return (
 
             <>
-                <div className="groupInterview">
-                    <HashLink smooth to="/issue2#section1" className="" >
-                        <img src={Directory} className="beginButton responseImg2"/>
-                    </HashLink>
-                    <div className="topHeader">
-                        <p className="groupHeader">HUE MEMBERS GROUP INTERVIEW</p>
-                        <div className="interviewBox">
-                            <p className="groupsubHeader">At HUE, our mission is to showcase different perspectives in design. So, we got together and talked about what design meant to each of us. We covered everything from our design inspirations to our most important learning experiences. In doing so, we were able to learn more about each other and our unique experiences with design. We hope you enjoy this interview! Thank you to Mylinh Lac, Braeanne Oribello, Lisa Zhou, Lwin DuMont, Adam Syed, Samantha Cheung, Justin Hwang, Amy An, Quylan Mac, and Alex Padayao for sharing. </p>
-                            <div className="responseVid interviewVid" style={{ width: ' 100%', height: '100%' }}>
-                                {/* <ReactPlayer className="" width={'100%'} maxHeight={'100%'} url={"https://www.youtube.com/watch?v=AZyUlomy4ls"}
-                                    playIcon={<img src={require(`../../img/playIcon.png`)}></img>}
-                                    controls={true} playing light={InterviewCover} ></ReactPlayer> */}
-                                <VideoPlayer
-                                    ref={p => this.player = p}
-                                    containerWidth={this.state.windowWidth}
-                                    containerHeight={this.state.windowHeight}
-                                    src={"https://media.githubusercontent.com/media/quylanmac/HUE-COLLECTIVE/progress/src/img/promo.mp4"}
-                                    poster={InterviewCover}
-                                    onPlay={this.handleOnPlay}
-                                    onPause={this.handleOnPause}
-                                    onMute={this.handleOnMute}
-                                    onUnmute={this.handleOnUnmute}
-                                    onTimeUpdate={this.handleTimeUpdate}
-                                    startTime={0}
-                                    autoPlay={false}
-                                    volume={0.5}
-                                    loop={false}
-                                    onEnd={this.toggleMute}
-                                    className={this.state.isPlaying ? (this.state.showControls ? 'lightOpacity interview' : 'normalOpacity interview') : 'lightOpacity interview'}
-                                />
+                <Container className="container-fluid">
+                    <div className="groupInterview">
+                        <HashLink smooth to="/issue2" className="" >
+                            <img src={Directory} className="beginButton responseImg2" />
+                        </HashLink>
+                        <div className="topHeader">
+                            <p className="groupHeader">HUE MEMBERS GROUP INTERVIEW</p>
+                            <div className="interviewBox">
+                                <p className="groupsubHeader">At HUE, our mission is to showcase different perspectives in design. So, we got together and talked about what design meant to each of us. We covered everything from our design inspirations to our most important learning experiences. In doing so, we were able to learn more about each other and our unique experiences with design. We hope you enjoy this interview! Thank you to Mylinh Lac, Braeanne Oribello, Lisa Zhou, Lwin DuMont, Adam Syed, Samantha Cheung, Justin Hwang, Amy An, Quylan Mac, and Alex Padayao for sharing. </p>
+                                <div className="responseVid interviewVid" >
+                                     <ReactPlayer className="" width={'100%'} maxHeight={'auto'} url={"https://www.youtube.com/embed/vr8cFwWLh90"}
+                                    playIcon={<img src={require(`../../img/Issue2/playVideo.png`)}></img>}
+                                    controls={true} playing light={InterviewCover} ></ReactPlayer> 
+                                    {/* <VideoPlayer
+                                        ref={p => this.player = p}
+                                        containerWidth={this.state.windowWidth}
+                                        containerHeight={this.state.windowHeight}
+                                        src={"https://media.githubusercontent.com/media/quylanmac/HUE-COLLECTIVE/progress/src/img/promo.mp4"}
+                                        poster={InterviewCover}
+                                        onPlay={this.handleOnPlay}
+                                        onPause={this.handleOnPause}
+                                        onMute={this.handleOnMute}
+                                        onUnmute={this.handleOnUnmute}
+                                        onTimeUpdate={this.handleTimeUpdate}
+                                        startTime={0}
+                                        autoPlay={false}
+                                        volume={0.5}
+                                        loop={false}
+                                        onEnd={this.toggleMute}
+                                        className={this.state.isPlaying ? (this.state.showControls ? 'lightOpacity interview' : 'normalOpacity interview') : 'lightOpacity interview'}
+                                    />
 
-                                <nav onMouseEnter={this.handleControlsOpen} onMouseLeave={this.handleControlsClose} className="interviewLayer">
-                                    <TransitionGroup component={null}>
-                                        <CSSTransition key={this.state.hover} timeout={5000} classNames="tester">
-                                            <button onClick={this.toggleTest} onMouseEnter={this.handleHover} onMouseLeave={this.handleHover} className="playInterviewButton">
-                                                <img src={(!this.state.isPlaying ? (this.state.hover ? playVideoHover : playVideo) :
-                                                    (!this.state.controls ? (this.state.hover ? pauseVideoHover : pauseVideo) : null))}
-                                                    className={this.state.isPlaying ? (this.state.showControls ? 'visibleButton' : 'invisibleButton') : 'visibleButton'} />
-                                            </button>
-                                        </CSSTransition>
-                                    </TransitionGroup>
-
-                                </nav>
-                            </div>
-                            <img className="transcriptButton" src={TranscriptButton} onClick={() => this.handleTranscript()} />
-                            {
-                                this.state.displayTranscript &&
-                                <Scrollbars className="transcript" renderThumbVertical={({ style, ...props }) =>
-                                    <div {...props} style={{
-                                        ...style, backgroundColor: '#D35135', width: '16px'
-                                    }} />
-                                }>
-                                    <p>
-                                        Mylinh: Ok, we’re recording
+                                    <nav onMouseEnter={this.handleControlsOpen} onMouseLeave={this.handleControlsClose} className="interviewLayer">
+                                        <TransitionGroup component={null}>
+                                            <CSSTransition key={this.state.hover} timeout={5000} classNames="tester">
+                                                <button onClick={this.toggleTest} onMouseEnter={this.handleHover} onMouseLeave={this.handleHover} className="playInterviewButton">
+                                                    <img src={(!this.state.isPlaying ? (this.state.hover ? playVideoHover : playVideo) :
+                                                        (!this.state.controls ? (this.state.hover ? pauseVideoHover : pauseVideo) : null))}
+                                                        className={this.state.isPlaying ? (this.state.showControls ? 'visibleButton' : 'invisibleButton') : 'visibleButton'} />
+                                                </button>
+                                            </CSSTransition>
+                                        </TransitionGroup>
+                                    </nav> */}
+                                </div>
+                                <img className="transcriptButton" src={TranscriptButton} onClick={() => this.handleTranscript()} />
+                                {
+                                    this.state.displayTranscript &&
+                                    <Scrollbars className="transcript" renderThumbVertical={({ style, ...props }) =>
+                                        <div {...props} style={{
+                                            ...style, backgroundColor: '#D35135', width: '16px'
+                                        }} />
+                                    }>
+                                        <p>
+                                            Mylinh: Ok, we’re recording
 <br /><br />
 Amy: Great
 <br /><br />
@@ -236,16 +238,17 @@ Alex: I think, just to sum everything up, I think all of us kind of took a big s
 <br /><br />
 Bri: Ok, I think this meeting is adjourned
 <br /><br />
-                                    </p>
-                                </Scrollbars>
-                            }
-                        </div>
+                                        </p>
+                                    </Scrollbars>
+                                }
+                            </div>
 
+                        </div>
+                        <HashLink smooth to="/empowerment" className="end2Button" >
+                            <img src={EmpowerButton} className=" responseImg2" />
+                        </HashLink>
                     </div>
-                    <HashLink smooth to="/issue2#section3" className="" >
-                        <img src={EmpowerButton}  className="end2Button responseImg2"/>
-                    </HashLink>
-                </div>
+                </Container>
             </>
         )
     }

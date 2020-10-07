@@ -3,12 +3,18 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import './FA20.css';
 import { setTheme } from '../../redux/actions';
-import HorizontalScroll from 'react-scroll-horizontal';
 import { HashLink } from 'react-router-hash-link';
 import GroupInterview from '../GroupInterview/GroupInterview';
 import groupButton from '../../img/Issue2/button.png';
 import Empowerment from '../Empowerment/Empowerment';
 import Directory from './Directory';
+import SimpleViewSlider from 'react-view-slider/simple';
+import { Link } from 'react-router-dom';
+
+import {
+    CSSTransition,
+    TransitionGroup,
+} from 'react-transition-group';
 class FA20 extends Component {
     constructor(props) {
         super(props);
@@ -31,16 +37,18 @@ class FA20 extends Component {
         return (
             <Container className="container-fluid">
                 <div style={parent} className="row nopad">
-                    <HorizontalScroll className="">
+                    <div className="">
                         <div className="viewResponsive sec1" id="section1">
                             <Row className="nopad">
                                 <Col md={4}>
+                                    <Link to={{pathname: "/issue2"}}>
                                     <Row md={2}>
                                         <Col md={12} className="issue_2">
                                             <p>ISSUE 2</p>
                                             <p>PLUGGED IN</p>
                                         </Col>
                                     </Row>
+                                    </Link>
                                     <Row xs={10} md={10}>
                                         <Col xs={4} md={4}>
                                             <Row>
@@ -95,20 +103,15 @@ class FA20 extends Component {
 
 
                             <Row className="horizontal_scroll justifyEnd">
-                                <HashLink smooth to="/issue2#section2" className="">
+                                <HashLink smooth to="/groupinterview" className="">
                                     <img src={groupButton} className="end2Button responseImg2" />
                                 </HashLink>
                             </Row>
                         </div>
-                        <div className="viewResponsive sec2" id="section2">
-                            <GroupInterview />
-                        </div>
-                        <div className="viewResponsive sec3" id="section3">
-                            <Empowerment />
-                        </div>                    </HorizontalScroll>
+
+                    </div>
                 </div>
             </Container>
-
         )
     }
 }

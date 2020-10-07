@@ -28,12 +28,14 @@ class issue2_landing extends Component {
             <Container>
                             <Row className="nopad">
                                 <Col md={4}>
+                                <Link to={{pathname: "/issue2"}}>
                                     <Row md={2}>
                                         <Col md={12} className="issue_2">
                                             <p>ISSUE 2</p>
                                             <p>PLUGGED IN</p>
                                         </Col>
                                     </Row>
+                                    </Link>
                                     <Row xs={10} md={10}>
                                         <Col xs={4} md={4}>
                                             <Row>

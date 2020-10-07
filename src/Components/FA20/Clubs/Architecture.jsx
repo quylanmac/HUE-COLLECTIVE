@@ -5,11 +5,11 @@ import '../FA20.css';
 import './Architecture.css';
 import { setTheme } from '../../../redux/actions';
 import Directory from '../Directory.jsx';
-import HorizontalScroll from 'react-scroll-horizontal';
 import { HashLink } from 'react-router-hash-link';
 import GroupInterview from '../../GroupInterview/GroupInterview';
 import groupButton from '../../../img/Issue2/button.png';
 import Empowerment from '../../Empowerment/Empowerment';
+import { Link } from 'react-router-dom';
 
 class Architecture extends Component {
     constructor(props) {
@@ -33,16 +33,17 @@ class Architecture extends Component {
         return (
             <Container className="container-fluid">
                 <div style={parent} className="row nopad">
-                    <HorizontalScroll className="">
                         <div className="viewResponsive sec1" id="section1">
                             <Row className="nopad">
                                 <Col md={4}>
+                                <Link to={{pathname: "/issue2"}}>
                                     <Row md={2}>
                                         <Col md={12} className="issue_2">
                                             <p>ISSUE 2</p>
                                             <p>PLUGGED IN</p>
                                         </Col>
                                     </Row>
+                                    </Link>
                                     <Row xs={10} md={10}>
                                         <Col xs={4} md={4}>
                                             <Row>
@@ -96,17 +97,12 @@ class Architecture extends Component {
 
 
                             <Row className="horizontal_scroll justifyEnd">
-                                <HashLink smooth to="/issue2#section2" className="">
+                                <HashLink smooth to="/groupinterview"  className="">
                                     <img src={groupButton} className="end2Button responseImg2" />
                                 </HashLink>
                             </Row>
                         </div>
-                        <div className="viewResponsive sec2" id="section2">
-                            <GroupInterview />
-                        </div>
-                        <div className="viewResponsive sec3" id="section3">
-                            <Empowerment />
-                        </div>                    </HorizontalScroll>
+                
                 </div>
             </Container>
         )

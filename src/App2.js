@@ -1,112 +1,108 @@
-import React, { Component } from 'react'
-import { Modal, Col, Row, Button } from 'react-bootstrap'
+import React from 'react';
+import './App.css';
+import ReactDOM from 'react-dom';
+import SP20 from './Components/SP20/SP20';
+import FA20 from './Components/FA20/FA20';
+import issue2_landing from './Components/FA20/issue2_landing';
+import DesignCo from './Components/FA20/Clubs/DesignCo';
+import ACM from './Components/FA20/Clubs/ACM';
+import Architecture from './Components/FA20/Clubs/Architecture';
+import DFA from './Components/FA20/Clubs/DFA';
+import DFSD from './Components/FA20/Clubs/DFSD';
+import TREND from './Components/FA20/Clubs/TREND';
+import TritonRobosub from './Components/FA20/Clubs/TritonRobosub';
+import TSE from './Components/FA20/Clubs/TSE';
+import YPS from './Components/FA20/Clubs/YPS';
 
-import logo from './img/logo.png'
-import data from './data.json';
-import './App.css'
+import About from './Components/About/About';
+import Issues from './Components/Issues/Issues';
+import Contact from './Components/Contact/Contact';
+import NewLoading from './Components/NewLoading';
+import Article1 from './Components/Article1/Article1';
+import Home from './Components/Home/Home';
+//------------Spring Issue Redirects-----------------//
+import JFunes from './Components/Article1/JFunes/JFunes';
+import LIbarra from './Components/Article1/LIbarra/LIbarra';
+import SKato from './Components/Article1/SKato/SKato';
+import SLee from './Components/Article1/SLee/SLee';
+import JWolf from './Components/Article1/JWolf/JWolf';
+import ATam from './Components/Article1/ATam/ATam';
+import HLiner from './Components/Article1/HLiner/HLiner';
+import RSinghal from './Components/Article1/RSinghal/RSinghal';
+import ALee from './Components/Article1/ALee/ALee';
+import ERichards from './Components/Article1/ERichards/ERichards';
+import EOrta from './Components/Article1/EOrta/EOrta';
+//--------End of Spring Issue Redirects--------------//
+//----------Issue 2 Things-----------------//
+import GroupInterview from './Components/GroupInterview/GroupInterview';
+import Empowerment from './Components/Empowerment/Empowerment';
+import { Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
+import { StoreProvider } from './Components/Store';
+import { Provider, connect } from 'react-redux';
+import { Dispatch } from 'react-redux';
+import rootStore from './redux/stores';
+import Navbar from './Components/Navbar/Navbar';
+import {
+  CSSTransition,
+  TransitionGroup,
+} from 'react-transition-group';
+import { withRouter } from 'react-router-dom';
+import './animation.css';
+const App = ({ location }) => {
+  const currentKey = location.pathname.split('/')[1] || '/'
+  const timeout = { enter: 300, exit: 200 }
 
-class App extends Component {
+  return (
+    <Switch>
 
-  constructor(props) {
-    super(props);
 
-    this.handleShow = this.handleShow.bind(this);
-    this.handleClose = this.handleClose.bind(this);
-
-    this.state = {
-      show: null
-    };
-
-    this.modals = [
-      {
-        buttonText: 'You are here!',
-        xsOffset: 1,
-        reactId: 'here',
-        image: logo,
-        imageAltText: 'working on a computer at home with cat',
-        imageWidth: '250px',
-        modalText: 'Tired of toy projects, tutorials and online courses?'
-      },
-      {
-        buttonText: 'Scrums',
-        xsOffset: 0,
-        mdPull: 2,
-        reactId: 'scrums',
-        image: logo,
-        imageAltText: 'team sitting round a table with kanban board in background',
-        imageWidth: '350px',
-        modalText: 'Meet others and plan your work in online hangouts.'
-      },
-      {
-        buttonText: 'Real Projects',
-        xsOffset: 3,
-        reactId: 'projects',
-        image: logo,
-        imageAltText: 'shaking hands with business client across desk',
-        imageWidth: '320px',
-        modalText: 'Satisfy real charity clients around the world.'
-      },
-      {
-        buttonText: 'Sprints',
-        xsOffset: 7,
-        reactId: 'sprints',
-        image: logo,
-        imageAltText: 'two people running',
-        imageWidth: '320px',
-        modalText: 'Commit to a week long sprint to accelerate your learning.'
-      },
-      {
-        buttonText: 'Jobs',
-        xsOffset: 5,
-        reactId: 'jobs',
-        image: logo,
-        imageAltText: 'person holding briefcase looking towards city',
-        imageWidth: '300px',
-        modalText: 'Get paid for in-house projects or go on to great things in the wider world.'
-       }
-    ]
-  }
-
-  handleClose() {
-    this.setState({show: null});
-  }
-
-  handleShow(id) {
-    this.setState({show: id});
-  }
-
-  renderModals() {
-    return data.map(data => {
-      return (
-        <Row key={data.id}>
-        <Col >
-          <Button bsStyle="primary" bsSize="large" block onClick={() => this.handleShow(data.id)}>
-            <h1>{data.name}</h1>
-          </Button>
-          <Modal
-            show={this.state.show === data.id} onHide={this.handleClose}
-          >
-            <Modal.Header closeButton closeLabel="close window">
-            </Modal.Header>
-            <Modal.Body>
-        
-              <p className='landing-page-markers you-are-here'>{data.major}</p>
-            </Modal.Body>
-          </Modal>
-        </Col>
-      </Row>
-      )
-    });
-  }
-
-  render() {
-    return (
-      <div className="App">
-          {this.renderModals()}
- 
-      </div >
-    );
-  }
+      <Route path="/">
+        <Navbar />
+        <Switch>
+          {/* Index is landing page */}
+          {/*<Route exact path="/" component={SP20} />*/}
+          <Route exact path="/" component={Home} />
+          {/* Current blank page for articles */}
+          <Route exact path="/article1" component={Article1} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/issues" component={SP20} />
+          <Route exact path="/issue2_landing" component={issue2_landing} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/JFunes" component={JFunes} />
+          <Route exact path="/LIbarra" component={LIbarra} />
+          <Route exact path="/SKato" component={SKato} />
+          <Route exact path="/SLee" component={SLee} />
+          <Route exact path="/JWolf" component={JWolf} />
+          <Route exact path="/ATam" component={ATam} />
+          <Route exact path="/HLiner" component={HLiner} />
+          <Route exact path="/RSinghal" component={RSinghal} />
+          <Route exact path="/ALee" component={ALee} />
+          <Route exact path="/ERichards" component={ERichards} />
+          <Route exact path="/EOrta" component={EOrta} />
+          <TransitionGroup component="main">
+            <CSSTransition key={currentKey} classNames="testerfood" appear timeout={timeout}>
+              <Switch location={location}>
+                <Route exact path="/issue2" component={FA20} />
+                <Route exact path="/empowerment" component={Empowerment} />
+                <Route exact path="/groupinterview" component={GroupInterview} />
+                <Route exact path="/issue2/design-co" component={DesignCo} />
+                <Route exact path="/issue2/triton-software-engineering" component={TSE} />
+                <Route exact path="/issue2/design-for-america" component={DFA} />
+                <Route exact path="/issue2/architecture@ucsd" component={Architecture} />
+                <Route exact path="/issue2/trend-magazine" component={TREND} />
+                <Route exact path="/issue2/acm-design" component={ACM} />
+                <Route exact path="/issue2/design-for-san-diego" component={DFSD} />
+                <Route exact path="/issue2/triton-robosub" component={TritonRobosub} />
+                <Route exact path="/issue2/young-planners-society" component={YPS} />
+              </Switch>
+            </CSSTransition>
+          </TransitionGroup>
+        </Switch>
+      </Route>
+    </Switch>
+  )
 }
 
-export default App;
+export default withRouter(App)
