@@ -91,7 +91,7 @@ class YPS extends Component {
                             </Row>
                             <Row className="horizontal_scroll justifyEnd">
                                 <HashLink smooth to="/issue2#section2" className="">
-                                    <img src={groupButton} className="end2Button responseImg" />
+                                    <img src={groupButton} className="end2Button responseImg2" />
                                 </HashLink>
                             </Row>
                         </div>

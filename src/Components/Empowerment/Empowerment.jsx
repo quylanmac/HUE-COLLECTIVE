@@ -119,7 +119,7 @@ class Empowerment extends Component {
                         </div>
                     </div>
                     <HashLink smooth to="/issue2#section1" className="">
-                        <img src={rightDesign} className="end2Button responseImg"/>
+                        <img src={rightDesign} className="end2Button responseImg2"/>
                     </HashLink>
                 </div>
             </>
