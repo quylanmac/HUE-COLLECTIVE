@@ -96,20 +96,20 @@ class FA20 extends Component {
 
                             <Row className="horizontal_scroll justifyEnd">
                                 <HashLink smooth to="/issue2#section2" className="">
-                                    <img src={groupButton} className="end2Button responseImg"/>
+                                    <img src={groupButton} className="end2Button responseImg" />
                                 </HashLink>
                             </Row>
                         </div>
-                            <div className="viewResponsive sec2" id="section2">
-                                <GroupInterview />
-                            </div>
-                            <div className="viewResponsive sec3" id="section3">
-                                <Empowerment />
-                            </div>                    </HorizontalScroll>
+                        <div className="viewResponsive sec2" id="section2">
+                            <GroupInterview />
+                        </div>
+                        <div className="viewResponsive sec3" id="section3">
+                            <Empowerment />
+                        </div>                    </HorizontalScroll>
                 </div>
             </Container>
 
         )
     }
 }
-export default connect(null, { setTheme})(FA20);
+export default connect(null, { setTheme })(FA20);

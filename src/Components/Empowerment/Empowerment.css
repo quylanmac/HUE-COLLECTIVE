@@ -31,7 +31,7 @@
     .beginButton2 {
         display: flex;
         justify-content: left;
-        padding-left: 0rem;
+        padding-left: 0 !important;
     }
     .Empowerment {
         padding: 3rem;

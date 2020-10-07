@@ -13,8 +13,12 @@
     }
 }
 .responseImg {
-    width: 100%;
+    width:100%;
     height:auto;
+}
+.responseImg2 {
+    max-width:100%;
+    height: auto;
 }
 
 .scroll-horizontal > div {
