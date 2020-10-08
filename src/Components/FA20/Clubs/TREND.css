@@ -67,7 +67,7 @@
     }
     .trend_mobile{
         display: flex;
-        flex:auto;
+        /* flex:auto; */
     }
     .trend_img1{
         max-width: 100%;

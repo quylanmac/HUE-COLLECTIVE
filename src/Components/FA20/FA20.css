@@ -351,4 +351,12 @@
         margin-right: 0.5rem;
         max-width: 10%;
     }
+    .plug_2{
+        max-width: 55%;
+    }
+    .outlet_2{
+        max-width: 75%;
+        margin-left: 5%;
+        margin-top: -25%;
+    }
 }

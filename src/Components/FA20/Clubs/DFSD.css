@@ -52,7 +52,7 @@
 @media(max-width:767px){
     .dfsd_mobile{
         display: flex;
-        flex:auto;
+        /* flex:auto; */
     }
     .dfsd_img{
         display:none;

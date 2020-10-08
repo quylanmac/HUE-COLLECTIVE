@@ -14,7 +14,7 @@
 .acm_row{
     background-color: #ce5cf6;
     position: relative;
-    top:75%;
+    top:74%;
     border-style: solid;
     border-width: 2px;
     border-color: black;
@@ -60,13 +60,13 @@
 
 .acm_row2{
     position: relative;
-    top:10%;
+    top:5%;
     z-index: 1;
 }
 
 .acm_row3{
     position: relative;
-    top:10%;
+    top:5%;
     z-index: 1;
 }
 

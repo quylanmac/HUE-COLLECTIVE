@@ -39,7 +39,7 @@
 
 @media (max-width:767px){
     .yps_row2>img{
-        flex:auto;
+        /* flex:auto; */
         max-width: 100% !important;
     }
     .yps_text{
