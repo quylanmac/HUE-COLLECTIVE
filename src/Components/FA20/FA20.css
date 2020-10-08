@@ -27,7 +27,12 @@
 .end2Button {
     display: flex;
     justify-content: end;
-    padding-left: 0 !important;
+    margin-top: 2rem;
+}
+.end3Button {
+    display: flex;
+    justify-content: end;
+    float:right;
 }
 .nopad {
     margin-left: 0px !important;
