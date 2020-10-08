@@ -55,8 +55,7 @@ class FA20 extends Component {
                                         <Col xs={4} md={4}>
                                             <Row>
                                                 <img className="plug_1" src={plug_1} />
-                                            </Row>
-                                            <Row>
+
                                                 <img className="outlet" src={outlet}/>
                                             </Row>
                                         </Col>
