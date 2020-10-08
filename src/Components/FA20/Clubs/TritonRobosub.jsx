@@ -73,7 +73,7 @@ class TritonRobosub extends Component {
                                     <Row>
                                         <Col className="nopad">
                                         <div className="ts_div">
-                                            <img  src={require('./Pictures/Arrows5.png')} />
+                                            <img  src={require('./Pictures/Arrows5.svg')} />
 
                                             <div className="ts_div_div">
                                                 <a style={{ marginTop: "1rem" }} className="blackbutton" href="https://robosub.ucsd.edu/" target="_blank">
@@ -93,7 +93,7 @@ class TritonRobosub extends Component {
                                         </Col>
                                     </Row>
                                     <Row>
-                                        <img className="ts_img" src={require('./Pictures/Robosub.png')} />
+                                        <img className="ts_img" src={require('./Pictures/Robosub.svg')} />
                                     </Row>
                                 </Col>
 

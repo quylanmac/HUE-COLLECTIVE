@@ -48,10 +48,10 @@ class FA20 extends Component {
                         </Link>
                         <Row xs={10} md={10}>
                             <Col xs={4} md={4}>
-                                <Row xs={1} md={1}>
+                                <Row xs={2} md={2}>
                                     <img className="plug_1" src={plug_1} />
-                                </Row>
-                                <Row xs={1} md={1}>
+                                {/* </Row> */}
+                                {/* <Row xs={1} md={1}> */}
                                     <img className="outlet" src={outlet} />
                                 </Row>
                             </Col>

@@ -64,7 +64,7 @@ class ACM extends Component {
 
                                 <Col md={3}>
                                     <Row className="acm_row">
-                                        <img style={{ maxWidth: '100%' }} src={require('./Pictures/ACM.png')} />
+                                        <img style={{ maxWidth: '100%' }} src={require('./Pictures/ACM.svg')} />
                                     </Row>
                                 </Col>
 
@@ -88,7 +88,7 @@ class ACM extends Component {
                                                     <img src={require('./Pictures/whitearrow.svg')} />
                                                 </a>
                                             </div>
-                                            <img style={{ flex: 'auto' }} src={require('./Pictures/Arrows6.png')} />
+                                            <img style={{ flex: 'auto' }} src={require('./Pictures/Arrows6.svg')} />
                                         </div>
                                     </Row>
                                 </Col>

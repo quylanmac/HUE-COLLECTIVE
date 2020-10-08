@@ -1,5 +1,5 @@
 import React, { Component, useState } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Media } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import '../FA20.css';
 import { setTheme } from '../../../redux/actions';
@@ -71,7 +71,7 @@ class TSE extends Component {
                                 <Col md={5}>
 
                                     <Row><img style={{ maxWidth: "100%", flex: 'auto' }} src={require('./Pictures/TSE.svg')} /></Row>
-                                    <Row>
+                                    <Row className="tse_row">
                                         {/* <Col md={7} className="tse_col"> */}
                                         <div className="tse_div">
                                             <div>

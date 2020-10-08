@@ -59,21 +59,21 @@ class DFSD extends Component {
                                                 <Directory />
                                             </Row>
                                             <Row md={3}>
-                                                <img className="dfsd_img" src={require('./Pictures/DFSD.png')} />
+                                                <img className="dfsd_img" src={require('./Pictures/DFSD.svg')} />
                                             </Row>
                                         </Col>
                                     </Row>
                                 </Col>
                                 <Col className="dfsd_mobile">
                                     <Row>
-                                        <img className="dfsd_img1" src={require('./Pictures/DFSD.png')} />
+                                        <img className="dfsd_img1" src={require('./Pictures/DFSD.svg')} />
                                     </Row>
                                 </Col>
 
                                 <Col md={3}>
                                     <Row className="dfsd_row">
 
-                                        <img style={{ maxWidth: '100%' }} src={require('./Pictures/Arrows2.png')} />
+                                        <img style={{ maxWidth: '100%' }} src={require('./Pictures/Arrows2.svg')} />
                                         <a className="whitebutton" href="https://d4sd.org/" target="_blank">
                                             <p>WEBSITE</p>
                                             <img src={require('./Pictures/whitearrow.svg')} />
