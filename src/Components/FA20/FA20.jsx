@@ -10,8 +10,8 @@ import Empowerment from '../Empowerment/Empowerment';
 import Directory from './Directory';
 import SimpleViewSlider from 'react-view-slider/simple';
 import { Link } from 'react-router-dom';
-import outlet from './Outlet.svg';
-import plug_1 from './Plug2.svg';
+import outlet from './outlet.png';
+import plug_1 from './plug.png';
 
 import {
     CSSTransition,
