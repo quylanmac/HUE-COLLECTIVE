@@ -39,7 +39,7 @@ class issue2_landing extends Component {
                                     <Row xs={10} md={10}>
                                         <Col xs={4} md={4}>
                                             <Row>
-                                            <Link to = {{pathname:"/issue2"}} className="landing_link">
+                                            <Link to = {{pathname:"/issue2"}} style={{zIndex:'3'}}>
                                                 <img className="plug_2" src={require('./Plug1.svg')} />
                                                 </Link>
                                             </Row>
