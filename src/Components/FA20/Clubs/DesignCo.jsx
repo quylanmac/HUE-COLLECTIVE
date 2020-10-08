@@ -10,7 +10,7 @@ import Empowerment from '../../Empowerment/Empowerment';
 import './DesignCo.css';
 import groupButton from '../../../img/Issue2/button.png';
 import { Link } from 'react-router-dom';
-import arrows from './Pictures/Arrows2.png';
+import arrows from './Pictures/Arrows2.svg';
 
 class DesignCo extends Component {
     constructor(props) {
