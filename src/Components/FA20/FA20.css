@@ -323,8 +323,10 @@
         margin-left: 5%;
         max-width: 75%;
         height:auto;
-
+        margin-left:10%;
         margin-top: -55%;
+        flex:auto;
+        /* margin:auto !important; */
     }
     .design_outlet {
         width: 100%;
@@ -408,7 +410,7 @@
         justify-content: end;
         height:auto;
         max-width: 75%;
-        margin-left: 5%;
+        margin-left: 10%;
         margin-top: -25%;
     }
 }

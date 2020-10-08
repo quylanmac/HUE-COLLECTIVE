@@ -44,8 +44,8 @@ class issue2_landing extends Component {
                                             <Link to = {{pathname:"/issue2"}} style={{zIndex:'3'}}>
                                                 <img className="plug_2" src={plug_2} />
                                                 </Link>
-                                            </Row>
-                                            <Row>
+                                            {/* </Row> */}
+                                            {/* <Row> */}
                                                 <img className="outlet_2" src={outlet_2} />
                                             </Row>
                                         </Col>

@@ -63,6 +63,10 @@
     }
     .dfa_row{
         top:0%;
+        justify-content: center;
+    }
+    .dfa_row2{
+        justify-content: center;
     }
     .dfa_div{
         display: flex;

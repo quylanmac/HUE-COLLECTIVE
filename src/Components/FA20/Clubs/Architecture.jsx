@@ -64,7 +64,7 @@ class Architecture extends Component {
 
                                 <Col md={3}>
                                     <Row className="arch_row" style={{ backgroundColor: '#257a66' }}>
-                                        <img style={{ maxWidth: '100%', flex: 'auto' }} src={require('./Pictures/Arrows4.png')} />
+                                        <img style={{ maxWidth: '100%', flex: 'auto' }} src={require('./Pictures/Arrows4.svg')} />
 
                                         <a style={{ marginTop: "1rem" }} className="whitebutton" href="https://plandesignbuild.ucsd.edu/news/challenge.html" target="_blank">
                                             <p>URBAN DESIGN CHALLENGE 2020</p>
@@ -87,7 +87,7 @@ class Architecture extends Component {
 
                                 <Col md={5}>
 
-                                    <Row className="arch_row2"><img className="arch_img" src={require('./Pictures/Architecture.png')} /></Row>
+                                    <Row className="arch_row2"><img className="arch_img" src={require('./Pictures/Architecture.svg')} /></Row>
                                     <Row className="arch_row3">
                                         <p className="arch_text">Architecture@UCSD is a student-run club, under the Construction Management Association of America (CMAA), founded to establish a space for students who are interested in the field of architecture and urban design. This club welcomes students from all majors, backgrounds, and experiences. We host software workshops (such as SketchUp, CAD, and Revit), professional speaker events, and site visits. We also have a project team that redesigns certain areas on campus from a student perspective and presents these plans to the UCSD Campus Planning Board. Our project team is usually active from the beginning of winter quarter to the end of spring quarter. For this 2020-21 school year, Architecture@UCSD will be withholding official activities and member recruitment until Winter 2021.</p>
                                     </Row>

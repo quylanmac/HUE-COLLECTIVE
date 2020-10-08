@@ -60,7 +60,7 @@ class TREND extends Component {
                                             </Row>
 
                                             <Row md={3}>
-                                                <img className="trend_img" src={require('./Pictures/TREND.png')} />
+                                                <img className="trend_img" src={require('./Pictures/TREND.svg')} />
                                             </Row>
                                         </Col>
                                     </Row>
@@ -68,7 +68,7 @@ class TREND extends Component {
 
                                 <Col className="trend_mobile">
                                     <Row>
-                                        <img className="trend_img1" src={require('./Pictures/TREND.png')} />
+                                        <img className="trend_img1" src={require('./Pictures/TREND.svg')} />
                                     </Row>
                                 </Col>
                                 <Col md={3}>
@@ -79,9 +79,9 @@ class TREND extends Component {
 
                                 <Col md={5}>
 
-                                    <Row>
+                                    <Row className="trend_row">
                                         <div className="trend_div">
-                                            <img style={{ flex: 'auto' }} src={require('./Pictures/Arrows5.png')} />
+                                            <img style={{ flex: 'auto' }} src={require('./Pictures/Arrows5.svg')} />
 
                                             <div className="trend_div_div">
                                                 <a style={{ marginTop: "1rem" }} className="blackbutton" href="https://www.facebook.com/trenducsd" target="_blank">
