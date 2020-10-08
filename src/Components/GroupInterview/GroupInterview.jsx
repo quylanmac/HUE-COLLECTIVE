@@ -106,7 +106,7 @@ class GroupInterview extends Component {
                                 <p className="groupsubHeader">At HUE, our mission is to showcase different perspectives in design. So, we got together and talked about what design meant to each of us. We covered everything from our design inspirations to our most important learning experiences. In doing so, we were able to learn more about each other and our unique experiences with design. We hope you enjoy this interview! Thank you to Mylinh Lac, Braeanne Oribello, Lisa Zhou, Lwin DuMont, Adam Syed, Samantha Cheung, Justin Hwang, Amy An, Quylan Mac, and Alex Padayao for sharing. </p>
                                 <div className="responseVid interviewVid" >
                                      <ReactPlayer className="" width={'100%'} maxHeight={'auto'} url={"https://www.youtube.com/embed/vr8cFwWLh90"}
-                                    playIcon={<img src={require(`../../img/Issue2/playVideo.png`)}></img>}
+                                    playIcon={<img src={require(`../../img/Issue2/playVideo.png`)} className="playResponse"></img>}
                                     controls={true} playing light={InterviewCover} ></ReactPlayer> 
                                     {/* <VideoPlayer
                                         ref={p => this.player = p}
@@ -244,8 +244,8 @@ Bri: Ok, I think this meeting is adjourned
                             </div>
 
                         </div>
-                        <HashLink smooth to="/empowerment" className="end2Button" >
-                            <img src={EmpowerButton} className=" responseImg2" />
+                        <HashLink smooth to="/empowerment" className="end2Button responseImg2" >
+                            <img src={EmpowerButton} className="responseImg2" />
                         </HashLink>
                     </div>
                 </Container>

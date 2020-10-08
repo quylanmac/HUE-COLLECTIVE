@@ -1,5 +1,8 @@
 
 @media (max-width: 767px) {
+    .playResponse {
+        max-width:75%;
+    }
     .playInterviewButton {
         height: 0;
         width: 0;
