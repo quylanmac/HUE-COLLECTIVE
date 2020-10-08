@@ -46,7 +46,7 @@ class issue2_landing extends Component {
                                                 </Link>
                                             </Row>
                                             <Row>
-                                                <img className="outlet_2" src={outlet_2} />
+                                                <img className="outlet_2" src={require('./Outlet.svg')} />
                                             </Row>
                                         </Col>
                                     </Row>

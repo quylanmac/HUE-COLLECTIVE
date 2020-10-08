@@ -10,6 +10,8 @@ import GroupInterview from '../../GroupInterview/GroupInterview';
 import groupButton from '../../../img/Issue2/button.png';
 import Empowerment from '../../Empowerment/Empowerment';
 import { Link } from 'react-router-dom';
+import arrows3 from './Pictures/Arrows3.png';
+import logo from './Pictures/DFAlogo.png';
 
 class DFA extends Component {
     constructor(props) {
@@ -67,7 +69,7 @@ class DFA extends Component {
                                         <p className="dfa_text">We design people-centered products, services, and experiences to tackle local challenges. Our studio aims to build a community of interdisciplinary students of all majors who fully embraces the Human-Centered Design process to aid in social innovation.</p>
                                     </Row>
                                     <Row>
-                                        <img style={{ maxWidth: '100%', zIndex: "1" }} src={require('./Pictures/DFAlogo.png')} />
+                                        <img style={{ maxWidth: '100%', zIndex: "1" }} src={logo} />
                                     </Row>
                                 </Col>
 
@@ -89,7 +91,7 @@ class DFA extends Component {
                                                     <img src={require('./Pictures/whitearrow.svg')} />
                                                 </a>
                                             </div>
-                                            <img style={{ flex: 'auto' }} src={require('./Pictures/Arrows3.png')} />
+                                            <img style={{ flex: 'auto' }} src={arrows3} />
                                         </div>
                                     </Row>
                                 </Col>

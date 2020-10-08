@@ -10,6 +10,7 @@ import Empowerment from '../../Empowerment/Empowerment';
 import './DesignCo.css';
 import groupButton from '../../../img/Issue2/button.png';
 import { Link } from 'react-router-dom';
+import arrows from './Pictures/Arrows2.png';
 
 class DesignCo extends Component {
     constructor(props) {
@@ -66,7 +67,7 @@ class DesignCo extends Component {
                                     {/* <Row md={12}>asd</Row> */}
                                     <Row className="designco_row2">
                                         {/* <Col> */}
-                                        <img style={{ maxWidth: '100%', display:'flex', justifyContent:'content' }} className="designco_arrows" src={require('./Pictures/Arrows2.png')} />
+                                        <img style={{ maxWidth: '100%', display:'flex', justifyContent:'content' }} className="designco_arrows" src={arrows} />
 
                                         <a className="whitebutton" href="http://ucsddesign.co/" target="_blank">
                                             <p>WEBSITE</p>
