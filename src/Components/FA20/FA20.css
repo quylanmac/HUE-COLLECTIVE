@@ -315,6 +315,7 @@
         justify-content: end;
         max-width: 40%;
         height:auto;
+        object-fit:cover;
 
     }
     .outlet {
@@ -323,8 +324,8 @@
         margin-left: 5%;
         max-width: 75%;
         height:auto;
-
         margin-top: -55%;
+        object-fit:cover;
     }
     .design_outlet {
         width: 100%;
