@@ -76,32 +76,32 @@ class FA20 extends Component {
                                     </Row>
                                 </Col>
 
-                                {/* COL 2 */}
-                                <Col md={3}>
-                                    <Row md={9}>
-                                        <img className="clouds" src={require('./Clouds.svg')} />
-                                    </Row>
-                                    <Row md={3}>
-                                        <img className="smiley" src={require('./Smiley.svg')} />
-                                    </Row>
-                                </Col>
+                    {/* COL 2 */}
+                    <Col md={3}>
+                        <Row md={9}>
+                            <img className="clouds" src={require('./Clouds.png')} />
+                        </Row>
+                        <Row md={3}>
+                            <img className="smiley" src={require('./Smiley.png')} />
+                        </Row>
+                    </Col>
 
-                                {/* COL 3 */}
-                                <Col md={5}>
-                                    <Row md={3}>
-                                        <img className="arrows" src={require('./Arrows.svg')} />
-                                    </Row>
-                                    <Row md={2}>
-                                        <img className="text" src={require('./Text.svg')} />
-                                    </Row>
-                                    <Row md={5}>
-                                        <img className="mug" src={require('./Mug.svg')} />
-                                    </Row>
-                                    <Row className="title" md={2}>
-                                        <p>HUECOLLECTIVE.CO</p>
-                                    </Row>
-                                </Col>
-                            </Row>
+                    {/* COL 3 */}
+                    <Col md={5}>
+                        <Row md={3}>
+                            <img className="arrows" src={require('./Arrows.png')} />
+                        </Row>
+                        <Row md={2}>
+                            <img className="text" src={require('./Text.png')} />
+                        </Row>
+                        <Row md={5}>
+                            <img className="mug" src={require('./Mug.png')} />
+                        </Row>
+                        <Row className="title" md={2}>
+                            <p>HUECOLLECTIVE.CO</p>
+                        </Row>
+                    </Col>
+                </Row>
 
 
                             <Row className="horizontal_scroll justifyEnd">
