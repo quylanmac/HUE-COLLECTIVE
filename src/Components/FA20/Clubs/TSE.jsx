@@ -90,7 +90,7 @@ class TSE extends Component {
                                                     <img src={require('./Pictures/whitearrow.svg')} />
                                                 </a>
                                             </div>
-                                            <img src={require('./Pictures/Arrows3.png')} />
+                                            <img src={require('./Pictures/Arrows3.svg')} />
                                         </div>
                                     </Row>
                                 </Col>
