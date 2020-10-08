@@ -66,7 +66,7 @@ class DesignCo extends Component {
                                     {/* <Row md={12}>asd</Row> */}
                                     <Row className="designco_row2">
                                         {/* <Col> */}
-                                        <img style={{ maxWidth: '100%' }} src={require('./Pictures/Arrows2.png')} />
+                                        <img style={{ maxWidth: '100%', height:'auto' }} src={require('./Pictures/Arrows2.png')} />
 
                                         <a className="whitebutton" href="http://ucsddesign.co/" target="_blank">
                                             <p>WEBSITE</p>
