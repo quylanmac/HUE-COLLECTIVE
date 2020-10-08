@@ -80,4 +80,8 @@
         margin: 0;
         font-size: 1rem;
     }
+    .designco_arrows{
+        display: flex !important;
+        justify-content: center !important;
+    }
 }

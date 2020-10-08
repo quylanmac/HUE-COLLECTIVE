@@ -25,6 +25,7 @@
     position: relative !important;
 }
 .end2Button {
+    /* max-width: 50%; */
     display: flex;
     justify-content: end;
     margin-top: 2rem;
@@ -313,11 +314,15 @@
         font-weight: 700;
     }
     .plug_1 {
+        display: flex;
+        justify-content: end;
         max-width: 40%;
         height:auto;
 
     }
     .outlet {
+        display: flex;
+        justify-content: end;
         margin-left: 5%;
         max-width: 75%;
         height:auto;
@@ -395,13 +400,16 @@
 
     }
     .plug_2{
+        display: flex;
+        justify-content: end;
         max-width: 55%;
         height:auto;
 
     }
     .outlet_2{
+        display: flex;
+        justify-content: end;
         height:auto;
-
         max-width: 75%;
         margin-left: 5%;
         margin-top: -25%;
