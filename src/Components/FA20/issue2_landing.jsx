@@ -5,8 +5,8 @@ import './FA20.css';
 import { setTheme } from '../../redux/actions';
 import {Link} from 'react-router-dom';
 import Directory from './Directory';
-import plug_2 from './Plug1.svg';
-import outlet_2 from './Outlet.svg';
+import plug_2 from './plug2.png';
+import outlet_2 from './outlet.png';
 
 class issue2_landing extends Component {
     constructor(props) {
@@ -46,7 +46,7 @@ class issue2_landing extends Component {
                                                 </Link>
                                             </Row>
                                             <Row>
-                                                <img className="outlet_2" src={require('./Outlet.svg')} />
+                                                <img className="outlet_2" src={outlet_2} />
                                             </Row>
                                         </Col>
                                     </Row>
