@@ -45,9 +45,9 @@ class issue2_landing extends Component {
                                                 <img className="plug_2" src={plug_2} />
                                                 </Link>
                                             </Row>
-                                            <Row className="outlet_2_row">
+                                            {/* <Row className="outlet_2_row">
                                                 <img className="outlet_2" src={outlet_2} />
-                                                </Row>
+                                                </Row> */}
                                         </Col>
                                     </Row>
                                 </Col>

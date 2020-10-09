@@ -51,9 +51,9 @@ class DFA extends Component {
                                             <Row>
                                                 <img className="plug_1" src={require('../Plug2.svg')} />
                                             </Row>
-                                            <Row>
+                                            {/* <Row>
                                                 <img className="outlet" src={require('../Outlet.svg')} />
-                                            </Row>
+                                            </Row> */}
                                         </Col>
 
                                         <Col xs={8} md={8}>
