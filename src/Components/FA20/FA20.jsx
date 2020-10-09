@@ -34,6 +34,8 @@ class FA20 extends Component {
         this.props.setTheme(theme);
     }
     render() {
+        const parent = { width: `100%`, height: `100%` }
+        const child = { width: `1110px`, height: `100%` }
         return (
             <Container className="container-fluid">
                 <Row className="nopad">
