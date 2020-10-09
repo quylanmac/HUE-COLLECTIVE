@@ -5,8 +5,8 @@ import './FA20.css';
 import { setTheme } from '../../redux/actions';
 import {Link} from 'react-router-dom';
 import Directory from './Directory';
-import plug_2 from './plug2.png';
-import outlet_2 from './outlet.png';
+import plug_2 from './Plug1.svg';
+import outlet_2 from './Outlet.svg';
 
 class issue2_landing extends Component {
     constructor(props) {
@@ -40,14 +40,14 @@ class issue2_landing extends Component {
                                     </Link>
                                     <Row xs={10} md={10}>
                                         <Col xs={4} md={4}>
-                                            <Row>
+                                        <Row className="plug_2_row">
                                             <Link to = {{pathname:"/issue2"}} style={{zIndex:'3'}}>
                                                 <img className="plug_2" src={plug_2} />
                                                 </Link>
-                                            {/* </Row> */}
-                                            {/* <Row> */}
-                                                <img className="outlet_2" src={outlet_2} />
                                             </Row>
+                                            <Row className="outlet_2_row">
+                                                <img className="outlet_2" src={outlet_2} />
+                                                </Row>
                                         </Col>
                                     </Row>
                                 </Col>

@@ -50,12 +50,12 @@ class FA20 extends Component {
                         </Link>
                         <Row xs={10} md={10}>
                             <Col xs={4} md={4}>
-                                <Row>
+                            <Row className="plug_1_row">
                                     <img className="plug_1" src={plug_1} />
-                                </Row>
-                                <Row>
+                                    </Row>
+                                    <Row className="outlet_row">
                                     <img className="outlet" src={outlet} />
-                                </Row>
+                                    </Row>
                             </Col>
 
                             <Col xs={8} md={8}>

@@ -79,38 +79,52 @@
     font-family: GT-Haptik-Black-Trail;
     margin-bottom: 0%;
 }
-
+.plug_1_row{
+    position: relative;
+    top:0%;
+    max-width: 100%;
+}
 .plug_1 {
     z-index: 3;
-    max-width: 62%;
-    margin-top: 0%;
-    margin-left: 1.8rem;
+    max-width: 75%;
+    /* margin-top: 0%; */
+    margin-left: 1.5rem;
     height:auto;
 }
+.outlet_row{
+    position: relative;
+    bottom:16%;
+    margin-bottom: -5rem;
+}
+.outlet {
+    /* margin-top: -85%; */
+    max-width: 100%;
+    z-index: 2;
+    height:auto;
+}
+.plug_2_row{
+    position: relative;
+    top:0%;
+}
 .plug_2 {
+    position: relative;
+    top:0%;
     max-width: 85%;
     margin-left: 1rem;
     height:auto;
 }
+.outlet_2_row{
+    position: relative;
+    top:-11%;
+}
+
 .outlet_2 {
-    height: auto;
-    margin-top: -40%;
     max-width: 100%;
     z-index: 2;
     height:auto;
 }
 
-.outlet {
-    height: auto;
-    margin-top: -85%;
-    max-width: 100%;
-    z-index: 2;
-    height:auto;
 
-    /* border-style: solid;
-    border-width: medium;
-    border-color: black; */
-}
 
 .design_outlet {
     background-color: #e08f61;
@@ -329,16 +343,16 @@
     .plug_1 {
         display: flex;
         justify-content: end;
-        max-width: 48%;
+        /* max-width: 48%; */
         height:auto;
 
     }
     .outlet {
         display: flex;
         justify-content: end;
-        max-width: 100%;
+        /* max-width: 100%; */
         height:auto;
-        margin-top: -75%;
+        /* margin-top: -75%; */
         flex:auto;
     }
     .design_outlet {
@@ -412,18 +426,18 @@
 
     }
     .plug_2{
-        display: flex;
-        justify-content: end;
+        /* display: flex; */
+        /* justify-content: end; */
         max-width: 70%;
-        height:auto;
+        /* height:auto; */
 
     }
     .outlet_2{
-        display: flex;
-        justify-content: end;
+        /* display: flex; */
+        /* justify-content: end; */
         max-width: 100%;
-        height:auto;
-        margin-top: -50%;
-        flex:auto;
+        /* height:auto; */
+        /* margin-top: -50%; */
+        /* flex:auto; */
     }
 }
