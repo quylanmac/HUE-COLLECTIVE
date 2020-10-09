@@ -47,9 +47,9 @@ class Issues extends Component {
         return (
             <Container>
                 <Row>
-                    <Draggable handle="strong" {...dragHandlers}>
+                    
                         <div className="box no-cursor issue">
-                            <strong className="moveCursor">
+                            <strong className="">
                                 <div className="issueHeader">
                                     <p className="textHeader">/Issue 1</p>
                                     {/*  <p className="closeIssue">X</p> */}
@@ -76,7 +76,6 @@ class Issues extends Component {
                                 </Link>
                             </div>
                         </div>
-                    </Draggable>
                     {/* <Draggable {...dragHandlers}>
                         <div className="moveCursor stickerBox">
                             <img draggable="false" src={fire} />

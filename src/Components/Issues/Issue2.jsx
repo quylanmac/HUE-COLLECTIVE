@@ -46,7 +46,6 @@ class Issues extends Component {
         return (
             <Container>
                 <Row>
-                    <Draggable handle="strong" {...dragHandlers}>
                         <div>
                             <Link to={{
                                 pathname: "/issue2_landing",
@@ -56,7 +55,6 @@ class Issues extends Component {
                             </Link>
                         </div>
 
-                    </Draggable>
                 </Row>
             </Container>
         )

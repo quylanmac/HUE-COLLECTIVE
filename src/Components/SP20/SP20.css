@@ -35,25 +35,7 @@
     font-size: 2rem;
     line-height: 35px;
 }
-.textHeader {
-    margin: 1rem;
-}
-.issueBody {
-    margin-top: 5rem;
-    text-align: center;
-    margin-bottom: 5rem;
-}
-.issueTarget {
-    margin-bottom: 2rem;
-    font-family: GT-America-Expanded-Medium;
-    font-size: 3rem;
-}
-.issueText {
-    margin-bottom: 2rem;
-    max-width: 75%;
-    text-align: justify;
-    font-family: GT-America-Extended-Regular;
-}
+
 .showMore {
     background-color: #121212;
     color: #fcfcfc;
@@ -109,6 +91,15 @@
     cursor: pointer;
 }
 @media (max-width: 767px) {
+    .textHeader {
+        margin: 0.25rem;
+    }
+    .issueText {
+        margin-bottom: 0;
+        max-width: 85%;
+        text-align: justify;
+        font-family: GT-America-Extended-Regular;
+    }
     .stickerBox {
         position: absolute;
         bottom: -42.5%;
@@ -133,8 +124,36 @@
     .stickerBox3 img {
         max-width: 75%;
     }
+    .issueBody {
+        margin:0 !important;
+        text-align: center;
+    }
+    .issueTarget {
+        margin-bottom: 0;
+        font-family: GT-America-Expanded-Medium;
+        font-size: 1.5rem;
+    }
 }
 @media (min-width: 768px) {
+    .textHeader {
+        margin: 1rem;
+    }
+    .issueText {
+        margin-bottom: 2rem;
+        max-width: 75%;
+        text-align: justify;
+        font-family: GT-America-Extended-Regular;
+    }
+    .issueTarget {
+        margin-bottom: 2rem;
+        font-family: GT-America-Expanded-Medium;
+        font-size: 3rem;
+    }
+    .issueBody {
+        margin-top: 5rem;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
     .stickerBox {
         position: absolute;
         bottom: 0%;
