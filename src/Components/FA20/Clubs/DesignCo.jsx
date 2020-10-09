@@ -4,12 +4,11 @@ import { connect } from 'react-redux';
 import '../FA20.css';
 import { setTheme } from '../../../redux/actions';
 import Directory from '../Directory.jsx';
-import { HashLink } from 'react-router-hash-link';
+import { HashLink as Link} from 'react-router-hash-link';
 import GroupInterview from '../../GroupInterview/GroupInterview';
 import Empowerment from '../../Empowerment/Empowerment';
 import './DesignCo.css';
 import groupButton from '../../../img/Issue2/button.png';
-import { Link } from 'react-router-dom';
 import arrows from './Pictures/Arrows2.svg';
 
 class DesignCo extends Component {
@@ -59,16 +58,17 @@ class DesignCo extends Component {
                                             <Row md={9}>
                                                 <Directory />
                                             </Row>
+                                            <Link smooth to="/issue2/design-co#club">
                                             <Row md={3}>
                                                 <Col md={12} className="down_arrow">
                                                     <img src={require('./Pictures/whitearrow.svg')}/>
                                                 </Col>
                                             </Row>
+                                            </Link>
                                         </Col>
                                     </Row>
                                 </Col>
-
-                                <Col md={3}>
+                                <Col md={3} id="club" className="alignEnd">
                                     {/* <Row md={12}>asd</Row> */}
                                     <Row className="designco_row2">
                                         {/* <Col> */}
@@ -98,9 +98,9 @@ class DesignCo extends Component {
                             </Row>
 
                             <Row className="horizontal_scroll justifyEnd">
-                                <HashLink smooth to="/groupinterview"  className="">
+                                <Link smooth to="/groupinterview"  className="">
                                     <img src={groupButton} className="end2Button responseImg2" />
-                                </HashLink>
+                                </Link>
                             </Row>
                         </div>
                   

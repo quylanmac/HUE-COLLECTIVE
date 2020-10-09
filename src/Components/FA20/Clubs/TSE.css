@@ -31,7 +31,7 @@
     border-width: 2px;
     border-color: black;
     /* margin-left: 0.2rem; */
-    max-width: 500% !important;
+    width: 100% !important;
 }
 
 .tse_div:nth-child(1)>div{

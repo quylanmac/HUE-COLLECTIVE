@@ -4,8 +4,8 @@
     border-color: black;
     background-color:#ce5cf6;
     position: relative;
-    top:60%;
     z-index: 1;
+    margin:0;
 }
 .yps_row>a{
     margin-left: 0.5rem;

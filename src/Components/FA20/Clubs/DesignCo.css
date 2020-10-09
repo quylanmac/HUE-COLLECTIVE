@@ -15,9 +15,9 @@
 }
 .designco_row2{
     background-color:#ce5cf6;
-    top:69%;
     position: relative;
     z-index: 1;
+    margin:0;
 }
 .designco_row2>a{
     margin-left: 0.5rem;
@@ -50,7 +50,6 @@
     padding-bottom: 3rem;
     background-color: #d35135;
 }
-
 @media (max-width:767px) {
     .designco_row2{
         background-color:#ce5cf6;
