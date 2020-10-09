@@ -62,6 +62,11 @@ class TREND extends Component {
                                             <Row md={3}>
                                                 <img className="trend_img" src={require('./Pictures/TREND.svg')} />
                                             </Row>
+                                            <Row md={3}>
+                                                <Col md={12} className="down_arrow">
+                                                    <img src={require('./Pictures/whitearrow.svg')}/>
+                                                </Col>
+                                            </Row>
                                         </Col>
                                     </Row>
                                 </Col>

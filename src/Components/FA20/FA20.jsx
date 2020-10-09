@@ -10,8 +10,8 @@ import Empowerment from '../Empowerment/Empowerment';
 import Directory from './Directory';
 import SimpleViewSlider from 'react-view-slider/simple';
 import { Link } from 'react-router-dom';
-import outlet from './outlet.png';
-import plug_1 from './plug.png';
+import outlet from './Outlet.svg';
+import plug_1 from './Plug2.svg';
 
 import {
     CSSTransition,
@@ -48,10 +48,10 @@ class FA20 extends Component {
                         </Link>
                         <Row xs={10} md={10}>
                             <Col xs={4} md={4}>
-                                <Row xs={2} md={2}>
+                                <Row>
                                     <img className="plug_1" src={plug_1} />
-                                {/* </Row> */}
-                                {/* <Row xs={1} md={1}> */}
+                                </Row>
+                                <Row>
                                     <img className="outlet" src={outlet} />
                                 </Row>
                             </Col>

@@ -81,7 +81,6 @@
 }
 
 .plug_1 {
-    height: auto;
     z-index: 3;
     max-width: 62%;
     margin-top: 0%;
@@ -89,7 +88,6 @@
     height:auto;
 }
 .plug_2 {
-    height: auto;
     max-width: 85%;
     margin-left: 1rem;
     height:auto;
@@ -121,6 +119,9 @@
     border-color: black;
     padding-top: 0.75rem;
     padding-bottom: 0.25rem;
+}
+.down_arrow{
+    display: none;
 }
 
 .design_outlet > p {
@@ -300,6 +301,21 @@
     justify-content:end;
 }
 @media (max-width: 767px) {
+    .down_arrow{
+        display: flex;
+        background-color: #e08f61;
+        border-style: solid;
+        border-width: 2px;
+        border-color: black;
+        /* padding-top: 0.75rem; */
+        /* padding-bottom: 0.25rem; */
+        justify-content: center;
+    }
+    .down_arrow>img{
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        -webkit-transform: rotate(90deg);
+    }
     .issue_2 :first-child {
         color: white;
         font-size: 2rem;
@@ -313,7 +329,7 @@
     .plug_1 {
         display: flex;
         justify-content: end;
-        max-width: 40%;
+        max-width: 48%;
         height:auto;
         flex:auto;
         margin:auto;
@@ -322,13 +338,10 @@
     .outlet {
         display: flex;
         justify-content: end;
-        margin-left: 5%;
-        max-width: 75%;
+        max-width: 100%;
         height:auto;
-        margin-left:10%;
-        margin-top: -55%;
+        margin-top: -75%;
         flex:auto;
-        /* margin:auto !important; */
     }
     .design_outlet {
         width: 100%;
@@ -403,16 +416,16 @@
     .plug_2{
         display: flex;
         justify-content: end;
-        max-width: 55%;
+        max-width: 70%;
         height:auto;
 
     }
     .outlet_2{
         display: flex;
         justify-content: end;
+        max-width: 100%;
         height:auto;
-        max-width: 75%;
-        margin-left: 10%;
-        margin-top: -25%;
+        margin-top: -50%;
+        flex:auto;
     }
 }

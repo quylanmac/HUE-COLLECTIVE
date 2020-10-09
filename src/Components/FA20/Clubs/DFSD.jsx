@@ -59,6 +59,11 @@ class DFSD extends Component {
                                                 <Directory />
                                             </Row>
                                             <Row md={3}>
+                                                <Col md={12} className="down_arrow">
+                                                    <img src={require('./Pictures/whitearrow.svg')}/>
+                                                </Col>
+                                            </Row>
+                                            <Row md={3}>
                                                 <img className="dfsd_img" src={require('./Pictures/DFSD.svg')} />
                                             </Row>
                                         </Col>

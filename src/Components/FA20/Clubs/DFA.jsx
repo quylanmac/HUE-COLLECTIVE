@@ -60,6 +60,11 @@ class DFA extends Component {
                                             <Row md={9}>
                                                 <Directory />
                                             </Row>
+                                            <Row md={3}>
+                                                <Col md={12} className="down_arrow">
+                                                    <img src={require('./Pictures/whitearrow.svg')}/>
+                                                </Col>
+                                            </Row>
                                         </Col>
                                     </Row>
                                 </Col>
