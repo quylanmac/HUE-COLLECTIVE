@@ -28,22 +28,13 @@
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
-.issueHeader {
-    border: #121212;
-    border-style: solid none solid none;
-    font-family: VT323;
-    font-size: 2rem;
-    line-height: 35px;
-}
+
 
 .showMore {
     background-color: #121212;
     color: #fcfcfc;
 }
-.buttonText {
-    margin: 1rem;
-    font-family: GT-America-Extended-Regular;
-}
+
 .myDrag {
     margin-top: 3rem;
 }
@@ -91,6 +82,17 @@
     cursor: pointer;
 }
 @media (max-width: 767px) {
+    .issueHeader {
+        border: #121212;
+        border-style: solid none solid none;
+        font-family: VT323;
+        font-size: 1.25rem;
+        line-height: 35px;
+    }
+    .buttonText {
+        margin: 0.5rem;
+        font-family: GT-America-Extended-Regular;
+    }
     .textHeader {
         margin: 0.25rem;
     }
@@ -135,6 +137,17 @@
     }
 }
 @media (min-width: 768px) {
+    .issueHeader {
+        border: #121212;
+        border-style: solid none solid none;
+        font-family: VT323;
+        font-size: 2rem;
+        line-height: 35px;
+    }
+    .buttonText {
+        margin: 1rem;
+        font-family: GT-America-Extended-Regular;
+    }
     .textHeader {
         margin: 1rem;
     }
