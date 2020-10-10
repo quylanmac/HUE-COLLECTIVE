@@ -103,7 +103,7 @@ class Landing extends Component {
                         ref={p => this.player = p}
                         containerWidth={this.state.windowWidth}
                         containerHeight={this.state.windowHeight}
-                        playsInline={true}
+                        playsInline={false}
                         src={promoVid}
                         poster={playIcon}
                         onPlay={this.handleOnPlay}
