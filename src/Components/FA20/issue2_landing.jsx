@@ -28,6 +28,8 @@ class issue2_landing extends Component {
     render(){
         return(
             <Container>
+            <div className="row nopad">
+                        <div className="viewResponsive sec1" id="section1">
                             <Row className="nopad">
                                 <Col md={4}>
                                 <Link to={{pathname: "/issue2"}}>
@@ -52,6 +54,8 @@ class issue2_landing extends Component {
                                     </Row>
                                 </Col>
                                 </Row>
+                                </div>
+                                </div>
                             </Container>
         )
 

@@ -38,6 +38,8 @@ class FA20 extends Component {
         const child = { width: `1110px`, height: `100%` }
         return (
             <Container className="container-fluid">
+            <div style={parent} className="row nopad">
+                        <div className="viewResponsive sec1" id="section1">
                 <Row className="nopad">
                     <Col md={4}>
                         <Link to={{ pathname: "/issue2" }}>
@@ -74,7 +76,7 @@ class FA20 extends Component {
                     </Col>
 
                     {/* COL 2 */}
-                    <Col md={3}>
+                    <Col md={3} id="club">
                         <Row md={9}>
                             <img className="clouds" src={require('./Clouds.svg')} />
                         </Row>
@@ -106,7 +108,8 @@ class FA20 extends Component {
                         <img src={groupButton} className="end2Button responseImg2" />
                     </HashLink>
                 </Row>
-
+                    </div>
+                    </div>
             </Container>
         )
     }
