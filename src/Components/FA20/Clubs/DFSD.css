@@ -3,8 +3,8 @@
     background-color: #e08f61;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
     border-style: solid;
     border-width: 2px;
     border-color: black;
@@ -14,8 +14,9 @@
 
 .dfsd_row{
     background-color:#ce5cf6;
-    position: relative;
-    top:60%;
+    /* position: relative; */
+    /* top:60%; */
+    margin: 0;
     border-style: solid;
     border-width: 2px;
     border-color: black;

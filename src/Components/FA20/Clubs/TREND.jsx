@@ -46,7 +46,7 @@ class TREND extends Component {
                                 </Link>
                                 <Row xs={10} md={10}>
                                     <Col xs={4} md={4}>
-                                        <Row>
+                                    <Row className="plug_1_row">
                                             <img className="plug_1" src={require('../Plug2.svg')} />
                                         </Row>
                                         {/* <Row>

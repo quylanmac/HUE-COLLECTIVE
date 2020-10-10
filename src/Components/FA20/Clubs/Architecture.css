@@ -23,13 +23,20 @@
 
 .arch_row2{
     position: relative;
-    top:11%;
+    top:7%;
+    /* justify-content: end; */
+    /* margin:0; */
     z-index: 1;
 }
 
 .arch_row3{
+    /* margin:0; */
+    margin-left:-15px;
     position: relative;
-    top:11%;
+    top:7%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
     border-style: solid;
     border-top: none;
     border-width: 2px;
@@ -53,6 +60,9 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     background-color: #d35135;
+    /* justify-content: flex-end; */
+    /* display: flex; */
+    /* align-items: flex-end; */
 }
 
 @media (max-width:767px){

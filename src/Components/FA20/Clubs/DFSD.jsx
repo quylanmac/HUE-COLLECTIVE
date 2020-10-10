@@ -46,7 +46,7 @@ class DFSD extends Component {
                                 </Link>
                                 <Row xs={10} md={10}>
                                     <Col xs={4} md={4}>
-                                        <Row>
+                                    <Row className="plug_1_row">
                                             <img className="plug_1" src={require('../Plug2.svg')} />
                                         </Row>
                                         {/* <Row>
@@ -77,7 +77,7 @@ class DFSD extends Component {
                                 </Row>
                             </Col>
 
-                            <Col md={3}>
+                            <Col md={3} className="alignEnd">
                                 <Row className="dfsd_row">
 
                                     <img style={{ maxWidth: '100%' }} src={require('./Pictures/Arrows2.svg')} />

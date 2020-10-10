@@ -21,17 +21,19 @@
     font-size: 1.2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
     background-color: #257a66;
 }
 .dfa_row{
-    top:71%;
-    position: relative;
-    z-index: 1;
+    margin: 0;
+    width: 100% !important;
+    /* top:70%; */
+    /* position: relative; */
+    /* z-index: 1; */
 }
 .dfa_div{
-    margin-left: 0;
+    /* margin-left: 0; */
     display: flex;
     justify-content: flex-start;
     background-color: #257a66;
@@ -49,7 +51,7 @@
     margin-top: 1rem;
 }
 .dfa_div>img{
-    max-width: 25%;
+    max-width: 30%;
     margin: 0;
     flex:auto;
 }

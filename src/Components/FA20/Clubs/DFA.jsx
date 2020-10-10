@@ -48,7 +48,7 @@ class DFA extends Component {
                                 </Link>
                                 <Row xs={10} md={10}>
                                     <Col xs={4} md={4}>
-                                        <Row>
+                                    <Row className="plug_1_row">
                                             <img className="plug_1" src={require('../Plug2.svg')} />
                                         </Row>
                                         {/* <Row>
@@ -80,7 +80,7 @@ class DFA extends Component {
                                 </Row>
                             </Col>
 
-                            <Col md={5}>
+                            <Col md={5} className="alignEnd">
 
                                 <Row className="dfa_row">
                                     <div className="dfa_div">
