@@ -47,36 +47,36 @@ class Issues extends Component {
         return (
             <Container>
                 <Row>
-                    
-                        <div className="box no-cursor issue">
-                            <strong className="">
-                                <div className="issueHeader">
-                                    <p className="textHeader">/Issue 1</p>
-                                    {/*  <p className="closeIssue">X</p> */}
-                                </div>
-                            </strong>
-                            <div className="issueBody">
-                                <p className="issueTarget">POINT OF VIEW</p>
-                                <div className="d-flex justify-content-center">
-                                    <p className="issueText">For HUE’s first issue, we decided to highlight a few of the many disciplines
-                                    across design by interviewing our incredible friends and fellow students. Each article follows our
-                                    designers on their journey to finding a passion, incorporating their projects, key insights, and most
-                                    valuable tools. With HUE, we hope you can start your own journey, and answer for yourself, “what is design?”
-                              </p>
-                                </div>
-                                <Link to={{
-                                    pathname: "/article1",
 
-                                }}>
-                                    <button className="showMore" onClick={() => this.handleTheme("white")}>
-                                        <p className="buttonText">
-                                            SHOW ME MORE
-                                        </p>
-                                    </button>
-                                </Link>
+                    <div className="box no-cursor issue">
+                        <strong className="">
+                            <div className="issueHeader">
+                                <p className="textHeader">/Issue 1</p>
+                                {/*  <p className="closeIssue">X</p> */}
                             </div>
+                        </strong>
+                        <div className="issueBody">
+                            <p className="issueTarget">POINT OF VIEW</p>
+                            <div className="d-flex justify-content-center">
+                                <p className="issueText">For HUE’s first issue, we decided to highlight a few of the many disciplines
+                                across design by interviewing our incredible friends and fellow students. Each article follows our
+                                designers on their journey to finding a passion, incorporating their projects, key insights, and most
+                                valuable tools. With HUE, we hope you can start your own journey, and answer for yourself, “what is design?”
+                              </p>
+                            </div>
+                            <Link to={{
+                                pathname: "/article1",
+
+                            }}>
+                                <button className="showMore" onClick={() => this.handleTheme("white")}>
+                                    <p className="buttonText">
+                                        SHOW ME MORE
+                                        </p>
+                                </button>
+                            </Link>
                         </div>
-                    {/* <Draggable {...dragHandlers}>
+                    </div>
+                    <Draggable {...dragHandlers}>
                         <div className="moveCursor stickerBox">
                             <img draggable="false" src={fire} />
                         </div>
@@ -90,7 +90,7 @@ class Issues extends Component {
                         <div className="moveCursor stickerBox3">
                             <img draggable="false" src={star} />
                         </div>
-                    </Draggable> */}
+                    </Draggable>
                 </Row>
             </Container>
         )

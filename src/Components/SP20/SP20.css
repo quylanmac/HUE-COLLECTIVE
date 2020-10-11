@@ -105,17 +105,17 @@
     }
     .stickerBox {
         position: absolute;
-        bottom: -42.5%;
+        bottom: -70%;
         left: 0%;
     }
     .stickerBox2 {
         position: absolute;
-        bottom: -42.5%;
+        bottom: -70%;
         left: 33.3%;
     }
     .stickerBox3 {
         position: absolute;
-        bottom: -42.5%;
+        bottom: -70%;
         left: 66.6%;
     }
     .stickerBox img {
@@ -186,19 +186,20 @@
 }
 @media (min-width: 1367px) {
     .stickerBox {
-        position: absolute;
-        bottom: 0%;
-        left: 10%;
+        position:absolute;
+        bottom:auto;
+        left:10%;
+
     }
     .stickerBox2 {
         position: absolute;
-        bottom: 0%;
-        right: 15%;
+        bottom: auto;
+        right:15%;
     }
     .stickerBox3 {
         position: absolute;
-        bottom: 40%;
-        right: 10%;
+        bottom: auto;
+        right:45%;
     }
 }
 
