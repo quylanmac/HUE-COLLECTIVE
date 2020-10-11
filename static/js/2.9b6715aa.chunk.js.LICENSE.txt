@@ -17,6 +17,10 @@ object-assign
  * @license  MIT
  */
 
+/*! npm.im/intervalometer */
+
+/*! npm.im/iphone-inline-video 2.2.2 */
+
 /** @license React v0.19.1
  * scheduler.production.min.js
  *

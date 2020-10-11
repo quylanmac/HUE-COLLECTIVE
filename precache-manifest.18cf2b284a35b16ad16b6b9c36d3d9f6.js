@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e588a0c86405106f63765ee9d5b3e9ec",
+    "revision": "1ca96043ee039ccf7e5fdfcfbf75dd07",
     "url": "/index.html"
   },
   {
-    "revision": "3980fcb6188d2b93eaf7",
-    "url": "/static/css/2.69121389.chunk.css"
+    "revision": "68121297ff2dcd37bb8c",
+    "url": "/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "22ffff029c10839ba74f",
-    "url": "/static/css/main.2e88caa5.chunk.css"
+    "revision": "82103bd67c7fef87aec8",
+    "url": "/static/css/main.2cd3cafc.chunk.css"
   },
   {
-    "revision": "3980fcb6188d2b93eaf7",
-    "url": "/static/js/2.eb23066d.chunk.js"
+    "revision": "68121297ff2dcd37bb8c",
+    "url": "/static/js/2.9b6715aa.chunk.js"
   },
   {
-    "revision": "88cbcb55f867c7e879dbc5e47becbf3b",
-    "url": "/static/js/2.eb23066d.chunk.js.LICENSE.txt"
+    "revision": "514f455b70cda4d69697317fa903bc09",
+    "url": "/static/js/2.9b6715aa.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "22ffff029c10839ba74f",
-    "url": "/static/js/main.53797b97.chunk.js"
+    "revision": "82103bd67c7fef87aec8",
+    "url": "/static/js/main.5a55e17a.chunk.js"
   },
   {
-    "revision": "aa8021130684922e19c3",
-    "url": "/static/js/runtime-main.724fe076.js"
+    "revision": "f75ecc5a6c8af381b048",
+    "url": "/static/js/runtime-main.31617832.js"
+  },
+  {
+    "revision": "4de099a6d5af29454bb9271d7e0958c9",
+    "url": "/static/media/ACM.4de099a6.svg"
   },
   {
     "revision": "5aa903599c2dcf8e5c2782dc50b6fd2a",
@@ -36,8 +40,52 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ALICIA TAM.d2238214.png"
   },
   {
+    "revision": "2dde456c9e681d4e19b754898336ace7",
+    "url": "/static/media/Architecture.2dde456c.svg"
+  },
+  {
+    "revision": "474ab2ad89c7386a4ad313dc9271269a",
+    "url": "/static/media/Arrows.474ab2ad.svg"
+  },
+  {
+    "revision": "09befc446b91b56c708976f8d6ea5b62",
+    "url": "/static/media/Arrows2.09befc44.svg"
+  },
+  {
+    "revision": "c59b0f208df6fce44f9e2d1a66da2a07",
+    "url": "/static/media/Arrows3.c59b0f20.svg"
+  },
+  {
+    "revision": "2fcfeaeff614f30a385c0fa3a8cb57f4",
+    "url": "/static/media/Arrows4.2fcfeaef.svg"
+  },
+  {
+    "revision": "548b9f211e0b1e5ec8cce497afe90e7b",
+    "url": "/static/media/Arrows5.548b9f21.svg"
+  },
+  {
+    "revision": "b03d455eb8a82247a7bb8852e88ea6ef",
+    "url": "/static/media/Arrows6.b03d455e.svg"
+  },
+  {
+    "revision": "26f4e56e33835c469dabac66494fdefd",
+    "url": "/static/media/Clouds.26f4e56e.svg"
+  },
+  {
+    "revision": "de7ab0f8a01176bf5ab9f42296af9a96",
+    "url": "/static/media/Cover.de7ab0f8.png"
+  },
+  {
     "revision": "aa15b22f6126f2a150f9ff3b14a42b19",
     "url": "/static/media/Cubano-Regular.aa15b22f.otf"
+  },
+  {
+    "revision": "9953213d1d7b9c1627bc48c4b5871991",
+    "url": "/static/media/DFAlogo.9953213d.svg"
+  },
+  {
+    "revision": "e0176bdd2a2f266b85548938020096e9",
+    "url": "/static/media/DFSD.e0176bdd.svg"
   },
   {
     "revision": "d726f071ac3d3a1a4cdbc5b402b97e05",
@@ -58,6 +106,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c5ab281046874c9d0a36456edb211b8c",
     "url": "/static/media/GT-America-Regular.c5ab2810.otf"
+  },
+  {
+    "revision": "f4bc7b80f7134c00c7711de667b5d3b2",
+    "url": "/static/media/GT-Haptik-Black-Trial.f4bc7b80.otf"
+  },
+  {
+    "revision": "55cb8fa7c7937be27e43969b93ab4419",
+    "url": "/static/media/GT-Walsheim-Pro-Regular-Trial.55cb8fa7.otf"
   },
   {
     "revision": "5e1e2588255022972d6243083f44ecd1",
@@ -86,6 +142,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3a349abf7637eeedd532c681ccd2992e",
     "url": "/static/media/LAUREN IBARRA.3a349abf.png"
+  },
+  {
+    "revision": "7e9ca62f9e9f35b7dd9e682097e2dc19",
+    "url": "/static/media/Mug.7e9ca62f.svg"
+  },
+  {
+    "revision": "874581bc438e55bbaa5c5b9cb58c999f",
+    "url": "/static/media/Outlet.874581bc.svg"
+  },
+  {
+    "revision": "d309466ef7c7837ed68429bdba9833e2",
+    "url": "/static/media/Plug1.d309466e.svg"
+  },
+  {
+    "revision": "0a7b65886ee71b74aa8741d7f0e95e5a",
+    "url": "/static/media/Plug2.0a7b6588.svg"
   },
   {
     "revision": "29c14cf2c63192872270082e8cae254c",
@@ -132,6 +204,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/RISHABH SINGHAL.4131a6b8.png"
   },
   {
+    "revision": "5b5384b9c443c27e4b54bcbf92c6fff9",
+    "url": "/static/media/Robosub.5b5384b9.svg"
+  },
+  {
     "revision": "f282801c9fd2943751759f97f2c20c16",
     "url": "/static/media/SOPHIE LEE.f282801c.png"
   },
@@ -140,8 +216,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/SOPHIEKATO.7ece7f65.png"
   },
   {
+    "revision": "20e170a7786e6640d9f39fac1e93760e",
+    "url": "/static/media/Smiley.20e170a7.svg"
+  },
+  {
+    "revision": "7344f9fa8520e3f7a4aa56d30414ffe6",
+    "url": "/static/media/TREND.7344f9fa.svg"
+  },
+  {
+    "revision": "d9875be32feb83282858c19259d42840",
+    "url": "/static/media/TSE.d9875be3.svg"
+  },
+  {
+    "revision": "8bb77ac8cd7c26efb1726b95ecad333d",
+    "url": "/static/media/Text.8bb77ac8.svg"
+  },
+  {
     "revision": "99a8ec3f3a0b9f1f636e2dbc8f7928ed",
     "url": "/static/media/Vector.99a8ec3f.png"
+  },
+  {
+    "revision": "d08b8586123c413ffde73e3fe0913ce8",
+    "url": "/static/media/Winson.d08b8586.png"
+  },
+  {
+    "revision": "19c8875a2e6b7f2c8b4697b7177d611a",
+    "url": "/static/media/YPS.19c8875a.svg"
   },
   {
     "revision": "7fc445e3f04e8ec76a1bd56f5f31f895",
@@ -272,6 +372,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/cursor.f553ebc8.svg"
   },
   {
+    "revision": "f5409a8a9654c23762d7354ddcabbd08",
+    "url": "/static/media/designcologo.f5409a8a.svg"
+  },
+  {
     "revision": "624e24857c3f5f0c7e8ea1624062c543",
     "url": "/static/media/emeraldsticker.624e2485.png"
   },
@@ -354,6 +458,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d556d891ad1db05f0fc3cbec11cdf15e",
     "url": "/static/media/inbutton.d556d891.svg"
+  },
+  {
+    "revision": "5334697cf69f5eed9de4af546b316746",
+    "url": "/static/media/interviewCover.5334697c.png"
   },
   {
     "revision": "5dc40ae1137d79dced02a30f64948381",
@@ -764,8 +872,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/tanish3.1c56caa7.png"
   },
   {
-    "revision": "cbf034dd4c3e08723eada5be44f80090",
-    "url": "/static/media/thumbnail.cbf034dd.png"
+    "revision": "74824a2824b8f13de666a09e3953cce4",
+    "url": "/static/media/thumbnail.74824a28.png"
+  },
+  {
+    "revision": "7c8c3735edfc70c9ac6b860973604843",
+    "url": "/static/media/thumbnail.7c8c3735.jpg"
   },
   {
     "revision": "67adc4792de595cdda3d7cecbdd565da",
@@ -802,6 +914,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f088fe2860693d8daba53be5b522c626",
     "url": "/static/media/white tanish illustration.f088fe28.png"
+  },
+  {
+    "revision": "c47574d52e3069878408b44f82f1bdfb",
+    "url": "/static/media/whitearrow.c47574d5.svg"
   },
   {
     "revision": "d0bed004eee20bd382cf15fc2dffcf07",
