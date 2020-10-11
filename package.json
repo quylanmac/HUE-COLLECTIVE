@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "homepage": "https://eggspired.online",
   "name": "asdftester",
+=======
+  "homepage": "https://huecollective.co/",
+  "name": "hue-collective",
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -33,13 +38,19 @@
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",
     "react-router-hash-link": "^2.1.0",
+<<<<<<< HEAD
     "react-router-transition": "^2.0.0",
+=======
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
     "react-scripts": "^3.4.3",
     "react-scroll": "^1.7.16",
     "react-scroll-horizontal": "^1.6.6",
     "react-scroll-text": "^1.0.1",
     "react-transition-group": "^4.3.0",
+<<<<<<< HEAD
     "react-view-slider": "^4.3.2",
+=======
+>>>>>>> 707ae0f34d6f67094fbcab2945778a08721590ac
     "reactjs-popup": "^1.5.0",
     "video-react": "^0.14.1",
     "webvtt-player": "0.0.15"
