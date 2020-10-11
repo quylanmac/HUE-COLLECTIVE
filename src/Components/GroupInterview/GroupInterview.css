@@ -1,5 +1,10 @@
 
 @media (max-width: 767px) {
+    .visibleButton {
+        max-width:100%;
+        height:auto;
+        display:flex;
+    }
     .playInterviewButton {
         width:45%;
         height:auto;
