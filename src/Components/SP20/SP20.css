@@ -105,21 +105,21 @@
     }
     .stickerBox {
         position: absolute;
-        bottom: -70%;
+        bottom: -30%;
         left: 0%;
     }
     .stickerBox2 {
         position: absolute;
-        bottom: -70%;
-        left: 33.3%;
+        bottom: -30%;
+        left: 70%;
     }
     .stickerBox3 {
         position: absolute;
-        bottom: -70%;
-        left: 66.6%;
+        bottom: -30%;
+        left: 85%;
     }
     .stickerBox img {
-        max-width: 50%;
+        max-width: 25%;
     }
     .stickerBox2 img {
         max-width: 50%;
