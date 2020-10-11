@@ -1,7 +1,7 @@
 
 @media (max-width: 767px) {
     .playInterviewButton {
-        width:60%;
+        max-width:60%;
     }
     .lightOpacity {
         background-color: black;
