@@ -1,5 +1,13 @@
 
 @media (max-width: 767px) {
+    .playInterviewButton {
+        width:60%;
+    }
+    .lightOpacity {
+        background-color: black;
+        padding: 0 !important;
+        height:50% !important;
+    }
     .playResponse {
         max-width:75%;
     }

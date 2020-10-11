@@ -97,7 +97,8 @@
         margin: 0.25rem;
     }
     .issueText {
-        margin-bottom: 0;
+        font-size:0.65rem;
+        margin:0.5rem;
         max-width: 85%;
         text-align: justify;
         font-family: GT-America-Extended-Regular;

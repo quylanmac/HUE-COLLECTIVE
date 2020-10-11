@@ -69,7 +69,7 @@ class Home extends Component {
     render() {
         return (
             <>
-                <div style={{ height: '80vh' }} id="test">
+                <div id="test" className="mainLand">
                     <Landing/>
                 </div>
                 <Container>
