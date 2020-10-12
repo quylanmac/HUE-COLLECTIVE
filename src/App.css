@@ -241,10 +241,7 @@ body {
 }
 @media (max-width: 767px) {
   .Recruitment {
-    max-width:33.3%;
-    padding: .5rem 1rem;
-    margin-bottom:2rem;
-    margin-right:1rem;
+    max-width:35%;
   }
   body {
     font-size: 12px !important;
@@ -302,10 +299,7 @@ body {
 }
 @media (min-width: 768px) {
   .Recruitment {
-    max-width:10%;
-    padding: .5rem 1rem;
-    margin-bottom:2rem;
-    margin-right:2rem;
+    max-width:15%;
   }
   body {
     font-size: 22px !important;

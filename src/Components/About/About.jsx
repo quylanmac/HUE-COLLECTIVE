@@ -16,7 +16,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import pageBreak from '../../img/pagebreak.png';
 import Marquee from 'react-double-marquee';
 import NavBar from 'react-bootstrap/Navbar';
-import Recruit from '../../img/Issue2/staticRecruit.png';
+import Recruit from '../../img/Issue2/JOIN.gif';
 
 const black = '#000000';
 

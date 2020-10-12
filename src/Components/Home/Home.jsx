@@ -8,7 +8,7 @@ import Issue2 from '../Issues/Issue2';
 import Marquee from 'react-double-marquee';
 import NavBar from 'react-bootstrap/Navbar';
 import Landing from '../Landing/Landing';
-import Recruit from '../../img/Issue2/staticRecruit.png';
+import Recruit from '../../img/Issue2/JOIN.gif';
 
 class Home extends Component {
     constructor(props) {

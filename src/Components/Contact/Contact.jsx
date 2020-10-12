@@ -7,7 +7,7 @@ import contact from '../../img/SP20/contact.jpg';
 import pageBreak from '../../img/pagebreak.png';
 import Marquee from 'react-double-marquee';
 import NavBar from 'react-bootstrap/Navbar';
-import Recruit from '../../img/Issue2/staticRecruit.png';
+import Recruit from '../../img/Issue2/JOIN.gif';
 
 class Contact extends Component {
     constructor(props) {
