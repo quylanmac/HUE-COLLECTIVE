@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.2cd3cafc.chunk.css",
-    "main.js": "/static/js/main.5a55e17a.chunk.js",
-    "main.js.map": "/static/js/main.5a55e17a.chunk.js.map",
+    "main.css": "/static/css/main.843126c4.chunk.css",
+    "main.js": "/static/js/main.02d02086.chunk.js",
+    "main.js.map": "/static/js/main.02d02086.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.31617832.js",
     "runtime-main.js.map": "/static/js/runtime-main.31617832.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.9b6715aa.chunk.js": "/static/js/2.9b6715aa.chunk.js",
-    "static/js/2.9b6715aa.chunk.js.map": "/static/js/2.9b6715aa.chunk.js.map",
+    "static/js/2.a11776f9.chunk.js": "/static/js/2.a11776f9.chunk.js",
+    "static/js/2.a11776f9.chunk.js.map": "/static/js/2.a11776f9.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.18cf2b284a35b16ad16b6b9c36d3d9f6.js": "/precache-manifest.18cf2b284a35b16ad16b6b9c36d3d9f6.js",
+    "precache-manifest.89713eaeebe7e24cc7a25b6b8a08dee5.js": "/precache-manifest.89713eaeebe7e24cc7a25b6b8a08dee5.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.2cd3cafc.chunk.css.map": "/static/css/main.2cd3cafc.chunk.css.map",
-    "static/js/2.9b6715aa.chunk.js.LICENSE.txt": "/static/js/2.9b6715aa.chunk.js.LICENSE.txt",
+    "static/css/main.843126c4.chunk.css.map": "/static/css/main.843126c4.chunk.css.map",
+    "static/js/2.a11776f9.chunk.js.LICENSE.txt": "/static/js/2.a11776f9.chunk.js.LICENSE.txt",
     "static/media/ACM.svg": "/static/media/ACM.4de099a6.svg",
     "static/media/ALICE LEE.png": "/static/media/ALICE LEE.5aa90359.png",
     "static/media/ALICIA TAM.png": "/static/media/ALICIA TAM.d2238214.png",
@@ -147,6 +147,7 @@
     "static/media/shootingstarsticker.png": "/static/media/shootingstarsticker.80982282.png",
     "static/media/star.png": "/static/media/star.e4ea0a0d.png",
     "static/media/starsticker.png": "/static/media/starsticker.ac2b5a87.png",
+    "static/media/staticRecruit.png": "/static/media/staticRecruit.091bd510.png",
     "static/media/tanish.png": "/static/media/tanish.e8cb1f07.png",
     "static/media/tanish2.png": "/static/media/tanish2.97083dba.png",
     "static/media/tanish3.png": "/static/media/tanish3.1c56caa7.png",
@@ -170,8 +171,8 @@
   "entrypoints": [
     "static/js/runtime-main.31617832.js",
     "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.9b6715aa.chunk.js",
-    "static/css/main.2cd3cafc.chunk.css",
-    "static/js/main.5a55e17a.chunk.js"
+    "static/js/2.a11776f9.chunk.js",
+    "static/css/main.843126c4.chunk.css",
+    "static/js/main.02d02086.chunk.js"
   ]
 }
