@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.f06c163d.chunk.css",
-    "main.js": "/static/js/main.02d02086.chunk.js",
-    "main.js.map": "/static/js/main.02d02086.chunk.js.map",
+    "main.css": "/static/css/main.d9b652ec.chunk.css",
+    "main.js": "/static/js/main.a81a2ca2.chunk.js",
+    "main.js.map": "/static/js/main.a81a2ca2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.31617832.js",
     "runtime-main.js.map": "/static/js/runtime-main.31617832.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.a11776f9.chunk.js": "/static/js/2.a11776f9.chunk.js",
-    "static/js/2.a11776f9.chunk.js.map": "/static/js/2.a11776f9.chunk.js.map",
+    "static/js/2.a0561173.chunk.js": "/static/js/2.a0561173.chunk.js",
+    "static/js/2.a0561173.chunk.js.map": "/static/js/2.a0561173.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d57b31eb5390239c0f176c626a2f4aca.js": "/precache-manifest.d57b31eb5390239c0f176c626a2f4aca.js",
+    "precache-manifest.6a1cf0381642b492e2ac60e1bfc1f7cb.js": "/precache-manifest.6a1cf0381642b492e2ac60e1bfc1f7cb.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.f06c163d.chunk.css.map": "/static/css/main.f06c163d.chunk.css.map",
-    "static/js/2.a11776f9.chunk.js.LICENSE.txt": "/static/js/2.a11776f9.chunk.js.LICENSE.txt",
+    "static/css/main.d9b652ec.chunk.css.map": "/static/css/main.d9b652ec.chunk.css.map",
+    "static/js/2.a0561173.chunk.js.LICENSE.txt": "/static/js/2.a0561173.chunk.js.LICENSE.txt",
     "static/media/ACM.svg": "/static/media/ACM.4de099a6.svg",
     "static/media/ALICE LEE.png": "/static/media/ALICE LEE.5aa90359.png",
     "static/media/ALICIA TAM.png": "/static/media/ALICIA TAM.d2238214.png",
@@ -33,6 +33,7 @@
     "static/media/SP20.css": "/static/media/GT-America-Regular.c5ab2810.otf",
     "static/media/TSE.css": "/static/media/GT-Walsheim-Pro-Regular-Trial.55cb8fa7.otf",
     "static/media/HARRY LINER.png": "/static/media/HARRY LINER.5e1e2588.png",
+    "static/media/JOIN.gif": "/static/media/JOIN.3f71b157.gif",
     "static/media/JONAH WOLF.png": "/static/media/JONAH WOLF.1a321e78.png",
     "static/media/JONATHAN FUNES.png": "/static/media/JONATHAN FUNES.37ac988e.png",
     "static/media/LAUREN IBARRA.png": "/static/media/LAUREN IBARRA.3a349abf.png",
@@ -171,8 +172,8 @@
   "entrypoints": [
     "static/js/runtime-main.31617832.js",
     "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.a11776f9.chunk.js",
-    "static/css/main.f06c163d.chunk.css",
-    "static/js/main.02d02086.chunk.js"
+    "static/js/2.a0561173.chunk.js",
+    "static/css/main.d9b652ec.chunk.css",
+    "static/js/main.a81a2ca2.chunk.js"
   ]
 }
