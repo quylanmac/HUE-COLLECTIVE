@@ -50,6 +50,7 @@ import {
 } from 'react-transition-group';
 import { withRouter } from 'react-router-dom';
 import './animation.css';
+import Recruit from './img/Issue2/staticRecruit.png';
 const App = ({ location }) => {
   const currentKey = location.pathname.split('/')[1] || '/'
   const timeout = { enter: 300, exit: 200 }

@@ -16,6 +16,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import pageBreak from '../../img/pagebreak.png';
 import Marquee from 'react-double-marquee';
 import NavBar from 'react-bootstrap/Navbar';
+import Recruit from '../../img/Issue2/staticRecruit.png';
 
 const black = '#000000';
 
@@ -245,8 +246,12 @@ class About extends Component {
       }
     render() {    
         return (
+            
             /*This div spans entire page*/
             <div style={{backgroundColor:"#121212",minHeight:"100vh"}}>
+                                <a href="https://docs.google.com/document/d/119WbGNpObYxrE8r0RxY6_ZAQRS1KrxjTXHA3HRX4QSA/edit" target="_blank">
+                    <img src={Recruit} className="Recruitment" />
+                </a>
             <Container className="d-flex flex-column justify-content-center align-self-center container-fluid my-auto">
 
             {/*FROM HERE IS THE MAIN PAGE*/}

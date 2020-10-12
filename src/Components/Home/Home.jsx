@@ -8,6 +8,8 @@ import Issue2 from '../Issues/Issue2';
 import Marquee from 'react-double-marquee';
 import NavBar from 'react-bootstrap/Navbar';
 import Landing from '../Landing/Landing';
+import Recruit from '../../img/Issue2/staticRecruit.png';
+
 class Home extends Component {
     constructor(props) {
         super(props);
@@ -69,8 +71,11 @@ class Home extends Component {
     render() {
         return (
             <>
+                <a href="https://docs.google.com/document/d/119WbGNpObYxrE8r0RxY6_ZAQRS1KrxjTXHA3HRX4QSA/edit" target="_blank">
+                    <img src={Recruit} className="Recruitment" />
+                </a>
                 <div id="test" className="mainLand">
-                    <Landing/>
+                    <Landing />
                 </div>
                 <Container>
                     <div className="postVid" id="issueHome">

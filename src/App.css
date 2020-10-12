@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+.Recruitment {
+  position:fixed;
+  bottom:0;
+  right:0;
+  z-index:1000;
+  cursor:pointer;
+}
 a {
   text-decoration-color: transparent !important;
 }
@@ -233,6 +240,12 @@ body {
   white-space: nowrap !important;
 }
 @media (max-width: 767px) {
+  .Recruitment {
+    max-width:33.3%;
+    padding: .5rem 1rem;
+    margin-bottom:2rem;
+    margin-right:1rem;
+  }
   body {
     font-size: 12px !important;
   }
@@ -288,6 +301,12 @@ body {
   }
 }
 @media (min-width: 768px) {
+  .Recruitment {
+    max-width:8.5%;
+    padding: .5rem 1rem;
+    margin-bottom:2rem;
+    margin-right:2rem;
+  }
   body {
     font-size: 22px !important;
   }
