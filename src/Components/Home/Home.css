@@ -12,7 +12,6 @@
         position: absolute;
         align-items: center;
         margin-top:33.3%;
-        margin-left:2.75%;
     }
 }
 @Media(min-width:768px) {
@@ -20,17 +19,15 @@
         height:80vh;
     }
     .promo {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .promoLayer {
-        width: 50%;
-        margin-left:2.75%;
         display:block;
         position:absolute;
         align-items:center;
         margin-top:25%;
         height:250px;
-        width: 1200px;
+        width: 70vh;
     }
 }
 .promo {

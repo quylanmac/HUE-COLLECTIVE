@@ -6,6 +6,7 @@ import playIcon from '../../img/thumbnail.jpg';
 import playVid from '../../img/Issue2/playInterview.png';
 import pauseVid from '../../img/Issue2/pauseInterview.png';
 import { connect } from 'react-redux';
+import {Container} from 'react-bootstrap';
 import './Landing.css';
 import playVideo from '../../img/Issue2/playVideo.png';
 import playVideoHover from '../../img/Issue2/playVideoHover.png';
@@ -118,7 +119,7 @@ class Landing extends Component {
                         onEnd={this.toggleMute}
                         className={this.state.isPlaying ? (this.state.showControls ? 'lightOpacity' : 'normalOpacity') : 'lightOpacity'}
                     />
-
+<Container>
                     <nav onMouseEnter={this.handleControlsOpen} onMouseLeave={this.handleControlsClose} className="promoLayer">
                         <p className={"karla promo " + (!this.state.isPlaying ? 'show' : 'hidden')}>Expressing ubiquity and ambiguity through different perspectives in design.</p>
 
@@ -127,12 +128,13 @@ class Landing extends Component {
                                 <button onClick={this.toggleTest} onMouseEnter={this.handleHover} onMouseLeave={this.handleHover} className="playInterviewButton">
                                     <img src={(!this.state.isPlaying ? (this.state.hover ? playVideoHover : playVideo) :
                                         (!this.state.controls ? (this.state.hover ? pauseVideoHover : pauseVideo) : null))}
-                                        className={this.state.isPlaying ? (this.state.showControls ? 'visibleButton' : 'invisibleButton') : 'visibleButton'} />
+                                        className={this.state.isPlaying ? (this.state.showControls ? 'visibleButton play' : 'invisibleButton play') : 'visibleButton play'} />
                                 </button>
                             </CSSTransition>
                         </TransitionGroup>
 
                     </nav>
+                    </Container>
                 </div>
 
             </>

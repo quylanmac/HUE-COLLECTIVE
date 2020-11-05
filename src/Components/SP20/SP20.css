@@ -169,17 +169,17 @@
     }
     .stickerBox {
         position: absolute;
-        bottom: 0%;
+        bottom: auto;
         left: 0%;
     }
     .stickerBox2 {
         position: absolute;
-        bottom: 0%;
-        right: 0%;
+        bottom: auto;
+        right: 33.3%;
     }
     .stickerBox3 {
         position: absolute;
-        bottom: 50%;
+        bottom: auto;
         right: 0%;
     }
 }
