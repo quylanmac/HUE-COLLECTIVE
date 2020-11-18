@@ -20,12 +20,13 @@
     }
     .promo {
         font-size: 2rem;
+        margin-bottom:2rem;
     }
     .promoLayer {
         display:block;
         position:absolute;
         align-items:center;
-        margin-top:25%;
+        margin-top:20%;
         height:250px;
         width: 70vh;
     }
