@@ -164,7 +164,7 @@ class About extends Component {
                         </Row>
                         <Row style={{ paddingBottom: "4rem" }}>
                             <Col>
-                                <p className="huearewe">Brought together by creative curiosity, we are a multidisciplinary group of UCSD students working to craft a platform that showcases different experiences and perspectives in design.
+                                <p className="huearewe">Brought together by creative curiosity, we are a multidisciplinary group of students working to craft a platform that showcases different experiences and perspectives in design.
                                 HUE aims to use different mediums to express the ubiquity and ambiguity of design. We also value community and are always looking for exciting designers to feature in our digital zine.
                         </p>
                             </Col>
