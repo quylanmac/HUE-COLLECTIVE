@@ -11,14 +11,14 @@ import { setTheme } from '../../../redux/actions';
 import { useEffect } from 'react';
 import profile from './Profile.png';
 
-class ALee extends Component{
+class ALee extends Component {
     constructor(props) {
         super(props);
     }
     componentDidMount() {
         document.body.className = "lighttheme";
         this.props.setTheme('white');
-        window.scrollTo(0,0);
+        window.scrollTo(0, 0);
     }
     componentWillUnmount() {
         document.body.className = "";
@@ -34,39 +34,39 @@ class ALee extends Component{
                 <Row>
                     {/* LEFT COLUMN */}
                     <Col className="column1" xs={12} md={4}>
-                    <Row className="inner">
-                        <Row>
-                            <Link to = {{
-                                        pathname: "/Article1",
-                                    }}>
-                                        <img className="backarrow" src={require('../Pictures/Cover/generalpics/backbutton.png')}></img>
-                                    </Link>
-                        </Row>
-                        <Row>
-                            <Col>
-                                <img class="profile" src={profile} alt="profile"/>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col md={12}>
-                                <p className="name">ALICE LEE</p>
-                            </Col>
-                            <Col md={12}>
-                                <p className="year">Class of 2020</p>
-                            </Col>
-                            
-                        </Row>
+                        <Row className="inner">
+                            <Row>
+                                <Link to={{
+                                    pathname: "/Article1",
+                                }}>
+                                    <img className="backarrow" src={require('../Pictures/Cover/generalpics/backbutton.png')}></img>
+                                </Link>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <img class="profile" src={profile} alt="profile" />
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col md={12}>
+                                    <p className="name">ALICE LEE</p>
+                                </Col>
+                                <Col md={12}>
+                                    <p className="year">Class of 2020</p>
+                                </Col>
 
-                        <Row>
-                            <Col>
-                            <a href="https://www.alicelee.design/" target="_blank"><img className="socials" src={require('../Pictures/Cover/generalpics/websitebutton.svg')}></img></a>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col>
-                            <a href="https://www.linkedin.com/in/alicelee1998/" target="_blank"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
-                            </Col>
-                        </Row>
+                            </Row>
+
+                            <Row>
+                                <Col>
+                                    <a href="https://www.alicelee.design/" target="_blank"><img className="socials" src={require('../Pictures/Cover/generalpics/websitebutton.svg')}></img></a>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <a href="https://www.linkedin.com/in/alicelee1998/" target="_blank"><img className="socials" src={require('../Pictures/Cover/generalpics/inbutton.svg')}></img></a>
+                                </Col>
+                            </Row>
                         </Row>
                     </Col>
                     <Col md={1}></Col>
@@ -75,14 +75,14 @@ class ALee extends Component{
 
                         <Row>
                             <Col>
-                            <p className="role">UI/UX DESIGN</p>
+                                <p className="role">UI/UX DESIGN</p>
                             </Col>
                         </Row>
-                        
-                        
+
+
                         <Row className="smallrow">
                             <Col>
-                            <Draggable {...dragHandlers}>
+                                <Draggable {...dragHandlers}>
                                     <img className="cursor alsticker1" draggable="false" src={require('../Pictures/Cover/generalpics/flowersticker.png')} />
                                 </Draggable>
                                 <p className="paragraph">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;With a double major in Cognitive Science and Political Science, Alice is fascinated by the <span className="paragraphbig">interaction between design and the world</span> around it. Inspired by friends who applied their design specializations to their passions for sustainability, healthcare, and mobility, Alice decided to pursue product design to <span className="paragraphbig">improve technologies</span> that are made to help people. Currently, she’s working on a project to help older adults shop for high-tech devices even if they can’t get to the store, a product of her love for <span className="paragraphbig">inclusive design</span> aimed at people whose needs often aren’t accommodated in product design.</p>
@@ -138,7 +138,7 @@ class ALee extends Component{
                             </Col>
 
                             <Col md={3} xs={3}>
-                                    <Draggable {...dragHandlers}>
+                                <Draggable {...dragHandlers}>
                                     <img className="cursor alsticker4" draggable="false" src={require('../Pictures/Cover/generalpics/randomsticker.png')} />
                                 </Draggable>
                             </Col>
@@ -151,35 +151,35 @@ class ALee extends Component{
                         </Row>
                         <Row>
                             <Col md={4} xs={4}>
-                                <Link to = {{
+                                <Link to={{
                                     pathname: "/SKato",
                                 }}>
-                                    <button className="nextbutton"><img className="upnext" src={require('../Pictures/Cover/SOPHIEKATO.png')} alt ="Sophie Kato" onClick={() => this.handleTheme("white")}></img></button>
-                                </Link>
-                            </Col>
-
-                            <Col md={4} xs = {4}>
-                                <Link to = {{
-                                    pathname: "/SLee",
-                                }}>
-                                    <button className="nextbutton"><img className="upnext" src={require('../Pictures/Cover/SOPHIE LEE.png')} alt ="Sophia Lee" onClick={() => this.handleTheme("white")}></img></button>
+                                    <button className="nextbutton"><img className="upnext" src={require('../Pictures/Cover/SOPHIEKATO.png')} alt="Sophie Kato" onClick={() => this.handleTheme("white")}></img></button>
                                 </Link>
                             </Col>
 
                             <Col md={4} xs={4}>
-                                <Link to = {{
+                                <Link to={{
+                                    pathname: "/SLee",
+                                }}>
+                                    <button className="nextbutton"><img className="upnext" src={require('../Pictures/Cover/SOPHIE LEE.png')} alt="Sophia Lee" onClick={() => this.handleTheme("white")}></img></button>
+                                </Link>
+                            </Col>
+
+                            <Col md={4} xs={4}>
+                                <Link to={{
                                     pathname: "/RSinghal",
                                 }}>
-                                    <button className="nextbutton"><img className="upnext" src={require('../Pictures/Cover/RISHABH SINGHAL.png')} alt ="Rishabh Singhal" onClick={() => this.handleTheme("white")}></img></button>
+                                    <button className="nextbutton"><img className="upnext" src={require('../Pictures/Cover/RISHABH SINGHAL.png')} alt="Rishabh Singhal" onClick={() => this.handleTheme("white")}></img></button>
                                 </Link>
                             </Col>
                         </Row>
 
                     </Col>
                 </Row>
-                
+
             </Container>
         )
     }
 }
-export default connect(null, {setTheme})(ALee);
+export default connect(null, { setTheme })(ALee);

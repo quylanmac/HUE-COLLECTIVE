@@ -3,8 +3,9 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { setTheme } from '../../redux/actions';
 import './Home.css';
 import { connect } from 'react-redux';
-import Issue1 from '../Issues/Issues';
-import Issue2 from '../Issues/Issue2';
+import Issue1 from '../Issue_Cards/Issue1/Issue1';
+import Issue2 from '../Issue_Cards/Issue2/Issue2';
+import Issue3 from '../Issue_Cards/Issue3/Issue3';
 import Marquee from 'react-double-marquee';
 import NavBar from 'react-bootstrap/Navbar';
 import Landing from '../Landing/Landing';
@@ -82,6 +83,7 @@ class Home extends Component {
                         <p className="huearewepre">issues</p>
                         <p className="huearewe">We are always looking for exciting designers to feature in our digital zines.</p>
                     </div>
+                    <Issue3 />
                     <Issue2 />
                     <Issue1 />
                 </Container>

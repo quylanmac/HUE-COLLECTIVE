@@ -1,13 +1,12 @@
 import React, { useState, Component } from 'react';
 import { connect } from 'react-redux';
-import '../SP20/SP20.css';
-import Draggable from 'react-draggable';
+import '../../SP20/SP20.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Redirect, NavLink, Link } from 'react-router-dom';
-import { setTheme } from '../../redux/actions';
-import Cover from '../../img/Issue2/Cover.png';
+import { setTheme } from '../../../redux/actions';
+import Cover from '../../../img/Issue2/Cover.png';
 import './Issue2.css';
-class Issues extends Component {
+class Issue2 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -46,18 +45,18 @@ class Issues extends Component {
         return (
             <Container>
                 <Row>
-                        <div>
-                            <Link to={{
-                                pathname: "/issue2_landing",
+                    <div>
+                        <Link to={{
+                            pathname: "/issue2_landing",
 
-                            }}>
-                                <img src={Cover} className="issue2cover" />
-                            </Link>
-                        </div>
+                        }}>
+                            <img src={Cover} className="issue2cover" />
+                        </Link>
+                    </div>
 
                 </Row>
             </Container>
         )
     }
 }
-export default connect(null, { setTheme })(Issues);
+export default connect(null, { setTheme })(Issue2);

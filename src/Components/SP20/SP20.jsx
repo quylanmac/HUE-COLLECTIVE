@@ -129,4 +129,4 @@ class SP20 extends Component {
     }
 }
 
-export default connect(null, {setTheme})(SP20);
+export default connect(null, { setTheme })(SP20);

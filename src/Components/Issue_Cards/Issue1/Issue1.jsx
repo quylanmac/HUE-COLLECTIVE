@@ -1,14 +1,14 @@
 import React, { useState, Component } from 'react';
 import { connect } from 'react-redux';
-import '../SP20/SP20.css';
+import '../../SP20/SP20.css';
 import Draggable from 'react-draggable';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Redirect, NavLink, Link } from 'react-router-dom';
-import { setTheme } from '../../redux/actions';
-import star from '../../img/SP20/star.png';
-import fire from '../../img/SP20/fire.png';
-import hue from '../../img/SP20/hue.png';
-class Issues extends Component {
+import { setTheme } from '../../../redux/actions';
+import star from '../../../img/SP20/star.png';
+import fire from '../../../img/SP20/fire.png';
+import hue from '../../../img/SP20/hue.png';
+class Issue1 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -96,4 +96,4 @@ class Issues extends Component {
         )
     }
 }
-export default connect(null, { setTheme })(Issues);
+export default connect(null, { setTheme })(Issue1);
