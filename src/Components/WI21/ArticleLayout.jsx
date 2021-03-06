@@ -23,7 +23,7 @@ class ArticleLayout extends Component {
     render() {
         return (
             <Container>
-                <p>Issue 3 Article Layout</p>
+                <p>Branch Check</p>
             </Container>
         )
 
