@@ -24,18 +24,17 @@ class ArticleLayout extends Component {
         return (
             <Container fluid>
                 <Row>
-                    <Col className="columnLeft" md={3}>
+                    {/* Leftmost whitespace  */}
+                    <Col md={1}></Col>
+                    <Col className="columnLeft" md={2}>
                         <Row>
                             <p>Branch Check</p>
                         </Row>
-
-
-
-
                     </Col>
-                    <Col md={1}></Col>
-                    {/* RIGHT COLUMN   */}
-                    <Col className="columnRight" md={8}>
+                    {/* Seperator whitespace */}
+                    <Col md={2}></Col>
+                    {/* Article Content Column   */}
+                    <Col className="columnRight" md={6}>
                         <Row className="articleTitle">
                             <p>Article Title</p>
                         </Row>
@@ -61,6 +60,8 @@ class ArticleLayout extends Component {
     Pellentesque a eros tellus. Nam est metus, efficitur nec magna at, imperdiet ullamcorper lectus. Aliquam erat volutpat. Proin eget auctor dui, ac venenatis est. Integer laoreet accumsan nunc, quis dignissim augue aliquet in. Fusce eget massa quis turpis vehicula semper id eu mauris. Ut sed lectus eget metus vehicula sollicitudin. In bibendum imperdiet lacinia. Phasellus vehicula commodo sem, eu tincidunt velit efficitur nec. Maecenas ante lorem, venenatis lacinia elit ut, posuere gravida ex. Mauris eu erat sed dui condimentum viverra. Nulla facilisi. Donec non convallis libero.</p>
                         </Row>
                     </Col>
+                    {/* Rightmost whitespace  */}
+                    <Col md={1}></Col>
                 </Row>
             </Container>
         )
