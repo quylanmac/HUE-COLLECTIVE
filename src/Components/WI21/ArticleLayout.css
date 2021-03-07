@@ -9,9 +9,14 @@
 }
 
 /* Testing column bounds*/
-.columnLeft {
+.columnLeft  {
     background-color: blueviolet;
     height:100%;
+}
+.columnLeft > .loadingDiskBase {
+
+    left: 0;
+    bottom: 0;
 }
 /* Testing column bounds*/
 .columnRight {
@@ -36,7 +41,17 @@
 
 /*Class for record/disk holder at bottom of column*/
 .loadingDiskBase{
-
+    /*  Math for this magic number width
+        Currently column setup with md 2
+        12 total md's so to match column width
+        2/12 = 0.1666666
+    */
+    width: 16.666vw;
+    /*Random Height Val, replace in final design*/
+    height: 6vh;
+    background-color: #B4B4B4;
+    position: fixed;
+    bottom:0;
 }
 
 .imageBox{
