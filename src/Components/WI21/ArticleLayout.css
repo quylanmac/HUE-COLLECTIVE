@@ -1,26 +1,39 @@
-.articleTitle > p {
+:root {
+    /* Temp Variable for testing, fix in final*/
+    --record-size: 8vw;
+    --record-holder: 9vw;
+    --disk-margins: 0.5vw;
+    /* Variables to match bootstrap columns for fixed elements */
+    --column-length: 8.33vw;
+  }
+body {
+    color: #000000;
+}
+
+.articleHeading {
+    padding: 0px;
+}
+.articleHeading > h1 {
     font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 48px;
-    line-height: 56px;
-    
+    line-height: 56.25px;
     color: #000000;
+    /* Matching design doc (probably should swap to percentages later)*/
+    margin-top: 69px;
 }
 
 /* Testing column bounds*/
 .columnLeft  {
-    background-color: blueviolet;
     height:100%;
 }
 .columnLeft > .loadingDiskBase {
-
     left: 0;
     bottom: 0;
 }
 /* Testing column bounds*/
 .columnRight {
-    background-color: red;
     height:100%;
 }
 
@@ -29,31 +42,77 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    color: #000000;
+    font-size: 20px;
+    line-height: 30px;
 }
 
 /*Class for disks appearing in left column*/
-.loadingDisk {
+.linkDisk {
+    background-color: #B4B4B4;
+    border-radius: 50%;
+    /*Random Height Val, replace in final design*/
+    height: var(--record-size);
+    width: var(--record-size);
+    flex-shrink: 0px;
+    margin-bottom: -3.8vw;
+    padding:0px;
+    z-index:0;
+}
 
+/*Class for disks appearing in left column*/
+.linkDiskSecondary {
+    background-color: #D6D6D6;
+    border-radius: 50%;
+    /*Random Height Val, replace in final design*/
+    height: var(--record-size);
+    width: var(--record-size);
+    flex-shrink: 0px;
+    margin-bottom: -6.2vw;
+    padding:0px;
+    z-index:-1;
+    text-align: center;
 }
 
 /*Class for record/disk holder at bottom of column*/
-.loadingDiskBase{
-    /*  Math for this magic number width
-        Currently column setup with md 2
-        12 total md's so to match column width
-        2/12 = 0.1666666
-    */
-    width: 16.666vw;
-    /*Random Height Val, replace in final design*/
-    height: 6vh;
+.linkDiskBase {
+   /*Temp dimensions, replace in final*/
+    width: var(--record-holder);
+    height: 4vh;
     background-color: #B4B4B4;
-    position: fixed;
-    bottom:0;
+    z-index: 1;
+    margin-bottom: 0px;
+    text-align: center;
 }
 
 .imageBox{
 
+}
+
+.diskArea {
+    /*Temp dimensions, replace in final*/
+    width: var(--record-holder);
+    height: 8vw;
+    position: fixed;
+    bottom:0;
+
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    left: var(--column-length);
+}
+
+
+.diskArea:hover {
+    /*Temp dimensions (4*record--size), replace in final*/
+    height: 32vw;
+}
+
+
+.diskArea:hover > .linkDisk {
+    margin-bottom: var(--disk-margins);
+}
+
+.diskArea:hover > .linkDiskSecondary {
+    margin-bottom: var(--disk-margins);
 }

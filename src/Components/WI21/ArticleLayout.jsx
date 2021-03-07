@@ -1,4 +1,5 @@
 import React, { Component, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { setTheme } from '../../redux/actions';
@@ -28,17 +29,27 @@ class ArticleLayout extends Component {
                     <Col md={1}></Col>
                     <Col className="columnLeft" md={2}>
                         <Row>
-                            <p>Branch Check</p>
-                            <div className="loadingDiskBase"></div>
+                            <div className="diskArea">
+                                <div className="linkDiskBase"></div>
+                                  {/* Links to articles in these disks. */}
+                                <div className="linkDisk"></div>
+                                <div className="linkDiskSecondary"></div>
+                                <div className="linkDiskSecondary"></div>
+                                <div className="linkDiskSecondary"></div>
+                            </div>
                         </Row>
                     </Col>
                     {/* Seperator whitespace */}
                     <Col md={2}></Col>
                     {/* Article Content Column   */}
                     <Col className="columnRight" md={6}>
-                        <Row className="articleTitle">
-                            <p>Article Title</p>
+                        <Row className="articleHeading">
+                            <h1>An Article About Design Ethics</h1>
                         </Row>
+                        <Row>
+                            <p>Article Author</p>
+                        </Row>
+
                         <Row className="articleText">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus scelerisque sollicitudin mi, eget ornare nisl consectetur sed. Curabitur vel vehicula nibh. Aliquam in magna non justo fringilla vulputate et nec leo. Morbi vestibulum, sapien sed bibendum gravida, metus enim tempus velit, et scelerisque ipsum justo eu felis. Nunc interdum pellentesque odio, mattis maximus mauris pulvinar eget. Aenean sit amet arcu sit amet felis imperdiet iaculis a non tortor. Duis molestie, risus eget finibus tristique, tellus massa molestie nisi, a suscipit velit augue non sem. Donec ac purus eget urna elementum suscipit nec sit amet sem. Suspendisse ut luctus lorem. Curabitur sollicitudin ultricies mi a luctus. Aliquam interdum tempor risus, nec consectetur tellus consectetur vitae. Suspendisse vestibulum dapibus orci sed molestie.
 
