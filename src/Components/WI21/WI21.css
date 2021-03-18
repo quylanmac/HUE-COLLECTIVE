@@ -1,0 +1,44 @@
+@media (max-width: 767px) {
+    .viewResponsive {
+        width: calc(100vw - 30px);
+        height: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .viewResponsive {
+        width: 1110px;
+        height: 100%;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
+
+.recordOpen_row{
+    position: relative; 
+}
+
+.recordClosed_row {
+    position: relative; 
+}
+
+.recordOpen {
+    position: absolute; 
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.recordClosed {
+    position: absolute; 
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.summary {
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 100px;  
+    width: 500px;
+    height: 100px;
+    border-style: solid;
+  }

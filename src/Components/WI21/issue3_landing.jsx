@@ -2,7 +2,13 @@ import React, { Component, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { setTheme } from '../../redux/actions';
-import './issue3_landing.css';
+import './WI21.css';
+import recordOpen from './recordOpen.png';
+import recordClosed from './recordClosed.png';
+import {Link} from 'react-router-dom';
+
+
+
 
 class issue3_landing extends Component {
     constructor(props) {
@@ -24,7 +30,24 @@ class issue3_landing extends Component {
     render() {
         return (
             <Container>
-                <p>Issue 3 Title Page</p>
+                <div className="row nopad">
+                        <div className="viewResponsive sec1" id="section1">
+                            <Row className="nopad">
+                                <Col md={4}>
+                                <Link to={{pathname: "/issue3"}}></Link>
+                                    <Row xs={10} md={10}> 
+                                        <Col xs={4} md={4}>
+                                        <Row className="recordOpen_row">
+                                            <Link to = {{pathname:"/issue3"}} style={{zIndex:'3'}}>
+                                                <img className="recordOpen" src={recordOpen} />
+                                            </Link>
+                                        </Row>
+                                        </Col>
+                                    </Row>
+                                </Col>
+                            </Row>
+                        </div>
+                </div>
             </Container>
         )
 

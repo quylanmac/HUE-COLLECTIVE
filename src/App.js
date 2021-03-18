@@ -3,6 +3,7 @@ import './App.css';
 import ReactDOM from 'react-dom';
 import SP20 from './Components/SP20/SP20';
 import FA20 from './Components/FA20/FA20';
+import WI21 from './Components/WI21/WI21';
 import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
 import NewLoading from './Components/NewLoading';
@@ -71,6 +72,7 @@ const App = ({ location }) => {
           {/* Current blank page for articles */}
           {/* ISSUE 3 */} 
           <Route exact path="/issue3_landing" component={issue3_landing}/>
+          <Route exact path="/issue3" component={WI21} />
           <Route exact path="/ArticleLayout" component={ArticleLayout}/>
 
           {/* ISSUE 1 */}

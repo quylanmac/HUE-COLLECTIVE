@@ -35,10 +35,7 @@
     justify-content: end;
     float:right;
 }
-.nopad {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-}
+
 @font-face {
     font-family: "GT-Haptik-Black-Trail";
     src: local("GT-Haptik-Black-Trail"), url(../../font/GT-Haptik-Black-Trial.otf) format("opentype");
@@ -122,7 +119,6 @@
     position: relative;
     top:-11%;
 }
-
 .outlet_2 {
     max-width: 100%;
     z-index: 2;
