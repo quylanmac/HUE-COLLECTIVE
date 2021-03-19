@@ -2,7 +2,10 @@
     /* Temp Variable for testing, fix in final*/
     --record-size: 8vw;
     --record-holder: 9vw;
+    --record-holder-half-neg: -4.5vw;
     --disk-margins: 0.5vw;
+    /* Temp found from 91 offset from top/1280 page height (dimensions used in figma)*/
+    --loading-offset-top: 7.109vh;
     /* Variables to match bootstrap columns for fixed elements */
     --column-length: 8.33vw;
   }
@@ -115,4 +118,24 @@ body {
 
 .diskArea:hover > .linkDiskSecondary {
     margin-bottom: var(--disk-margins);
+}
+
+
+.loadingArea {
+    /*Temp dimensions, replace in final*/
+    width: var(--record-holder);
+    height: var(--record-holder);
+    position: fixed;
+    top: var(--loading-offset-top);
+
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    left: var(--column-length);
+    padding:0px;
+    /* Transform used to make the scrolling happen
+     in the direction of the figma 
+     sketch titled Article_Web_End*/
+    transform: rotate(270deg) scaleY(-1);
 }

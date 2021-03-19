@@ -12,14 +12,45 @@ class ArticleLayout extends Component {
         document.body.className = "lighttheme";
         this.props.setTheme('white');
         window.scrollTo(0, 0);
+        window.addEventListener('scroll', this.listenToScroll)
+
     }
     componentWillUnmount() {
         document.body.className = "";
         this.props.setTheme('black');
+        window.removeEventListener('scroll', this.listenToScroll)
     }
     handleTheme(theme) {
         this.props.setTheme(theme);
     }
+    handleStroke(){
+        console.log("click");
+        return 2;
+    }
+    listenToScroll = () => {
+        // Calculate Scroll Progress
+        const winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop
+        const height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight
+        const scrolled = winScroll / height
+        this.setState({
+          theposition: scrolled,
+        })
+
+        // Find and update loading circle.
+        var circle = document.querySelector('circle');
+        var radius = circle.r.baseVal.value;
+        var circumference = radius * 2 * Math.PI;
+        circle.style.strokeDasharray = `${circumference} ${circumference}`;
+        circle.style.strokeDashoffset = `${circumference}`;
+        const offset = circumference - scrolled * circumference;
+        circle.style.strokeDashoffset = offset;
+        // Circular progress code above is super weird but at least it's pretty lightweight
+        // Source : https://css-tricks.com/building-progress-ring-quickly/
+        // Useful for other animated line drawings: https://jakearchibald.com/2013/animated-line-drawing-svg/
+      }
 
     render() {
         return (
@@ -29,6 +60,23 @@ class ArticleLayout extends Component {
                     <Col md={1}></Col>
                     <Col className="columnLeft" md={2}>
                         <Row>
+                            {/* Loading Bar Logic */}
+                            <div className="loadingArea">
+                                <svg
+                                    class="progress-ring"
+                                    width="100%"
+                                    height="100%">
+                                    <circle
+                                        class="progress-ring__circle"
+                                        stroke="#000000"
+                                        stroke-width= "4"
+                                        fill="#F3F3F3"
+                                        r="48%"
+                                        cx="50%"
+                                        cy="50%"/>
+                                </svg>
+                            </div>
+
                             <div className="diskArea">
                                 <div className="linkDiskBase"></div>
                                   {/* Links to articles in these disks. */}
