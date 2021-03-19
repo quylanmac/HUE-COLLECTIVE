@@ -13,6 +13,7 @@ class ArticleLayout extends Component {
         this.props.setTheme('white');
         window.scrollTo(0, 0);
         window.addEventListener('scroll', this.listenToScroll)
+        this.setupLoadingCircle();
 
     }
     componentWillUnmount() {
@@ -23,9 +24,12 @@ class ArticleLayout extends Component {
     handleTheme(theme) {
         this.props.setTheme(theme);
     }
-    handleStroke(){
-        console.log("click");
-        return 2;
+    setupLoadingCircle(){
+        var circle = document.querySelector('circle');
+
+        const ZERO_PROGRESS_VAL = 800;
+        circle.style.strokeDasharray = `${ZERO_PROGRESS_VAL} ${ZERO_PROGRESS_VAL}`;
+        circle.style.strokeDashoffset = `${ZERO_PROGRESS_VAL}`;
     }
     listenToScroll = () => {
         // Calculate Scroll Progress
@@ -54,29 +58,31 @@ class ArticleLayout extends Component {
 
     render() {
         return (
+            
             <Container fluid>
+                    {/* Loading Circle Zone  */}
+                    <div className="stickyZone">
+                        <div className="loadingArea">
+                            <svg
+                                className="progress-ring"
+                                width="100%"
+                                height="100%">
+                                <circle
+                                    className="progress-ring__circle"
+                                    stroke="#000000"
+                                    strokeWidth= "4"
+                                    fill="#F3F3F3"
+                                    r="48%"
+                                    cx="50%"
+                                    cy="50%"/>
+                            </svg>
+                        </div>
+                    </div>
                 <Row>
-                    {/* Leftmost whitespace  */}
+                    {/* Leftmost whitespace*/}
                     <Col md={1}></Col>
                     <Col className="columnLeft" md={2}>
-                        <Row>
-                            {/* Loading Bar Logic */}
-                            <div className="loadingArea">
-                                <svg
-                                    class="progress-ring"
-                                    width="100%"
-                                    height="100%">
-                                    <circle
-                                        class="progress-ring__circle"
-                                        stroke="#000000"
-                                        stroke-width= "4"
-                                        fill="#F3F3F3"
-                                        r="48%"
-                                        cx="50%"
-                                        cy="50%"/>
-                                </svg>
-                            </div>
-
+                        <Row> 
                             <div className="diskArea">
                                 <div className="linkDiskBase"></div>
                                   {/* Links to articles in these disks. */}
@@ -120,7 +126,7 @@ class ArticleLayout extends Component {
                             Pellentesque a eros tellus. Nam est metus, efficitur nec magna at, imperdiet ullamcorper lectus. Aliquam erat volutpat. Proin eget auctor dui, ac venenatis est. Integer laoreet accumsan nunc, quis dignissim augue aliquet in. Fusce eget massa quis turpis vehicula semper id eu mauris. Ut sed lectus eget metus vehicula sollicitudin. In bibendum imperdiet lacinia. Phasellus vehicula commodo sem, eu tincidunt velit efficitur nec. Maecenas ante lorem, venenatis lacinia elit ut, posuere gravida ex. Mauris eu erat sed dui condimentum viverra. Nulla facilisi. Donec non convallis libero.</p>
                         </Row>
                     </Col>
-                    {/* Rightmost whitespace  */}
+                    {/* Rightmost whitespace */}
                     <Col md={1}></Col>
                 </Row>
             </Container>

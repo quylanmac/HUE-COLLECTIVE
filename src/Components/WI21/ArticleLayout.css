@@ -8,6 +8,8 @@
     --loading-offset-top: 7.109vh;
     /* Variables to match bootstrap columns for fixed elements */
     --column-length: 8.33vw;
+    /* Above not working for loading bar margin, guess and check here */
+    --column-length-test: 7.33vw;
   }
 body {
     color: #000000;
@@ -120,19 +122,26 @@ body {
     margin-bottom: var(--disk-margins);
 }
 
+.stickyZone {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 0px;
+    height: 0px;
+  }
 
 .loadingArea {
     /*Temp dimensions, replace in final*/
     width: var(--record-holder);
     height: var(--record-holder);
-    position: fixed;
+    position: absolute;
     top: var(--loading-offset-top);
 
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: center;
-    left: var(--column-length);
+    left: var(--column-length-test);
     padding:0px;
     /* Transform used to make the scrolling happen
      in the direction of the figma 
