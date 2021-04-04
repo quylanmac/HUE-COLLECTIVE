@@ -77,6 +77,18 @@ body {
   background-size: 200px 100px;
 }
 @font-face {
+  font-family: "Corben";
+  src: local("Corben"), url(./font/Corben-Regular.ttf) format("truetype");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: "CorbenBold";
+  src: local("CorbenBold"), url(./font/Corben-Bold.ttf) format("truetype");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
   font-family: "HelveticaLight";
   src: local("HelveticaLight"), url(./font/HelveticaNeue\ Light.ttf) format("truetype");
   -webkit-font-smoothing: antialiased;

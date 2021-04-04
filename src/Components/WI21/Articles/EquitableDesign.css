@@ -1,3 +1,52 @@
+.articleFont {
+    font-family: Corben;
+}
+.corbenBold {
+    font-family: CorbenBold !important;
+}
+.designCircle {
+    border: 2px solid #76B19F;
+    box-sizing: border-box;
+    border-radius:40px;
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+}
+.articleHeading {
+    background-image: url('../../../img/Issue3/EquitableDesign.png');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+@media (min-width:768px) {
+    .articleHeading {
+        height:75vh;
+    }
+}
+@media (max-width:767px) {
+    .articleHeading {
+        height: 20vh;
+    }
+}
+.introduction {
+    background: #D8D5C6;
+    padding-top:4rem;
+    padding-bottom:4rem;
+}
+.universalDesign {
+    background: #FFFAF4;
+    padding-top:4rem;
+    padding-bottom:4rem;
+}
+.fleetlibrary {
+    background: #E5E5E5;
+    padding-top:4rem;
+    padding-bottom:4rem;
+}
+.designingforall {
+    background: #FFFAF4;
+    padding-top:4rem;
+    padding-bottom:8rem;
+}
 :root {
     /* Temp Variable for testing, fix in final*/
     --record-size: 8vw;
@@ -44,7 +93,7 @@ body {
 
 /*Temp class I added could not find design guidance atm (3/6/21)*/
 .articleText > p {
-    font-family: Roboto;
+    font-family: Corben;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -91,16 +140,18 @@ body {
 
 .imageBox{
     max-width:100%;
-
 }
-
+.noPad {
+    padding-left:0px !important;
+    padding-right:0px !important;
+}
 .diskArea {
     /*Temp dimensions, replace in final*/
     width: var(--record-holder);
     height: 8vw;
     position: fixed;
     bottom:0;
-    z-index: 1;
+
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-start;
@@ -129,6 +180,7 @@ body {
     top: 0;
     padding: 0px;
     height: 0px;
+    visibility:hidden;
   }
 
 .loadingArea {
