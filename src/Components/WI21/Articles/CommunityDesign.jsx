@@ -1,0 +1,149 @@
+import React, { Component, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Container, Row, Col } from 'react-bootstrap';
+import { connect } from 'react-redux';
+import { setTheme } from '../../../redux/actions';
+import './CommunityDesign.css';
+import cover from '../../../img/Issue3/designingcommunitylong.png';
+import building from '../../../img/Issue3/buildingidk.png';
+import cancer from '../../../img/Issue3/cancer.png';
+import disks from '../../../img/Issue3/TOC.png';
+
+class CommunityDesign extends Component{
+    constructor(props) {
+        super(props);
+    }
+    componentDidMount() {
+        document.body.className = "lighttheme";
+        this.props.setTheme('black');
+        window.scrollTo(0, 0);
+        window.addEventListener('scroll', this.listenToScroll)
+
+    }
+    componentWillUnmount() {
+        document.body.className = "";
+        this.props.setTheme('black');
+        window.removeEventListener('scroll', this.listenToScroll)
+    }
+    handleTheme(theme) {
+        this.props.setTheme(theme);
+    }
+
+    render() {
+        return(
+            <Container fluid className="community_container">
+                <Row>
+                    <img className="community_pic" src={cover}/>
+                </Row>
+
+                {/* first section with the black background */}
+                <Row className="black_background">
+                        <Col md={3}/>
+
+                        {/* everything is in this Col code */}
+                        <Col className="community_col" md={9}>
+                            <Row>
+                                <Col className="community_paragraph">
+                                <p className="community_design_font">In the United States, the <span className="community_bold">Civil Rights Act </span> provided the impetus for a “great organizational flourishing,” in which many communities banded together in order to advocate and improve their own neighborhoods. The process of combining professional experience with community expertise and participation became known overall as community design. In 1973, a group of architectural students from UC Berkeley, organized as Asian Neighborhood Design, set out to design for the Asian communities of the Bay area, <span className="community_bold">initially focusing on both San Francisco’s and Oakland’s Chinatowns.</span> As they expanded, they branched out into various projects, engaging community members and creating both educational and vocational opportunities.</p>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col md={3}>
+                                    <img className="community_pic" src={building}/>
+                                </Col>
+
+                                <Col md={9}>
+                                    <p className="community_design_font">One of their earliest major projects was the renovation of what would come to be known as the <span className="community_bold">Asian Resource Center (ARC),</span> located within Oakland’s Chinatown. Collaborating with the East Bay Asian Local Development Corp, AND volunteers directed the renovations of the 1924 terra cotta building, developing several community programs in the process. Several community organizations found a home within the ARC, including Asian Health Services and Filipinos for Affirmative Action, providing a breadth of social services in one location while sharing useful utilities and staff.</p>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col className="trash community_paragraph">
+                                    <p className="community_design_font">
+                                      Andy Gee, one of AND’s co-founders, saw the renovation as holding significance beyond the material changes; multi-service was a device for “community action.” Through community improvements, and not outsider investment, AND was able to facilitate a collective self-development that improved living conditions far beyond its four walls.
+                                    </p>
+                                </Col>
+                            </Row>
+                            
+                            <Row>
+                                <Col className="community_paragraph">
+                                    <p className="community_design_font">Another of AND’s most successful programs has been the Employment Training Center, which sought to train community members in lucrative and reliable trades. In a 14-week, full-time employment with official certifications, attendees received valuable green construction training while developing soft skills in conflict resolution and GED preparation. Since its inception in 1978, the ETC has trained over 2,500 individuals, with post-program wages averaging around $20.85 an hour.  In its over forty years of operation, AND has grown to service the Bay Area’s continually changing working class communities. Through projects like the Asian Resource Center renovation and the Employment Training Center, AND enables community members to improve their own lives by taking direct action within their towns and cities.</p>
+                                </Col>
+                            </Row>
+
+                        </Col>
+                </Row>
+
+                <Row className="white_background">
+
+                    <Col md={3}>
+                        <div style={{width:"100%"}}>
+                        <img className="disks" src={disks}/>
+                        </div>
+                    </Col>
+
+                    <Col className="community_col" md={9}>
+                        <Row>
+                            <Col className="community_paragraph">
+                                <p className="community_design_font1">After it closed as a prison in 2012, <span className="community_bold1">Lancaster Castle</span> in Lanchester, England was found with an overgrown 14 hectares of land in need of some revamping. Thus, the project Beyond the Castle was established in an effort to renovate the open area into some sort of community space. The city council wanted the general public to help brainstorm the specifics of what the community space could be. However, people believed the decision on how to revamp the land was already made and dismissed any outreach as “an exercise in communicating the decisions already made.” Thus, a group of hired designers came up with five implementable methods to promote community involvement for the project. </p>
+                            </Col>
+                        </Row>
+
+                        <Row>
+                            <Col className="cancer_column" md={6}>
+                                <p className="community_design_font1 cancer">1. Part of a shopping center was redesigned to mimic the castle’s open space, and shoppers were encouraged to <span className="community_bold1">talk about their experiences</span> with the area and offer potential revamping ideas.</p>
+                            </Col>
+
+                            <Col md={6}>
+                                <img className="community_cancer" src={cancer}/>
+                            </Col>
+                        </Row>
+
+                        <Row>
+                            <Col md={6}>
+                                <img className="community_cancer1" src={cancer}/>
+                            </Col>
+                            <Col className="cancer_column" md={6}>
+                                <p className="community_design_font1 cancer">2. Actors were hired to tell <span className="community_bold1">interactive stories</span> on the open land.</p>
+                            </Col>
+                        </Row>
+
+                        <Row>
+                            <Col className="cancer_column" md={6}>
+                                <p className="community_design_font1 cancer">3. Participants of <span className="community_bold1">all ages</span> were invited to build potential revamp idea models.</p>
+                            </Col>
+
+                            <Col md={6}>
+                                <img className="community_cancer" src={cancer}/>
+                            </Col>
+                        </Row>
+
+                        <Row>
+                            <Col md={6}>
+                                <img className="community_cancer1" src={cancer}/>
+                            </Col>
+                            <Col className="cancer_column" md={6}>
+                                <p className="community_design_font1 cancer">4. Active contributors were <span className="community_bold1">invited for a discussion</span> about ideas produced from the previous methods.</p>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col className="cancer_column" md={6}>
+                                <p className="community_design_font1 cancer">5. An interactive exhibition was created, involving answering a prompt and thinking of suggestions “that were documented on <span className="community_bold1">cardboard boxes.”</span></p>
+                            </Col>
+
+                            <Col md={6}>
+                                <img className="community_cancer" src={cancer}/>
+                            </Col>
+                        </Row>
+
+                        <Row>
+                            <Col style={{paddingTop:"3rem"}}>
+                                <p className="community_design_font1">Following the methods, the ideas generated were presented to the city council, who used it to move forward with the plan. For more details on the projects and very specific examples of the five methods, a detailed case study can be accessed.</p>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+            </Container>
+        )
+    }
+}
+export default connect(null, { setTheme })(CommunityDesign);

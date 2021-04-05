@@ -39,6 +39,7 @@ import YPS from './Components/FA20/Clubs/YPS';
 import issue3_landing from './Components/WI21/issue3_landing';
 import ArticleLayout from './Components/WI21/ArticleLayout';
 import EquitableDesign from './Components/WI21/Articles/EquitableDesign';
+import CommunityDesign from './Components/WI21/Articles/CommunityDesign';
 
 import { Redirect } from 'react-router-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -73,6 +74,7 @@ const App = ({ location }) => {
           <Route exact path="/issue3_landing" component={issue3_landing}/>
           <Route exact path="/ArticleLayout" component={ArticleLayout}/>
           <Route exact path="/equitabledesign" component={EquitableDesign} />
+          <Route exact path="/communitydesign" component={CommunityDesign} />
           {/* ISSUE 1 */}
           <Route exact path="/article1" component={Article1} />
           <Route exact path="/JFunes" component={JFunes} />
