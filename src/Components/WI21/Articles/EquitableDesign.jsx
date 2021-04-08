@@ -82,15 +82,16 @@ class EquitableDesign extends Component {
                         </svg>
                     </div>
                 </div>
-                <Row className="articleHeading">
+                <Row>
+                    <img className="imageBox" src={header}/>
                 </Row>
-                <Row className="introduction">
+                <Row className="introduction mobilePadding">
                     {/* Leftmost whitespace*/}
                     <Col md={1}></Col>
                     <Col className="columnLeft" md={2}>
                         <Row>
                             <div className="articleLabels">
-                                <p>Introduction</p>
+                                <p className="headerText">Introduction</p>
                             </div>
                             <div className="diskArea">
                                 <div className="linkDiskBase"><img className="imageBox" src={disc}/></div>
@@ -105,7 +106,7 @@ class EquitableDesign extends Component {
                     {/* Seperator whitespace */}
                     <Col md={2}></Col>
                     {/* Article Content Column   */}
-                    <Col className="columnRight" md={6}>
+                    <Col className="columnRight" xs={12} md={6}>
                         <Row className="articleText">
                             <p>Deep within the mountains of New York lies a summer camp whose impact on American lives far outreaches that of smores.
                             This summer camp, known as <span style={{color: "#76B19F"}} className="corbenBold">Camp Jened</span>, and it’s campers challenged the American government into rethinking the way we
@@ -124,13 +125,13 @@ class EquitableDesign extends Component {
                     {/* Rightmost whitespace */}
                     <Col md={1}></Col>
                 </Row>
-                <Row className="universalDesign">
+                <Row className="universalDesign  mobilePadding">
                     {/* Leftmost whitespace*/}
                     <Col md={1}></Col>
                     <Col className="columnLeft" md={2}>
                         <Row>
                             <div className="articleLabels">
-                                <p>Universal Design</p>
+                                <p className="headerText">Universal Design</p>
                             </div>
                         </Row>
                     </Col>
@@ -151,8 +152,8 @@ class EquitableDesign extends Component {
                                 fell on those without disabilities.  As society evolves, so must our ability to be flexible and innovative, not because it is being forced,
                                 but because it's necessary. Many of the changes required to be more inclusive do not require a grandiose amount of wealth, resources,
                                 and time, but rather <span style={{color:"#5E53D9"}} className="corbenBold">small tweaks that will have large scale impacts</span>- maybe a handrail is built, maybe a layout is changed. While
-                                implementing changes for disabled persons, it is crucial to remember that disability cannot be seen just by looking at someone;
-                                <span style={{color:"#5E53D9"}} className="corbenBold">disability can be a visual, cognitive, or auditory impairment, not just mobile. </span>We have begun to truly see the concept of universal
+                                implementing changes for disabled persons, it is crucial to remember that disability cannot be seen just by looking at someone: 
+                                <span style={{color:"#5E53D9"}} className="corbenBold"> disability can be a visual, cognitive, or auditory impairment, not just mobile. </span>We have begun to truly see the concept of universal
                                 design in motion in places such as the Fleet Library in the Rhode Island School of Design and the Hazelwood School located in Glasgow.
                             </p>
                         </Row>
@@ -160,13 +161,13 @@ class EquitableDesign extends Component {
                     {/* Rightmost whitespace */}
                     <Col md={1}></Col>
                 </Row>
-                <Row className="fleetlibrary">
+                <Row className="fleetlibrary  mobilePadding">
                     {/* Leftmost whitespace*/}
                     <Col md={1}></Col>
                     <Col className="columnLeft" md={2}>
                         <Row>
                             <div className="articleLabels">
-                                <p>Fleet Library + The Hazelwood School </p>
+                                <p className="headerText">Fleet Library + The Hazelwood School </p>
                             </div>
                         </Row>
                     </Col>
@@ -175,14 +176,16 @@ class EquitableDesign extends Component {
                     {/* Article Content Column   */}
                     <Col className="columnRight" md={6}>
                         <Row className="articleText">
-                            <Col xs={8} className="noPad"><p>
+                            <Col xs={12} md={7} className="noPad"><p className="articleText">
                                 The Fleet Library, founded in 1878, was redesigned under the guidance of Monica Ponce de Leon and her architecture and design firm
                                 Office dA in 2006. Ponce de Leon, a Venezuelan-American who immigrated to the US in the 1980’s, discussed with NPR how she incorporated
                                 universal design in her work. One of the most notable designs to the Fleet Library was its <span style={{color:"#76B19F"}}  className="corbenBold">cubicles</span>, which varied subtly in size and shape.
 </p>
 </Col>
-<Col xs={4} style={{marginTop:"-5rem"}}><img src={fleetlibrarycubicle} className="imageBox"/></Col>
-                            <p>
+<Col xs={0} md={1}/>
+           <Col xs={12} md={4} className="fleetlibrarycubicle" ><img src={fleetlibrarycubicle} className="imageBox mobileImage"/></Col>
+      
+                            <p className="articleText">
                                 Ponce de Leon explained how this difference was intentional, hoping to “accommodate many different body types in a very subtle way”.
                                 Her design encompassed various principles of universal design, some of which included size and space for approach and use as well as
                                 being simple and intuitive. The Fleet Library’s cubicles were designed for people with different types of needs to enjoy the same benefit
@@ -191,8 +194,9 @@ class EquitableDesign extends Component {
                                 but universal design can also be applied in a bigger scope. The Hazelwood School for the multiple sensory impaired in Glasgow, Scotland applies
                                 these principles, but in a way that can be accessible to children with special needs to learn.
 </p>
-<Col xs={4} style={{marginLeft:"-5rem"}}><img src={corktrailrail} className="imageBox"/></Col>
-<Col xs={8} className="noPad"><p>
+
+<Col xs={12} md={4} className="corktrailrail"><img src={corktrailrail} className="imageBox mobileImage"/></Col>
+<Col xs={12} md={9} className="noPad"><p className="articleText">
                                 The school, which was opened in 2007, answered the challenge of universal design through intuitive features in its architecture,
                                 both internal and external. A majority of the school's design features included a <span style={{color:"#76B19F"}}  className="corbenBold">cork “trail rail” </span>which visually impared
                                 students could interact with to find their way around the school. Hazelwood also includes Braille, Pictograph, and Moon signage
@@ -204,13 +208,13 @@ class EquitableDesign extends Component {
                     {/* Rightmost whitespace */}
                     <Col md={1}></Col>
                 </Row>
-                <Row className="designingforall">
+                <Row className="designingforall  mobilePadding">
                     {/* Leftmost whitespace*/}
                       <Col md={1}></Col>
                     <Col className="columnLeft" md={2}>
                         <Row>
                             <div className="articleLabels">
-                                <p>The Impacts of Designing for All</p>
+                                <p className="headerText">The Impacts of Designing for All</p>
                             </div>
                         </Row>
                     </Col>

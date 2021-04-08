@@ -11,20 +11,48 @@
     padding-left:0.5rem;
     padding-right:0.5rem;
 }
-.articleHeading {
-    background-image: url('../../../img/Issue3/EquitableDesign.png');
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size:cover;
-}
 @media (min-width:768px) {
-    .articleHeading {
-        height:75vh;
+    .corbenBold {
+        font-size: 1.125rem;
+    }
+    .articleText > p {
+        font-size: 1.25rem;
+    }
+    .articleText {
+        font-size: 1.25rem;
+    }
+    .headerText {
+        font-size: 1.3rem;
+    }
+    .fleetlibrarycubicle {
+        margin-top:-5rem;
+    }
+    .corktrailrail {
+        margin-left:-5rem;
     }
 }
 @media (max-width:767px) {
+    .mobileImage {
+        max-width:100% !important;
+    }
+    .mobilePadding {
+        padding-left:1.5rem;
+        padding-right:1.5rem
+    }
     .articleHeading {
         height: 20vh;
+    }
+    .corbenBold {
+        font-size: .5rem;
+    }
+    .articleText > p {
+        font-size: .75rem;
+    }
+    .articleText {
+        font-size: .75rem;
+    }
+    .headerText {
+        font-size: 1.125rem;
     }
 }
 .introduction {
@@ -96,8 +124,17 @@ body {
     font-family: Corben;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
+    line-height: 2rem;
+    text-align: justify;
+
+}
+.articleText {
+    font-family: Corben;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 2rem;
+    text-align: justify;
+
 }
 
 /*Class for disks appearing in left column*/
