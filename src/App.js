@@ -40,7 +40,7 @@ import issue3_landing from './Components/WI21/issue3_landing';
 import ArticleLayout from './Components/WI21/ArticleLayout';
 import EquitableDesign from './Components/WI21/Articles/EquitableDesign';
 import CommunityDesign from './Components/WI21/Articles/CommunityDesign';
-
+import EthicalDesign from './Components/WI21/Articles/EthicalDesign';
 import { Redirect } from 'react-router-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
@@ -75,6 +75,7 @@ const App = ({ location }) => {
           <Route exact path="/ArticleLayout" component={ArticleLayout}/>
           <Route exact path="/equitabledesign" component={EquitableDesign} />
           <Route exact path="/communitydesign" component={CommunityDesign} />
+          <Route exact path="/ethicaldesign" component={EthicalDesign} />
           {/* ISSUE 1 */}
           <Route exact path="/article1" component={Article1} />
           <Route exact path="/JFunes" component={JFunes} />

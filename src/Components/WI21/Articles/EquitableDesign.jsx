@@ -104,9 +104,9 @@ class EquitableDesign extends Component {
                         </Row>
                     </Col>
                     {/* Seperator whitespace */}
-                    <Col md={2}></Col>
+                    <Col md={1}></Col>
                     {/* Article Content Column   */}
-                    <Col className="columnRight" xs={12} md={6}>
+                    <Col className="columnRight" xs={12} md={7}>
                         <Row className="articleText">
                             <p>Deep within the mountains of New York lies a summer camp whose impact on American lives far outreaches that of smores.
                             This summer camp, known as <span style={{color: "#76B19F"}} className="corbenBold">Camp Jened</span>, and it’s campers challenged the American government into rethinking the way we
@@ -136,9 +136,9 @@ class EquitableDesign extends Component {
                         </Row>
                     </Col>
                     {/* Seperator whitespace */}
-                    <Col md={2}></Col>
+                    <Col md={1}></Col>
                     {/* Article Content Column   */}
-                    <Col className="columnRight" md={6}>
+                    <Col className="columnRight" md={7}>
                         <Row className="articleText">
                             <p>
                                 Universal design. This idea is thrown around often, but what does it truly entail? By definition, the concept of universal
@@ -172,18 +172,19 @@ class EquitableDesign extends Component {
                         </Row>
                     </Col>
                     {/* Seperator whitespace */}
-                    <Col md={2}></Col>
+                    <Col md={1}></Col>
                     {/* Article Content Column   */}
-                    <Col className="columnRight" md={6}>
+                    <Col className="columnRight" md={7}>
                         <Row className="articleText">
                             <Col xs={12} md={7} className="noPad"><p className="articleText">
                                 The Fleet Library, founded in 1878, was redesigned under the guidance of Monica Ponce de Leon and her architecture and design firm
                                 Office dA in 2006. Ponce de Leon, a Venezuelan-American who immigrated to the US in the 1980’s, discussed with NPR how she incorporated
                                 universal design in her work. One of the most notable designs to the Fleet Library was its <span style={{color:"#76B19F"}}  className="corbenBold">cubicles</span>, which varied subtly in size and shape.
-</p>
-</Col>
-<Col xs={0} md={1}/>
-           <Col xs={12} md={4} className="fleetlibrarycubicle" ><img src={fleetlibrarycubicle} className="imageBox mobileImage"/></Col>
+                                </p>
+                            </Col>
+                            <Col xs={0} md={1}/>
+                            <Col xs={12} md={4} className="fleetlibrarycubicle" ><img src={fleetlibrarycubicle} className="imageBox mobileImage"/>
+                            </Col>
       
                             <p className="articleText">
                                 Ponce de Leon explained how this difference was intentional, hoping to “accommodate many different body types in a very subtle way”.
@@ -193,10 +194,10 @@ class EquitableDesign extends Component {
                                 could sit in the same cubicle and not feel the difference. De Leon’s process represents an application of universal design on a small scale,
                                 but universal design can also be applied in a bigger scope. The Hazelwood School for the multiple sensory impaired in Glasgow, Scotland applies
                                 these principles, but in a way that can be accessible to children with special needs to learn.
-</p>
-
-<Col xs={12} md={4} className="corktrailrail"><img src={corktrailrail} className="imageBox mobileImage"/></Col>
-<Col xs={12} md={9} className="noPad"><p className="articleText">
+                                </p>
+                            <Col xs={12} md={4} className="corktrailrail"><img src={corktrailrail} className="imageBox mobileImage"/>
+                            </Col>
+                            <Col xs={12} md={8} className="noPad"><p className="articleText">
                                 The school, which was opened in 2007, answered the challenge of universal design through intuitive features in its architecture,
                                 both internal and external. A majority of the school's design features included a <span style={{color:"#76B19F"}}  className="corbenBold">cork “trail rail” </span>which visually impared
                                 students could interact with to find their way around the school. Hazelwood also includes Braille, Pictograph, and Moon signage
@@ -219,9 +220,9 @@ class EquitableDesign extends Component {
                         </Row>
                     </Col>
                     {/* Seperator whitespace */}
-                    <Col md={2}></Col>
+                    <Col md={1}></Col>
                     {/* Article Content Column   */}
-                    <Col className="columnRight" md={6}>
+                    <Col className="columnRight" md={7}>
                         <Row className="articleText">
                             <p>
                                 For DeLeon, the design of the Fleet Library was meant to have broad impacts into the future.
