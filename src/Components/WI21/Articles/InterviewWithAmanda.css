@@ -1,0 +1,309 @@
+.article_question{
+    font-family: Corben !important;
+    color: black;
+    background: white !important;
+}
+
+.articleFont {
+    font-family: Epilogue;
+}
+
+.hoverText{
+    color:#76B19F !important;
+}
+.disc1 {
+    max-width:100%;
+}
+.testerDisc {
+    max-width:75%;
+    position:absolute;
+    margin-bottom:4rem;
+}
+.tester2 {
+    background-image:url('../../../img/Issue3/flowerpot.png');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 20%;
+    opacity: 17.5%;
+    max-width: 100%;
+}
+.starBackground {
+    background-image:url('../../../img/Issue3/star.png');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 50%;
+    opacity: 17.5%;
+    max-width: 100%;
+}
+.flowerBackground {
+    background-image:url('../../../img/Issue3/flowerpot.png');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 35%;
+    opacity: 17.5%;
+    max-width: 100%;
+}
+.designCircle {
+    border: 2px solid #76B19F;
+    box-sizing: border-box;
+    border-radius:40px;
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+}
+.ethicalQuestion {
+    margin-bottom:4rem;
+}
+.newQuestion {
+    margin-top:4rem;
+    margin-bottom:2rem;
+}
+.beginQuestion {
+    margin-bottom:2rem;
+}
+.endBlock {
+    margin-bottom:2rem;
+}
+
+
+.glove {
+    bottom:0;
+    position:absolute;
+}
+.sparkle {
+    margin-left:-25%;
+    position:absolute;
+}
+@media (min-width:768px) {
+    .tinyImageBox {
+        max-width:5%;
+    }
+    .articleText > p {
+        font-size: 1.25rem;
+    }
+    .articleText {
+        font-size: 1.25rem;
+    }
+    .captionText {
+        font-size: 1rem;
+    }
+    .captionText > a {
+        font-size: 1rem;
+    }
+    .backgroundImageBox {
+        max-width:100%;
+        opacity:25%;
+    }
+    .articleQuestion {
+        font-size: 1.35rem !important;
+    }
+    .backToTopWrapper {
+        visibility: hidden;
+        width:0;
+        height:0;
+        display:block;
+    }
+}
+@media (max-width:767px) {
+    .mobileHidden{
+        visibility: hidden;
+    }
+    .backToTop {
+        position: fixed;
+        bottom:0;
+        right:0;
+    }
+    .backToTopWrapper {
+        position:absolute;
+        z-index:999;
+    }
+    .tinyImageBox {
+        max-width:15%;
+    }
+    .mobileImage {
+        max-width:100% !important;
+    }
+    .mobilePadding {
+        padding-left:1.5rem;
+        padding-right:1.5rem
+    }
+    .articleHeading {
+        height: 20vh;
+    }
+    .articleText > p {
+        font-size: .75rem;
+    }
+    .articleText {
+        font-size: .75rem;
+    }
+    .captionText {
+        font-size: .75rem;
+    }
+    .captionText > a {
+        font-size: .75rem;
+    }
+    .backgroundImageBox {
+        max-width:25%;
+        opacity:25%;
+    }
+    .articleQuestion {
+        font-size: 1.35rem !important;
+    }
+}
+.introduction_1 {
+    background: #034BB5;
+    padding-top:4rem;
+    color: #ffffff; 
+}
+.introduction_2 {
+    background: white;
+    padding-bottom:4rem;
+    color: #ffffff; 
+}
+.secondSection {
+    background: #FFFAF4;
+    padding-top:4rem;
+    padding-bottom:4rem;
+}
+.thirdSection {
+    background: #1D1D1D;
+    padding-top:4rem;
+    padding-bottom:4rem;
+    color:#ffffff;
+}
+.fourthSection {
+    background: #ffffff;
+    padding-top:4rem;
+    padding-bottom:4rem;
+}
+.fifthSection {
+    background: #ffffff;
+    padding-top:4rem;
+    padding-bottom:4rem;
+}
+:root {
+    /* Temp Variable for testing, fix in final*/
+    --record-size: 8vw;
+    --record-holder: 9vw;
+    --record-holder-half-neg: -4.5vw;
+    --disk-margins: 0.5vw;
+    /* Temp found from 91 offset from top/1280 page height (dimensions used in figma)*/
+    --loading-offset-top: 7.109vh;
+    /* Variables to match bootstrap columns for fixed elements */
+    --column-length: 8.33vw;
+    /* Above not working for loading bar margin, guess and check here */
+    --column-length-test: 7.33vw;
+  }
+body {
+    color: #000000;
+}
+
+.articleHeading {
+    padding: 0px;
+}
+.articleHeading > h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56.25px;
+    color: #000000;
+    /* Matching design doc (probably should swap to percentages later)*/
+    margin-top: 69px;
+}
+
+/* Testing column bounds*/
+.columnLeft  {
+    height:100%;
+}
+.columnLeft > .loadingDiskBase {
+    left: 0;
+    bottom: 0;
+}
+/* Testing column bounds*/
+.columnRight {
+    height:100%;
+}
+
+/*Temp class I added could not find design guidance atm (3/6/21)*/
+.articleText > p {
+    font-family: Epilogue;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 2.5rem;
+    text-align: justify;
+
+}
+.articleText {
+    font-family: Epilogue;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 2.5rem;
+    text-align: justify;
+}
+
+.captionText {
+    font-family: Epilogue;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 2.5rem;
+    text-align: justify;
+    display:flex;
+    justify-content: center;
+}
+.captionText > a {
+    font-family: Epilogue;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 2.5rem;
+    z-index:1;
+    text-align: justify;
+}
+
+.imageBox{
+    max-width:100%;
+}
+.smallImageBox{
+    max-width:50%;
+}
+.noPad {
+    padding-left:0px !important;
+    padding-right:0px !important;
+}
+
+
+.stickyZone {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 0px;
+    height: 0px;
+    visibility:hidden;
+  }
+
+.loadingArea {
+    /*Temp dimensions, replace in final*/
+    width: var(--record-holder);
+    height: var(--record-holder);
+    position: absolute;
+    top: var(--loading-offset-top);
+
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    left: var(--column-length-test);
+    padding:0px;
+    /* Transform used to make the scrolling happen
+     in the direction of the figma 
+     sketch titled Article_Web_End*/
+    transform: rotate(270deg) scaleY(-1);
+}
