@@ -7,6 +7,14 @@
 .hoverText{
     color:#76B19F !important;
 }
+.disc1 {
+    max-width:100%;
+}
+.testerDisc {
+    max-width:75%;
+    position:absolute;
+    margin-bottom:4rem;
+}
 .tester2 {
     background-image:url('../../../img/Issue3/flowerpot.png');
     background-size: cover;
@@ -93,8 +101,26 @@
     .articleQuestion {
         font-size: 1.35rem !important;
     }
+    .backToTopWrapper {
+        visibility: hidden;
+        width:0;
+        height:0;
+        display:block;
+    }
 }
 @media (max-width:767px) {
+    .mobileHidden{
+        visibility: hidden;
+    }
+    .backToTop {
+        position: fixed;
+        bottom:0;
+        right:0;
+    }
+    .backToTopWrapper {
+        position:absolute;
+        z-index:999;
+    }
     .tinyImageBox {
         max-width:15%;
     }
@@ -237,43 +263,6 @@ body {
     z-index:1;
     text-align: justify;
 }
-/*Class for disks appearing in left column*/
-.linkDisk {
-    background-color: #B4B4B4;
-    border-radius: 50%;
-    /*Random Height Val, replace in final design*/
-    height: var(--record-size);
-    width: var(--record-size);
-    flex-shrink: 0px;
-    margin-bottom: -3.8vw;
-    padding:0px;
-    z-index:0;
-}
-
-/*Class for disks appearing in left column*/
-.linkDiskSecondary {
-    background-color: #D6D6D6;
-    border-radius: 50%;
-    /*Random Height Val, replace in final design*/
-    height: var(--record-size);
-    width: var(--record-size);
-    flex-shrink: 0px;
-    margin-bottom: -6.2vw;
-    padding:0px;
-    z-index:-1;
-    text-align: center;
-}
-
-/*Class for record/disk holder at bottom of column*/
-.linkDiskBase {
-   /*Temp dimensions, replace in final*/
-    width: var(--record-holder);
-    /*height: 4vh;*/
-    background-color: #B4B4B4;
-    z-index: 1;
-    margin-bottom: 0px;
-    text-align: center;
-}
 
 .imageBox{
     max-width:100%;
@@ -285,34 +274,7 @@ body {
     padding-left:0px !important;
     padding-right:0px !important;
 }
-.diskArea {
-    /*Temp dimensions, replace in final*/
-    width: var(--record-holder);
-    height: 8vw;
-    position: fixed;
-    bottom:0;
 
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-start;
-    align-items: center;
-    left: var(--column-length);
-}
-
-
-.diskArea:hover {
-    /*Temp dimensions (4*record--size), replace in final*/
-    height: 32vw;
-}
-
-
-.diskArea:hover > .linkDisk {
-    margin-bottom: var(--disk-margins);
-}
-
-.diskArea:hover > .linkDiskSecondary {
-    margin-bottom: var(--disk-margins);
-}
 
 .stickyZone {
     position: -webkit-sticky;

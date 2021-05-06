@@ -8,13 +8,46 @@ import header from '../../../img/Issue3/EquitableDesign.png';
 import disc from '../../../img/Issue3/equitabledesigndisc.jpg';
 import corktrailrail from '../../../img/Issue3/corktrailrail.png';
 import fleetlibrarycubicle from '../../../img/Issue3/fleetLibraryCubicle.png';
+
+import disc1 from '../../../img/Issue3/disc1.png';
+import disc2 from '../../../img/Issue3/disc2.png';
+import disc3 from '../../../img/Issue3/disc3.png';
+import disc4 from '../../../img/Issue3/disc4.png';
+import smallArticle1 from '../../../img/Issue3/smallArticle1.png';
+import smallArticle2 from '../../../img/Issue3/smallArticle2.png';
+import smallArticle3 from '../../../img/Issue3/smallArticle3.png';
+import smallArticle4 from '../../../img/Issue3/smallArticle4.png';
+import backToTop from '../../../img/Issue3/backToTop.png';
 class EquitableDesign extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            showDisc2: false,
+            showDisc3: false,
+            showDisc4: false,
+        }
+        this.setDisc2 = this.setDisc2.bind(this);
+        this.setDisc3 = this.setDisc3.bind(this);
+        this.setDisc4 = this.setDisc4.bind(this);
+    }
+    setDisc2() {
+        this.setState({
+            showDisc2: !this.state.showDisc2
+        })
+    }
+    setDisc3() {
+        this.setState({
+            showDisc3: !this.state.showDisc3
+        })
+    }
+    setDisc4() {
+        this.setState({
+            showDisc4: !this.state.showDisc4
+        })
     }
     componentDidMount() {
-        document.body.className = "lighttheme";
-        this.props.setTheme('white');
+        document.body.className = "darktheme";
+        this.props.setTheme('black');
         window.scrollTo(0, 0);
         window.addEventListener('scroll', this.listenToScroll)
         this.setupLoadingCircle();
@@ -22,7 +55,7 @@ class EquitableDesign extends Component {
     }
     componentWillUnmount() {
         document.body.className = "";
-        this.props.setTheme('black');
+        this.props.setTheme('white');
         window.removeEventListener('scroll', this.listenToScroll)
     }
     handleTheme(theme) {
@@ -64,6 +97,9 @@ class EquitableDesign extends Component {
         return (
 
             <Container fluid className="articleFont">
+                <a href="#top" className="backToTopWrapper">
+                <img src={backToTop} className="imageBox backToTop"/>
+                </a>
                 {/* Loading Circle Zone  */}
                 <div className="stickyZone">
                     <div className="loadingArea">
@@ -82,24 +118,49 @@ class EquitableDesign extends Component {
                         </svg>
                     </div>
                 </div>
-                <Row>
+                <Row id="top">
                     <img className="imageBox" src={header}/>
                 </Row>
-                <Row className="introduction mobilePadding">
+                <Row className="equitableIntroduction mobilePadding">
+                <Col xs={12}>
+                    <Row className="equitableQuestion">
+                        <Col md={1}/>
+                        <Col xs={12} md={8}>
+                        <p className="articleQuestion">Introduction</p>
+                        </Col>
+                        <Col md={3}/>
+                    </Row>
+                    </Col>
                     {/* Leftmost whitespace*/}
                     <Col md={1}></Col>
-                    <Col className="columnLeft" md={2}>
+                    <Col className="columnLeft mobileHidden" xs={0} md={2}>
                         <Row>
-                            <div className="articleLabels">
-                                <p className="headerText">Introduction</p>
-                            </div>
                             <div className="diskArea">
-                                <div className="linkDiskBase"><img className="imageBox" src={disc}/></div>
+                                <div className="linkDiskBase"><img className="imageBox" src={smallArticle1}/></div>
                                 {/* Links to articles in these disks. */}
-                                <div className="linkDisk"></div>
-                                <div className="linkDiskSecondary"></div>
-                                <div className="linkDiskSecondary"></div>
-                                <div className="linkDiskSecondary"></div>
+                                <div className="linkDisk">
+                                </div>
+                                <div className="linkDiskSecondary" 
+                                    onMouseEnter={() => this.setDisc2(true)}
+                                    onMouseLeave={() => this.setDisc2(false)}>
+                                    <img src={disc2} className="disc1" 
+                                    />
+                                    {this.state.showDisc2 && <Link to={{pathname: "/CommunityDesign"}}><img src={smallArticle2} className="testerDisc"/></Link>}
+                                </div>
+                                <div className="linkDiskSecondary"
+                                    onMouseEnter={() => this.setDisc3(true)}
+                                    onMouseLeave={() => this.setDisc3(false)}>
+                                    <img src={disc1} className="disc1" 
+                                    />
+                                    {this.state.showDisc3 && <Link to={{pathname: "/EthicalDesign"}}><img src={smallArticle3} className="testerDisc"/></Link>}
+                                </div>
+                                <div className="linkDiskSecondary"
+                                    onMouseEnter={() => this.setDisc4(true)}
+                                    onMouseLeave={() => this.setDisc4(false)}>
+                                    <img src={disc4} className="disc1" 
+                                    />
+                                    {this.state.showDisc4 && <Link to={{pathname: "/CommunityDesign"}}><img src={smallArticle4} className="testerDisc"/></Link>}
+                                </div>
                             </div>
                         </Row>
                     </Col>

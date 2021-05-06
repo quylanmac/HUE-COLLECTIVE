@@ -11,7 +11,14 @@
     padding-left:0.5rem;
     padding-right:0.5rem;
 }
+.sideArticle1 {
+    max-width:100%;
+    margin-right:5rem;
+}
 @media (min-width:768px) {
+    .equitableQuestion {
+        margin-bottom:-2rem;
+    }
     .corbenBold {
         font-size: 1.125rem;
     }
@@ -32,6 +39,9 @@
     }
 }
 @media (max-width:767px) {
+    .equitableQuestion {
+        margin-bottom:0rem;
+    }
     .mobileImage {
         max-width:100% !important;
     }
@@ -55,7 +65,7 @@
         font-size: 1.125rem;
     }
 }
-.introduction {
+.equitableIntroduction {
     background: #D8D5C6;
     padding-top:4rem;
     padding-bottom:4rem;
@@ -137,43 +147,6 @@ body {
 
 }
 
-/*Class for disks appearing in left column*/
-.linkDisk {
-    background-color: #B4B4B4;
-    border-radius: 50%;
-    /*Random Height Val, replace in final design*/
-    height: var(--record-size);
-    width: var(--record-size);
-    flex-shrink: 0px;
-    margin-bottom: -3.8vw;
-    padding:0px;
-    z-index:0;
-}
-
-/*Class for disks appearing in left column*/
-.linkDiskSecondary {
-    background-color: #D6D6D6;
-    border-radius: 50%;
-    /*Random Height Val, replace in final design*/
-    height: var(--record-size);
-    width: var(--record-size);
-    flex-shrink: 0px;
-    margin-bottom: -6.2vw;
-    padding:0px;
-    z-index:-1;
-    text-align: center;
-}
-
-/*Class for record/disk holder at bottom of column*/
-.linkDiskBase {
-   /*Temp dimensions, replace in final*/
-    width: var(--record-holder);
-    /*height: 4vh;*/
-    background-color: #B4B4B4;
-    z-index: 1;
-    margin-bottom: 0px;
-    text-align: center;
-}
 
 .imageBox{
     max-width:100%;
@@ -181,34 +154,6 @@ body {
 .noPad {
     padding-left:0px !important;
     padding-right:0px !important;
-}
-.diskArea {
-    /*Temp dimensions, replace in final*/
-    width: var(--record-holder);
-    height: 8vw;
-    position: fixed;
-    bottom:0;
-
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-start;
-    align-items: center;
-    left: var(--column-length);
-}
-
-
-.diskArea:hover {
-    /*Temp dimensions (4*record--size), replace in final*/
-    height: 32vw;
-}
-
-
-.diskArea:hover > .linkDisk {
-    margin-bottom: var(--disk-margins);
-}
-
-.diskArea:hover > .linkDiskSecondary {
-    margin-bottom: var(--disk-margins);
 }
 
 .stickyZone {

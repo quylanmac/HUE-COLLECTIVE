@@ -1,6 +1,7 @@
 :root {
     /* Temp Variable for testing, fix in final*/
-    --record-size: 8vw;
+    --record-size: 264px;
+    --record-holderTotal: 15vw;
     --record-holder: 9vw;
     --record-holder-half-neg: -4.5vw;
     --disk-margins: 0.5vw;
@@ -53,7 +54,6 @@ body {
 
 /*Class for disks appearing in left column*/
 .linkDisk {
-    background-color: #B4B4B4;
     border-radius: 50%;
     /*Random Height Val, replace in final design*/
     height: var(--record-size);
@@ -66,7 +66,6 @@ body {
 
 /*Class for disks appearing in left column*/
 .linkDiskSecondary {
-    background-color: #D6D6D6;
     border-radius: 50%;
     /*Random Height Val, replace in final design*/
     height: var(--record-size);
@@ -83,7 +82,6 @@ body {
    /*Temp dimensions, replace in final*/
     width: var(--record-holder);
     /*height: 4vh;*/
-    background-color: #B4B4B4;
     z-index: 1;
     margin-bottom: 0px;
     text-align: center;
@@ -96,7 +94,7 @@ body {
 
 .diskArea {
     /*Temp dimensions, replace in final*/
-    width: var(--record-holder);
+    width: var(--record-holderTotal);
     height: 8vw;
     position: fixed;
     bottom:0;
