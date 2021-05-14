@@ -16,6 +16,12 @@ import disc1 from '../../../img/Issue3/disc1.png';
 import disc2 from '../../../img/Issue3/disc2.png';
 import disc3 from '../../../img/Issue3/disc3.png';
 import disc4 from '../../../img/Issue3/disc4.png';
+import accent_heart from '../../../img/Issue3/accent_heart.png';
+import star2 from '../../../img/Issue3/star2.png';
+import star_frame from '../../../img/Issue3/star_frame.png';
+import rectangle_frame from '../../../img/Issue3/rectangle_frame.png';
+import polygon_frame from '../../../img/Issue3/polygon_frame.png';
+import circle_frame from '../../../img/Issue3/circle_frame.png';
 import smallArticle1 from '../../../img/Issue3/smallArticle1.png';
 import smallArticle2 from '../../../img/Issue3/smallArticle2.png';
 import smallArticle3 from '../../../img/Issue3/smallArticle3.png';
@@ -52,7 +58,7 @@ class InterviewWithAmanda extends Component {
         document.body.className = "darktheme";
         this.props.setTheme('black');
         window.scrollTo(0, 0);
-        window.addEventListener('scroll', this.listenToScroll)
+        window.addEventListener('scroll', this.listenToScroll);
         this.setupLoadingCircle();
 
     }
@@ -129,7 +135,7 @@ class InterviewWithAmanda extends Component {
                     <Row className="ethicalQuestion">
                         <Col md={1}/>
                         <Col xs={12} md={8}>
-                        <p className="article_question">To start off - can you elaborate more on your role as Managing Director of UX/UI at Develop for Good and how you came to join the organization? </p>
+                        <p className="article_question1">To start off - can you elaborate more on your role as Managing Director of UX/UI at Develop for Good and how you came to join the organization? </p>
                         </Col>
                         <Col md={3}/>
                     </Row>
@@ -139,7 +145,7 @@ class InterviewWithAmanda extends Component {
                     <Col className="columnLeft mobileHidden" xs={0} md={2}>
                         <Row>
                             <div className="diskArea">
-                                <div className="linkDiskBase"><img className="imageBox" src={smallArticle3}/></div>
+                                <div className="linkDiskBase"><img className="imageBox" src={smallArticle4}/></div>
                                 {/* Links to articles in these disks. */}
                                 <div className="linkDisk">
                                 </div>
@@ -162,7 +168,7 @@ class InterviewWithAmanda extends Component {
                                     onMouseLeave={() => this.setDisc4(false)}>
                                     <img src={disc4} className="disc1" 
                                     />
-                                    {this.state.showDisc4 && <Link to={{pathname: "/CommunityDesign"}}><img src={smallArticle4} className="testerDisc"/></Link>}
+                                    {this.state.showDisc4 && <Link to={{pathname: "/EthicalDesign"}}><img src={smallArticle3} className="testerDisc"/></Link>}
                                 </div>
                             </div>
                         </Row>
@@ -187,20 +193,17 @@ class InterviewWithAmanda extends Component {
                         </Row>
                     </Col>
                 </Row>
-                <Row className="introduction_2 mobilePadding">
-                    <Col xs={12}>
+                <Row className="second_section mobilePadding">
+                <Col xs={12}>
                     <Row className="ethicalQuestion">
                         <Col md={1}/>
-                        <Col xs={12} md={8}>
-                        <p className="article_question">What does ethics and design mean to you? </p>
+                        <Col xs={12} md={5}>
+                        <p className="article_question2">What does ethics and design mean to you? </p>
                         </Col>
-                        <Col md={3}/>
+                        <Col md={6}/>
                     </Row>
+                    <div className="flower_background"/>
                     </Col>
-                {/* add stuff here */}
-                {/* CONTINUE HERE */}
-                </Row>
-                <Row className="secondSection mobilePadding">
                     {/* Leftmost whitespace*/}
                     <Col md={1}></Col>
                     <Col className="columnLeft" md={2}>
@@ -210,87 +213,132 @@ class InterviewWithAmanda extends Component {
                     {/* Article Content Column   */}
                     <Col className="columnRight" md={7}>
                         <div>
-                            <div className="flowerBackground"/>
-                        <Row className="articleText beginQuestion">
-                            <p className="articleQuestion">2. Include Ethical Design Choices During Ideation </p>
-                        </Row>
-                        <Row className="articleText"v>
-                            <p>During the ideation phase of the design process, designers are free to brainstorm wild ideas without any limitations. Novel and even unconventional ideas are welcome during this time since the ideation phase emphasizes creativity and innovation when developing solutions. Including ethical design choices during the ideation phase allows designers to think about ethical concerns freely without constraints. For example, this might look like brainstorming features that create a more accessible experience or exploring different solutions that benefit everyone.Therefore, using this time to generate ethical designs will ultimately lead to a more thoughtful and inclusive solution.</p>
-                        </Row>
-                        <Row className="articleText newQuestion">
-                            <p className="articleQuestion">3. Create a Moral Value Map</p>
+                            {/* <div className="flower_background"/> */}
+                        <Row className="articleText">
+                            <p>Going into the world of design just in the past year, I feel very fortunate. Since starting, I’ve been involved in many organizations that revolve around ethics and emphasize creating products and designs for accessibility, inclusivity, diversity, and similar values.</p>
                         </Row>
                         </div>
                         <Row className="articleText">
-                            <p>A moral value map is a tool which designers use to find values that are relevant to their solution. This is an exercise that maps out values that are relevant to your design, yourself, the company, and stakeholders. Concerns about the design and the potential effects that it may have are also discussed. Moral Value Maps are a great tool for aligning the team’s values and making sure that everyone from the designers, company leaders, and stakeholders are on the same page about the ethics of their design. </p>
+                            <p>That to me I think is everything, because when you create and design products for good, you need to be able to make sure that you're designing for everyone, not just a certain group of people. You want to make sure that everything works well for a diverse variety of users. </p>
                         </Row>
-                        <Row className="captionText">
-                            <img src={moralValue} className="smallImageBox mobileImage" />
+                        <Row className="articleText">
+                            <p>And so, from my experience with working for Develop for Good and also the nonprofit Students of UXD, that’s really been the main mission. Students of UXD is an online community where we host events almost every weekend about topics relating to ethics and inclusion, such as creating a more inclusive design for the LGBTQ+ community. There are a bunch more that you can see on the website, </p>
                         </Row>
-                        <Row className="captionText">
-                            <a href="https://www.ethicsfordesigners.com/moral-value-map" target="_blank">An example of a moral value map</a>
+                        <Row className="articleText">
+                            <p>For me especially, I feel very fortunate because these are things that you don't normally learn in class. Even though I wasn't a Cognitive Science major, I know from hearing other students from that major that these are topics you don’t learn in class. Ethics is something very important to learn, and I think I’ve been very fortunate to be surrounded by these organizations that push these ideas forward. </p>
                         </Row>
                     </Col>
                     {/* Rightmost whitespace */}
                     <Col md={1}></Col>
                 </Row>
+{/* ------------------------------------------ */}
+                <Row className="third_section mobilePadding">
 
-                <Row className="thirdSection mobilePadding">
-                    {/* Leftmost whitespace*/}
+                <Col md={1}/>
+                    {/* Article Content Column   */}
+                    <Col className="columnRight" md={7}>
+                        <div> 
+                        <Row className="articleText">
+                        <img src={star2} className="star_background4"/>
+                        <img src={star2} className="star_background5"/>
+                        <img src={star2} className="star_background6"/>
+                            <p>I don't know if there was any specific moment, since I kind of fell into the whole realm of it. That's why I feel very lucky to have been involved in these projects or these organizations that really drive those values of ethics, and because I feel like if I hadn't been involved in these organizations, I wouldn’t have known anything about designing for ethics, diversity or inclusion. I just feel very fortunate because I know that a lot of students don't get exposure to this, but it’s so important. Regarding ethics in my work,  I can draw upon Care Myanmar, the project that I am a PM for. </p>
+                        </Row>
+                        </div>
+                        <Row className="articleText">
+                        <img src={star2} className="star_background7"/>
+                     
+                            <p>Care Myanmar is an organization in Myanmar located in Southeast Asia, so it's a whole different country, literally another side of the world. Coming in as a PM, I really had to put into consideration the people that I am talking to. They’re Burmese, a whole different culture, a whole different country, and you really have to respect that. I had to make sure that  everyone is on the same page when I'm speaking to them, so when I do joint meetings with my team and the client, we can discuss progress and updates as respectfully  as possible, that we can understand each other on a professional level. Also, establishing ways where we're able to communicate with each other as effectively as possible and understand each other has also been very important for me on that project. </p>
+                        </Row>
+                        
+                    </Col>
+                    <Col xs={12} md={4}>
+                    <img src={star2} className="star_background1"/>
+                    <img src={star2} className="star_background2"/>
+                    <img src={star2} className="star_background3"/>
+                    </Col>
+                </Row>
+
+                {/* ------------------------------------------------------------ */}
+
+                <Row className="fourth_section mobilePadding">
+                <Col xs={12}>
+                    <Row className="ethicalQuestion">
+                        <Col md={6}/>
+                        <Col xs={12} md={5}>
+                        <p className="article_question3">From your experience working with Develop of Good, how have they incorporated ethics into their work? </p>
+                        </Col>
+                        <Col md={1}/>
+                    </Row>
+                    </Col>
+
                     <Col md={1}></Col>
-                    <Col className="columnLeft" md={2}>
+                    {/* Article Content Column   */}
+                    <Col className="columnRight" md={7}>
+                        <div>
+                        <Row className="articleText">
+                            <p>Well, I think in Develop for Good, we do try to make sure that we're very transparent with each other; we're very honest, open, and welcoming to every person that participates on our team or  applies. We have guidelines for all of our students and our clients as well, because we want to make sure that our clients are willing and open to work with students no matter who they are, and vice versa. Our goal is to match applicants and clients who are passionate about each other and actually want to make a difference and do good for the world. I do try to keep that in mind, in everything that I do, but obviously it depends on the project. You know, some projects do have a much bigger impact on ethics, and ethics have a bigger role in them. Then for others, you know you don't really think or see that as much, but overall I do try to make sure that I'm creating a product ethically, that I do consider all facets of it, in the whole design process and journey too. </p>
+                        </Row>
+                        </div>
+                        <Row className="articleText">
+                            <p>And again,  I think my most concrete example of that would be my project for Care Myanmar, because we're working with a totally different group of people in a whole different country. There's a language barrier, differences in customs and how we speak to each other, even through email. The way that I speak to them is a lot different than how I speak normally or how I write emails normally, because I want to make sure that I'm very respectful of them and their time. </p>
+                        </Row>
                         <Row>
+                            <Col>
+                                <img src = {accent_heart} className="heart1"/>
+                            </Col>
+                            <Col>
+                                <img src = {accent_heart} className="heart2"/>
+                            </Col>
+                            <Col>
+                                <img src = {accent_heart} className="heart3"/>
+                            </Col>
+                            <Col>
+                                <img src = {accent_heart} className="heart4"/>
+                            </Col>
                         </Row>
+
                     </Col>
-                    {/* Seperator whitespace */}
-                    <Col md={1}><img src={cellphone} className="backgroundImageBox glove"/></Col>
+                    {/* Rightmost whitespace */}
+                    <Col md={1}></Col>
+                    <Col className="columnLeft" md={2}>
+                    </Col>
+                    <Col md={1}></Col>
+                </Row>
+
+
+                <Row className="fifth_section mobilePadding">
+                    <Col xs={12}>
+                    <Row className="ethicalQuestion">
+                        <Col md={1}/>
+                        <Col xs={12} md={8}>
+                        <p className="article_question3">We talked about this with UCSD classes incorporating more ethics classes, but do you have an area in design that you think needs improvement in terms of ethics? </p>
+                        </Col>
+                        <Col md={3}/>
+                    </Row>
+                    </Col>
+                    <Col md={4}>
+                        <img src={rectangle_frame} className="rectangle_frame"/>
+                    </Col>
                     {/* Article Content Column   */}
                     <Col className="columnRight" md={7}>
+                    <img src={circle_frame} className="circle_frame"/>
+                    <img src={star_frame} className="star_frame"/>
+                    <img src={polygon_frame} className="polygon_frame"/>
                         <Row className="articleText beginQuestion">
-                            <p className="articleQuestion">4. Beware of Dark Patterns In UX </p>
-                        </Row>
-                        <Row className="articleText">
-                            <p>A dark pattern is a design that is used to trick or mislead users into doing something that they might not otherwise do. Companies may use these tactics in order to generate more sales, subscriptions, or keep users addicted to their product. While good ethical design creates a better experience for the user, dark patterns in design are used to manipulate the user experience in order to benefit the company. Some examples include sneaking items into your cart, trick questions, privacy zuckering, and misdirection. You can find more examples of dark patterns <span><a className="hoverText" href="https://darkpatterns.org/types-of-dark-pattern.html">here.</a></span></p>
+                            <p className="articleText">I don't know if there's a specific area because I feel like you should try to bring ethics into every single area if you can. I think that starts at the root of the design process, too. If you're designing a product or something, you should make sure that at the beginning stages, when you're doing UX research or the secondary research, that you’re doing it ethically and making sure that you're targeting the right audience, targeting the right users for the end goal of your product. That could be a specific group of people or it could be the larger range. If you start off with a bad foundation and you don't know who you're designing for, what you're designing for, or even why you're designing, how are you going to design the rest of the product for the people that you’re supposed to be helping? You need to make sure that the beginning stages are done ethically. </p>
                         </Row>
                     </Col>
                     {/* Rightmost whitespace */}
                     <Col md={1}></Col>
                 </Row>
 
-                <Row className="fourthSection mobilePadding">
-                    {/* Leftmost whitespace*/}
-                    <Col md={1}></Col>
-                    <Col className="columnLeft" md={2}>
-                    </Col>
-                    {/* Seperator whitespace */}
-                    <Col md={1}></Col>
-                    {/* Article Content Column   */}
-                    <Col className="columnRight" md={7}>
-                        <div>
-                            <div className="starBackground"/>
-                        <Row className="articleText beginQuestion">
-                            <p className="articleQuestion">5. Incorporate Nielsen’s 10 Usability Heuristics </p>
-                        </Row>
-                        <Row className="articleText">
-                            <p>Designers can use <span style={{color:"#76B19F"}}><a className="hoverText" href="https://www.google.com/search?client=firefox-b-1-d&q=nielsen%27s+10+usability+heuristics" target="_blank">Nielsen’s 10 usability heuristics</a></span> as a guideline to evaluate the user interface to ensure ethical design choices were made. These heuristics were created by Jakob Nielsen, a co-founder of the Nielsen Norman group. These heuristics are standards that determine a product's usability and ensure a straightforward experience for the users. By conducting a heuristic evaluation, designers observe how the user interacts with their product and identifies any major issues with the design. </p>
-                        </Row>
-                        <Row className="articleText newQuestion">
-                            <p className="articleQuestion">6. Educate Yourself</p>
-                        </Row>
-                        </div>
-                        <Row className="articleText endBlock">    
-                            <p>There are many great resources out there to learn more about ethics in design. While this article is a great first step towards becoming a well educated designer, other resources include books, articles, and films. Some of our recommendations include Ruined by Design by Mike Monteiro which describes the harmful effects of products that are working exactly as designed. The Social Dilemma on Netflix is another great resource that highlights some of the major issues with the way social media is designed and how it affects society as a whole. </p>                    
-                        </Row>
-                    </Col>
-                    {/* Rightmost whitespace */}
-                    <Col md={1}></Col>
-                </Row>
-                <Row className="fifthSection mobilePadding">
+                <Row className="sixth_section mobilePadding">
                     <Col xs={12}>
                     <Row className="ethicalQuestion">
                         <Col md={1}/>
                         <Col xs={12} md={8}>
-                        <p className="articleQuestion">A few tips on applying design ethics </p>
+                        <p className="article_question3">Do you have any advice for any younger students who are interested in pursuing design? I know you had a bit of  a less traditional pathway to getting into design, so do you have advice for students like yourself? </p>
                         </Col>
                         <Col md={3}/>
                     </Row>
@@ -300,35 +348,14 @@ class InterviewWithAmanda extends Component {
                     <Col className="columnLeft" md={2}>
                     </Col>
                     {/* Seperator whitespace */}
-                    <Col md={1}> <img src={sparkle} className="backgroundImageBox sparkle"/></Col>
+                    <Col md={1}></Col>
                     {/* Article Content Column   */}
                     <Col className="columnRight" md={7}>
                         <Row className="articleText beginQuestion">
-                            <p className="articleText">The steps above are meant to guide you in your exploration of ethics in design. This approach can be applied to many different facets of design. Now, we’ll be taking a deeper look at what design ethics means for presenting information. </p>
-                            <p className="articleText"> When developing consumer-oriented technological media, some major ethical concerns involve how people’s information is handled and presented. The goal here is to maintain honesty and visibility. The consumer should have an easy time discerning what information is presented to them, and it would be ethically responsible to avoid misdirecting their attention or deceiving them. Statistics don’t lie, but they can definitely be used to lead people the wrong way. Here are a few ideas and examples on how to incorporate ethical design choices. </p>
+                            <p className="articleText">I think my advice would just be to just go for it. Be brave and go for it , even if it takes you, like me, an entire four year degree of pre-health/pre-med to get to the point where you're finally confident enough to say, “hey, I want to change career paths,” and then do it. You have so much life to live, and it's not the end of the world. You can always change your mind again, too. Just have that confidence and be brave enough to do something that you want to do, and I'm sure that along the way you’ll probably have a great support system to help you. And even if the haters don't follow along, or if your parents are kind of concerned, don’t worry. It's okay, and it's your life. Do what you go to do, and if you're successful with it, then that's all that matters in the end. And even if you're not successful, as long as you're happy, it's okay, really. </p>
                         </Row>
-                        <Row className="articleText newQuestion">
-                            <img src={sparkle} className="tinyImageBox sparkle1"/>
-                            <p className="articleQuestion">Visualize your data</p>
-                            <img src={sparkle} className="tinyImageBox sparkle2"/>
-                        </Row>
-                        <Row className="articleText">
-                            <p>When displaying data, using visuals like charts, graphs, and pictures generally capture the attention of the user more than words or a set of text would. Not only can data be presented in a more clear and concise fashion, but it can also generate more curiosity in the users, which in turn can help them focus their attention and utilize the data presented for their benefit. A great idea is to use a data dashboard, which are information management tools that visually track, analyze and display information and metrics. They can be used for anything from application usage to vital measurements to company performances.</p>
-                        </Row>
-                        <Row className="articleText newQuestion">
-                            <p className="articleQuestion">Don’t Make Users Remember Information</p>
-                            <img src={heart} className="tinyImageBox"/>
-                        </Row>
-                        <Row className="articleText">
-                            <p>Humans undertake a cognitive load when holding short-term information, which can negatively affect their decision making and awareness capabilities. When the goal is to enable the user to make the best decisions with the information they are given, reducing this cognitive load can relieve them from remembering unnecessary information. If your app, website, or interactable service requires the user to take actions or progress between screens, ensure that the user can see the relevant information at every step of the way.</p>                        
-                        </Row>
-                        <Row className="articleText newQuestion">
-                            <img src={flowerpot} className="tinyImageBox"/>
-                            <p className="articleQuestion">Misdirection in Informatics</p>
-                        </Row>
-                        <Row className="articleText">
-                            <p>It is important to be aware of some common dark patterns in order to deliberately avoid them when it comes to handling information. A common one associated with displaying information is misdirection. Presenting information that is not relevant to the user or their decisions can distract them from the information they need. Also, presenting information that pulls the readers towards certain pieces of information over others can be manipulative. For example, let's consider an interface that displays information on how to exercise. Examples of misdirection include the usage of bold colors and fonts that emphasize an advertisement to buy exercise equipment versus the usage of grey or neutral fonts to deemphasize free alternatives. If the interest of the consumer is the priority, it would be in the best interest to emphasize them equally and to provide information on how the paid products compare to the free alternatives. </p>
-                            <p>These were just a few examples, on how the responsibility to be ethical can impact design choices. Steps like these are important in embracing social ethics in your own work and setting a standard for the future of design.</p>
+                        <Row className="articleText beginQuestion">
+                            <p className="articleText">Honestly, I didn't even think I would get that far with design. A year ago from now, I was just graduating from UCSD.  If you asked me a year ago if I would be here now, I would be, like, “what are you talking about? That’s so crazy. Do I actually have a design portfolio now? Did I actually do all these projects? Am I actually the managing director of UX/UI for Develop for Good? Oh my gosh that's crazy!” So I do reflect back to myself a year ago; I can't believe I grew so much in that time and I did so much, even during a pandemic. So, if you really want something, if you put your mind to it, you can achieve anything. </p>
                         </Row>
                     </Col>
                     {/* Rightmost whitespace */}

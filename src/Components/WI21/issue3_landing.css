@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Archivo-Black";
+    src: local("Archivo-Black"), url(../../font/ArchivoBlack-Regular.otf) format("opentype");
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.issue3_background{
+    background-image:url('../../img/Issue3/issue3_landing_background.png');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0%;
+    opacity: 100%;
+    max-width: 100%;
+}
+
+.issue3_landing{
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    left: 15%;
+    width: 85%;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    background-color: black;
+    border-radius: 2px;
+    text-align: justify;
+    padding: 1rem 2rem;
+}
+.issue3_landing > h7{
+    font-family: Archivo-Black;
+}
+.issue3_landing >h1{
+    font-family: Archivo-Black;
+}
+.issue3_landing > p{
+    font-family: Epilogue;
+    font-size: 1rem;
+}
+.record_player{
+    position: relative;
+    left: 15%;
+    width: 85%;
+}
+.issue3_landing1{
+    position: relative;
+    left: 25%;
+    top: 5%;
+    width: 55%;
+}
+
+.issue3_landing2{
+    position: relative;
+    left: 25%;
+    top: 20%;
+    width: 55%;
+}
+
+.issue3_landing3{
+    position: relative;
+    top: 10%;
+    left: 20%;
+    width: 55%;
+}
+.issue3_landing4{
+    position: relative;
+    left: 20%;
+    width: 55%;
+    top:25%;
+}
+
+@media (max-width:767px) {
+    .issue3_landing{
+        left: 0%;
+        width: 95%;
+        padding: 1rem 1rem;
+        padding-bottom: 0rem;
+    }
+    .record_player{
+        left: 0%;
+        width: 95%;
+        padding: 1rem 1rem;
+    }
+    .issue3_landing1{
+        width: 95%;
+        left:0%;
+        top:0%;
+        padding: 1rem 1rem;
+    }
+    .issue3_landing2{
+        width: 95%;
+        left:0%;
+        top:0%;
+        padding: 1rem 1rem;
+    }
+    .issue3_landing3{
+        width: 95%;
+        left:0%;
+        top:0%;
+        padding: 1rem 1rem;
+    }
+    .issue3_landing4{
+        width: 95%;
+        left:0%;
+        top:0%;
+        padding: 1rem 1rem;
+    }
+}

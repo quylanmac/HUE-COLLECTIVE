@@ -30,6 +30,9 @@
 .community_pic{
     max-width: 100%;
 }
+.community_pic1{
+    max-width: 100%;
+}
 .community_cancer{
     max-width: 80%;
     margin-left: 2rem;
@@ -44,7 +47,7 @@
     margin-top: -1rem;
 }
 .community_col{
-    padding-right: 5rem;
+    /* padding-right: 5rem; */
 }
 .community_bold{
     color: #76B19F;
@@ -58,10 +61,58 @@
     margin-bottom: 1rem;
 }
 
-
+.community_phone{
+    width: 30%;
+    position: relative;
+    left: 30%;
+}
 .cancer{
-    padding-top: 5rem;
-    padding-right: 5rem;
+    padding-top: 4rem;
+    /* padding-right: 5rem; */
+}
+
+.community_star1{
+    position: absolute;
+    top:5%;
+    left: 30%;
+    width: 40%;
+    transform: rotate(-30deg);
+}
+.community_star2{
+    position: absolute;
+    top:25%;
+    left: 30%;
+    width: 40%;
+    opacity: 75%;
+    transform: rotate(-30deg);
+}
+.community_star3{
+    position: absolute;
+    top:45%;
+    left: 30%;
+    width: 40%;
+    opacity: 50%;
+    transform: rotate(-30deg);
+}
+.community_star4{
+    position: absolute;
+    top:65%;
+    left: 30%;
+    width: 40%;
+    opacity: 25%;
+    transform: rotate(-30deg);
+}
+.community_star5{
+    position: absolute;
+    top:85%;
+    left: 30%;
+    width: 40%;
+    opacity: 10%;
+    transform: rotate(-30deg);
+}
+
+.center{
+    text-align: center;
 }
 
 .disks{
@@ -72,3 +123,78 @@
     margin-right: auto;
 }
 
+@media (max-width:767px) {
+    .center{
+        text-align: left;
+    }
+    .special{
+        font-size: 1.5rem;
+    }
+    .community_design_font{
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    .community_design_font1{
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .community_phone{
+        left: 35%;
+    }
+    .community_star1{
+        position: absolute;
+        top:0%;
+        left:85%;
+        /* right:0%; */
+        width: 30%;
+        transform: rotate(-30deg);
+    }
+    .community_star2{
+        position: absolute;
+        top:200%;
+        left:85%;
+        width: 30%;
+        opacity: 75%;
+        transform: rotate(-30deg);
+    }
+    .community_star3{
+        position: absolute;
+        top:400%;
+        left:85%;
+        width: 30%;
+        opacity: 50%;
+        /* display: none; */
+        transform: rotate(-30deg);
+    }
+    .community_star4{
+        position: absolute;
+        top:600%;
+        left:85%;
+        width: 30%;
+        opacity: 25%;
+        /* display: none; */
+        transform: rotate(-30deg);
+    }
+    .community_star5{
+        position: absolute;
+        top:800%;
+        left:85%;
+        width: 30%;
+        opacity: 10%;
+        /* display: none; */
+        transform: rotate(-30deg);
+    }
+
+    .cancer{
+        padding-top: 2.5rem;
+    }
+    .community_pic{
+        width: 50%;
+        position: relative;
+        left: 25%;
+        padding-bottom: 1rem;
+    }
+    .community_pic1{
+        width: 100%;
+    }
+}
