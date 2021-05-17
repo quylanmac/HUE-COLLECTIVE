@@ -4,7 +4,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.art3Landing {
+    overflow: inherit;
+    font-family: Epilogue;
 
+}
 .issue3_background{
     background-image:url('../../img/Issue3/issue3_landing_background.png');
     background-size: cover;
@@ -15,6 +19,7 @@
     left: 0%;
     opacity: 100%;
     max-width: 100%;
+    height:120vh;
 }
 
 .issue3_landing{
@@ -76,7 +81,7 @@
 @media (max-width:767px) {
     .issue3_landing{
         left: 0%;
-        width: 95%;
+        width: 100%;
         padding: 1rem 1rem;
         padding-bottom: 0rem;
     }

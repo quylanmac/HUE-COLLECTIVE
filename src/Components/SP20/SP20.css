@@ -104,17 +104,17 @@
     }
     .stickerBox {
         position: absolute;
-        bottom: -30%;
+        bottom: -70%;
         left: 0%;
     }
     .stickerBox2 {
         position: absolute;
-        bottom: -30%;
+        bottom: -70%;
         left: 70%;
     }
     .stickerBox3 {
         position: absolute;
-        bottom: -30%;
+        bottom: -70%;
         left: 85%;
     }
     .stickerBox img {

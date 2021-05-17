@@ -20,6 +20,7 @@
     background-color: black;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    overflow: hidden;
 }
 
 .white_background{
@@ -122,21 +123,27 @@
     margin-left: auto;
     margin-right: auto;
 }
-
+@media (min-width:768px) {
+    .special {
+        font-size: 1.375rem;
+    }
+}
 @media (max-width:767px) {
     .center{
         text-align: left;
     }
     .special{
-        font-size: 1.5rem;
+        font-size: 1.5rem !important;
     }
     .community_design_font{
+        font-size:.75rem;
         padding-right: 2rem;
         padding-left: 2rem;
     }
     .community_design_font1{
         padding-right: 1rem;
         padding-left: 1rem;
+        font-size:.75rem;
     }
     .community_phone{
         left: 35%;

@@ -13,8 +13,9 @@
 .testerDisc {
     max-width:75%;
     position:absolute;
-    margin-bottom:4rem;
+    padding-bottom:1rem;
 }
+
 .tester2 {
     background-image:url('../../../img/Issue3/flowerpot.png');
     background-size: cover;
@@ -33,7 +34,7 @@
     top: 0px;
     right: 0px;
     bottom: 0px;
-    left: 50%;
+    left: 45%;
     opacity: 17.5%;
     max-width: 100%;
 }
@@ -79,6 +80,16 @@
     position:absolute;
 }
 @media (min-width:768px) {
+    .flowerBackground {
+        height: 80vh;
+    }
+    .cellphone {
+        right: -5rem;
+        max-width: 250% !important;
+    }
+    .glove2 {
+        max-width: 150% !important;
+    }
     .tinyImageBox {
         max-width:5%;
     }
@@ -109,6 +120,22 @@
     }
 }
 @media (max-width:767px) {
+    .flowerBackground {
+        height:50vh;
+        top: 15%;
+    }
+    .starBackground {
+        height:50vh;
+        top:30%;
+        left: 15%;
+    }
+    .cellphone {
+        max-width: 50% !important;
+        top: -50%;
+    }
+    .glove2 {
+        top: -50%;
+    }
     .mobileHidden{
         visibility: hidden;
     }

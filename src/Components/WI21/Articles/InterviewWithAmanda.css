@@ -6,6 +6,7 @@
 
 .articleFont {
     font-family: Epilogue;
+    overflow: hidden;
 }
 .heart1{
     width: 100%;
@@ -32,7 +33,6 @@
 .testerDisc {
     max-width:75%;
     position:absolute;
-    margin-bottom:4rem;
 }
 .tester2 {
     background-image:url('../../../img/Issue3/flowerpot.png');
@@ -56,7 +56,6 @@
     z-index: 999;
     opacity: 17.5%;
     width: 35%;
-    height: 450%;
 }
 
 .star_background1{
@@ -180,6 +179,9 @@
     position:absolute;
 }
 @media (min-width:768px) {
+    .flower_background {
+        height: 80vh;
+    }
     .tinyImageBox {
         max-width:5%;
     }
@@ -237,6 +239,39 @@
     }
 }
 @media (max-width:767px) {
+    .flower_background {
+        height:50vh;
+        top: 15%;
+    }
+    .article_question1 {
+        font-size: .75rem !important;
+        font-weight: 900;
+        padding: 10px;
+        box-decoration-break: clone;
+        display: inline;
+        box-shadow: 0.25em 0 0 #EBD448, -0.25em 0 0 #EBD448;
+        background-color: #EBD448;
+        line-height: 3;
+        background-color: #EBD448;
+        color: #5F53E5;
+    }
+    .article_question2 {
+        font-size: .75rem !important;
+        background-color: #EBD448;
+        max-width: 80%;
+        padding: 10px;
+        color: #5F53E5;
+    }
+    .article_question3 {
+        font-size: .75rem !important;
+        padding: 10px;
+        box-decoration-break: clone;
+        display: inline;
+        box-shadow: 0.25em 0 0 #EBD448, -0.25em 0 0 #EBD448;
+        background-color: #EBD448;
+        line-height: 3;
+        color: #5F53E5;
+    }
     .rectangle_frame{
         position: absolute;
         top: 10% !important;
@@ -369,6 +404,7 @@
     padding-top:4rem;
     padding-bottom:4rem;
     color: white;
+    overflow: hidden;
 }
 .sixth_section {
     background: #FFFAF4;

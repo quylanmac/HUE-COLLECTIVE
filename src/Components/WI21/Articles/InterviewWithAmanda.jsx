@@ -151,7 +151,7 @@ class InterviewWithAmanda extends Component {
                                 </div>
                                 <div className="linkDiskSecondary" 
                                     onMouseEnter={() => this.setDisc2(true)}
-                                    onMouseLeave={() => this.setDisc2(false)}>
+                                   >
                                     <img src={disc2} className="disc1" 
                                     />
                                     {this.state.showDisc2 && <Link to={{pathname: "/CommunityDesign"}}><img src={smallArticle2} className="testerDisc"/></Link>}
@@ -166,7 +166,7 @@ class InterviewWithAmanda extends Component {
                                 <div className="linkDiskSecondary"
                                     onMouseEnter={() => this.setDisc4(true)}
                                     onMouseLeave={() => this.setDisc4(false)}>
-                                    <img src={disc4} className="disc1" 
+                                    <img src={disc3} className="disc1" 
                                     />
                                     {this.state.showDisc4 && <Link to={{pathname: "/EthicalDesign"}}><img src={smallArticle3} className="testerDisc"/></Link>}
                                 </div>

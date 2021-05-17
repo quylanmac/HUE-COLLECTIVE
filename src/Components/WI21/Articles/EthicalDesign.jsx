@@ -177,7 +177,7 @@ class EthicalDesign extends Component {
                 </Row>
                 <Row className="introduction2 mobilePadding myTest">
                     <Col md={3}/>
-                    <Col md={1}><img src={glove} className="backgroundImageBox glove"/></Col>
+                    <Col md={1}><img src={glove} className="backgroundImageBox glove glove2"/></Col>
                     {/* Article Content Column   */}
                     <Col className="columnRight" xs={12} md={7}>
                         <Row className="articleText newQuestion">
@@ -234,7 +234,7 @@ class EthicalDesign extends Component {
                         </Row>
                     </Col>
                     {/* Seperator whitespace */}
-                    <Col md={1}><img src={cellphone} className="backgroundImageBox glove"/></Col>
+                    <Col md={1}><img src={cellphone} className="backgroundImageBox glove cellphone"/></Col>
                     {/* Article Content Column   */}
                     <Col className="columnRight" md={7}>
                         <Row className="articleText beginQuestion">

@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { setTheme } from '../../redux/actions';
 import './issue3_landing.css';
 import record_player from '../../../src/img/Issue3/record_player.png';
-import smallArticle1 from '../../../src/img/Issue3/smallArticle1.png';
+import smallArticle1 from '../../../src/img/Issue3/equitabledesigndisc2.png';
 import smallArticle2 from '../../../src/img/Issue3/smallArticle2.png';
 import smallArticle3 from '../../../src/img/Issue3/smallArticle3.png';
 import smallArticle4 from '../../../src/img/Issue3/smallArticle4.png';
@@ -29,7 +29,7 @@ class issue3_landing extends Component {
 
     render() {
         return (
-            <Container fluid className="articleFont">
+            <Container fluid className="art3Landing">
             <div className="issue3_background"/>
                 <Row>
                     <Col md={4} xs={12}>

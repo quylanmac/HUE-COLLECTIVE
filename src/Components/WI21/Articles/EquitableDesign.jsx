@@ -150,7 +150,7 @@ class EquitableDesign extends Component {
                                 <div className="linkDiskSecondary"
                                     onMouseEnter={() => this.setDisc3(true)}
                                     onMouseLeave={() => this.setDisc3(false)}>
-                                    <img src={disc1} className="disc1" 
+                                    <img src={disc3} className="disc1" 
                                     />
                                     {this.state.showDisc3 && <Link to={{pathname: "/EthicalDesign"}}><img src={smallArticle3} className="testerDisc"/></Link>}
                                 </div>
