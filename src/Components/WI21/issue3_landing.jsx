@@ -17,6 +17,8 @@ class issue3_landing extends Component {
     componentDidMount() {
         document.body.className = "darktheme";
         this.props.setTheme('black');
+        console.log('HEELLEELL');
+        console.log('Version: ' + process.version);
         window.scrollTo(0, 0);
     }
     componentWillUnmount() {

@@ -44,6 +44,7 @@
     "video-react": "^0.14.1",
     "webvtt-player": "0.0.15"
   },
+  "engines" : { "node" : ">=0.14" },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
