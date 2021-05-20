@@ -154,8 +154,7 @@
     }
     .mobileImage {
         width:100% !important;
-        height:auto;
-        margin:auto;
+        max-height:100%;
         object-fit: fill;
     }
     .mobilePadding {
