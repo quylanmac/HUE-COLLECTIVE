@@ -39,6 +39,7 @@
     max-width: 100%;
 }
 .flowerBackground {
+    background-image: url("/flowerpot.png");
     background-size: cover;
     position: absolute;
     top: 0px;

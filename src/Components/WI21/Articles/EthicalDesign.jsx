@@ -203,7 +203,7 @@ class EthicalDesign extends Component {
                     {/* Article Content Column   */}
                     <Col className="columnRight" md={7}>
                         <div>
-                            <div className="flowerBackground" style={{backgroundImage: 'url(' + flowerBackground + ')'}}/>
+                            <div className="flowerBackground"/>
                         <Row className="articleText beginQuestion">
                             <p className="articleQuestion">2. Include Ethical Design Choices During Ideation </p>
                         </Row>
