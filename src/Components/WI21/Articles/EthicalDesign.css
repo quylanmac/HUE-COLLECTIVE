@@ -154,6 +154,8 @@
     }
     .mobileImage {
         max-width:100% !important;
+        height:auto;
+        object-fit: cover; 
     }
     .mobilePadding {
         padding-left:1.5rem;
@@ -295,9 +297,7 @@ body {
 .imageBox{
     max-width:100%;
 }
-.smallImageBox{
-    height:auto;
-}
+
 .noPad {
     padding-left:0px !important;
     padding-right:0px !important;
