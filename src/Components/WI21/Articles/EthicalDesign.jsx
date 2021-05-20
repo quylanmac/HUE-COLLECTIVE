@@ -21,6 +21,8 @@ import smallArticle2 from '../../../img/Issue3/designingCover.png';
 import smallArticle3 from '../../../img/Issue3/ethicalCover.png';
 import smallArticle4 from '../../../img/Issue3/interviewCover.png';
 import backToTop from '../../../img/Issue3/backToTop.png';
+import flowerBackground from '../../../img/Issue3/flowerpot.png';
+
 class EthicalDesign extends Component {
     constructor(props) {
         super(props);
@@ -171,7 +173,7 @@ class EthicalDesign extends Component {
                     <Col md={1}></Col>
                     <Col className="columnRight" xs={12} md={7}>
                         <Row className="articleText">
-                            <p>These are the types of complex questions that design ethics can help us break down. Ethical design is made with the intent to do good. It concerns moral behavior and responsibility in design. To understand why this is important, let’s reflect on some current issues and the way technology is designed. Oftentimes human behavior is exploited by design, creating unwanted habits and negative consequences for the user (ex. social media addiction). Other times, design prioritizes the interests of the company at the cost of their users (ex. surveillance capitalism). As we educate ourselves to be the next generation of designers, here are some general guidelines on how we can design technology more ethically. </p>
+                            <p>These are the types of complex questions that design ethics can help us break down. Ethical design is made with the intent to do good. It concerns moral behavior and responsibility in design. To understand why this is important, let’s reflect on some current issues in the way technology is designed. Oftentimes human behavior is exploited by design, creating unwanted habits and negative consequences for the user (ex. social media addiction). Other times, design prioritizes the interests of the company at the cost of their users (ex. surveillance capitalism). As we educate ourselves to be the next generation of designers, here are some general guidelines on how we can design technology more ethically. </p>
                         </Row>
                     </Col>
                 </Row>
@@ -201,7 +203,7 @@ class EthicalDesign extends Component {
                     {/* Article Content Column   */}
                     <Col className="columnRight" md={7}>
                         <div>
-                            <div className="flowerBackground"/>
+                            <div className="flowerBackground" style={{backgroundImage: 'url(' + flowerBackground + ')'}}/>
                         <Row className="articleText beginQuestion">
                             <p className="articleQuestion">2. Include Ethical Design Choices During Ideation </p>
                         </Row>

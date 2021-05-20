@@ -27,6 +27,7 @@ import smallArticle2 from '../../../img/Issue3/designingCover.png';
 import smallArticle3 from '../../../img/Issue3/ethicalCover.png';
 import smallArticle4 from '../../../img/Issue3/interviewCover.png';
 import backToTop from '../../../img/Issue3/backToTop.png';
+import flowerBackground from '../../../img/Issue3/flowerpot.png';
 class InterviewWithAmanda extends Component {
     constructor(props) {
         super(props);
@@ -203,7 +204,7 @@ class InterviewWithAmanda extends Component {
                         </Col>
                         <Col md={6}/>
                     </Row>
-                    <div className="flower_background"/>
+                    <div className="flower_background" style={{backgroundImage: 'url(' + flowerBackground + ')'}}/>
                     </Col>
                     {/* Leftmost whitespace*/}
                     <Col md={1}></Col>

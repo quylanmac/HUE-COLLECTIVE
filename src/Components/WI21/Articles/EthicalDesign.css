@@ -39,7 +39,6 @@
     max-width: 100%;
 }
 .flowerBackground {
-    background-image:url('../../../img/Issue3/flowerpot.png');
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -297,6 +296,7 @@ body {
 }
 .smallImageBox{
     max-width:50%;
+    height:auto;
 }
 .noPad {
     padding-left:0px !important;
