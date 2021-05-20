@@ -22,10 +22,10 @@ import star_frame from '../../../img/Issue3/star_frame.png';
 import rectangle_frame from '../../../img/Issue3/rectangle_frame.png';
 import polygon_frame from '../../../img/Issue3/polygon_frame.png';
 import circle_frame from '../../../img/Issue3/circle_frame.png';
-import smallArticle1 from '../../../img/Issue3/smallArticle1.png';
-import smallArticle2 from '../../../img/Issue3/smallArticle2.png';
-import smallArticle3 from '../../../img/Issue3/smallArticle3.png';
-import smallArticle4 from '../../../img/Issue3/smallArticle4.png';
+import smallArticle1 from '../../../img/Issue3/equitableCover.png';
+import smallArticle2 from '../../../img/Issue3/designingCover.png';
+import smallArticle3 from '../../../img/Issue3/ethicalCover.png';
+import smallArticle4 from '../../../img/Issue3/interviewCover.png';
 import backToTop from '../../../img/Issue3/backToTop.png';
 class InterviewWithAmanda extends Component {
     constructor(props) {

@@ -13,10 +13,10 @@ import disc1 from '../../../img/Issue3/disc1.png';
 import disc2 from '../../../img/Issue3/disc2.png';
 import disc3 from '../../../img/Issue3/disc3.png';
 import disc4 from '../../../img/Issue3/disc4.png';
-import smallArticle1 from '../../../img/Issue3/smallArticle1.png';
-import smallArticle2 from '../../../img/Issue3/smallArticle2.png';
-import smallArticle3 from '../../../img/Issue3/smallArticle3.png';
-import smallArticle4 from '../../../img/Issue3/smallArticle4.png';
+import smallArticle1 from '../../../img/Issue3/equitableCover.png';
+import smallArticle2 from '../../../img/Issue3/designingCover.png';
+import smallArticle3 from '../../../img/Issue3/ethicalCover.png';
+import smallArticle4 from '../../../img/Issue3/interviewCover.png';
 import backToTop from '../../../img/Issue3/backToTop.png';
 class EquitableDesign extends Component {
     constructor(props) {

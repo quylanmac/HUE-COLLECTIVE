@@ -50,6 +50,7 @@
     position: relative;
     left: 15%;
     width: 85%;
+    cursor: pointer;
 }
 .issue3_landing1{
     position: relative;
