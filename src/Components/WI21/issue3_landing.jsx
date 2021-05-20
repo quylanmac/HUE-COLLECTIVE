@@ -1,5 +1,5 @@
 import React, { Component, useState } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setTheme } from '../../redux/actions';
@@ -11,7 +11,9 @@ import smallArticle2 from '../../../src/img/Issue3/designingCover.png';
 import smallArticle3 from '../../../src/img/Issue3/ethicalCover.png';
 import smallArticle4 from '../../../src/img/Issue3/interviewCover.png';
 import equitableRecord from '../../../src/img/Issue3/equitableRecord.png';
-import flowerpot from '../../../src/img/Issue3/flowerpot.png';
+import ethicalRecord from '../../../src/img/Issue3/ethicalRecord.png';
+import designRecord from '../../../src/img/Issue3/designRecord.png';
+import interviewRecord from '../../../src/img/Issue3/interviewRecord.png';
 
 
 class issue3_landing extends Component {
@@ -53,36 +55,67 @@ class issue3_landing extends Component {
             <Container fluid className="art3Landing">
             <div className="issue3_background"/>
                 <Row>
-                    <Col md={4} xs={12}>
+                    <Col md={4} xs={12} className="issueBox">
                         <div className="issue3_landing">
-                            <h7>{this.state.mobile}</h7>
-                            <p>{this.state.mobile}</p>
+                            <h7> ISSUE 3 </h7>
                             <h1> WITHOUT EXCEPTION </h1>
                             <p>How can we design for those who are all too often left behind? As designers, we all want to do good in the world, but in order to do so, we must look far beyond our own lives. Join HUE in our third issue as we dive into ethical design, exploring the amazing things that can happen through advocacy and community engagement.</p>
                         </div>
-                        {this.state.openRecord && <img src={record_player} className="record_player" onClick={this.isMobile}/>}
-                        {!this.state.openRecord && <img src={record_player_closed} className="record_player" onClick={this.handleRecord}/>}
+                        {this.state.openRecord && !this.state.mobile && <img src={record_player} className="record_player" onClick={this.isMobile}/>}
+                        {!this.state.openRecord && !this.state.mobile && <img src={record_player_closed} className="record_player" onClick={this.handleRecord}/>}
                     </Col>
-                        
+
+                    {this.state.mobile && 
+
+                    <>
+
+                    {!this.state.openRecord && 
+                    <>
+                    <p className="mobileChoose">PRESS TO CHOOSE</p>
+                    <img src={record_player} className="record_player" onClick={this.handleRecord}/>
+                    </>
+                    }
+                    {this.state.openRecord && 
+                    <Col xs={12}>
+                        <Carousel interval={null} className="landingCarousel">
+                            <Carousel.Item>
+                                <h1>Equitable Design</h1>
+                                <Link to={{pathname: "/EquitableDesign"}}><img src={equitableRecord} className="issue3_landing1"/></Link>
+                            </Carousel.Item>  
+                            <Carousel.Item>
+                                <h1>Designing for Community Involvement</h1>
+                                <Link to={{pathname: "/CommunityDesign"}}><img src={designRecord} className="issue3_landing2"/></Link>
+                            </Carousel.Item>  
+                            <Carousel.Item>
+                                <h1>Ethical Design For Tech</h1>
+                                <Link to={{pathname: "/EthicalDesign"}}><img src={ethicalRecord} className="issue3_landing3"/></Link>
+                            </Carousel.Item> 
+                            <Carousel.Item>
+                                <h1>Interview With Amanda</h1>
+                                <Link to={{pathname: "/interview-with-amanda"}}><img src={interviewRecord} className="issue3_landing4"/></Link>
+                            </Carousel.Item> 
+                        </Carousel>    
+                    </Col> 
+                    }
+                    </>
+                    }
+
                     <Col md={4} xs={12}>
-                        {this.state.openRecord && 
+                        {this.state.openRecord && !this.state.mobile && 
                         <>
                     <Link to={{pathname: "/EquitableDesign"}}><img src={smallArticle1} className="issue3_landing1"/></Link>
                     <Link to={{pathname: "/CommunityDesign"}}><img src={smallArticle2} className="issue3_landing2"/></Link>
                         </>
                         }
-                        {this.state.openRecord && this.state.mobile && <Link to={{pathname: "/EquitableDesign"}}><img src={equitableRecord} className="issue3_landing1"/></Link>}
-                        {this.state.openRecord && !this.state.mobile && <Link to={{pathname: "/EquitableDesign"}}><img src={flowerpot} className="issue3_landing1"/></Link>}
-
                     </Col> 
 
                     <Col md={4} xs={12}>
-                        {this.state.openRecord && 
+                        {this.state.openRecord && !this.state.mobile &&
                         <>
-                    <Link to={{pathname: "/EthicalDesign"}}><img src={smallArticle3} className="issue3_landing3"/></Link>
-                    <Link to={{pathname: "/interview-with-amanda"}}><img src={smallArticle4} className="issue3_landing4"/></Link>
-                    </>
-                        }
+                        <Link to={{pathname: "/EthicalDesign"}}><img src={smallArticle3} className="issue3_landing3"/></Link>
+                        <Link to={{pathname: "/interview-with-amanda"}}><img src={smallArticle4} className="issue3_landing4"/></Link>
+                        </>
+                        }                     
                     </Col>
                 </Row>
             </Container>
