@@ -218,7 +218,11 @@ class EthicalDesign extends Component {
                             <p>A moral value map is a tool which designers use to find values that are relevant to their solution. This is an exercise that maps out values that are relevant to your design, yourself, the company, and stakeholders. Concerns about the design and the potential effects that it may have are also discussed. Moral Value Maps are a great tool for aligning the team’s values and making sure that everyone from the designers, company leaders, and stakeholders are on the same page about the ethics of their design. </p>
                         </Row>
                         <Row className="captionText">
+                            <Col md={2}></Col>
+                            <Col md={8}>
                             <img src={moralValue} className="smallImageBox mobileImage" />
+                            </Col>
+                            <Col md={2}></Col>
                         </Row>
                         <Row className="captionText">
                             <a href="https://www.ethicsfordesigners.com/moral-value-map" target="_blank">An example of a moral value map</a>
