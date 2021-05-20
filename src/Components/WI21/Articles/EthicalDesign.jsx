@@ -123,8 +123,8 @@ class EthicalDesign extends Component {
                         </svg>
                     </div>
                 </div>
-                <Row id="top">
-                    <img className="imageBox" src={header}/>
+                <Row id="top" className="header">
+                    <img className="imageBox mobileImage" src={header}/>
                 </Row>
                 <Row className="introduction mobilePadding">
                     <Col xs={12}>

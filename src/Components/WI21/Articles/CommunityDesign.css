@@ -84,7 +84,7 @@
     top:25%;
     left: 30%;
     width: 40%;
-    opacity: 75%;
+    opacity: 0.75;
     transform: rotate(-30deg);
 }
 .community_star3{
@@ -92,7 +92,7 @@
     top:45%;
     left: 30%;
     width: 40%;
-    opacity: 50%;
+    opacity: 0.5;
     transform: rotate(-30deg);
 }
 .community_star4{
@@ -100,7 +100,7 @@
     top:65%;
     left: 30%;
     width: 40%;
-    opacity: 25%;
+    opacity: 0.25;
     transform: rotate(-30deg);
 }
 .community_star5{
@@ -108,7 +108,7 @@
     top:85%;
     left: 30%;
     width: 40%;
-    opacity: 10%;
+    opacity: 0.1;
     transform: rotate(-30deg);
 }
 
@@ -161,7 +161,7 @@
         top:200%;
         left:85%;
         width: 30%;
-        opacity: 75%;
+        opacity: 0.75;
         transform: rotate(-30deg);
     }
     .community_star3{
@@ -169,7 +169,7 @@
         top:400%;
         left:85%;
         width: 30%;
-        opacity: 50%;
+        opacity: 0.5;
         /* display: none; */
         transform: rotate(-30deg);
     }
@@ -178,7 +178,7 @@
         top:600%;
         left:85%;
         width: 30%;
-        opacity: 25%;
+        opacity: 0.25;
         /* display: none; */
         transform: rotate(-30deg);
     }
@@ -187,7 +187,7 @@
         top:800%;
         left:85%;
         width: 30%;
-        opacity: 10%;
+        opacity: 0.1;
         /* display: none; */
         transform: rotate(-30deg);
     }

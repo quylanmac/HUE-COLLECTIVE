@@ -10,15 +10,15 @@
 }
 .heart1{
     width: 100%;
-    opacity: 30%;
+    opacity: .3;
 }
 .heart2{
     width: 100%;
-    opacity: 50%;
+    opacity: .5;
 }
 .heart3{
     width: 100%;
-    opacity: 70%;
+    opacity: .7;
 }
 .heart4{
     width: 100%;
@@ -42,7 +42,7 @@
     right: 0px;
     bottom: 0px;
     left: 20%;
-    opacity: 17.5%;
+    opacity: 0.175;
     max-width: 100%;
 }
 .flower_background {
@@ -50,17 +50,16 @@
     position: absolute;
     top: 10%;
     right: 0px;
-    /* bottom: 0px; */
     left: 10%;
     z-index: 0;
-    opacity: 17.5%;
+    opacity: 0.175;
     width: 35%;
 }
 
 .star_background1{
     position: absolute;
     max-width: 75%;
-    opacity: 17.5%;
+    opacity: 0.175;
     z-index: 1;
     top:0%;
     right: 20%;
@@ -75,7 +74,7 @@
 .star_background3{
     position: absolute;
     max-width: 75%;
-    opacity: 17.5%;
+    opacity: 0.175;
     z-index: 1;
     right: 10%;
     top:70%;
@@ -84,7 +83,7 @@
 .star_background4{
     position: absolute;
     max-width: 75%;
-    opacity: 17.5%;
+    opacity: 0.175;
     z-index: 1;
     right: 30%;
     top:-5%;
@@ -93,7 +92,7 @@
 .star_background5{
     position: absolute;
     max-width: 75%;
-    opacity: 17.5%;
+    opacity: 0.175;
     z-index: 1;
     right: 0%;
     top:5%;
@@ -102,7 +101,7 @@
 .star_background6{
     position: absolute;
     max-width: 75%;
-    opacity: 17.5%;
+    opacity: 0.175;
     z-index: 1;
     right: 10%;
     top:40%;
@@ -111,7 +110,7 @@
 .star_background7{
     position: absolute;
     max-width: 75%;
-    opacity: 17.5%;
+    opacity: 0.175;
     z-index: 1;
     right: -10%;
     top:70%;
@@ -198,7 +197,7 @@
     }
     .backgroundImageBox {
         max-width:100%;
-        opacity:25%;
+        opacity:0.25;
     }
     .article_question1 {
         font-size: 1.35rem !important;
@@ -314,7 +313,7 @@
     .star_background4{
         position: absolute;
         max-width: 75%;
-        opacity: 17.5%;
+        opacity: 0.175;
         z-index: 1;
         right: 30%;
         top:-5%;
@@ -366,7 +365,7 @@
     }
     .backgroundImageBox {
         max-width:25%;
-        opacity:25%;
+        opacity:.25;
     }
     .articleQuestion {
         font-size: 1.35rem !important;
