@@ -153,9 +153,10 @@
         max-width:15%;
     }
     .mobileImage {
-        max-width:100% !important;
+        width:100% !important;
         height:auto;
-        object-fit: cover; 
+        margin:auto;
+        object-fit: fill;
     }
     .mobilePadding {
         padding-left:1.5rem;
