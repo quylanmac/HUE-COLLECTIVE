@@ -136,6 +136,7 @@ body {
     font-weight: normal;
     line-height: 2rem;
     text-align: justify;
+    z-index:1;
 
 }
 .articleText {

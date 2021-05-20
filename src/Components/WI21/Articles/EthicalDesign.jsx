@@ -162,7 +162,7 @@ class EthicalDesign extends Component {
                                     onMouseLeave={() => this.setDisc4(false)}>
                                     <img src={disc4} className="disc1" 
                                     />
-                                    {this.state.showDisc4 && <Link to={{pathname: "/CommunityDesign"}}><img src={smallArticle4} className="testerDisc"/></Link>}
+                                    {this.state.showDisc4 && <Link to={{pathname: "/interview-with-amanda"}}><img src={smallArticle4} className="testerDisc"/></Link>}
                                 </div>
                             </div>
                         </Row>
@@ -184,7 +184,7 @@ class EthicalDesign extends Component {
                             <p className="articleQuestion">1. Ask Questions</p>
                         </Row>
                         <Row className="articleText endBlock">
-                            <p>A crucial part of design is understanding the current structures and systems that exist. In order to create better designs, it’s important to recognize and deconstruct the reasoning behind why things are designed the way that they are. Some concepts to think about as we question and evaluate existing designs are the consequences, effects, and benefits for society. </p>
+                            <p>A crucial part of design is understanding the existing structures and systems. In order to create better designs, it’s important to recognize and deconstruct the reasoning behind why things are designed the way that they are. Some concepts to think about as we question and evaluate existing designs are the consequences, effects, and benefits for society. </p>
                         </Row>
                     </Col>
                     <Col xs={1}/>
@@ -241,7 +241,7 @@ class EthicalDesign extends Component {
                             <p className="articleQuestion">4. Beware of Dark Patterns In UX </p>
                         </Row>
                         <Row className="articleText">
-                            <p>A dark pattern is a design that is used to trick or mislead users into doing something that they might not otherwise do. Companies may use these tactics in order to generate more sales, subscriptions, or keep users addicted to their product. While good ethical design creates a better experience for the user, dark patterns in design are used to manipulate the user experience in order to benefit the company. Some examples include sneaking items into your cart, trick questions, privacy zuckering, and misdirection. You can find more examples of dark patterns <span><a className="hoverText" href="https://darkpatterns.org/types-of-dark-pattern.html">here.</a></span></p>
+                            <p>A dark pattern is a design that is used to trick or mislead users into doing something that they might not otherwise do. Companies may use these tactics in order to generate more sales, subscriptions, or keep users addicted to their product. While good ethical design creates a better experience for the user, dark patterns in design are used to manipulate the user experience in order to benefit the company. Some examples include sneaking items into your cart, trick questions, privacy zuckering, and misdirection. You can find more examples of dark patterns <span><a className="hoverText" href="https://darkpatterns.org/types-of-dark-pattern">here.</a></span></p>
                         </Row>
                     </Col>
                     {/* Rightmost whitespace */}
@@ -270,7 +270,7 @@ class EthicalDesign extends Component {
                         </Row>
                         </div>
                         <Row className="articleText endBlock">    
-                            <p>There are many great resources out there to learn more about ethics in design. While this article is a great first step towards becoming a well educated designer, other resources include books, articles, and films. Some of our recommendations include Ruined by Design by Mike Monteiro which describes the harmful effects of products that are working exactly as designed. The Social Dilemma on Netflix is another great resource that highlights some of the major issues with the way social media is designed and how it affects society as a whole. </p>                    
+                            <p>There are many great resources out there to learn more about ethics in design. While this article is a great first step towards becoming a well-educated designer, other resources include books, articles, and films. Some of our recommendations include Ruined by Design by Mike Monteiro which describes the harmful effects of products that are working exactly as designed. The Social Dilemma on Netflix is another great resource that highlights some of the major issues with the way social media is designed and how it affects society as a whole. </p>                    
                         </Row>
                     </Col>
                     {/* Rightmost whitespace */}
@@ -304,7 +304,7 @@ class EthicalDesign extends Component {
                             <img src={sparkle} className="tinyImageBox sparkle2"/>
                         </Row>
                         <Row className="articleText">
-                            <p>When displaying data, using visuals like charts, graphs, and pictures generally capture the attention of the user more than words or a set of text would. Not only can data be presented in a more clear and concise fashion, but it can also generate more curiosity in the users, which in turn can help them focus their attention and utilize the data presented for their benefit. A great idea is to use a data dashboard, which are information management tools that visually track, analyze and display information and metrics. They can be used for anything from application usage to vital measurements to company performances.</p>
+                            <p>When displaying data, using visuals like charts, graphs, and pictures generally capture the attention of the user more than words or a set of text would. Not only can data be presented in a more clear and concise fashion, but it can also generate more curiosity in the users, which in turn can help them focus their attention and utilize the data presented for their benefit. A great idea is to use a data dashboard, which is a information management tool that visually tracks, analyzes and displays information and metrics. They can be used for anything from application usage to vital measurements to company performances.</p>
                         </Row>
                         <Row className="articleText newQuestion">
                             <p className="articleQuestion">Don’t Make Users Remember Information</p>

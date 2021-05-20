@@ -151,6 +151,7 @@ class InterviewWithAmanda extends Component {
                                 </div>
                                 <div className="linkDiskSecondary" 
                                     onMouseEnter={() => this.setDisc2(true)}
+                                    onMouseLeave={() => this.setDisc2(false)}
                                    >
                                     <img src={disc2} className="disc1" 
                                     />
