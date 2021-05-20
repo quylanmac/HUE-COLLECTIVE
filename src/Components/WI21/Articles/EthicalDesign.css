@@ -297,7 +297,8 @@ body {
 }
 .smallImageBox{
     max-width:50%;
-    height:auto;
+    height:100%;
+    margin:auto;
 }
 .noPad {
     padding-left:0px !important;
