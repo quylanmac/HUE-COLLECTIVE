@@ -157,7 +157,9 @@
         z-index:999;
     }
     .tinyImageBox {
-        max-width:15%;
+        width:15%;
+        max-height:100%;
+        object-fit: fill;
     }
     .mobileImage {
         width:100% !important;
