@@ -72,7 +72,7 @@ class issue3_landing extends Component {
                     {!this.state.openRecord && 
                     <>
                     <p className="mobileChoose">PRESS TO CHOOSE</p>
-                    <img src={record_player} className="record_player" onClick={this.handleRecord}/>
+                    <img src={record_player} className="record_player displayCenter" onClick={this.handleRecord}/>
                     </>
                     }
                     {this.state.openRecord && 
