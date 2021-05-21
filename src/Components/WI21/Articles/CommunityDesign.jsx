@@ -209,7 +209,9 @@ class CommunityDesign extends Component{
                         </Row>
 
                         <Row>
-                            <img src={cellphone} className="community_phone"/>
+                            <div className="willThisWork" style={{display:"flex"}}>
+                            <img src={cellphone} className="community_phone displayCenter"/>
+                            </div>
                         </Row>
 
 

@@ -154,6 +154,8 @@
     }
     .backToTop {
         position: fixed;
+        padding-right:1rem;
+        padding-bottom:1rem;
         bottom:0;
         right:0;
     }

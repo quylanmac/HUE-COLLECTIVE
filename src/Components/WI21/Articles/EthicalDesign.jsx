@@ -321,7 +321,7 @@ class EthicalDesign extends Component {
                         <Row className="articleText newQuestion">
                             <p className="articleQuestion">Don’t Make Users Remember Information</p>
                             <div className="willThisWork" style={{display:"flex"}}>
-                            <img src={heart} className="tinyImageBox"/>
+                            <img src={heart} className="tinyImageBox displayCenter"/>
                             </div>
                         </Row>
                         <Row className="articleText">
@@ -329,7 +329,7 @@ class EthicalDesign extends Component {
                         </Row>
                         <Row className="articleText newQuestion">
                             <div className="willThisWork" style={{display:"flex"}}>
-                            <img src={flowerpot} className="tinyImageBox"/>
+                            <img src={flowerpot} className="tinyImageBox displayCenter"/>
                             <p className="articleQuestion">Misdirection in Informatics</p>
                             </div>
                         </Row>
