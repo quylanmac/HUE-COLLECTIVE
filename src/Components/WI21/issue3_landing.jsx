@@ -61,7 +61,7 @@ class issue3_landing extends Component {
                             <h1> WITHOUT EXCEPTION </h1>
                             <p>How can we design for those who are all too often left behind? As designers, we all want to do good in the world, but in order to do so, we must look far beyond our own lives. Join HUE in our third issue as we dive into ethical design, exploring the amazing things that can happen through advocacy and community engagement.</p>
                         </div>
-                        {this.state.openRecord && !this.state.mobile && <img src={record_player} className="record_player" onClick={this.isMobile}/>}
+                        {this.state.openRecord && !this.state.mobile && <img src={record_player} className="record_player" onClick={this.handleRecord}/>}
                         {!this.state.openRecord && !this.state.mobile && <img src={record_player_closed} className="record_player" onClick={this.handleRecord}/>}
                     </Col>
 
@@ -104,7 +104,7 @@ class issue3_landing extends Component {
                         {this.state.openRecord && !this.state.mobile && 
                         <>
                     <Link to={{pathname: "/EquitableDesign"}}><img src={smallArticle1} className="issue3_landing1"/></Link>
-                    <Link to={{pathname: "/CommunityDesign"}}><img src={smallArticle2} className="issue3_landing2"/></Link>
+                    <Link to={{pathname: "/EthicalDesign"}}><img src={smallArticle3} className="issue3_landing2"/></Link>
                         </>
                         }
                     </Col> 
@@ -112,7 +112,8 @@ class issue3_landing extends Component {
                     <Col md={4} xs={12}>
                         {this.state.openRecord && !this.state.mobile &&
                         <>
-                        <Link to={{pathname: "/EthicalDesign"}}><img src={smallArticle3} className="issue3_landing3"/></Link>
+                        <Link to={{pathname: "/CommunityDesign"}}><img src={smallArticle2} className="issue3_landing3"/></Link>
+
                         <Link to={{pathname: "/interview-with-amanda"}}><img src={smallArticle4} className="issue3_landing4"/></Link>
                         </>
                         }                     
