@@ -18,6 +18,11 @@
 .header {
     position:relative;
 }
+.willThisWork {
+    display:flex;
+    position:relative;
+    width:100%;
+}
 .tester2 {
     background-image:url('../../../img/Issue3/flowerpot.png');
     background-size: cover;

@@ -305,9 +305,11 @@ class EthicalDesign extends Component {
                             <p className="articleText"> When developing consumer-oriented technological media, some major ethical concerns involve how people’s information is handled and presented. The goal here is to maintain honesty and visibility. The consumer should have an easy time discerning what information is presented to them, and it would be ethically responsible to avoid misdirecting their attention or deceiving them. Statistics don’t lie, but they can definitely be used to lead people the wrong way. Here are a few ideas and examples on how to incorporate ethical design choices. </p>
                         </Row>
                         <Row className="articleText newQuestion">
+                            <div className="willThisWork">
                             <img src={sparkle} className="tinyImageBox sparkle1"/>
                             <p className="articleQuestion">Visualize your data</p>
                             <img src={sparkle} className="tinyImageBox sparkle2"/>
+                            </div>
                         </Row>
                         <Row className="articleText">
                             <p>When displaying data, using visuals like charts, graphs, and pictures generally capture the attention of the user more than words or a set of text would. Not only can data be presented in a more clear and concise fashion, but it can also generate more curiosity in the users, which in turn can help them focus their attention and utilize the data presented for their benefit. A great idea is to use a data dashboard, which is a information management tool that visually tracks, analyzes and displays information and metrics. They can be used for anything from application usage to vital measurements to company performances.</p>
