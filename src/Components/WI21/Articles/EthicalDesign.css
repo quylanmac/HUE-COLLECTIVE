@@ -19,7 +19,7 @@
     position:relative;
 }
 .willThisWork {
-    display:flex;
+    max-width:66.67%;
     position:relative;
     width:100%;
 }
