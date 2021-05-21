@@ -309,7 +309,7 @@ class EthicalDesign extends Component {
                             <p className="articleText"> When developing consumer-oriented technological media, some major ethical concerns involve how people’s information is handled and presented. The goal here is to maintain honesty and visibility. The consumer should have an easy time discerning what information is presented to them, and it would be ethically responsible to avoid misdirecting their attention or deceiving them. Statistics don’t lie, but they can definitely be used to lead people the wrong way. Here are a few ideas and examples on how to incorporate ethical design choices. </p>
                         </Row>
                         <Row className="articleText newQuestion">
-                            <div className="willThisWork" style={{display:"flex"}}>
+                            <div className="willThisWork displayCenter" style={{display:"flex"}}>
                             <img src={sparkle} className="tinyImageBox sparkle1"/>
                             <p className="articleQuestion">Visualize your data</p>
                             <img src={sparkle} className="tinyImageBox sparkle2"/>

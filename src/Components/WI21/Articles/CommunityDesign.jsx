@@ -115,7 +115,7 @@ class CommunityDesign extends Component{
                     </div>
                 </div>
                 <Row>
-                    <img className="community_pic1" src={cover}/>
+                    <img className="community_pic1 displayCenter" src={cover}/>
                 </Row>
                 <Row>
                 <Col className="columnLeft mobileHidden" xs={0} md={2}>

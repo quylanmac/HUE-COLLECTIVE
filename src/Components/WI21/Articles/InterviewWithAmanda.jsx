@@ -129,7 +129,7 @@ class InterviewWithAmanda extends Component {
                     </div>
                 </div>
                 <Row id="top">
-                    <img className="imageBox" src={header}/>
+                    <img className="imageBox displayCenter" src={header}/>
                 </Row>
                 <Row className="introduction_1 mobilePadding">
                     <Col xs={12}>

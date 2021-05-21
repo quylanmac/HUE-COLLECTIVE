@@ -119,7 +119,7 @@ class EquitableDesign extends Component {
                     </div>
                 </div>
                 <Row id="top">
-                    <img className="imageBox" src={header}/>
+                    <img className="imageBox displayCenter" src={header}/>
                 </Row>
                 <Row className="equitableIntroduction mobilePadding">
                 <Col xs={12}>
