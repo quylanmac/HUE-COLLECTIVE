@@ -61,6 +61,23 @@
 .community_paragraph{
     margin-bottom: 1rem;
 }
+.authors {
+    color: #ffffff;
+    display:flex;
+    margin-bottom:1rem;
+}
+.authorsDark {
+    color: black;
+    display:flex;
+    margin-bottom:1rem;
+}
+.authorsDark > p {
+    color:black;
+}
+
+.corben {
+    font-family: Corben;
+}
 
 .community_phone{
     width: 30%;
@@ -127,13 +144,47 @@
     .special {
         font-size: 1.375rem;
     }
+    .specialInterview {
+        font-size:1.375rem;
+    }
+    .lineSpace {
+        line-height:24px;
+    }
+    .lineSpace2 {
+        line-height:24px;
+    }
+    .authors {
+        justify-content:end;
+    }
+    .authorsDark {
+        justify-content:end;
+    }
 }
 @media (max-width:767px) {
+    .specialInterview {
+        font-size: .9rem;
+        padding-right:0rem !important;
+        padding-left:0rem !important;
+    }
+    .lineSpace2 {
+        line-height:24px;
+    }
+    .authors {
+        justify-content:center;
+    }
+    .authorsDark {
+        justify-content:center;
+    }
+    .lineSpace {
+        line-height:28px;
+    }
     .center{
         text-align: left;
     }
     .special{
-        font-size: 1.5rem !important;
+        font-size: 1rem !important;
+        padding-right:0rem !important;
+        padding-left:0rem !important;
     }
     .community_design_font{
         font-size:.75rem;

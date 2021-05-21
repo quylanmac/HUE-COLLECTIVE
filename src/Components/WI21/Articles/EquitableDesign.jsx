@@ -122,6 +122,12 @@ class EquitableDesign extends Component {
                     <img className="imageBox displayCenter" src={header}/>
                 </Row>
                 <Row className="equitableIntroduction mobilePadding">
+                <Col md={7}/>
+                        <Col xs={12} md={4} className="authorsDark">
+                            <p className="corben special lineSpace">Written By: </p>
+                            <p className="community_design_font special"> &nbsp;Shaonee Mitra & Alex Padayao </p>
+                        </Col>
+                        <Col md={1}/>
                 <Col xs={12}>
                     <Row className="equitableQuestion">
                         <Col md={1}/>

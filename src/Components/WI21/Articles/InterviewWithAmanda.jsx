@@ -132,6 +132,12 @@ class InterviewWithAmanda extends Component {
                     <img className="imageBox displayCenter" src={header}/>
                 </Row>
                 <Row className="introduction_1 mobilePadding">
+                <Col md={7}/>
+                        <Col xs={12} md={4} className="authors">
+                            <p className="corben specialInterview lineSpace2">Interviewed By: </p>
+                            <p className="community_design_font specialInterview"> &nbsp;Shaonee Mitra & Jocelyn Horng </p>
+                        </Col>
+                        <Col md={1}/>
                     <Col xs={12}>
                     <Row className="ethicalQuestion">
                         <Col md={1}/>

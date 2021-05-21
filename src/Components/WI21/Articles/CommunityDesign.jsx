@@ -152,6 +152,13 @@ class CommunityDesign extends Component{
                 </Row>
                 {/* first section with the black background */}
                 <Row className="black_background">
+                        <Col md={8}/>
+                        <Col xs={12} md={3} className="authors">
+                            <p className="corben special lineSpace">Written By: </p>
+                            <p className="community_design_font special"> &nbsp;Lwin DuMont & Jocelyn Horng </p>
+                        </Col>
+                        <Col md={1}/>
+
                         <Col md={4}>
                             <p className="community_design_font center special">Then</p>
                             <img src={star} className="community_star1"/>

@@ -127,6 +127,12 @@ class EthicalDesign extends Component {
                     <img className="imageBox mobileImage displayCenter" src={header}/>
                 </Row>
                 <Row className="introduction mobilePadding">
+                <Col md={7}/>
+                        <Col xs={12} md={4} className="authors">
+                            <p className="corben special lineSpace">Written By: </p>
+                            <p className="community_design_font special"> &nbsp;Amy An & Shameek Mitra </p>
+                        </Col>
+                        <Col md={1}/>
                     <Col xs={12}>
                     <Row className="ethicalQuestion">
                         <Col md={1}/>
