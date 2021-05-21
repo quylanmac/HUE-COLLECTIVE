@@ -15,6 +15,9 @@
     position:absolute;
     padding-bottom:1rem;
 }
+.displayCenter {
+    align-self:center;
+}
 .header {
     position:relative;
 }

@@ -124,7 +124,7 @@ class EthicalDesign extends Component {
                     </div>
                 </div>
                 <Row id="top" className="header">
-                    <img className="imageBox mobileImage" src={header}/>
+                    <img className="imageBox mobileImage displayCenter" src={header}/>
                 </Row>
                 <Row className="introduction mobilePadding">
                     <Col xs={12}>
@@ -309,7 +309,7 @@ class EthicalDesign extends Component {
                             <p className="articleText"> When developing consumer-oriented technological media, some major ethical concerns involve how people’s information is handled and presented. The goal here is to maintain honesty and visibility. The consumer should have an easy time discerning what information is presented to them, and it would be ethically responsible to avoid misdirecting their attention or deceiving them. Statistics don’t lie, but they can definitely be used to lead people the wrong way. Here are a few ideas and examples on how to incorporate ethical design choices. </p>
                         </Row>
                         <Row className="articleText newQuestion">
-                            <div className="willThisWork">
+                            <div className="willThisWork" style={{display:"flex"}}>
                             <img src={sparkle} className="tinyImageBox sparkle1"/>
                             <p className="articleQuestion">Visualize your data</p>
                             <img src={sparkle} className="tinyImageBox sparkle2"/>
@@ -320,14 +320,18 @@ class EthicalDesign extends Component {
                         </Row>
                         <Row className="articleText newQuestion">
                             <p className="articleQuestion">Don’t Make Users Remember Information</p>
+                            <div className="willThisWork" style={{display:"flex"}}>
                             <img src={heart} className="tinyImageBox"/>
+                            </div>
                         </Row>
                         <Row className="articleText">
                             <p>Humans undertake a cognitive load when holding short-term information, which can negatively affect their decision making and awareness capabilities. When the goal is to enable the user to make the best decisions with the information they are given, reducing this cognitive load can relieve them from remembering unnecessary information. If your app, website, or interactable service requires the user to take actions or progress between screens, ensure that the user can see the relevant information at every step of the way.</p>                        
                         </Row>
                         <Row className="articleText newQuestion">
+                            <div className="willThisWork" style={{display:"flex"}}>
                             <img src={flowerpot} className="tinyImageBox"/>
                             <p className="articleQuestion">Misdirection in Informatics</p>
+                            </div>
                         </Row>
                         <Row className="articleText">
                             <p>It is important to be aware of some common dark patterns in order to deliberately avoid them when it comes to handling information. A common one associated with displaying information is misdirection. Presenting information that is not relevant to the user or their decisions can distract them from the information they need. Also, presenting information that pulls the readers towards certain pieces of information over others can be manipulative. For example, let's consider an interface that displays information on how to exercise. Examples of misdirection include the usage of bold colors and fonts that emphasize an advertisement to buy exercise equipment versus the usage of grey or neutral fonts to deemphasize free alternatives. If the interest of the consumer is the priority, it would be in the best interest to emphasize them equally and to provide information on how the paid products compare to the free alternatives. </p>
