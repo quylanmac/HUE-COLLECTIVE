@@ -81,15 +81,15 @@ class issue3_landing extends Component {
                             <Carousel.Item>
                                 <h1>Equitable Design</h1>
                                 <Link to={{pathname: "/EquitableDesign"}}><img src={equitableRecord} className="issue3_landing1"/></Link>
-                            </Carousel.Item>  
-                            <Carousel.Item>
-                                <h1>Designing for Community Involvement</h1>
-                                <Link to={{pathname: "/CommunityDesign"}}><img src={designRecord} className="issue3_landing2"/></Link>
-                            </Carousel.Item>  
+                            </Carousel.Item>    
                             <Carousel.Item>
                                 <h1>Ethical Design For Tech</h1>
                                 <Link to={{pathname: "/EthicalDesign"}}><img src={ethicalRecord} className="issue3_landing3"/></Link>
                             </Carousel.Item> 
+                            <Carousel.Item>
+                                <h1>Designing for Community Involvement</h1>
+                                <Link to={{pathname: "/CommunityDesign"}}><img src={designRecord} className="issue3_landing2"/></Link>
+                            </Carousel.Item>
                             <Carousel.Item>
                                 <h1>Interview With Amanda</h1>
                                 <Link to={{pathname: "/interview-with-amanda"}}><img src={interviewRecord} className="issue3_landing4"/></Link>

@@ -19,9 +19,10 @@
     position:relative;
 }
 .willThisWork {
-    max-width:66.67%;
-    position:relative;
+    position: relative;
     width:100%;
+    padding-left:15px;
+    padding-right:15px;
 }
 .tester2 {
     background-image:url('../../../img/Issue3/flowerpot.png');

@@ -78,6 +78,12 @@
     width: 55%;
     top:25%;
 }
+.carousel-control-next-icon {
+    background-image: none !important;
+}
+.carousel-control-prev-icon {
+    background-image: none !important;
+}
 
 @media (max-width:767px) {
     .landingCarousel li {
