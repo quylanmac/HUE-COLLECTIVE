@@ -165,7 +165,7 @@ class EquitableDesign extends Component {
                                     onMouseLeave={() => this.setDisc4(false)}>
                                     <img src={disc4} className="disc1" 
                                     />
-                                    {this.state.showDisc4 && <Link to={{pathname: "/CommunityDesign"}}><img src={smallArticle4} className="testerDisc"/></Link>}
+                                    {this.state.showDisc4 && <Link to={{pathname: "/interview-with-amanda"}}><img src={smallArticle4} className="testerDisc"/></Link>}
                                 </div>
                             </div>
                         </Row>
