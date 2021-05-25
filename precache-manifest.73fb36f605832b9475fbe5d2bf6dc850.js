@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eee229f449f52c6a838025d5dd732376",
+    "revision": "aa39d5f606e36c03faf788ab09e77728",
     "url": "/index.html"
   },
   {
-    "revision": "b78b3709084500fb8cfa",
+    "revision": "342d0767b97c21e58604",
     "url": "/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "2ec233f217d7d1690b5f",
-    "url": "/static/css/main.5e3961c7.chunk.css"
+    "revision": "2921ccc4c7810b0f069e",
+    "url": "/static/css/main.c0008fc8.chunk.css"
   },
   {
-    "revision": "b78b3709084500fb8cfa",
-    "url": "/static/js/2.4f777405.chunk.js"
+    "revision": "342d0767b97c21e58604",
+    "url": "/static/js/2.fd586788.chunk.js"
   },
   {
     "revision": "514f455b70cda4d69697317fa903bc09",
-    "url": "/static/js/2.4f777405.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.fd586788.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2ec233f217d7d1690b5f",
-    "url": "/static/js/main.a1fe042f.chunk.js"
+    "revision": "2921ccc4c7810b0f069e",
+    "url": "/static/js/main.fc60aec9.chunk.js"
   },
   {
     "revision": "f75ecc5a6c8af381b048",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2dde456c9e681d4e19b754898336ace7",
     "url": "/static/media/Architecture.2dde456c.svg"
+  },
+  {
+    "revision": "3d84fe66f89b682882eb7fcac3745612",
+    "url": "/static/media/ArchivoBlack-Regular.3d84fe66.otf"
   },
   {
     "revision": "474ab2ad89c7386a4ad313dc9271269a",
@@ -72,6 +76,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Clouds.26f4e56e.svg"
   },
   {
+    "revision": "470053bf8aa61de5e6e6489d4d96d886",
+    "url": "/static/media/Corben-Bold.470053bf.ttf"
+  },
+  {
+    "revision": "8fb0a19af0482a1c74b1000f37eb92ee",
+    "url": "/static/media/Corben-Regular.8fb0a19a.ttf"
+  },
+  {
+    "revision": "d4df8bb8fea635a6c0f86f607038977d",
+    "url": "/static/media/Cover.d4df8bb8.png"
+  },
+  {
     "revision": "de7ab0f8a01176bf5ab9f42296af9a96",
     "url": "/static/media/Cover.de7ab0f8.png"
   },
@@ -90,6 +106,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d726f071ac3d3a1a4cdbc5b402b97e05",
     "url": "/static/media/ERIC RICHARDS.d726f071.png"
+  },
+  {
+    "revision": "02986281c9b30ba0359d3873ce633b4b",
+    "url": "/static/media/Epilogue-Regular.02986281.ttf"
+  },
+  {
+    "revision": "26eec95775e282bbf90a74dcfd52e10f",
+    "url": "/static/media/EquitableDesign.26eec957.png"
+  },
+  {
+    "revision": "f9bb095944b6832b0be9d3b96cbb113c",
+    "url": "/static/media/EthicalDesignBanner.f9bb0959.png"
   },
   {
     "revision": "53d1b6aadbc2ba5b7c8b718fa48d4128",
@@ -130,6 +158,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b8edca3e45f1f16bc6e20464bd8f2fff",
     "url": "/static/media/HelveticaNeueBd.b8edca3e.ttf"
+  },
+  {
+    "revision": "129401a24ef3012744f17e7a136beb14",
+    "url": "/static/media/Interview_Banner.129401a2.png"
   },
   {
     "revision": "3f71b157a9926f7ddfed826166a55f66",
@@ -210,6 +242,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5b5384b9c443c27e4b54bcbf92c6fff9",
     "url": "/static/media/Robosub.5b5384b9.svg"
+  },
+  {
+    "revision": "11eabca2251325cfc5589c9c6fb57b46",
+    "url": "/static/media/Roboto-Regular.11eabca2.ttf"
   },
   {
     "revision": "f282801c9fd2943751759f97f2c20c16",
@@ -392,8 +428,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/brent3.78b40c67.png"
   },
   {
+    "revision": "77df1bf15de9e179cb86e15a9829798b",
+    "url": "/static/media/buildingidk.77df1bf1.png"
+  },
+  {
     "revision": "03ea816ab9adb399eb01daea06f19472",
     "url": "/static/media/carsticker.03ea816a.png"
+  },
+  {
+    "revision": "2f452a31e7e9d46648cce9b8ef271a67",
+    "url": "/static/media/cellphone.2f452a31.png"
+  },
+  {
+    "revision": "9486e11d5c27c9e652258c523cebe9f9",
+    "url": "/static/media/circle_frame.9486e11d.png"
   },
   {
     "revision": "47202b5571a4485870152fbcc4a72974",
@@ -408,16 +456,68 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/contact.e8b5ef98.jpg"
   },
   {
+    "revision": "c6ca640d8d9757cc198a07c4aa32882a",
+    "url": "/static/media/corktrailrail.c6ca640d.png"
+  },
+  {
     "revision": "f553ebc8b19c643c10e861ba4120ad35",
     "url": "/static/media/cursor.f553ebc8.svg"
+  },
+  {
+    "revision": "2566dd754ccd28b37da921ee7b377cdb",
+    "url": "/static/media/designRecord.2566dd75.png"
   },
   {
     "revision": "f5409a8a9654c23762d7354ddcabbd08",
     "url": "/static/media/designcologo.f5409a8a.svg"
   },
   {
+    "revision": "869baaa40d8c7a6b169418340efc6309",
+    "url": "/static/media/designingCover.869baaa4.png"
+  },
+  {
+    "revision": "b5d3b0e17a317fdf9e85729fe860004f",
+    "url": "/static/media/designingcommunitylong.b5d3b0e1.png"
+  },
+  {
+    "revision": "774221dd4619948b6efb91be67dc43a4",
+    "url": "/static/media/disc1.774221dd.png"
+  },
+  {
+    "revision": "cf5f360c8cfbe22e90ca4fd5585d3f04",
+    "url": "/static/media/disc2.cf5f360c.png"
+  },
+  {
+    "revision": "ffe273003dbbfe251a7c59426b0bc01b",
+    "url": "/static/media/disc3.ffe27300.png"
+  },
+  {
+    "revision": "cadf94fb478610e6df53169d23babb15",
+    "url": "/static/media/disc4.cadf94fb.png"
+  },
+  {
     "revision": "624e24857c3f5f0c7e8ea1624062c543",
     "url": "/static/media/emeraldsticker.624e2485.png"
+  },
+  {
+    "revision": "e18e86e1c155dc55171309742c5bc3f3",
+    "url": "/static/media/equitableCover.e18e86e1.png"
+  },
+  {
+    "revision": "247684f8cae42484771cd35d2c375bd8",
+    "url": "/static/media/equitableRecord.247684f8.png"
+  },
+  {
+    "revision": "e1f86891abca6efb2ae3b73f72777cdd",
+    "url": "/static/media/equitabledesigndisc.e1f86891.jpg"
+  },
+  {
+    "revision": "942f38934bfd1715606980f4645e8b4f",
+    "url": "/static/media/ethicalCover.942f3893.png"
+  },
+  {
+    "revision": "1077618c4eb6c3f92889051250b2fceb",
+    "url": "/static/media/ethicalRecord.1077618c.png"
   },
   {
     "revision": "712a67bff73996225f010268bab69af1",
@@ -434,6 +534,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a9be9a587046141bb5240ef3675e4a85",
     "url": "/static/media/firesticker.a9be9a58.png"
+  },
+  {
+    "revision": "057cda062d0bbdf79546090eea0d5bf7",
+    "url": "/static/media/fleetLibraryCubicle.057cda06.png"
+  },
+  {
+    "revision": "6f4ed537fdc38127d7073f9e36c54048",
+    "url": "/static/media/flowerpot.6f4ed537.png"
   },
   {
     "revision": "0a13204a4800d370355713585fb9c8dc",
@@ -458,6 +566,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "46dc520a3d85abcc8208e42d2d5eae10",
     "url": "/static/media/gisca4.46dc520a.png"
+  },
+  {
+    "revision": "21e9f07d644572692d0e897a7e070a9d",
+    "url": "/static/media/glove.21e9f07d.png"
+  },
+  {
+    "revision": "3205d834cd9d961bb7a9119221f3011c",
+    "url": "/static/media/heart.3205d834.png"
   },
   {
     "revision": "09fa1e3c3afc0af175d6cf88b1e7e7fe",
@@ -524,8 +640,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/interviewCover.5334697c.png"
   },
   {
+    "revision": "bbe1f55558a4b0fae786b8555cf25f59",
+    "url": "/static/media/interviewCover.bbe1f555.png"
+  },
+  {
+    "revision": "c9fac383457dfd2ad6f08ed8dab9ad97",
+    "url": "/static/media/interviewRecord.c9fac383.png"
+  },
+  {
     "revision": "5dc40ae1137d79dced02a30f64948381",
     "url": "/static/media/issue2.5dc40ae1.gif"
+  },
+  {
+    "revision": "65b0c7bfbb6796eae1be0b926262724f",
+    "url": "/static/media/issue3_landing_background.65b0c7bf.png"
   },
   {
     "revision": "14a8298049059f162df13e8514958cbc",
@@ -742,6 +870,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5da2c13b8b433c2bbd728dd3eed90dbb",
     "url": "/static/media/lwin3.5da2c13b.png"
+  },
+  {
+    "revision": "0041258fc55ac5f1b24fa6d1637a0d24",
+    "url": "/static/media/moralValue.0041258f.png"
   },
   {
     "revision": "18687ba86e4469053aa4a5e5c0e39dca",
@@ -980,6 +1112,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/randomsticker4.e4fbd24f.png"
   },
   {
+    "revision": "d30b26bc661c58cc02bb4aad0a31ab86",
+    "url": "/static/media/record_player.d30b26bc.png"
+  },
+  {
+    "revision": "f7ca5fc591aa16c4b1100dc89fc7d5a1",
+    "url": "/static/media/record_player_new.f7ca5fc5.png"
+  },
+  {
     "revision": "6dc149f0b2ee3b4183ad63b91a90d64c",
     "url": "/static/media/ryan.6dc149f0.png"
   },
@@ -1064,16 +1204,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/shootingstarsticker.80982282.png"
   },
   {
+    "revision": "563083ab088aa09886984a41a5556316",
+    "url": "/static/media/sparkle.563083ab.png"
+  },
+  {
+    "revision": "a04c5bd6cc1d9a7e437f6b765901ccdf",
+    "url": "/static/media/star.a04c5bd6.png"
+  },
+  {
     "revision": "e4ea0a0db5d5e27e667f1924dffb31b9",
     "url": "/static/media/star.e4ea0a0d.png"
   },
   {
-    "revision": "ac2b5a87cf0935ea04394f92dc9fd9cf",
-    "url": "/static/media/starsticker.ac2b5a87.png"
+    "revision": "021f554de3269291a63f4ae5ce29dc66",
+    "url": "/static/media/star2.021f554d.png"
   },
   {
-    "revision": "091bd5109d6a4a68b132b8d4c84dcccb",
-    "url": "/static/media/staticRecruit.091bd510.png"
+    "revision": "0611008063bc340f4e3f68435e593fa3",
+    "url": "/static/media/star_frame.06110080.png"
+  },
+  {
+    "revision": "ac2b5a87cf0935ea04394f92dc9fd9cf",
+    "url": "/static/media/starsticker.ac2b5a87.png"
   },
   {
     "revision": "422f578473233c6109fb9d32777e4ab9",
